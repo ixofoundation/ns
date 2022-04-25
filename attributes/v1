@@ -7,7 +7,7 @@
       "type": "@type",
       "name": { 
       "@id": "schema:name",
-      "@type": "@id"
-    }
+      "@type": "@id"}
+      }
     ]
     }
