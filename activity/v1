@@ -1,0 +1,14 @@
+{
+  "@context":[
+      {
+      "taxonomy":"https://ec.europa.eu/sustainable-finance-taxonomy/scripts/1.0.4/taxonomy.json",
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "name": { 
+      "@id": "taxonomy:",
+      "@type": "activity",
+      "name": "Afforestation"}
+      }
+    ]
+    }
