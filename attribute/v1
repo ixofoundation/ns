@@ -1,13 +1,1083 @@
 {
-  "@context":[
-      {
-      "schema":"https://schema.org/",
+  "@context": [
+    {
+      "schema": "https://schema.org/",
       "@protected": true,
       "id": "@id",
-      "type": "@type",
-      "name": { 
-      "@id": "schema:name",
-      "@type": "@id"}
-      }
-    ]
+      "type": "@type"}],
+      "attributes": [
+        {
+          "@id": "schema:spouse",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The person's spouse.",
+          "rdfs:label": "spouse",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Person"
+          }
+        },
+        {
+          "@id": "schema:NLNonprofitType",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "NLNonprofitType: Non-profit organization type originating from the Netherlands.",
+          "rdfs:label": "NLNonprofitType",
+          "rdfs:subClassOf": {
+            "@id": "schema:NonprofitType"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:FundingScheme",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A FundingScheme combines organizational, project and policy aspects of grant-based funding\n    that sets guidelines, principles and mechanisms to support other kinds of projects and activities.\n    Funding is typically organized via [[Grant]] funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome institutional strategic support fund. For large scale public sector funding, the management and administration of grant awards is often handled by other, dedicated, organizations - [[FundingAgency]]s such as ERC, REA, ...",
+          "rdfs:label": "FundingScheme",
+          "rdfs:subClassOf": {
+            "@id": "schema:Organization"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": [
+            {
+              "@id": "https://github.com/schemaorg/schemaorg/issues/383"
+            },
+            {
+              "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"
+            }
+          ]
+        },
+        {
+          "@id": "schema:employerOverview",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A description of the employer, career opportunities and work environment for this position.",
+          "rdfs:label": "employerOverview",
+          "schema:domainIncludes": {
+            "@id": "schema:JobPosting"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2396"
+          }
+        },
+        {
+          "@id": "schema:isAcceptingNewPatients",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Whether the provider is accepting new patients.",
+          "rdfs:label": "isAcceptingNewPatients",
+          "schema:domainIncludes": {
+            "@id": "schema:MedicalOrganization"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Boolean"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1062"
+          }
+        },
+        {
+          "@id": "schema:HealthCare",
+          "@type": "schema:GovernmentBenefitsType",
+          "rdfs:comment": "HealthCare: this is a benefit for health care.",
+          "rdfs:label": "HealthCare",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2534"
+          }
+        },
+        {
+          "@id": "schema:MedicalProcedure",
+          "@type": "rdfs:Class",
+          "owl:equivalentClass": {
+            "@id": "http://purl.bioontology.org/ontology/SNOMEDCT/50731006"
+          },
+          "rdfs:comment": "A process of care used in either a diagnostic, therapeutic, preventive or palliative capacity that relies on invasive (surgical), non-invasive, or other techniques.",
+          "rdfs:label": "MedicalProcedure",
+          "rdfs:subClassOf": {
+            "@id": "schema:MedicalEntity"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:Hospital",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A hospital.",
+          "rdfs:label": "Hospital",
+          "rdfs:subClassOf": [
+            {
+              "@id": "schema:MedicalOrganization"
+            },
+            {
+              "@id": "schema:EmergencyService"
+            },
+            {
+              "@id": "schema:CivicStructure"
+            }
+          ]
+        },
+        {
+          "@id": "schema:countriesSupported",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.",
+          "rdfs:label": "countriesSupported",
+          "schema:domainIncludes": {
+            "@id": "schema:SoftwareApplication"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:cvdNumBedsOcc",
+          "@type": "rdf:Property",
+          "rdfs:comment": "numbedsocc - HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are occupied.",
+          "rdfs:label": "cvdNumBedsOcc",
+          "schema:domainIncludes": {
+            "@id": "schema:CDCPMDRecord"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Number"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2521"
+          }
+        },
+        {
+          "@id": "schema:UnincorporatedAssociationCharity",
+          "@type": "schema:UKNonprofitType",
+          "rdfs:comment": "UnincorporatedAssociationCharity: Non-profit type referring to a charitable company that is not incorporated (UK).",
+          "rdfs:label": "UnincorporatedAssociationCharity",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:ApprovedIndication",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "An indication for a medical therapy that has been formally specified or approved by a regulatory body that regulates use of the therapy; for example, the US FDA approves indications for most drugs in the US.",
+          "rdfs:label": "ApprovedIndication",
+          "rdfs:subClassOf": {
+            "@id": "schema:MedicalIndication"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:TelevisionStation",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A television station.",
+          "rdfs:label": "TelevisionStation",
+          "rdfs:subClassOf": {
+            "@id": "schema:LocalBusiness"
+          }
+        },
+        {
+          "@id": "schema:targetPopulation",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.",
+          "rdfs:label": "targetPopulation",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:DietarySupplement"
+            },
+            {
+              "@id": "schema:DoseSchedule"
+            }
+          ],
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:recommendedIntake",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
+          "rdfs:label": "recommendedIntake",
+          "schema:domainIncludes": {
+            "@id": "schema:DietarySupplement"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:RecommendedDoseSchedule"
+          }
+        },
+        {
+          "@id": "schema:energyEfficiencyScaleMin",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Specifies the least energy efficient class on the regulated EU energy consumption scale for the product category a product belongs to. For example, energy consumption for televisions placed on the market after January 1, 2020 is scaled from D to A+++.",
+          "rdfs:label": "energyEfficiencyScaleMin",
+          "schema:domainIncludes": {
+            "@id": "schema:EnergyConsumptionDetails"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:EUEnergyEfficiencyEnumeration"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2670"
+          }
+        },
+        {
+          "@id": "schema:DrugCostCategory",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "Enumerated categories of medical drug costs.",
+          "rdfs:label": "DrugCostCategory",
+          "rdfs:subClassOf": {
+            "@id": "schema:MedicalEnumeration"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:PlayAction",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.\\n\\nRelated actions:\\n\\n* [[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.",
+          "rdfs:label": "PlayAction",
+          "rdfs:subClassOf": {
+            "@id": "schema:Action"
+          }
+        },
+        {
+          "@id": "schema:Abdomen",
+          "@type": "schema:PhysicalExam",
+          "rdfs:comment": "Abdomen clinical examination.",
+          "rdfs:label": "Abdomen",
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:PoliceStation",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A police station.",
+          "rdfs:label": "PoliceStation",
+          "rdfs:subClassOf": [
+            {
+              "@id": "schema:CivicStructure"
+            },
+            {
+              "@id": "schema:EmergencyService"
+            }
+          ]
+        },
+        {
+          "@id": "schema:programPrerequisites",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Prerequisites for enrolling in the program.",
+          "rdfs:label": "programPrerequisites",
+          "schema:domainIncludes": {
+            "@id": "schema:EducationalOccupationalProgram"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:AlignmentObject"
+            },
+            {
+              "@id": "schema:Course"
+            },
+            {
+              "@id": "schema:EducationalOccupationalCredential"
+            },
+            {
+              "@id": "schema:Text"
+            }
+          ],
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2289"
+          }
+        },
+        {
+          "@id": "schema:Homeopathic",
+          "@type": "schema:MedicineSystem",
+          "rdfs:comment": "A system of medicine based on the principle that a disease can be cured by a substance that produces similar symptoms in healthy people.",
+          "rdfs:label": "Homeopathic",
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:additionalName",
+          "@type": "rdf:Property",
+          "rdfs:comment": "An additional name for a Person, can be used for a middle name.",
+          "rdfs:label": "additionalName",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:Nonprofit501c4",
+          "@type": "schema:USNonprofitType",
+          "rdfs:comment": "Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees.",
+          "rdfs:label": "Nonprofit501c4",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:PotentialActionStatus",
+          "@type": "schema:ActionStatusType",
+          "rdfs:comment": "A description of an action that is supported.",
+          "rdfs:label": "PotentialActionStatus"
+        },
+        {
+          "@id": "schema:EUEnergyEfficiencyCategoryD",
+          "@type": "schema:EUEnergyEfficiencyEnumeration",
+          "rdfs:comment": "Represents EU Energy Efficiency Class D as defined in EU energy labeling regulations.",
+          "rdfs:label": "EUEnergyEfficiencyCategoryD",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2670"
+          }
+        },
+        {
+          "@id": "schema:Energy",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
+          "rdfs:label": "Energy",
+          "rdfs:subClassOf": {
+            "@id": "schema:Quantity"
+          }
+        },
+        {
+          "@id": "schema:cvdNumICUBedsOcc",
+          "@type": "rdf:Property",
+          "rdfs:comment": "numicubedsocc - ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied.",
+          "rdfs:label": "cvdNumICUBedsOcc",
+          "schema:domainIncludes": {
+            "@id": "schema:CDCPMDRecord"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Number"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2521"
+          }
+        },
+        {
+          "@id": "schema:validFor",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The duration of validity of a permit or similar thing.",
+          "rdfs:label": "validFor",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:Permit"
+            },
+            {
+              "@id": "schema:EducationalOccupationalCredential"
+            }
+          ],
+          "schema:rangeIncludes": {
+            "@id": "schema:Duration"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1779"
+          }
+        },
+        {
+          "@id": "schema:MedicalClinic",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A facility, often associated with a hospital or medical school, that is devoted to the specific diagnosis and/or healthcare. Previously limited to outpatients but with evolution it may be open to inpatients as well.",
+          "rdfs:label": "MedicalClinic",
+          "rdfs:subClassOf": [
+            {
+              "@id": "schema:MedicalOrganization"
+            },
+            {
+              "@id": "schema:MedicalBusiness"
+            }
+          ],
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:SeatingMap",
+          "@type": "schema:MapCategoryType",
+          "rdfs:comment": "A seating map.",
+          "rdfs:label": "SeatingMap"
+        },
+        {
+          "@id": "schema:Bacteria",
+          "@type": "schema:InfectiousAgentClass",
+          "rdfs:comment": "Pathogenic bacteria that cause bacterial infection.",
+          "rdfs:label": "Bacteria",
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:LearningResource",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "The LearningResource type can be used to indicate [[CreativeWork]]s (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes.\n\n[[LearningResource]] is expected to be used as an addition to a primary type such as [[Book]], [[VideoObject]], [[Product]] etc.\n\n[[EducationEvent]] serves a similar purpose for event-like things (e.g. a [[Trip]]). A [[LearningResource]] may be created as a result of an [[EducationEvent]], for example by recording one.",
+          "rdfs:label": "LearningResource",
+          "rdfs:subClassOf": {
+            "@id": "schema:CreativeWork"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1401"
+          }
+        },
+        {
+          "@id": "schema:educationalLevel",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
+          "rdfs:label": "educationalLevel",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:CreativeWork"
+            },
+            {
+              "@id": "schema:EducationalOccupationalCredential"
+            },
+            {
+              "@id": "schema:LearningResource"
+            },
+            {
+              "@id": "schema:EducationEvent"
+            }
+          ],
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:URL"
+            },
+            {
+              "@id": "schema:DefinedTerm"
+            },
+            {
+              "@id": "schema:Text"
+            }
+          ],
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1779"
+          }
+        },
+        {
+          "@id": "schema:programmingLanguage",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The computer programming language.",
+          "rdfs:label": "programmingLanguage",
+          "schema:domainIncludes": {
+            "@id": "schema:SoftwareSourceCode"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:Text"
+            },
+            {
+              "@id": "schema:ComputerLanguage"
+            }
+          ]
+        },
+        {
+          "@id": "schema:Brand",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
+          "rdfs:label": "Brand",
+          "rdfs:subClassOf": {
+            "@id": "schema:Intangible"
+          },
+          "schema:source": {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass"
+          }
+        },
+        {
+          "@id": "schema:FDAcategoryC",
+          "@type": "schema:DrugPregnancyCategory",
+          "rdfs:comment": "A designation by the US FDA signifying that animal reproduction studies have shown an adverse effect on the fetus and there are no adequate and well-controlled studies in humans, but potential benefits may warrant use of the drug in pregnant women despite potential risks.",
+          "rdfs:label": "FDAcategoryC",
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:ReducedRelevanceForChildrenConsideration",
+          "@type": "schema:AdultOrientedEnumeration",
+          "rdfs:comment": "A general code for cases where relevance to children is reduced, e.g. adult education, mortgages, retirement-related products, etc.",
+          "rdfs:label": "ReducedRelevanceForChildrenConsideration",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2989"
+          }
+        },
+        {
+          "@id": "schema:estimatedSalary",
+          "@type": "rdf:Property",
+          "rdfs:comment": "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
+          "rdfs:label": "estimatedSalary",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:JobPosting"
+            },
+            {
+              "@id": "schema:Occupation"
+            }
+          ],
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:MonetaryAmountDistribution"
+            },
+            {
+              "@id": "schema:MonetaryAmount"
+            },
+            {
+              "@id": "schema:Number"
+            }
+          ],
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1698"
+          }
+        },
+        {
+          "@id": "schema:Accommodation",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requirement.\nFor more specific types of accommodations not defined in schema.org, one can use additionalType with external vocabularies.\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+          "rdfs:label": "Accommodation",
+          "rdfs:subClassOf": {
+            "@id": "schema:Place"
+          },
+          "schema:source": {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology"
+          }
+        },
+        {
+          "@id": "schema:RsvpResponseNo",
+          "@type": "schema:RsvpResponseType",
+          "rdfs:comment": "The invitee will not attend.",
+          "rdfs:label": "RsvpResponseNo"
+        },
+        {
+          "@id": "schema:Male",
+          "@type": "schema:GenderType",
+          "rdfs:comment": "The male gender.",
+          "rdfs:label": "Male"
+        },
+        {
+          "@id": "schema:False",
+          "@type": "schema:Boolean",
+          "rdfs:comment": "The boolean value false.",
+          "rdfs:label": "False"
+        },
+        {
+          "@id": "schema:pregnancyCategory",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Pregnancy category of this drug.",
+          "rdfs:label": "pregnancyCategory",
+          "schema:domainIncludes": {
+            "@id": "schema:Drug"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:DrugPregnancyCategory"
+          }
+        },
+        {
+          "@id": "schema:Nonprofit501k",
+          "@type": "schema:USNonprofitType",
+          "rdfs:comment": "Nonprofit501k: Non-profit type referring to Child Care Organizations.",
+          "rdfs:label": "Nonprofit501k",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:bccRecipient",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A sub property of recipient. The recipient blind copied on a message.",
+          "rdfs:label": "bccRecipient",
+          "rdfs:subPropertyOf": {
+            "@id": "schema:recipient"
+          },
+          "schema:domainIncludes": {
+            "@id": "schema:Message"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:Person"
+            },
+            {
+              "@id": "schema:ContactPoint"
+            },
+            {
+              "@id": "schema:Organization"
+            }
+          ]
+        },
+        {
+          "@id": "schema:SchoolDistrict",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A School District is an administrative area for the administration of schools.",
+          "rdfs:label": "SchoolDistrict",
+          "rdfs:subClassOf": {
+            "@id": "schema:AdministrativeArea"
+          },
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2500"
+          }
+        },
+        {
+          "@id": "schema:candidate",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A sub property of object. The candidate subject of this action.",
+          "rdfs:label": "candidate",
+          "rdfs:subPropertyOf": {
+            "@id": "schema:object"
+          },
+          "schema:domainIncludes": {
+            "@id": "schema:VoteAction"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Person"
+          }
+        },
+        {
+          "@id": "schema:addressCountry",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
+          "rdfs:label": "addressCountry",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:DefinedRegion"
+            },
+            {
+              "@id": "schema:GeoShape"
+            },
+            {
+              "@id": "schema:GeoCoordinates"
+            },
+            {
+              "@id": "schema:PostalAddress"
+            }
+          ],
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:Country"
+            },
+            {
+              "@id": "schema:Text"
+            }
+          ],
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2506"
+          }
+        },
+        {
+          "@id": "schema:overdosage",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
+          "rdfs:label": "overdosage",
+          "schema:domainIncludes": {
+            "@id": "schema:Drug"
+          },
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:Person",
+          "@type": "rdfs:Class",
+          "owl:equivalentClass": {
+            "@id": "foaf:Person"
+          },
+          "rdfs:comment": "A person (alive, dead, undead, or fictional).",
+          "rdfs:label": "Person",
+          "rdfs:subClassOf": {
+            "@id": "schema:Thing"
+          },
+          "schema:source": {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"
+          }
+        },
+        {
+          "@id": "schema:founders",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A person who founded this organization.",
+          "rdfs:label": "founders",
+          "schema:domainIncludes": {
+            "@id": "schema:Organization"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:supersededBy": {
+            "@id": "schema:founder"
+          }
+        },
+        {
+          "@id": "schema:requiredMinAge",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Audiences defined by a person's minimum age.",
+          "rdfs:label": "requiredMinAge",
+          "schema:domainIncludes": {
+            "@id": "schema:PeopleAudience"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Integer"
+          }
+        },
+        {
+          "@id": "schema:legalStatus",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The drug or supplement's legal status, including any controlled substance schedules that apply.",
+          "rdfs:label": "legalStatus",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:Drug"
+            },
+            {
+              "@id": "schema:DietarySupplement"
+            },
+            {
+              "@id": "schema:MedicalEntity"
+            }
+          ],
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:DrugLegalStatus"
+            },
+            {
+              "@id": "schema:Text"
+            },
+            {
+              "@id": "schema:MedicalEnumeration"
+            }
+          ]
+        },
+        {
+          "@id": "schema:suggestedMaxAge",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Maximum recommended age in years for the audience or user.",
+          "rdfs:label": "suggestedMaxAge",
+          "schema:domainIncludes": {
+            "@id": "schema:PeopleAudience"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Number"
+          }
+        },
+        {
+          "@id": "schema:Wholesale",
+          "@type": "schema:DrugCostCategory",
+          "rdfs:comment": "The drug's cost represents the wholesale acquisition cost of the drug.",
+          "rdfs:label": "Wholesale",
+          "schema:isPartOf": {
+            "@id": "https://health-lifesci.schema.org"
+          }
+        },
+        {
+          "@id": "schema:telephone",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The telephone number.",
+          "rdfs:label": "telephone",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:Person"
+            },
+            {
+              "@id": "schema:Organization"
+            },
+            {
+              "@id": "schema:Place"
+            },
+            {
+              "@id": "schema:ContactPoint"
+            }
+          ],
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:honorificPrefix",
+          "@type": "rdf:Property",
+          "rdfs:comment": "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.",
+          "rdfs:label": "honorificPrefix",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:parents",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A parents of the person.",
+          "rdfs:label": "parents",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:supersededBy": {
+            "@id": "schema:parent"
+          }
+        },
+        {
+          "@id": "schema:providesService",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The service provided by this channel.",
+          "rdfs:label": "providesService",
+          "schema:domainIncludes": {
+            "@id": "schema:ServiceChannel"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Service"
+          }
+        },
+        {
+          "@id": "schema:NGO",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "Organization: Non-governmental Organization.",
+          "rdfs:label": "NGO",
+          "rdfs:subClassOf": {
+            "@id": "schema:Organization"
+          }
+        },
+        {
+          "@id": "schema:familyName",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Family name. In the U.S., the last name of a Person.",
+          "rdfs:label": "familyName",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:givenName",
+          "@type": "rdf:Property",
+          "rdfs:comment": "Given name. In the U.S., the first name of a Person.",
+          "rdfs:label": "givenName",
+          "schema:domainIncludes": {
+            "@id": "schema:Person"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+        },
+        {
+          "@id": "schema:Nonprofit501c1",
+          "@type": "schema:USNonprofitType",
+          "rdfs:comment": "Nonprofit501c1: Non-profit type referring to Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations.",
+          "rdfs:label": "Nonprofit501c1",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:Female",
+          "@type": "schema:GenderType",
+          "rdfs:comment": "The female gender.",
+          "rdfs:label": "Female"
+        },
+        {
+          "@id": "schema:ElementarySchool",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "An elementary school.",
+          "rdfs:label": "ElementarySchool",
+          "rdfs:subClassOf": {
+            "@id": "schema:EducationalOrganization"
+          }
+        },
+        {
+          "@id": "schema:ExerciseAction",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "The act of participating in exertive activity for the purposes of improving health and fitness.",
+          "rdfs:label": "ExerciseAction",
+          "rdfs:subClassOf": {
+            "@id": "schema:PlayAction"
+          }
+        },
+        {
+          "@id": "schema:assesses",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
+          "rdfs:label": "assesses",
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:EducationEvent"
+            },
+            {
+              "@id": "schema:CreativeWork"
+            },
+            {
+              "@id": "schema:LearningResource"
+            }
+          ],
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:Text"
+            },
+            {
+              "@id": "schema:DefinedTerm"
+            }
+          ],
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2427"
+          }
+        },
+        {
+          "@id": "schema:recipient",
+          "@type": "rdf:Property",
+          "rdfs:comment": "A sub property of participant. The participant who is at the receiving end of the action.",
+          "rdfs:label": "recipient",
+          "rdfs:subPropertyOf": {
+            "@id": "schema:participant"
+          },
+          "schema:domainIncludes": [
+            {
+              "@id": "schema:Message"
+            },
+            {
+              "@id": "schema:SendAction"
+            },
+            {
+              "@id": "schema:AuthorizeAction"
+            },
+            {
+              "@id": "schema:ReturnAction"
+            },
+            {
+              "@id": "schema:PayAction"
+            },
+            {
+              "@id": "schema:DonateAction"
+            },
+            {
+              "@id": "schema:CommunicateAction"
+            },
+            {
+              "@id": "schema:GiveAction"
+            },
+            {
+              "@id": "schema:TipAction"
+            }
+          ],
+          "schema:rangeIncludes": [
+            {
+              "@id": "schema:Person"
+            },
+            {
+              "@id": "schema:Audience"
+            },
+            {
+              "@id": "schema:ContactPoint"
+            },
+            {
+              "@id": "schema:Organization"
+            }
+          ]
+        },
+        {
+          "@id": "schema:Nonprofit501n",
+          "@type": "schema:USNonprofitType",
+          "rdfs:comment": "Nonprofit501n: Non-profit type referring to Charitable Risk Pools.",
+          "rdfs:label": "Nonprofit501n",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:Nonprofit501c7",
+          "@type": "schema:USNonprofitType",
+          "rdfs:comment": "Nonprofit501c7: Non-profit type referring to Social and Recreational Clubs.",
+          "rdfs:label": "Nonprofit501c7",
+          "schema:isPartOf": {
+            "@id": "https://pending.schema.org"
+          },
+          "schema:source": {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/2543"
+          }
+        },
+        {
+          "@id": "schema:ChildCare",
+          "@type": "rdfs:Class",
+          "rdfs:comment": "A Childcare center.",
+          "rdfs:label": "ChildCare",
+          "rdfs:subClassOf": {
+            "@id": "schema:LocalBusiness"
+          }
+        }
+      ]
     }
