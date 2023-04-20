@@ -1,0 +1,30 @@
+{
+    "@context":{
+        "@version": 1.0,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "did":"https://www.w3.org/ns/did/v1",
+        "schema":"http://schema.org/",
+        "Assertion": "https://w3id.org/dcc/v1#Assertion",
+        "zcap":"https://w3id.org/zcap/v1",
+        "dataIntegrity":"https://w3id.org/security/data-integrity/v1
+        "verifiableCredential":"https://www.w3.org/2018/credentials/v1",
+        "didixo":"https://w3id.org/ixo/protocol/identifier/ixo/v1",
+        "didx":"https://w3id.org/ixo/protocol/identifier/x/v1",     
+        "entity":"https://w3id.org/ixo/protocol/entities/",
+        "attribute":"https://w3id.org/ixo/protocol/attributes/",
+        "claim":"https://w3id.org/ixo/protocol/claims/",
+        "right":"https://w3id.org/ixo/protocol/accorded-rights/",
+        "credential":"https://w3id.org/ixo/protocol/credentials/",
+        "indicator":"https://w3id.org/ixo/protocol/indicators/",
+        "resource":"https://w3id.org/ixo/protocol/linked-reources/",
+        "payment":"https://w3id.org/ixo/protocol/payments/",
+        "method":"https://w3id.org/ixo/protocol/methods/",
+        "proof":"https://w3id.org/ixo/protocol/proofs/",
+        "token":"https://w3id.org/ixo/protocol/tokens/",
+        "vocab":"https://w3id.org/ixo/vocab/",
+        "startDate": "http://schema.org/startDate",
+        "endDate": "http://schema.org/endDate",
+    }
+}
