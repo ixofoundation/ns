@@ -1,0 +1,79 @@
+{
+	"@context": {
+		"cc": "http://creativecommons.org/ns#",
+		"cert": "http://www.w3.org/ns/auth/cert#",
+		"dbp": "http://dbpedia.org/property/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"geonames": "http://www.geonames.org/ontology#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"rsa": "http://www.w3.org/ns/auth/rsa#",
+		"schema": "http://schema.org/",
+		"swrc": "http://swrc.ontoware.org/ontology#",
+		"types": "http://rdfs.org/sioc/types#",
+		"xhtml": "http://www.w3.org/1999/xhtml#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@graph": [
+		{
+			"@id": "#Claim",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Claim",
+			"rdfs:comment": "A statement or assertion in the context of sustainable development, backed by Web3 or AI technologies."
+		},
+		{
+			"@id": "#Credential",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Credential",
+			"rdfs:comment": "A certification or qualification related to sustainable development, issued by an authoritative body, and utilizing Web3 or AI technologies for verification."
+		},
+		{
+			"@id": "#CryptographicProof",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Cryptographic Proof",
+			"rdfs:comment": "A mathematical or digital verification mechanism for confirming the authenticity or validity of a claim, credential, or piece of evidence in the context of sustainable development."
+		},
+		{
+			"@id": "#Evaluation",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Evaluation",
+			"rdfs:comment": "The process or result of assessing the performance, impact, or effectiveness of an entity, action, or technology in the context of sustainable development."
+		},
+		{
+			"@id": "#Evidence",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Evidence",
+			"rdfs:comment": "Supporting information or documentation that substantiates a claim, credential, or evaluation in the context of sustainable development and related technologies."
+		},
+		{
+			"@id": "#Indicator",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Indicator",
+			"rdfs:comment": "A metric or measurement used to assess the progress, impact, or effectiveness of an entity, action, or technology in the context of sustainable development."
+		},
+		{
+			"@id": "#LinkedClaim",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Linked Claim",
+			"rdfs:comment": "A claim associated with other claims or entities within the context of sustainable development, utilizing Web3 or AI technologies for data linkage and verification."
+		},
+		{
+			"@id": "#Proof",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Proof",
+			"rdfs:comment": "A piece of evidence or verification for a claim or credential in the context of sustainable development, backed by Web3 or AI technologies."
+		},
+		{
+			"@id": "#VerifiableClaim",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Verifiable Claim",
+			"rdfs:comment": "A statement or assertion in the context of sustainable development, backed by cryptographic proofs or other Web3 technologies, and tied to a Verifiable Credential."
+		},
+		{
+			"@id": "#VerifiableCredential",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Verifiable Credential",
+			"rdfs:comment": "A digital certification or qualification related to sustainable development, issued by an authoritative body, and utilizing cryptographic proofs for verification."
+		}
+	]
+}
