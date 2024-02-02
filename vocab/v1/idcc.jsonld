@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "cc": "http://creativecommons.org/ns#",
+    "cert": "http://www.w3.org/ns/auth/cert#",
+    "dbp": "http://dbpedia.org/property/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "geonames": "http://www.geonames.org/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rsa": "http://www.w3.org/ns/auth/rsa#",
+    "schema": "http://schema.org/",
+    "swrc": "http://swrc.ontoware.org/ontology#",
+    "types": "http://rdfs.org/sioc/types#",
+    "xhtml": "http://www.w3.org/1999/xhtml#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+  },
+  "@graph": [
+    {
+      "@id": "#PersonalAgency",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Personal Agency",
+      "rdfs:comment": "Controlling things happening to you."
+    },
+    {
+      "@id": "#SelfResolution",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Self Resolution",
+      "rdfs:comment": "Being able to resolve own problems."
+    },
+    {
+      "@id": "#EqualCompetency",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Equal Competency",
+      "rdfs:comment": "Being able to perform as well as others."
+    },
+    {
+      "@id": "#ChangeInitiation",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Change Initiation",
+      "rdfs:comment": "Being able to change important things."
+    },
+    {
+      "@id": "#FeelingsOfInutility",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Feelings Of Inutility",
+      "rdfs:comment": "Feeling useless."
+    },
+    {
+      "@id": "#PerceivedHelplessness",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Perceived Helplessness",
+      "rdfs:comment": "Feeling helpless to tackle life problems."
+    },
+    {
+      "@id": "#PerceivedManipulation",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Perceived Manipulation",
+      "rdfs:comment": "Feeling manipulated in life."
+    },
+    {
+      "@id": "#SelfPerceivedFailure",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Self Perceived Failure",
+      "rdfs:comment": "Regarding oneself as a loser."
+    },
+    {
+      "@id": "#IntensityLikert",
+      "@type": "rdf:Property",
+      "rdfs:label": "Intensity Likert",
+      "rdfs:comment": "No (1), Rather little (2), Average (3), Rather a lot (4), Very much (5)."
+    }
+  ]
+}
