@@ -3,7 +3,7 @@
 		"cc": "http://creativecommons.org/ns#",
 		"cert": "http://www.w3.org/ns/auth/cert#",
 		"dbp": "http://dbpedia.org/property/",
-    "dpv": "https://w3c.github.io/dpv/2.0/dpv/",
+                "dpv": "https://w3c.github.io/dpv/2.0/dpv/",
 		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
 		"geonames": "http://www.geonames.org/ontology#",
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
