@@ -1,1 +1,26 @@
-{}
+{
+	"@context": {
+		"cc": "http://creativecommons.org/ns#",
+		"cert": "http://www.w3.org/ns/auth/cert#",
+		"dbp": "http://dbpedia.org/property/",
+    "dpv": "https://w3c.github.io/dpv/2.0/dpv/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"geonames": "http://www.geonames.org/ontology#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"rsa": "http://www.w3.org/ns/auth/rsa#",
+		"schema": "http://schema.org/",
+		"swrc": "http://swrc.ontoware.org/ontology#",
+		"types": "http://rdfs.org/sioc/types#",
+		"xhtml": "http://www.w3.org/1999/xhtml#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@graph": [
+		{
+			"@id": "#Display",
+			"@type": "rdfs:Class",
+			"rdfs:label": "Display",
+			"rdfs:comment": "To present or show data"
+		}
+  ]
+}
