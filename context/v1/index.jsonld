@@ -6,7 +6,7 @@
 		"type": "@type",
 		"did": "https://www.w3.org/ns/did/v1",
 		"schema": "http://schema.org/",
-		"Assertion": "https://w3id.org/dcc/v1#Assertion",
+		"assertion": "https://w3id.org/dcc/v1#assertion",
 		"zcap": "https://w3id.org/zcap/v1",
 		"dataIntegrity": "https://w3id.org/security/data-integrity/v1",
 		"verifiableCredential": "https://www.w3.org/2018/credentials/v1",
