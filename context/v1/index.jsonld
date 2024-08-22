@@ -15,7 +15,7 @@
 		"entity": "https://w3id.org/ixo/protocol/entities/v1",
 		"attribute": "https://w3id.org/ixo/protocol/attributes/v1",
 		"claim": "https://w3id.org/ixo/protocol/claims/v1",
-		"display": "https://w3id.org/ixo/protocol/linked-resources/v1#display",
+		"display": "https://w3id.org/ixo/protocol/displays/v1#display",
 		"right": "https://w3id.org/ixo/protocol/accorded-rights/v1",
 		"credential": "https://w3id.org/ixo/protocol/credentials/v1",
 		"indicator": "https://w3id.org/ixo/protocol/indicators/v1",
