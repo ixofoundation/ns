@@ -1,48 +1,40 @@
 {
-  "@context": [
-    {
-      "display": "https://w3c.github.io/dpv/2.0/dpv/#Display",
-      "type": "@type",
-      "@id": "@type",
-      "@version": 1.1
+    "@context": [
+      {
+        "display": "https://w3c.github.io/dpv/2.0/dpv/#Display",
+        "type": "@type",
+        "@id": "@type",
+        "@version": 1.1
+      }
+    ],
+    "display": {
+      "ClaimSchema": {
+        "description": "A structured framework defining the format and content of claims."
+      },
+      "LegalAgreement": {
+        "description": "A legally binding agreement"
+      },
+      "Lottie": {
+        "description": "Image or animation file"
+      },
+      "ProjectCredential": {
+        "description": "A digital certificate attesting to specific facts or achievements about a project."
+      },
+      "surveyTemplate": {
+        "description": "A predefined set of questions or forms used to collect data."
+      },
+      "TokenMetadata": {
+        "description": "Properties of the token"
+      },
+      "VerifiableCredential": {
+        "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification."
+      },
+      "VerificationMethods": {
+        "description": "Methods used to authenticate or authorize interactions"
+      },
+      "WebDashboard": {
+        "description": "Information displayed in Graphic User Interfaces of Web Client applications"
+      }
     }
-  ],
-  "display": [
-    {
-      "type": "ClaimSchema",
-      "description": "A structured framework defining the format and content of claims."
-    },
-    {
-      "type": "LegalAgreement",
-      "description": "A legally binding agreement"
-    },
-    {
-      "type": "Lottie",
-      "description": "Image or animation file"
-    },
-    {
-      "type": "ProjectCredential",
-      "description": "A digital certificate attesting to specific facts or achievements about a project."
-    },
-    {
-      "type": "surveyTemplate",
-      "description": "A predefined set of questions or forms used to collect data."
-    },
-    {
-      "type": "TokenMetadata",
-      "description": "Properties of the token"
-    },
-    {
-      "type": "VerifiableCredential",
-      "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification."
-    },
-    {
-      "type": "VerificationMethods",
-      "description": "Methods used to authenticate or authorize interactions"
-    },
-    {
-      "type": "WebDashboard",
-      "description": "Information displayed in Graphic User Interfaces of Web Client applications"
-    }
-  ]
-}
+  }
+  
