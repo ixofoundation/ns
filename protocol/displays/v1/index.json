@@ -11,6 +11,15 @@
       "ClaimSchema": {
         "description": "A structured framework defining the format and content of claims."
       },
+      "document": {
+        "description": "A file composed primarily of text."
+      },
+      "CredentialSchema": {
+        "description": "A structured framework defining the format and content of credentials."
+      },
+      "image": {
+        "description": "An image of the item. This can be a URL or a fully described ImageObject."
+      },
       "LegalAgreement": {
         "description": "A legally binding agreement"
       },
@@ -20,8 +29,14 @@
       "ProjectCredential": {
         "description": "A digital certificate attesting to specific facts or achievements about a project."
       },
+      "proposalAction": {
+        "description": "A description of an action that is executed if the proposal is supported."
+      },
       "surveyTemplate": {
         "description": "A predefined set of questions or forms used to collect data."
+      },
+      "text": {
+        "description": "Text."
       },
       "TokenMetadata": {
         "description": "Properties of the token"
