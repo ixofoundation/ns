@@ -6,7 +6,8 @@
     "id": "@id",
     "type": "@type"
   },
-   "attributes": {
+  "tokenMetadata"{
+    "attributes": {
       "vintage": {
         "@id": "ixo:vintage",
         "@type": "rdf:Property",
@@ -135,4 +136,5 @@
         }
       }
     }
+  }
 }
