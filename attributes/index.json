@@ -1,7 +1,7 @@
 {
   "@context": {
     "ixo": "https://w3id.org/ixo/context",
-    "schema": "https://schema.org/,
+    "schema": "https://schema.org/",
     "@protected": true,
     "id": "@id",
     "type": "@type"
@@ -135,5 +135,4 @@
         }
       }
     }
-  }
 }
