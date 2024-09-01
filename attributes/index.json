@@ -7,7 +7,7 @@
     "id": "@id",
     "type": "@type"
   },
-  "@id": " "https://w3id.org/ixo/attributes/v1/index",
+  "@id": "https://w3id.org/ixo/attributes/v1/index",
   "title": "Attributes JSON-LD Dictionary",
   "description": "This dictionary contains JSON-LD files for the attribues of entities in the IXO domain.",
   "version": "1.0",
