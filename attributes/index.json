@@ -1,140 +1,21 @@
 {
   "@context": {
     "ixo": "https://w3id.org/ixo/context",
+    "vocab": "https://w3id.org/ixo/vocab/v1",
     "schema": "https://schema.org/",
     "@protected": true,
     "id": "@id",
     "type": "@type"
   },
-  "tokenMetadata"{
-    "attributes": {
-      "vintage": {
-        "@id": "ixo:vintage",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The vintage year for the carbon credits.",
-        "rdfs:label": "vintage",
-        "rangeIncludes": "schema:Text"
-      },
-      "methodology": {
-        "@id": "ixo:methodology",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The methodology used for carbon credit calculation.",
-        "rdfs:label": "methodology",
-        "rangeIncludes": "schema:Text"
-      },
-      "location": {
-        "@id": "ixo:location",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The location where the carbon credits are generated.",
-        "rdfs:label": "location",
-        "rangeIncludes": "schema:Text"
-      },
-      "credits": {
-        "@id": "ixo:credits",
-        "@type": "rdf:Property",
-        "rdfs:comment": "Type of credits being generated.",
-        "rdfs:label": "credits",
-        "rangeIncludes": "schema:Text"
-      },
-      "market": {
-        "@id": "ixo:market",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The market in which the credits are being traded.",
-        "rdfs:label": "market",
-        "rangeIncludes": "schema:Text"
-      },
-      "mitigation_activity": {
-        "@id": "ixo:mitigation_activity",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The type of mitigation activity involved.",
-        "rdfs:label": "mitigation_activity",
-        "rangeIncludes": "schema:Text"
-      },
-      "assurance": {
-        "@id": "ixo:assurance",
-        "@type": "rdf:Property",
-        "rdfs:comment": "Assurance standard applied.",
-        "rdfs:label": "assurance",
-        "rangeIncludes": "schema:Text"
-      },
-      "certifier": {
-        "@id": "ixo:certifier",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The organization certifying the carbon credits.",
-        "rdfs:label": "certifier",
-        "rangeIncludes": "schema:Text"
-      },
-      "registry": {
-        "@id": "ixo:registry",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The registry where the credits are listed.",
-        "rdfs:label": "registry",
-        "rangeIncludes": "schema:Text"
-      },
-      "mechanism": {
-        "@id": "ixo:mechanism",
-        "@type": "rdf:Property",
-        "rdfs:comment": "The mechanism used for certification.",
-        "rdfs:label": "mechanism",
-        "rangeIncludes": "schema:Text"
-      },
-      "fNRB": {
-        "@id": "ixo:fNRB",
-        "@type": "rdfs:Class",
-        "rdfs:comment": "Non-renewable status of woody biomass in the specified scenario.",
-        "rdfs:label": "fNRB",
-        "properties": {
-          "parameter": {
-            "@id": "ixo:parameter",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Parameter defining the scenario and year.",
-            "rdfs:label": "parameter",
-            "rangeIncludes": "schema:Text"
-          },
-          "unit": {
-            "@id": "ixo:unit",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Unit of measure for fNRB.",
-            "rdfs:label": "unit",
-            "rangeIncludes": "schema:Text"
-          },
-          "description": {
-            "@id": "ixo:description",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Description of the non-renewable status of woody biomass.",
-            "rdfs:label": "description",
-            "rangeIncludes": "schema:Text"
-          },
-          "reference": {
-            "@id": "ixo:reference",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Reference to the calculations submitted.",
-            "rdfs:label": "reference",
-            "rangeIncludes": "schema:Text"
-          },
-          "value": {
-            "@id": "ixo:value",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Value of the fNRB.",
-            "rdfs:label": "value",
-            "rangeIncludes": "schema:Number"
-          },
-          "methodology": {
-            "@id": "ixo:methodology",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Methodology used for fNRB calculation.",
-            "rdfs:label": "methodology",
-            "rangeIncludes": "schema:Text"
-          },
-          "purpose": {
-            "@id": "ixo:purpose",
-            "@type": "rdf:Property",
-            "rdfs:comment": "Purpose of the fNRB calculation.",
-            "rdfs:label": "purpose",
-            "rangeIncludes": "schema:Text"
-          }
-        }
-      }
+  "@id": " "https://w3id.org/ixo/attributes/v1/index",
+  "title": "Attributes JSON-LD Dictionary",
+  "description": "This dictionary contains JSON-LD files for the attribues of entities in the IXO domain.",
+  "version": "1.0",
+  "resources": [
+    {
+      "name": "tokenMatadata",
+      "description": "Token attributes.",
+      "file": "tokenMatadata.json",
+      "id": "vocab:attribute"
     }
-  }
-}
+ }
