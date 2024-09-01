@@ -1,0 +1,65 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/attributes/v1",
+    {
+      "ixo": "https://w3id.org/ixo/attributes/v1/",
+      "type": "@type",
+      "@id": "@type", 
+      "@version": 1.1
+    }
+  ],
+  "attributes": [
+    {
+      "vintage": "2022", 
+      "type": "ixo:vintage"
+    },
+    {
+      "methodology": "GS-MMCECD",
+      "type": "ixo:methodology"
+    },
+    {
+      "location": "ZM",
+      "type": "ixo:location"
+    },
+    {
+      "credits": "Carbon",
+      "type": "ixo:credits"
+    },
+    {
+      "market": "Voluntary",
+      "type": "ixo:market"
+    },
+    {
+      "mitigation_activity": "Clean Cooking",
+      "type": "ixo:mitigation_activity"
+    },
+    {
+      "assurance": "CCB",
+      "type": "ixo:assurance"
+    },
+    {
+      "certifier": "ImpactsAI",
+      "type": "ixo:certifier"
+    },
+    {
+      "registry": "Impacts-Hub",
+      "type": "ixo:registry"
+    },
+    {
+      "mechanism": "Self-Certification",
+      "type": "ixo:mechanism"
+    },
+    {
+      "type": "ixo:fNRB",
+      "fNRB": {
+        "parameter": "fNRB(i,y)",
+        "unit": "Fractional Non-renewability",
+        "description": "Non-renewable status of woody biomass in scenario (i) during year (y)",
+        "reference": "Calculations submitted for Gold Standard POA GS11508 and VPA GS11509",
+        "value": "81", 
+        "methodology": "MoFuSS",
+        "purpose": "Calculation of emission reductions"
+      }
+    }
+  ]
+}
