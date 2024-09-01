@@ -17,5 +17,6 @@
       "description": "Token attributes.",
       "file": "tokenMatadata.json",
       "id": "vocab:attribute"
-    },
+    }
+  ]
  }
