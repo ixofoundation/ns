@@ -18,6 +18,7 @@
 		"right": "https://w3id.org/ixo/protocol/accorded-rights/v1",
 		"credential": "https://w3id.org/ixo/protocol/credentials/v1",
 		"indicator": "https://w3id.org/ixo/protocol/indicators/v1",
+		"identity": "https://w3id.org/ixo/protocol/identity/v1",
 		"resource": "https://w3id.org/ixo/protocol/linked-resources/v1",
 		"payment": "https://w3id.org/ixo/protocol/payments/v1",
 		"method": "https://w3id.org/ixo/protocol/methods/v1",
