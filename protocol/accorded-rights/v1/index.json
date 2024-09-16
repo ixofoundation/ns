@@ -1,1 +1,44 @@
-{}
+{
+  "@context": [
+    {
+      "right": "https://earthprogram.github.io/did-cosmos/#accorded-rights",
+      "type": "@type",
+      "@id": "@type",
+      "@version": 1.1
+    }
+  ],
+  "right": {
+    "capability/swapToken": {
+      "description": "Exchange one type of token for another."
+    },
+    "capability/retireToken": {
+      "description": "Render a token unusable."
+    },
+    "capability/cancelToken": {
+      "description": "Invalidate a token."
+    },
+    "capability/mintToken": {
+      "description": "Create or issue a new token."
+    },
+    "capability/transferToken": {
+      "description": "Transfer ownership to another account."
+    },
+    "capability/sendToken": {
+      "description": "Send token to another account."
+    },
+    "capability/ibcTransfer": {
+      "description": "Transfer ownership to another account on a different blockchain."
+    },
+    "capability/createEntity": {
+      "description": "Create a new entity."
+    },
+    "capability/attest": {
+      "description": "Create attestations."
+    },
+    "display:Legal": {
+      "description": "Display legal documents."
+    }
+  }
+}
+   
+
