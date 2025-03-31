@@ -305,6 +305,9 @@
         },
         "environmentalStewardship": {
           "description": "A task dedicated to the protection, conservation, or sustainable management of natural resources and ecosystems"
+        },
+         "development": {
+          "description": "A task focused on the development of a product or service"
         }
       }
     },
