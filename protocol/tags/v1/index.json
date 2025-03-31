@@ -148,6 +148,9 @@
         "facilitator": {
           "description": "A request to guide and enable processes or interactions between parties"
         },
+        "service": {
+          "description": "A request for a specific service to be provided"
+        },
         "workPlacement": {
           "description": "A request for practical work experience or professional training position"
         }
