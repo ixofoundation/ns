@@ -8,7 +8,7 @@
         }
     ],
     "linkedResource": {
-      "bidSchema": {
+      "bidTemplate": {
         "description": "An application to participate in or contribute to another domain"
       },
       "claimSchema": {
