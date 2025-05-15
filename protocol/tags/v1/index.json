@@ -140,22 +140,37 @@
       }
     },
     "request": {
-      "description": "A deed detailing an appeal or demand for something to be provided or done",
-      "types": {
-        "environmentalSteward": {
-          "description": "A request to serve as a protector and manager of environmental resources"
-        },
-        "facilitator": {
-          "description": "A request to guide and enable processes or interactions between parties"
-        },
-        "service": {
-          "description": "A request for a specific service to be provided"
-        },
-        "workPlacement": {
-          "description": "A request for practical work experience or professional training position"
-        }
-      }
+  "description": "A deed detailing an appeal or demand for something to be provided or done",
+  "types": {
+    "environmentalSteward": {
+      "description": "A request to serve as a protector and manager of environmental resources"
     },
+    "facilitator": {
+      "description": "A request to guide and enable processes or interactions between parties"
+    },
+    "marketSolutions": {
+      "description": "Configurations of IXO tools for specific use-cases or sectors."
+    },
+    "marketingAndAdoption": {
+      "description": "Campaigns, communications assets, and onboarding flows to grow user and developer adoption."
+    },
+    "platformIntegration": {
+      "description": "Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules."
+    },
+    "productEnhancements": {
+      "description": "Core protocol or app-level improvements."
+    },
+    "service": {
+      "description": "A request for a specific service to be provided"
+    },
+    "strategicProjects": {
+      "description": "High-value internal or partner initiatives."
+    },
+    "workPlacement": {
+      "description": "A request for practical work experience or professional training position"
+    }
+  }
+},
     "subscription": {
       "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
     }
