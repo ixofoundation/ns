@@ -46,6 +46,9 @@
       "lottie": {
         "description": "Image or animation file"
       },
+      "page": {
+        "description": "The overview page of a domain containing the title and content."
+      },
       "projectCredential": {
         "description": "A digital certificate attesting to specific facts or achievements about a project."
       },
