@@ -9,7 +9,6 @@
     }
   ],
   "display": {
-    "name": "Display",
     "description": "Visual representation of information in the interface",
     "fragmentIdentifier": "#dsp"
   }
