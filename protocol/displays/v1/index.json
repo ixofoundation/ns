@@ -1,5 +1,6 @@
 {
   "@context": [
+    "https://w3id.org/ixo/context/v1",
     {
       "display": "https://w3c.github.io/dpv/2.0/dpv/#Display",
       "type": "@type",
@@ -8,47 +9,8 @@
     }
   ],
   "display": {
-    "ClaimSchema": {
-      "description": "A structured framework defining the format and content of claims."
-    },
-    "CredentialSchema": {
-      "description": "A structured framework defining the format and content of credentials."
-    },
-    "Document": {
-      "description": "A file composed primarily of text."
-    },
-    "Image": {
-      "description": "An image of the item. This can be a URL or a fully described ImageObject."
-    },
-    "LegalAgreement": {
-      "description": "A legally binding agreement"
-    },
-    "Lottie": {
-      "description": "Image or animation file"
-    },
-    "ProjectCredential": {
-      "description": "A digital certificate attesting to specific facts or achievements about a project."
-    },
-    "ProposalAction": {
-      "description": "A description of an action that is executed if the proposal is supported."
-    },
-    "SurveyTemplate": {
-      "description": "A predefined set of questions or forms used to collect data."
-    },
-    "Text": {
-      "description": "Text."
-    },
-    "TokenMetadata": {
-      "description": "Properties of the token"
-    },
-    "VerificationMethods": {
-      "description": "Methods used to authenticate or authorize interactions"
-    },
-    "VerifiableCredential": {
-      "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification."
-    },
-    "WebDashboard": {
-      "description": "Information displayed in Graphic User Interfaces of Web Client applications"
-    }
+    "name": "Display",
+    "description": "Visual representation of information in the interface",
+    "fragmentIdentifier": "#dsp"
   }
 }
