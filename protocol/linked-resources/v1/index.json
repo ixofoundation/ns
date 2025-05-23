@@ -9,75 +9,100 @@
     ],
     "linkedResource": {
       "bidTemplate": {
-        "description": "An application to participate in or contribute to another domain"
+        "description": "An application to participate in or contribute to another domain",
+        "fragmentIdentifier": "#bdt"
       },
       "claimSchema": {
-        "description": "A structured framework defining the format and content of claims."
+        "description": "A structured framework defining the format and content of claims.",
+        "fragmentIdentifier": "#csc"
       },
       "credentialSchema": {
-        "description": "A structured framework defining the format and content of credentials."
-      },
-      "document": {
-        "description": "A file composed primarily of text."
+        "description": "A structured framework defining the format and content of credentials.",
+        "fragmentIdentifier": "#crs"
       },
       "domainSettingsTemplate": {
-        "description": "A predefined set of forms used to create and update domain settings"
+        "description": "A predefined set of forms used to create and update domain settings",
+        "fragmentIdentifier": "#dst"
       },
-     "evaluationTemplate": {
-        "description": "A predefined set of forms used for evaluations"
+      "evaluationTemplate": {
+        "description": "A structured framework defining the format and criteria for evaluating submissions or proposals.",
+        "fragmentIdentifier": "#evt"
       },
       "image": {
         "description": "An image of the item. This can be a URL or a fully described ImageObject.",
         "types": {
-          "icon": {
-            "description": "A small, simplified visual representation used for navigation, buttons, or status indicators."
+          "imageIcon": {
+            "description": "A small, simplified visual representation used for navigation, buttons, or status indicators.",
+            "fragmentIdentifier": "#icn"
           },
-          "logo": {
-            "description": "A distinctive graphic mark or symbol used to identify a brand, organization, or project."
+          "imageLogo": {
+            "description": "A distinctive graphic mark or symbol used to identify a brand, organization, or project.",
+            "fragmentIdentifier": "#lgo"
           },
-          "profileImage": {
-            "description": "A representative image displayed on domain cards to provide visual identification of the domain."
+          "imageProfile": {
+            "description": "A representative image displayed on domain cards to provide visual identification of the domain.",
+            "fragmentIdentifier": "#pri"
           },
-          "headerImage": {
-            "description": "A banner or hero image displayed at the top of the domain overview page to provide visual context."
+          "imageHeader": {
+            "description": "A banner or hero image displayed at the top of the domain overview page to provide visual context.",
+            "fragmentIdentifier": "#hdr"
           }
         }
       },
       "legalAgreement": {
-        "description": "A legally binding agreement"
+        "description": "A legally binding agreement",
+        "fragmentIdentifier": "#lga"
       },
       "lottie": {
-        "description": "Image or animation file"
+        "description": "Image or animation file",
+        "fragmentIdentifier": "#ltt"
+      },
+      "oracleAuthZConfig": {
+        "description": "Configuration settings for oracle service authorization and access control."
       },
       "page": {
-        "description": "The overview page of a domain containing the title and content."
+        "description": "The overview page of a domain containing the title and content.",
+        "fragmentIdentifier": "#pag"
+      },
+      "pricingList": {
+        "description": "A structured list of pricing information for services, resources, or assets.",
+        "fragmentIdentifier": "#fee"
       },
       "projectCredential": {
-        "description": "A digital certificate attesting to specific facts or achievements about a project."
+        "description": "A digital certificate attesting to specific facts or achievements about a project.",
+        "fragmentIdentifier": "#pjc"
       },
       "proposalAction": {
-        "description": "A description of an action that is executed if the proposal is supported."
+        "description": "A description of an action that is executed if the proposal is supported.",
+        "fragmentIdentifier": "#pac"
       },
-       "proposalTemplate": {
-        "description": "A description of an action that is executed if the proposal is supported."
+      "proposalTemplate": {
+        "description": "A predefined structure for creating and submitting proposals within a domain.",
+        "fragmentIdentifier": "#ptf"
       },
       "surveyTemplate": {
-        "description": "A predefined set of questions or forms used to collect data."
+        "description": "A predefined set of questions or forms used to collect data.",
+        "fragmentIdentifier": "#svt"
       },
-      "text": {
-        "description": "Text."
+      "textDocument": {
+        "description": "Text document file",
+        "fragmentIdentifier": "#txt"
       },
       "tokenMetadata": {
-        "description": "Properties of the token"
+        "description": "Properties of the token",
+        "fragmentIdentifier": "#tmd"
       },
       "verificationMethods": {
-        "description": "Methods used to authenticate or authorize interactions"
+        "description": "Methods used to authenticate or authorize interactions",
+        "fragmentIdentifier": "#vfm"
       },
       "verifiableCredential": {
-        "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification."
+        "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification.",
+        "fragmentIdentifier": "#vcc"
       },
       "webDashboard": {
-        "description": "Information displayed in Graphic User Interfaces of Web Client applications"
+        "description": "Information displayed in Graphic User Interfaces of Web Client applications",
+        "fragmentIdentifier": "#wdb"
       }
     }
   }
