@@ -8,13 +8,49 @@
         }
     ],
     "verificationMethod": {
-        "EcdsaSecp256k1VerificationKey2019": {
-            "description": "A verification key using ECDSA with the secp256k1 curve, commonly used in blockchain systems.",
-            "source": "https://w3c.github.io/dpv/2.0/dpv/#CryptographicMethods"
+        "administrative": {
+            "description": "The root key with administrative privileges for system management.",
+            "fragmentIdentifier": "#adm"
+        },
+        "assertionMethod": {
+            "description": "A key used to make assertions and verify claims within the system.",
+            "fragmentIdentifier": "#ass"
+        },
+        "authentication": {
+            "description": "A key used for entity authentication and identity verification.",
+            "fragmentIdentifier": "#aut"
+        },
+        "capabilityDelegation": {
+            "description": "A key used to delegate capabilities or permissions to other entities.",
+            "fragmentIdentifier": "#del"
+        },
+        "capabilityInvocation": {
+            "description": "A key used to invoke capabilities or permissions within the system.",
+            "fragmentIdentifier": "#inv"
         },
         "CosmosAccountAddress": {
             "description": "A blockchain account address within the Cosmos ecosystem for verification purposes.",
             "source": "https://w3c.github.io/dpv/2.0/dpv/#CryptographicMethods"
+        },
+        "digitalSignature": {
+            "description": "The default key used for digital signatures and message verification.",
+            "fragmentIdentifier": "#sig"
+        },
+        "EcdsaSecp256k1VerificationKey2019": {
+            "description": "A verification key using ECDSA with the secp256k1 curve, commonly used in blockchain systems.",
+            "source": "https://w3c.github.io/dpv/2.0/dpv/#CryptographicMethods"
+        },
+        "keyAgreement": {
+            "description": "A key used for encryption and secure communication between parties.",
+            "fragmentIdentifier": "#agr"
+        },
+        "operational": {
+            "description": "A rotating key used for regular operational activities.",
+            "fragmentIdentifier": "#ops"
+        },
+        "userPersonal": {
+            "description": "A personal key assigned to end-users for their individual operations.",
+            "fragmentIdentifier": "#usr"
         }
     },
     "verificationRelationships": {
