@@ -23,6 +23,9 @@
       "domainSettingsTemplate": {
         "description": "A predefined set of forms used to create and update domain settings"
       },
+     "evaluationTemplate": {
+        "description": "A predefined set of forms used for evaluations"
+      },
       "image": {
         "description": "An image of the item. This can be a URL or a fully described ImageObject.",
         "types": {
@@ -53,6 +56,9 @@
         "description": "A digital certificate attesting to specific facts or achievements about a project."
       },
       "proposalAction": {
+        "description": "A description of an action that is executed if the proposal is supported."
+      },
+       "proposalTemplate": {
         "description": "A description of an action that is executed if the proposal is supported."
       },
       "surveyTemplate": {
