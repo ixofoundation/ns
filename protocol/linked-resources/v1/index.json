@@ -10,7 +10,7 @@
     "linkedResource": {
       "bidTemplate": {
         "description": "An application to participate in or contribute to another domain",
-        "fragmentIdentifier": "#bdt"
+        "fragmentIdentifier": "#bid"
       },
       "claimSchema": {
         "description": "A structured framework defining the format and content of claims.",
@@ -26,7 +26,7 @@
       },
       "evaluationTemplate": {
         "description": "A structured framework defining the format and criteria for evaluating submissions or proposals.",
-        "fragmentIdentifier": "#evt"
+        "fragmentIdentifier": "#eft"
       },
       "image": {
         "description": "An image of the item. This can be a URL or a fully described ImageObject.",
@@ -78,11 +78,11 @@
       },
       "proposalTemplate": {
         "description": "A predefined structure for creating and submitting proposals within a domain.",
-        "fragmentIdentifier": "#ptf"
+        "fragmentIdentifier": "#pft"
       },
       "surveyTemplate": {
         "description": "A predefined set of questions or forms used to collect data.",
-        "fragmentIdentifier": "#svt"
+        "fragmentIdentifier": "#vct"
       },
       "textDocument": {
         "description": "Text document file",
