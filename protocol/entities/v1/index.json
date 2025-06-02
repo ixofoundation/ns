@@ -11,63 +11,57 @@
         "asset": {
             "description": "An item or resource of value that is owned or controlled.",
             "types": {
-                "asset/coin": {
+                "coin": {
                     "description": "A digital or physical currency used as a medium of exchange, including cryptocurrencies"
                 },
-                "asset/collection": {
+                "collection": {
                     "description": "A curated group of related assets organized under a common theme or purpose"
                 },
-                "asset/data": {
+                "data": {
                     "description": "A digital representation of data, such as financial data, scientific data, or other types of data that can be stored and shared in a decentralized manner"
                 },
-                "asset/device": {
+                "device": {
                     "description": "A physical or virtual tool or equipment used to perform specific tasks or functions"
                 },
-                "asset/impactCredit": {
+                "impactCredit": {
                     "description": "A unit representing verified environmental or social impact, such as carbon sequestration or community development outcomes"
                 },
-                "asset/learnership": {
+                "learnership": {
                     "description": "An asset representing a structured learning program that combines theoretical study with practical workplace experience"
                 },
-                "asset/membershipAsset": {
+                "membershipAsset": {
                     "description": "An asset signifying membership rights or privileges within a group, organization, or service"
                 }
             }
         },
         "dao": {
-            "description": "A Decentralized Autonomous Organization operating through smart contracts."
+            "description": "A Decentralized Autonomous Organization operating through smart contracts.",
+            "types": {
+                "dao": {
+                    "description": "A parent DAO that can contain and coordinate multiple sub-DAOs or organizational units"
+                },
+                "group": {
+                    "description": "A specialized organizational unit within a DAO that focuses on specific functions or areas of responsibility"
+                },
+                "pod": {
+                    "description": "A small, autonomous sub-group within a DAO that can make independent decisions while remaining connected to the parent organization"
+                }
+            }
         },
         "deed": {
             "description": "A legal document representing ownership or an agreement.",
             "types": {
-                "deed/offer": {
+                "offer": {
                     "description": "A deed representing a formal expression of willingness to provide or do something"
                 },
-                "deed/proposal": {
+                "proposal": {
                     "description": "A deed that outlines a suggested plan or action for consideration and approval"
                 },
-                "deed/request": {
+                "request": {
                     "description": "A deed detailing an appeal or demand for something to be provided or done"
                 },
-                "deed/subscription": {
+                "subscription": {
                     "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
-                }
-            }
-        },
-        "group": {
-            "description": "An aggregation of individuals or entities with a common purpose.",
-            "types": {
-                "group/categorical": {
-                    "description": "A group where governance rights and decision-making power are distributed among members based on their participation and contributions"
-                },
-                "group/multiSignatureGovernance": {
-                    "description": "A group governed by multiple signature holders who must reach consensus for executing transactions and making organizational decisions"
-                },
-                "group/nativeTokenStaking": {
-                    "description": "A group where participants stake native tokens to gain voting rights and participate in governance, often receiving rewards for their stake"
-                },
-                "group/nftStaking": {
-                    "description": "A group where NFT holders can stake their tokens to participate in governance and receive benefits, combining digital asset ownership with decision-making rights"
                 }
             }
         },
@@ -76,62 +70,6 @@
         },
         "oracle": {
             "description": "A service providing external data to smart contracts or blockchain systems.",
-            "types": {
-                "oracle/participationOfPeople": {
-                     "description": "Involves human oversight in decision-making processes"
-                },
-                "oracle/pathfinding": {
-                    "description": "Guides users through complex decision-making processes"
-                },
-                "oracle/patternRecognition": {
-                    "description": "Identifies patterns in data to inform decision-making and optimize strategies"
-                },
-                "oracle/payment": {
-                    "description": "Automates payments based on impact goal achievements, using smart contracts to streamline transactions"
-                },
-                "oracle/performanceMonitoring": {
-                    "description": "Tracks project performance in real-time, providing feedback and analytics"
-                },
-                "oracle/personalization": {
-                    "description": "Tailors interactions and recommendations to individual users, enhancing user experience"
-                },
-                "oracle/planning": {
-                    "description": "Supports strategic planning by predicting trends and resource needs"
-                },
-                "oracle/policyEnforcement": {
-                    "description": "Ensures compliance with policies and regulations, enforcing rules automatically"
-                },
-                "oracle/portfolioManagement": {
-                    "description": "Manages and optimizes project portfolios for strategic goals"
-                },
-                "oracle/positioning": {
-                    "description": "Determines optimal placement of resources and interventions within the ecosystem"
-                },
-                "oracle/prescribingInterventions": {
-                    "description": "Recommends actions based on data analysis to guide stakeholders towards effective strategies"
-                },
-                "oracle/preventionOfRisks": {
-                    "description": "Anticipates and mitigates potential risks to keep projects on track"
-                },
-                "oracle/privacyProtection": {
-                    "description": "Safeguards sensitive information and ensures compliance with regulations"
-                },
-                "oracle/problemDetectionAndResolution": {
-                    "description": "Monitors systems for potential issues, enabling early detection and resolution"
-                },
-                "oracle/processOptimization": {
-                    "description": "Enhances operational efficiency by automating tasks and streamlining workflows"
-                },
-                "oracle/profiling": {
-                    "description": "Creates detailed profiles of users and projects for accurate targeting of interventions"
-                },
-                "oracle/proofing": {
-                    "description": "Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting"
-                },
-                "oracle/protocolAdherence": {
-                    "description": "Ensures compliance with predefined protocols for consistency and reliability"
-                }
-            }
         },
         "project": {
             "description": "A planned undertaking or initiative to achieve specific goals."
@@ -139,37 +77,34 @@
         "protocol": {
             "description": "A system of rules or procedures for transmitting data or interacting with systems.",
             "types": {
-                "protocol/verifiableClaim": {
+                "verifiableClaim": {
                     "description": "A protocol for creating verifiable claims and defining the claims content and structure"
                 },
-                "protocol/verifiableCredential": {
+                "verifiableCredential": {
                     "description": "A protocol for creating verifiable credentials and defining the credentials content and structure"
                 },
-                "protocol/task": {
-                    "description": "A protocol defining the structure, execution, and verification of specific tasks or activities"
-                },
-                "protocol/asset": {
+                "asset": {
                     "description": "A protocol governing the creation of digital assets and defining the assets properties"
                 },
-                "protocol/dao": {
+                "dao": {
                     "description": "A protocol establishing the governance, operation, and decision-making processes of decentralized autonomous organizations"
                 },
-                "protocol/deed": {
+                "deed": {
                     "description": "A protocol for creating deeds and defining the deeds content and structure"
                 },
-                "protocol/group": {
+                "group": {
                     "description": "A protocol for creating groups and defining the formation, membership, and governance structures"
                 },
-                "protocol/investment": {
+                "investment": {
                     "description": "A protocol governing investment processes, including funding, returns, and impact measurement"
                 },
-                "protocol/oracle": {
+                "oracle": {
                     "description": "A protocol for creating oracles and defining the oracles properties"
                 },
-                "protocol/project": {
+                "project": {
                     "description": "A protocol for creating project domains and defining the domains properties"
                 },
-                "protocol/system": {
+                "system": {
                     "description": "A protocol for creating a cognitive digital twin system"
                 }
             }
