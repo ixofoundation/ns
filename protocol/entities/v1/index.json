@@ -70,17 +70,19 @@
         },
         "oracle": {
             "description": "A service providing external data to smart contracts or blockchain systems.",
-             "types": {
+            "types": {
                 "oracle": {
-                    "description": A service providing external data to smart contracts or blockchain systems."
+                    "description": "A service providing external data to smart contracts or blockchain systems."
                 }
+            }
         },
         "project": {
-            "description": "A planned undertaking or initiative to achieve specific goals."
-             "types": {
+            "description": "A planned undertaking or initiative to achieve specific goals.",
+            "types": {
                 "project": {
-                    "description": A planned undertaking or initiative to achieve specific goals."
+                    "description": "A planned undertaking or initiative to achieve specific goals."
                 }
+            }
         },
         "protocol": {
             "description": "A system of rules or procedures for transmitting data or interacting with systems.",
