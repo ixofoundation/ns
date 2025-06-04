@@ -367,6 +367,9 @@
             }
           }
         },
+        "indicator": {
+          "description": "A claim that measures and validates specific metrics or indicators of progress towards defined goals or outcomes"
+        },
         "investment": {
           "description": "A claim documenting investment activities, commitments, or outcomes in impact projects"
         },
@@ -424,6 +427,9 @@
         "certification": {
           "description": "A credential validating professional certifications or specialized training completions"
         },
+        "indicator": {
+          "description": "A credential that certifies the achievement or status of specific indicators or metrics"
+        },
         "investorCredential": {
           "description": "A credential validating an entity's status as an accredited or qualified investor"
         },
@@ -465,6 +471,4 @@
       }
     }
   }
-} 
-
-
+}
