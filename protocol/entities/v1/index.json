@@ -69,7 +69,15 @@
             "description": "An allocation of resources, typically capital, in expectation of a future return."
         },
         "oracle": {
-            "description": "A service providing external data to smart contracts or blockchain systems."
+            "description": "A service providing external data to smart contracts or blockchain systems.",
+            "types": {
+                "evaluation": {
+                    "description": "An oracle that evaluates and verifies data, conditions, or outcomes based on predefined criteria"
+                },
+                "subscription": {
+                    "description": "An oracle that provides continuous access to data feeds or information streams through a subscription model"
+                }
+            }
         },
         "project": {
             "description": "A planned undertaking or initiative to achieve specific goals."
