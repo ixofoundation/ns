@@ -59,6 +59,7 @@
       },
       "oracleAuthZConfig": {
         "description": "Configuration settings for oracle service authorization and access control."
+        "fragmentIdentifier": "#orz"  
       },
       "page": {
         "description": "The overview page of a domain containing the title and content.",
