@@ -85,6 +85,10 @@
       "description": "A predefined set of questions or forms used to collect data.",
       "fragmentIdentifier": "#vct"
     },
+    "tags": {
+      "description": "Values for categorizing and identifying domains",
+      "fragmentIdentifier": "#tag"
+    },
     "textDocument": {
       "description": "Text document file",
       "fragmentIdentifier": "#txt"
