@@ -61,6 +61,14 @@
       "description": "Configuration settings for oracle service authorization and access control.",
       "fragmentIdentifier": "#orz"
     },
+    "observableMarkdown": {
+      "description": "Markdown content for Observable Framework pages and components.",
+      "fragmentIdentifier": "#omd"
+    },
+    "observableNotebook": {
+      "description": "Interactive notebook content for Observable Framework.",
+      "fragmentIdentifier": "#obs"
+    },
     "page": {
       "description": "The overview page of a domain containing the title and content.",
       "fragmentIdentifier": "#pag"
