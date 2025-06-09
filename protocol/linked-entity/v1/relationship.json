@@ -1,0 +1,93 @@
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+    "relationship": {
+        "alignsWith": {
+            "description": "Represents a shared alignment of objectives between domains"
+        },
+        "authorities": {
+            "description": "Specifies the domain that provides authority or permission for the target"
+        },
+        "beneficiary": {
+            "description": "Specifies the domain that benefits from funding or resources"
+        },
+        "certifies": {
+            "description": "Denotes that a domain provides certification for the target"
+        },
+        "consumes": {
+            "description": "Indicates that a Project or Protocol uses data or services from the target (an Oracle or another Protocol)"
+        },
+        "defines": {
+            "description": "Specifies that the domain establishes parameters for the target"
+        },
+        "delegates": {
+            "description": "Assigns governance responsibilities to another domain"
+        },
+        "dependsOn": {
+            "description": "Indicates that a domain's functionality is reliant on another's"
+        },
+        "deploys": {
+            "description": "The origin domain (Protocol or DAO) deploys or launches the target (an Asset, such as a token, or an Oracle service)"
+        },
+        "documents": {
+            "description": "Denotes that a Deed documents legal/contractual details of the target entity"
+        },
+        "earns": {
+            "description": "Indicates revenue or yield derived from the target domain"
+        },
+        "executes": {
+            "description": "Indicates a domain carrying out operational tasks on the target"
+        },
+        "funds": {
+            "description": "Denotes a controlling stake or ownership of the target domain"
+        },
+        "governs": {
+            "description": "Specifies that a domain (DAO or Project) manages the operations or lifecycle of a target domain (another Project or Asset)"
+        },
+        "implements": {
+            "description": "Indicates a domain applying a predefined plan on the target"
+        },
+        "insures": {
+            "description": "Specifies that the entity provides risk coverage for the target domain"
+        },
+        "interactsWith": {
+            "description": "Signifies a bidirectional operational dependency between domains"
+        },
+        "investsIn": {
+            "description": "Specifies a capital investment in the target domain"
+        },
+        "issues": {
+            "description": "Specifies a domain issuing tokens or rights to the target"
+        },
+        "manages": {
+            "description": "Specifies that a domain manages the operations or lifecycle of a target"
+        },
+        "monitors": {
+            "description": "Indicates that a domain tracks the progress or performance of a target domain"
+        },
+        "operates": {
+            "description": "Indicates ongoing operation of the target domain by the origin"
+        },
+        "owns": {
+            "description": "Denotes a controlling stake or ownership of the target domain"
+        },
+        "references": {
+            "description": "Signifies that the originating domain references data/artifacts from the target"
+        },
+        "secures": {
+            "description": "Indicates that the Protocol provides security guarantees for the target"
+        },
+        "submits": {
+            "description": "Denotes a domain submitting data or proposals to a target"
+        },
+        "verifies": {
+            "description": "Specifies the domain verifying authenticity of the target"
+        }
+    }
+}
