@@ -8,6 +8,9 @@
         }
     ],
     "relationship": {
+        "admin": {
+            "description": "Specifies that the entity has administrative control or oversight over the target"
+        },
         "alignsWith": {
             "description": "Represents a shared alignment of objectives between domains"
         },
