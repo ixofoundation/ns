@@ -77,6 +77,10 @@
       "description": "A structured list of pricing information for services, resources, or assets.",
       "fragmentIdentifier": "#fee"
     },
+     "profile": {
+      "description": "Domain profile",
+      "fragmentIdentifier": "#pro"
+    },
     "projectCredential": {
       "description": "A digital certificate attesting to specific facts or achievements about a project.",
       "fragmentIdentifier": "#pjc"
