@@ -353,6 +353,9 @@
         "dispute": {
           "description": "A claim documenting formal disagreements and their resolution processes"
         },
+        "householdSurvey": {
+          "description": "A claim documenting a household survey"
+        },
         "identity": {
           "description": "A claim verifying the authentic identity attributes of an individual, organization, or entity"
         },
