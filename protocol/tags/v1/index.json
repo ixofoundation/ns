@@ -238,17 +238,20 @@
     }
   },
   "groupType": {
-    "categorical": {
-      "description": "A DAO where governance rights and decision-making power are distributed among members based on their participation and contributions"
+    "membership": {
+      "description": "The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees."
     },
-    "multiSignatureGovernance": {
-      "description": "A DAO governed by multiple signature holders who must reach consensus for executing transactions and making organizational decisions"
+    "custodians": {
+      "description": "A long-lived multisig council of trusted community stewards empowered to safeguard the chain’s best interests and block malicious or harmful actions."
     },
-    "nativeTokenStaking": {
-      "description": "A DAO where participants stake native tokens to gain voting rights and participate in governance, often receiving rewards for their stake"
+    "security": {
+      "description": "A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO."
     },
-    "nftStaking": {
-      "description": "A DAO where NFT holders can stake their tokens to participate in governance and receive benefits, combining digital asset ownership with decision-making rights"
+    "finance": {
+      "description": "An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting."
+    },
+        "operations": {
+      "description": "An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows."
     }
   },
   "projectType": {
