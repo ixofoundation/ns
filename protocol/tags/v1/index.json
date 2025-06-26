@@ -50,8 +50,8 @@
     }
   },
   "daoType": {
-    "business": {
-      "description": "A DAO operating as a business entity",
+    "organisation": {
+      "description": "An organisation",
       "types": {
         "cooperative": {
           "description": "A DAO operating as a cooperative, owned and managed by its members for mutual benefit"
