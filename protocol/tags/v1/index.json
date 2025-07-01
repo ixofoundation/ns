@@ -142,6 +142,9 @@
     "request": {
       "description": "A deed detailing an appeal or demand for something to be provided or done",
       "types": {
+         "ambassador": {
+          "description": "A request to serve as an ambassedor for an organisation"
+        },
         "environmentalSteward": {
           "description": "A request to serve as a protector and manager of environmental resources"
         },
