@@ -245,7 +245,7 @@
       "description": "The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees."
     },
     "custodians": {
-      "description": "A long-lived multisig council of trusted community stewards empowered to safeguard the chain’s best interests and block malicious or harmful actions."
+      "description": "A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions."
     },
     "security": {
       "description": "A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO."
@@ -255,6 +255,38 @@
     },
         "operations": {
       "description": "An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows."
+    }
+  },
+  "podType": {
+    "agriculture": {
+      "description": "A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain."
+    },
+    "communitySocialImpact": {
+      "description": "A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies."
+    },
+    "education": {
+      "description": "A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources."
+    },
+    "energy": {
+      "description": "A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading."
+    },
+    "enterprise": {
+      "description": "A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management."
+    },
+    "environmentalConservation": {
+      "description": "A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data."
+    },
+    "finance": {
+      "description": "A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization."
+    },
+    "governance": {
+      "description": "A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance."
+    },
+    "research": {
+      "description": "A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos."
+    },
+    "urbanPlanningAndInfrastructure": {
+      "description": "A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way."
     }
   },
   "projectType": {
