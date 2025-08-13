@@ -10,7 +10,7 @@
   "linkedResource": {
     "bidTemplate": {
       "description": "An application to participate in or contribute to another domain",
-      "fragmentIdentifier": "#bid"
+      "fragmentIdentifier": "#bid",
       "types": {
         "bidContributor": {
           "description": "An application to contribute to a domain",
@@ -20,6 +20,7 @@
           "description": "An application to evaluate contributions to a domain",
           "fragmentIdentifier": "#bev"
         }
+      }
     },
     "claimSchema": {
       "description": "A structured framework defining the format and content of claims.",
