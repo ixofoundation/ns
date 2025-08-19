@@ -30,6 +30,10 @@
       "description": "A structured framework defining the format and content of credentials.",
       "fragmentIdentifier": "#crs"
     },
+  "documentCollection": {
+      "description": "A container that groups multiple collaborative documents as a single linked resource (e.g., a folder or workspace).",
+      "fragmentIdentifier": "#dcl"
+  },
     "domainSettingsTemplate": {
       "description": "A predefined set of forms used to create and update domain settings",
       "fragmentIdentifier": "#dst"
