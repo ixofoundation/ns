@@ -353,23 +353,6 @@
     }
   },
   "protocolType": {
-    "taskType": {
-      "description": "A protocol defining structured tasks to be performed by participants",
-      "types": {
-        "educationalFacilitator": {
-          "description": "A task focused on facilitating learning experiences, knowledge transfer, or educational activities"
-        },
-        "employmentReadiness": {
-          "description": "A task designed to prepare individuals for employment opportunities through skill development and training"
-        },
-        "environmentalStewardship": {
-          "description": "A task dedicated to the protection, conservation, or sustainable management of natural resources and ecosystems"
-        },
-        "development": {
-          "description": "A task focused on the development of a product or service"
-        }
-      }
-    },
     "verifiableClaimType": {
       "description": "A protocol for creating and verifying claims about actions, outcomes, or attributes",
       "types": {
@@ -438,7 +421,10 @@
           "description": "A claim documenting the acquisition process and compliance with procurement standards",
           "types": {
             "fuelPurchase": {
-              "description": "A claim verifying the purchase and sourcing of fuel products according to specified standards"
+              "description": "A claim asserting the purchase and sourcing of fuel products according to specified standards"
+            },
+            "onboardingFee": {
+              "description": "A claim asserting the payment of an onboarding fee"
             }
           }
         },
