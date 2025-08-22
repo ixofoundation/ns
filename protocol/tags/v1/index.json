@@ -459,6 +459,7 @@
         },
         "householdCredential": {
           "description": "A credential validating an entity's status as a household"
+        },
         "indicator": {
           "description": "A credential that certifies the achievement or status of specific indicators or metrics"
         },
@@ -468,6 +469,9 @@
         "kycamlAttestation": {
           "description": "A credential confirming completion of Know Your Customer and Anti-Money Laundering verification processes"
         },
+          "leadGeneratorCredential": {
+          "description": "A credential validating an entity's status as a Lead Generator"
+          },
         "license": {
           "description": "A credential validating official permissions to perform specific activities or services"
         },
