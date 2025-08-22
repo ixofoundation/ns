@@ -457,6 +457,8 @@
          "customerCredential": {
           "description": "A credential validating an entity's status as a customer"
         },
+        "householdCredential": {
+          "description": "A credential validating an entity's status as a household"
         "indicator": {
           "description": "A credential that certifies the achievement or status of specific indicators or metrics"
         },
