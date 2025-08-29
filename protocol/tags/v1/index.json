@@ -151,6 +151,9 @@
         "facilitator": {
           "description": "A request to guide and enable processes or interactions between parties"
         },
+        "payment": {
+          "description": "A request for payment"
+        },
         "marketSolutions": {
           "description": "Configurations of IXO tools for specific use-cases or sectors."
         },
