@@ -67,6 +67,10 @@
       "description": "A legally binding agreement",
       "fragmentIdentifier": "#lga"
     },
+    "llm": {
+      "description": "A LLM file used for dynamically creating user facing content",
+      "fragmentIdentifier": "#llm"
+    },
     "lottie": {
       "description": "Image or animation file",
       "fragmentIdentifier": "#ltt"
