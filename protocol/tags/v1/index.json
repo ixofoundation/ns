@@ -288,6 +288,9 @@
     "research": {
       "description": "A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos."
     },
+    "sme": {
+      "description": "A POD that "
+    },
     "urbanPlanningAndInfrastructure": {
       "description": "A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way."
     }
