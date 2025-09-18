@@ -68,7 +68,7 @@
             "description": "A service linking to domains for additional context or functionality.",
             "fragmentIdentifier": "#ldm"
         },
-        "matrixHomeServer": {
+        "matrix": {
             "description": "A service for hosting and managing Matrix communication servers.",
             "fragmentIdentifier": "#mhs"
         },

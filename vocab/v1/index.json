@@ -7,7 +7,7 @@
 		"certifier": "https://schema.org/issuedBy",
 		"capabilityDelegation": "https://www.w3.org/TR/did-core/#capability-delegation",
 		"capabilityInvocation":"https://www.w3.org/TR/did-core/#capability-invocation",
-		"country":"https://w3id.org/ixo/vocab/v1/countries"
+		"country":"https://w3id.org/ixo/vocab/v1/countries",
 		"dbp": "http://dbpedia.org/property/",
 		"description": "https://schema.org/description",
 		"document": "https://schema.org/DigitalDocument",
@@ -28,7 +28,7 @@
 		"reference": "https://schema.org/citation",
 		"registry": "https://schema.org/Registry",
 		"rsa": "http://www.w3.org/ns/auth/rsa#",
-		"service": "https://w3c.github.io/dpv/2.0/dpv/#Service"
+		"service": "https://w3c.github.io/dpv/2.0/dpv/#Service",			
 		"schema": "http://schema.org/",
 		"swrc": "http://swrc.ontoware.org/ontology#",
 		"text": "https://schema.org/Text",
