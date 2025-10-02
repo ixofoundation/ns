@@ -47,6 +47,13 @@
     },
     "membershipAsset": {
       "description": "An asset signifying membership rights or privileges within a group, organization, or service."
+    },
+     "voucher": {
+     "description": "An asset representing a voucher exchangeable for goods or services",
+        "types": {
+        "beanVoucher": {
+          "description": "A voucher representing a bag of fortified beans."
+        }
     }
   },
   "daoType": {
