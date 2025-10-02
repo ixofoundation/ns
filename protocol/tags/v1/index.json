@@ -385,6 +385,9 @@
         "credentialAudit": {
           "description": "A claim documenting the systematic examination and verification of credential issuance and management processes"
         },
+        "delivery": {
+          "description": "A claim documenting delivery of goods"
+        },
         "dispute": {
           "description": "A claim documenting formal disagreements and their resolution processes"
         },
@@ -413,6 +416,9 @@
         },
         "invoice": {
           "description": "A claim validating the authenticity and details of financial transactions or service provisions"
+        },
+         "location": {
+          "description": "A claim docuetning the location of an entity"
         },
         "offset": {
           "description": "A claim validating the compensation or neutralization of environmental impacts through verified actions"
