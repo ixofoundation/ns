@@ -8,6 +8,10 @@
     }
   ],
   "linkedResource": {
+    "agentCard": {
+      "description": "Semantic profile of an agent for research, interoperability, and AI-driven context discovery.",
+      "fragmentIdentifier": "#dmn"
+    },
     "bidTemplate": {
       "description": "An application to participate in or contribute to another domain",
       "fragmentIdentifier": "#bid",
