@@ -34,6 +34,10 @@
       "description": "A container that groups multiple collaborative documents as a single linked resource (e.g., a folder or workspace).",
       "fragmentIdentifier": "#dcl"
   },
+     "domainCard": {
+      "description": "Semantic profile of a domain for research, interoperability, and AI-driven context discovery.",
+      "fragmentIdentifier": "#dmn"
+    },
     "domainSettingsTemplate": {
       "description": "A predefined set of forms used to create and update domain settings",
       "fragmentIdentifier": "#dst"
