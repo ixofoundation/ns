@@ -96,9 +96,53 @@
       "fragmentIdentifier": "#obs"
     },
     "page": {
-      "description": "The overview page of a domain containing the title and content.",
-      "fragmentIdentifier": "#pag"
-    },
+    "description": "The overview page of a domain containing the title and content.",
+    "fragmentIdentifier": "#pag",
+    "types": {
+      "pageList": {
+        "description": "A list-style page layout that organizes related subpages and process views.",
+        "fragmentIdentifier": "#pgl",
+        "types": {
+          "page": {
+            "description": "List of pages",
+            "fragmentIdentifier": "#lpg"
+          },
+          "members": {
+            "description": "List of members",
+            "fragmentIdentifier": "#lme"
+          },
+          "transactions": {
+            "description": "List of transactions",
+            "fragmentIdentifier": "#ltx"
+          },
+          "flows": {
+            "description": "List of flows",
+            "fragmentIdentifier": "#lfl",
+            "types": {
+              "active": {
+                "description": "List of active flows",
+                "fragmentIdentifier": "#lfa"
+              },
+              "completed": {
+                "description": "List of completed flows",
+                "fragmentIdentifier": "#lfc",
+                "types": {
+                  "failed": {
+                    "description": "List of failed flows",
+                    "fragmentIdentifier": "#lfp"
+                  },
+                  "passed": {
+                    "description": "List of passed flows.",
+                    "fragmentIdentifier": "#lfc"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
     "pricingList": {
       "description": "A structured list of pricing information for services, resources, or assets.",
       "fragmentIdentifier": "#fee"
