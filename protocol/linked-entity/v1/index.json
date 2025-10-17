@@ -8,6 +8,9 @@
         }
     ],
     "linkedEntity": {
+         "agent": {
+            "description": "An agent linked to the domain."
+        },
         "asset": {
             "description": "An item or resource of value that is owned or controlled.",
             "types": {
