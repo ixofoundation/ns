@@ -24,6 +24,7 @@
 		"payment": "https://w3id.org/ixo/protocol/payments/v1",
 		"method": "https://w3id.org/ixo/protocol/methods/v1",
 		"metric": "https://w3id.org/ixo/protocol/metric/v1",
+		"schema": "https://w3id.org/ixo/protocol/schema/v1",
 		"service": "https://w3id.org/ixo/protocol/services/v1",
 		"token": "https://w3id.org/ixo/protocol/tokens/v1",
 		"vocab": "https://w3id.org/ixo/vocab/v1",
