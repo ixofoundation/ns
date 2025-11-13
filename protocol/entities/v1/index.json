@@ -11,6 +11,8 @@
         "asset": {
             "description": "An item or resource of value that is owned or controlled.",
             "types": {
+                 "asset": {
+                    "description": "An item or resource of value that is owned or controlled.",
                 "coin": {
                     "description": "A digital or physical currency used as a medium of exchange, including cryptocurrencies"
                 },
