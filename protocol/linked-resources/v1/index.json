@@ -163,6 +163,10 @@
       "description": "A predefined structure for creating and submitting proposals within a domain.",
       "fragmentIdentifier": "#pft"
     },
+    "rubric": {
+      "description": "A predefined rule set to help evaluate claims",
+      "fragmentIdentifier": "rub"
+    },
     "surveyTemplate": {
       "description": "A predefined set of questions or forms used to collect data.",
       "fragmentIdentifier": "#vct"
