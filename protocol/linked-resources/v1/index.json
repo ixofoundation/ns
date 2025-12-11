@@ -165,7 +165,7 @@
     },
     "rubric": {
       "description": "A predefined rule set to help evaluate claims",
-      "fragmentIdentifier": "rub"
+      "fragmentIdentifier": "#rub"
     },
     "surveyTemplate": {
       "description": "A predefined set of questions or forms used to collect data.",
