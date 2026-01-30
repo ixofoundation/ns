@@ -57,6 +57,9 @@
     "deed": {
       "description": "A legal document representing ownership or an agreement.",
       "types": {
+        "deed": {
+          "description": "A generic deed."
+        },
         "offer": {
           "description": "A deed representing a formal expression of willingness to provide or do something"
         },
