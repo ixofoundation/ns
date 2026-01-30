@@ -121,6 +121,9 @@
     }
   },
   "deedType": {
+    "deed": {
+      "description": "A deed representing a formal expression of willingness to provide or do something"
+    },
     "offer": {
       "description": "A deed representing a formal expression of willingness to provide or do something"
     },
