@@ -333,6 +333,9 @@
     "civicAction": {
       "description": "A project that engages citizens in collective efforts to address community or societal issues"
     },
+    "course": {
+      "description": "A project that designs, delivers, and manages structured training programs or courses for learners"
+    },
     "development": {
       "description": "A project providing software development services, including design, implementation, testing, and maintenance of software solutions"
     },
