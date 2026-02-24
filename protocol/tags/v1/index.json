@@ -121,8 +121,22 @@
     }
   },
   "deedType": {
-    "deed": {
-      "description": "A deed representing a formal expression of willingness to provide or do something"
+    "flow": {
+      "description": "An intent-driven workflow that defines and enables the coordination of a piece of work—or a business process—from start to finish",
+      "types": {
+        "identity": {
+          "description": "A flow that establishes, verifies, or manages identities and their attributes"
+        },
+        "governance": {
+          "description": "A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization"
+        },
+        "payout": {
+          "description": "A flow that coordinates the calculation, approval, and distribution of payments or rewards"
+        },
+        "domainCreation": {
+          "description": "A flow that creates and configures new domains, including their governance, permissions, and resources"
+        }
+      }
     },
     "offer": {
       "description": "A deed representing a formal expression of willingness to provide or do something"
@@ -153,7 +167,7 @@
     "request": {
       "description": "A deed detailing an appeal or demand for something to be provided or done",
       "types": {
-         "ambassador": {
+        "ambassador": {
           "description": "A request to serve as an ambassedor for an organisation"
         },
         "environmentalSteward": {
