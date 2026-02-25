@@ -379,6 +379,9 @@
     "oracle": {
       "description": "A project involving systems that provide data integrity, insights, or automation for decision-making processes"
     },
+    "place": {
+      "description": "A project focusing on a specific geographic place"
+    },
     "relayer": {
       "description": "A project focused on facilitating communication or transactions between different systems or networks"
     },
