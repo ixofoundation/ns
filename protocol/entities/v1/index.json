@@ -57,6 +57,9 @@
     "deed": {
       "description": "A legal document representing ownership or an agreement.",
       "types": {
+         "deed": {
+          "description": "A legal document representing ownership or an agreement."
+        },
         "flow": {
           "description": "An intent-driven workflow that defines and enables the coordination of a piece of work—or a business process—from start to finish"
         },
