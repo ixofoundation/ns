@@ -1,1 +1,207 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "type": "@type",
+      "@id": "@type",
+      "@version": 1.1
+    }
+  ],
+  "linkedResource": {
+    "agentCard": {
+      "description": "Semantic profile of an agent for research, interoperability, and AI-driven context discovery.",
+      "fragmentIdentifier": "#agt"
+    },
+    "bidTemplate": {
+      "description": "An application to participate in or contribute to another domain",
+      "fragmentIdentifier": "#bid",
+      "types": {
+        "bidContributor": {
+          "description": "An application to contribute to a domain",
+          "fragmentIdentifier": "#bco"
+        },
+        "bidEvaluator": {
+          "description": "An application to evaluate contributions to a domain",
+          "fragmentIdentifier": "#bev"
+        }
+      }
+    },
+    "claimSchema": {
+      "description": "A structured framework defining the format and content of claims.",
+      "fragmentIdentifier": "#csc"
+    },
+    "credentialSchema": {
+      "description": "A structured framework defining the format and content of credentials.",
+      "fragmentIdentifier": "#crs"
+    },
+    "documentCollection": {
+      "description": "A container that groups multiple collaborative documents as a single linked resource (e.g., a folder or workspace).",
+      "fragmentIdentifier": "#dcl"
+    },
+    "domainCard": {
+      "description": "Semantic profile of a domain for research, interoperability, and AI-driven context discovery.",
+      "fragmentIdentifier": "#dmn"
+    },
+    "domainSettingsTemplate": {
+      "description": "A predefined set of forms used to create and update domain settings",
+      "fragmentIdentifier": "#dst"
+    },
+    "evaluationTemplate": {
+      "description": "A structured framework defining the format and criteria for evaluating submissions or proposals.",
+      "fragmentIdentifier": "#eft"
+    },
+    "image": {
+      "description": "An image of the item. This can be a URL or a fully described ImageObject.",
+      "types": {
+        "imageIcon": {
+          "description": "A small, simplified visual representation used for navigation, buttons, or status indicators.",
+          "fragmentIdentifier": "#icn"
+        },
+        "imageLogo": {
+          "description": "A distinctive graphic mark or symbol used to identify a brand, organization, or project.",
+          "fragmentIdentifier": "#lgo"
+        },
+        "imageProfile": {
+          "description": "A representative image displayed on domain cards to provide visual identification of the domain.",
+          "fragmentIdentifier": "#pri"
+        },
+        "imageHeader": {
+          "description": "A banner or hero image displayed at the top of the domain overview page to provide visual context.",
+          "fragmentIdentifier": "#hdr"
+        }
+      }
+    },
+    "legalAgreement": {
+      "description": "A legally binding agreement",
+      "fragmentIdentifier": "#lga"
+    },
+    "llm": {
+      "description": "A LLM file used for dynamically creating user facing content",
+      "fragmentIdentifier": "#llm"
+    },
+    "lottie": {
+      "description": "Image or animation file",
+      "fragmentIdentifier": "#ltt"
+    },
+    "oracleAuthZConfig": {
+      "description": "Configuration settings for oracle service authorization and access control.",
+      "fragmentIdentifier": "#orz"
+    },
+    "observableMarkdown": {
+      "description": "Markdown content for Observable Framework pages and components.",
+      "fragmentIdentifier": "#omd"
+    },
+    "observableNotebook": {
+      "description": "Interactive notebook content for Observable Framework.",
+      "fragmentIdentifier": "#obs"
+    },
+    "page": {
+      "description": "The overview page of a domain containing the title and content.",
+      "fragmentIdentifier": "#pag",
+      "types": {
+        "pageList": {
+          "description": "A list-style page layout that organizes related subpages and process views.",
+          "fragmentIdentifier": "#pgl",
+          "types": {
+            "page": {
+              "description": "List of pages",
+              "fragmentIdentifier": "#lpg"
+            },
+            "members": {
+              "description": "List of members",
+              "fragmentIdentifier": "#lme"
+            },
+            "transactions": {
+              "description": "List of transactions",
+              "fragmentIdentifier": "#ltx"
+            },
+            "flows": {
+              "description": "List of flows",
+              "fragmentIdentifier": "#lfl",
+              "types": {
+                "active": {
+                  "description": "List of active flows",
+                  "fragmentIdentifier": "#lfa"
+                },
+                "completed": {
+                  "description": "List of completed flows",
+                  "fragmentIdentifier": "#lfc",
+                  "types": {
+                    "failed": {
+                      "description": "List of failed flows",
+                      "fragmentIdentifier": "#lfp"
+                    },
+                    "passed": {
+                      "description": "List of passed flows.",
+                      "fragmentIdentifier": "#lfc"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pricingList": {
+      "description": "A structured list of pricing information for services, resources, or assets.",
+      "fragmentIdentifier": "#fee"
+    },
+    "profile": {
+      "description": "Domain profile",
+      "fragmentIdentifier": "#pro"
+    },
+    "projectCredential": {
+      "description": "A digital certificate attesting to specific facts or achievements about a project.",
+      "fragmentIdentifier": "#pjc"
+    },
+    "proposalAction": {
+      "description": "A description of an action that is executed if the proposal is supported.",
+      "fragmentIdentifier": "#pac"
+    },
+    "proposalTemplate": {
+      "description": "A predefined structure for creating and submitting proposals within a domain.",
+      "fragmentIdentifier": "#pft"
+    },
+    "rubric": {
+      "description": "A predefined rule set to help evaluate claims",
+      "fragmentIdentifier": "#rub"
+    },
+    "surveyTemplate": {
+      "description": "A predefined set of questions or forms used to collect data.",
+      "fragmentIdentifier": "#vct"
+    },
+    "tags": {
+      "description": "Values for categorizing and identifying domains",
+      "fragmentIdentifier": "#tag"
+    },
+    "textDocument": {
+      "description": "Text document file",
+      "fragmentIdentifier": "#txt"
+    },
+    "typeMetadata": {
+      "description": "SD-JWT VC type metadata describing vct, display, and claim disclosure semantics.",
+      "fragmentIdentifier": "#vtm"
+    },
+    "vctSchema": {
+      "description": "JSON schema for SD-JWT VC claims bound to a specific vct.",
+      "fragmentIdentifier": "#vcs"
+    },
+    "tokenMetadata": {
+      "description": "Properties of the token",
+      "fragmentIdentifier": "#tmd"
+    },
+    "verificationMethods": {
+      "description": "Methods used to authenticate or authorize interactions",
+      "fragmentIdentifier": "#vfm"
+    },
+    "verifiableCredential": {
+      "description": "A digital certification or qualification, issued by an authoritative body, and utilizing cryptographic proofs for verification.",
+      "fragmentIdentifier": "#vcc"
+    },
+    "webDashboard": {
+      "description": "Information displayed in Graphic User Interfaces of Web Client applications",
+      "fragmentIdentifier": "#wdb"
+    }
+  }
+}

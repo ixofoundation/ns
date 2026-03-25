@@ -1,0 +1,132 @@
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+    "blockchainAccount": {
+        "AlgorandAccount": {
+            "description": "Represents an account in the Algorand blockchain for ALGO and related assets."
+        },
+        "ArbitrumAccount": {
+            "description": "Represents an account on the Arbitrum Layer 2 Ethereum scaling solution."
+        },
+        "AvalancheAccount": {
+            "description": "Represents an account on the Avalanche network for AVAX and smart contract interactions."
+        },
+        "BinanceSmartChainAccount": {
+            "description": "Represents an account in Binance Smart Chain (BSC) for managing BNB and BEP-20 tokens."
+        },
+        "BitcoinAccount": {
+            "description": "Represents a Bitcoin wallet or address for holding and transacting BTC."
+        },
+        "BitcoinCashAccount": {
+            "description": "Represents an account in the Bitcoin Cash blockchain for BCH transactions."
+        },
+        "Blockchain.comAccount": {
+            "description": "Represents an account in the Blockchain.com wallet system."
+        },
+        "CardanoAccount": {
+            "description": "Represents an account in the Cardano blockchain for ADA and staking purposes."
+        },
+        "CeloAccount": {
+            "description": "Represents an account in the Celo network for mobile-first financial solutions."
+        },
+        "ChainlinkAccount": {
+            "description": "Represents an account for Chainlink-related interactions (mainly for node operators)."
+        },
+        "CosmosAccount": {
+            "description": "Represents an account within the Cosmos ecosystem for staking and token transfers."
+        },
+        "DashAccount": {
+            "description": "Represents an account in the Dash blockchain for private and instant transactions."
+        },
+        "DogecoinAccount": {
+            "description": "Represents an account in the Dogecoin blockchain for DOGE transactions."
+        },
+        "EOSAccount": {
+            "description": "Represents an account in the EOS blockchain for dApps and transactions."
+        },
+        "ElrondAccount": {
+            "description": "Represents an account in the Elrond blockchain for EGLD and related dApps."
+        },
+        "EthereumAccount": {
+            "description": "Represents an Ethereum wallet or address for ETH and ERC tokens."
+        },
+        "FantomAccount": {
+            "description": "Represents an account in the Fantom blockchain for DeFi and smart contracts."
+        },
+        "FilecoinAccount": {
+            "description": "Represents an account in the Filecoin blockchain for decentralized storage payments."
+        },
+        "HarmonyAccount": {
+            "description": "Represents an account in the Harmony blockchain for ONE tokens and transactions."
+        },
+        "HederaAccount": {
+            "description": "Represents an account in Hedera Hashgraph for HBAR and dApps."
+        },
+        "HyperledgerAccount": {
+            "description": "Represents an account in the Hyperledger permissioned blockchain ecosystem."
+        },
+        "IOTAAccount": {
+            "description": "Represents an account in the IOTA Tangle for IoT-focused transactions."
+        },
+        "KuCoinAccount": {
+            "description": "Represents an account in KuCoin for blockchain interactions within their platform."
+        },
+        "KusamaAccount": {
+            "description": "Represents an account in the Kusama network, Polkadot's canary network."
+        },
+        "LitecoinAccount": {
+            "description": "Represents an account in the Litecoin blockchain for LTC transactions."
+        },
+        "MoneroAccount": {
+            "description": "Represents an account in the Monero blockchain for privacy-focused XMR transactions."
+        },
+        "NearAccount": {
+            "description": "Represents an account in the NEAR Protocol for smart contract interactions."
+        },
+        "OptimismAccount": {
+            "description": "Represents an account on the Optimism Layer 2 Ethereum scaling solution."
+        },
+        "PolkadotAccount": {
+            "description": "Represents an account in the Polkadot network for staking, governance, and transactions."
+        },
+        "PolygonAccount": {
+            "description": "Represents an account in the Polygon (Matic) blockchain for Ethereum scaling."
+        },
+        "PrivateChainAccount": {
+            "description": "Represents an account in a custom private blockchain network."
+        },
+        "RippleAccount": {
+            "description": "Represents an account in the Ripple (XRP) ledger for XRP transactions."
+        },
+        "SolanaAccount": {
+            "description": "Represents an account in the Solana blockchain for managing SOL and related assets."
+        },
+        "StellarAccount": {
+            "description": "Represents an account in the Stellar blockchain for managing Lumens (XLM)."
+        },
+        "TerraAccount": {
+            "description": "Represents an account in the Terra blockchain for managing LUNA and stablecoins."
+        },
+        "TezosAccount": {
+            "description": "Represents an account in the Tezos blockchain for staking, baking, and transactions."
+        },
+        "ThetaAccount": {
+            "description": "Represents an account in the Theta blockchain for video streaming and rewards."
+        },
+        "TronAccount": {
+            "description": "Represents an account in the TRON network for TRX and TRC tokens."
+        },
+        "VeChainAccount": {
+            "description": "Represents an account in the VeChainThor blockchain for VET and VeChain tokens."
+        },
+        "ZilliqaAccount": {
+            "description": "Represents an account in the Zilliqa blockchain for ZIL and shard-based transactions."
+        }
+    }
+}

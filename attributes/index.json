@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "ixo": "https://w3id.org/ixo/context",
+    "vocab": "https://w3id.org/ixo/vocab/v1",
+    "schema": "https://schema.org/",
+    "@protected": true,
+    "id": "@id",
+    "type": "@type"
+  },
+  "@id": "https://w3id.org/ixo/attributes/v1/index",
+  "title": "Attributes JSON-LD Dictionary",
+  "description": "This dictionary contains JSON-LD files for the attribues of entities in the IXO domain.",
+  "version": "1.0",
+  "resources": [
+    {
+      "name": "tokenMatadata",
+      "description": "Token attributes.",
+      "file": "tokenMatadata.json",
+      "id": "vocab:attribute"
+    }
+  ]
+ }

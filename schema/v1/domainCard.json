@@ -1,0 +1,324 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/ixo/context/v1",
+    {
+      "schema": "https://schema.org/",
+      "ixo": "https://w3id.org/ixo/vocab/v1",
+      "prov": "http://www.w3.org/ns/prov#",
+      "proj": "https://linked.data.gov.au/def/project#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": "@id",
+      "type": "@type",
+      "@protected": true
+    }
+  ],
+  "id": "did:ixo:<<<Domain DID>>>#dmn",
+  "type": [
+    "VerifiableCredential",
+    "ixo:DomainCard"
+  ],
+  "issuer": {
+    "id": "did:ixo:issuer:<<<Issuer DID>>>"
+  },
+  "validFrom": "<<<ISO8601 timestamp>>>",
+  "validUntil": "<<<ISO8601 timestamp or omit>>>",
+  "credentialSchema": {
+    "id": "https://example.org/schemas/ixo-domain-card-1.json",
+    "type": "JsonSchema"
+  },
+  "credentialSubject": {
+    "id": "did:ixo:<<<Entity DID>>>",
+    "type": [
+      "ixo:<<<EntityType>>>"
+    ],
+    "additionalType": [
+      "<<<AdditionalType>>>"
+    ],
+    "name": "<<<Domain Name>>>",
+    "alternateName": [
+      "<<<Alt Name>>>"
+    ],
+    "description": "<<<One-Paragraph Canonical Description>>>",
+    "url": "https://<<<Domain URL>>>",
+    "sameAs": [
+      "https://twitter.com/<<<Handle>>>",
+      "https://github.com/<<<Organization>>>"
+    ],
+    "logo": {
+      "type": "schema:ImageObject",
+      "id": "https://<<<Logo URL>>>",
+      "contentUrl": "https://<<<Logo URL>>>"
+    },
+    "image": [
+      {
+        "type": "schema:ImageObject",
+        "id": "https://<<<Image URL>>>",
+        "contentUrl": "https://<<<Image URL>>>"
+      }
+    ],
+    "keywords": [
+      "<<<k1>>>",
+      "<<<k2>>>",
+      "<<<k3>>>"
+    ],
+    "knowsAbout": [
+      "<<<Topic 1>>>",
+      "<<<Topic 2>>>"
+    ],
+    "address": {
+      "type": "schema:PostalAddress",
+      "streetAddress": "<<<Street>>>",
+      "addressLocality": "<<<City>>>",
+      "addressRegion": "<<<Region>>>",
+      "postalCode": "<<<Postal Code>>>",
+      "addressCountry": "<<<ISO country>>>"
+    },
+    "areaServed": {
+      "type": "schema:AdministrativeArea",
+      "name": "<<<Area>>>"
+    },
+    "contactPoint": [
+      {
+        "type": "schema:ContactPoint",
+        "contactType": "<<<support|business|technical>>>",
+        "email": "<<<Email>>>",
+        "telephone": "<<<E.164>>>",
+        "availableLanguage": [
+          "en",
+          "<<<lang>>>"
+        ]
+      }
+    ],
+    "composition": {
+      "type": "schema:Collection",
+      "hasPart": [
+        {
+          "type": "schema:CreativeWork",
+          "id": "<<<DID or URL>>>",
+          "name": "<<<Name>>>",
+          "description": "<<<Role in domain>>>",
+          "url": "https://<<<URL>>>",
+          "creator": {
+            "type": "schema:Organization",
+            "name": "<<<Creator>>>"
+          },
+          "license": "<<<SPDX or URL>>>"
+        }
+      ],
+      "subjectOf": [
+        {
+          "type": "schema:CreativeWork",
+          "name": "<<<Publication Title>>>",
+          "url": "https://<<<Publication URL>>>",
+          "author": {
+            "type": "schema:Person",
+            "name": "<<<Author>>>"
+          }
+        }
+      ]
+    },
+    "makesOffer": [
+      {
+        "type": "schema:Offer",
+        "itemOffered": {
+          "type": "schema:SoftwareApplication",
+          "name": "<<<App>>>",
+          "applicationCategory": "<<<Category>>>",
+          "operatingSystem": "<<<OS>>>"
+        }
+      }
+    ],
+    "relationships": {
+      "memberOf": [
+        {
+          "type": "schema:Organization",
+          "name": "<<<Organization Name>>>"
+        }
+      ],
+      "prov:wasAssociatedWith": [
+        {
+          "type": "schema:Organization",
+          "name": "<<<Partner Organization>>>"
+        }
+      ],
+      "funding": [
+        {
+          "type": "schema:Grant",
+          "funder": {
+            "type": "schema:Organization",
+            "name": "<<<Funder>>>"
+          },
+          "amount": {
+            "type": "schema:MonetaryAmount",
+            "currency": "<<<Currency Code>>>",
+            "value": "<<<Amount>>>"
+          }
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "schema:Event",
+        "name": "<<<Event Name>>>",
+        "startDate": "<<<ISO8601>>>",
+        "endDate": "<<<ISO8601>>>",
+        "location": {
+          "type": "schema:Place",
+          "name": "<<<Venue>>>",
+          "address": "<<<Address or PostalAddress>>>"
+        },
+        "organizer": {
+          "type": "schema:Organization",
+          "name": "<<<Organizer>>>"
+        }
+      }
+    ],
+    "agents": [
+      {
+        "type": "ixo:AgentCard",
+        "id": "<<<Agent ID>>>",
+        "name": "<<<Agent Name>>>",
+        "url": "https://<<<Agent URL>>>",
+        "contactPoint": {
+          "type": "schema:ContactPoint",
+          "email": "<<<Agent Email>>>"
+        }
+      }
+    ],
+    "credentials": [
+      {
+        "type": "VerifiableCredential",
+        "id": "https://<<<Credential URL>>>",
+        "name": "<<<Credential Name>>>",
+        "description": "<<<Credential Description>>>"
+      }
+    ],
+    "attributes": [
+      {
+        "@type": "ixo:Attribute",
+        "@id": "<<<Attribute uri>>>",
+        "name": "<<<Attribute Name>>>",
+        "value": "<<<Attribute Value>>>"
+      }
+    ],
+    "project": {
+      "type": "proj:Project",
+      "name": "<<<Project Title>>>",
+      "schema:description": "<<<High-level mission or purpose statement>>>",
+      "proj:hadObjective": [
+        "<<<Objective 1>>>",
+        "<<<Objective 2>>>",
+        "<<<Objective 3>>>"
+      ],
+      "proj:plannedStart": "<<<ISO8601>>>",
+      "proj:plannedEnd": "<<<ISO8601>>>",
+      "proj:hadSponsor": {
+        "type": "schema:Organization",
+        "name": "<<<Sponsor Organization>>>"
+      },
+      "proj:wasFundedThrough": [
+        {
+          "type": "proj:FundingAssociation",
+          "proj:fundsProvided": {
+            "type": "proj:SumOfMoney",
+            "proj:moneyAmount": "<<<Amount>>>",
+            "proj:moneyCurrency": "<<<Currency Code>>>"
+          },
+          "prov:agent": {
+            "type": "schema:Organization",
+            "id": "<<<uri>>>",
+            "name": "<<<Funder>>>"
+          }
+        }
+      ],
+      "proj:hadSubActivity": [
+        {
+          "type": "prov:Activity",
+          "id": "did:ixo:activity:<<<Activity ID>>>",
+          "name": "<<<Activity Name>>>",
+          "schema:description": "<<<Concise summary of what this activity does>>>",
+          "proj:activityType": "<<<e.g. field-monitoring, training, data-analysis>>>",
+          "proj:plannedStart": "<<<ISO8601>>>",
+          "proj:plannedEnd": "<<<ISO8601>>>",
+          "proj:actualStart": "<<<ISO8601>>>",
+          "proj:actualEnd": "<<<ISO8601>>>",
+          "proj:hadObjective": [
+            "<<<Specific measurable objective>>>"
+          ],
+          "prov:wasAssociatedWith": [
+            {
+              "type": "schema:Organization",
+              "id": "did:ixo:<<<Partner Org>>>",
+              "name": "<<<Partner Organization>>>",
+              "schema:roleName": "<<<Role>>>"
+            }
+          ],
+          "proj:usedResource": [
+            {
+              "type": "proj:Resource",
+              "id": "<<<uri>>>",
+              "name": "<<<Resource Name>>>",
+              "proj:resourceType": "Equipment",
+              "proj:quantity": "<<<Number of Units>>>",
+              "proj:unit": "<<<Unit>>>"
+            }
+          ],
+          "proj:hadOutput": [
+            {
+              "type": "proj:Result",
+              "id": "<<<uri>>>",
+              "name": "<<<Output Name>>>",
+              "proj:resultDescription": "<<<Observable outcome or data product>>>",
+              "proj:resultMetric": "<<<Metric or indicator>>>",
+              "proj:resultValue": "<<<Value>>>",
+              "schema:measurementTechnique": "<<<Method or instrument>>>"
+            }
+          ],
+          "proj:hadDeliverable": [
+            {
+              "type": "proj:Deliverable",
+              "id": "<<<uri>>>",
+              "name": "<<<Name>>>",
+              "proj:deliverableDescription": "<<<Description>>>",
+              "schema:url": "https://<<<Deliverable URL>>>",
+              "proj:deliverableDueDate": "<<<ISO8601>>>",
+              "proj:deliverableStatus": "<<<Status>>>"
+            }
+          ]
+        }
+      ]
+    },
+    "researchProfile": {
+      "type": "ixo:ResearchProfile",
+      "ixo:seedQueries": [
+        "<<<Seed 1>>>",
+        "<<<Seed 2>>>"
+      ],
+      "citation": [
+        {
+          "type": "schema:CreativeWork",
+          "name": "<<<Citation Title>>>",
+          "url": "https://<<<Citation URL>>>",
+          "publisher": "<<<Publisher>>>",
+          "datePublished": "<<<ISO8601>>>"
+        }
+      ],
+      "ixo:embedding": {
+        "type": "ixo:Embedding",
+        "id": "<<<Embedding ID>>>",
+        "model": "<<<Embedding Model>>>",
+        "contentUrl": "https://<<<Embedding URL>>>"
+      },
+      "dateModified": "<<<ISO8601>>>"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "<<<ISO8601 timestamp>>>",
+    "verificationMethod": "did:ixo:issuer:<<<Issuer DID>>>#keys-1",
+    "cryptosuite": "eddsa-rdfc-2022",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "<<<multibase base58btc signature>>>"
+  }
+}

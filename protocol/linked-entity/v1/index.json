@@ -1,0 +1,248 @@
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+    "linkedEntity": {
+         "agent": {
+            "description": "An agent linked to the domain."
+        },
+        "asset": {
+            "description": "An item or resource of value that is owned or controlled.",
+            "types": {
+                "coin": {
+                    "description": "A digital or physical currency used as a medium of exchange, including cryptocurrencies"
+                },
+                "collection": {
+                    "description": "A curated group of related assets organized under a common theme or purpose"
+                },
+                "data": {
+                    "description": "A digital representation of data, such as financial data, scientific data, or other types of data that can be stored and shared in a decentralized manner"
+                },
+                "device": {
+                    "description": "A physical or virtual tool or equipment used to perform specific tasks or functions"
+                },
+                "impactCredit": {
+                    "description": "A unit representing verified environmental or social impact, such as carbon sequestration or community development outcomes"
+                },
+                "learnership": {
+                    "description": "An asset representing a structured learning program that combines theoretical study with practical workplace experience"
+                },
+                "membershipAsset": {
+                    "description": "An asset signifying membership rights or privileges within a group, organization, or service"
+                }
+            }
+        },
+        "dao": {
+            "description": "A Decentralized Autonomous Organization operating through smart contracts.",
+            "types": {
+                "dao": {
+                    "description": "A parent DAO that can contain and coordinate multiple sub-DAOs or organizational units"
+                },
+                "group": {
+                    "description": "A specialized organizational unit within a DAO that focuses on specific functions or areas of responsibility"
+                },
+                "pod": {
+                    "description": "A small, autonomous sub-group within a DAO that can make independent decisions while remaining connected to the parent organization"
+                }
+            }
+        },
+        "deed": {
+            "description": "A legal document representing ownership or an agreement.",
+            "types": {
+                "offer": {
+                    "description": "A deed representing a formal expression of willingness to provide or do something"
+                },
+                "proposal": {
+                    "description": "A deed that outlines a suggested plan or action for consideration and approval"
+                },
+                "request": {
+                    "description": "A deed detailing an appeal or demand for something to be provided or done"
+                },
+                "subscription": {
+                    "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
+                }
+            }
+        },
+        "investment": {
+            "description": "An allocation of resources, typically capital, in expectation of a future return."
+        },
+        "oracle": {
+            "description": "A service providing external data to smart contracts or blockchain systems.",
+            "types": {
+                "oracle": {
+                    "description": "A service providing external data to smart contracts or blockchain systems."
+                }
+            }
+        },
+        "project": {
+            "description": "A planned undertaking or initiative to achieve specific goals.",
+            "types": {
+                "project": {
+                    "description": "A planned undertaking or initiative to achieve specific goals."
+                }
+            }
+        },
+        "protocol": {
+            "description": "A system of rules or procedures for transmitting data or interacting with systems.",
+            "types": {
+                "verifiableClaim": {
+                    "description": "A protocol for creating verifiable claims and defining the claims content and structure"
+                },
+                "verifiableCredential": {
+                    "description": "A protocol for creating verifiable credentials and defining the credentials content and structure"
+                },
+                "asset": {
+                    "description": "A protocol governing the creation of digital assets and defining the assets properties"
+                },
+                "dao": {
+                    "description": "A protocol establishing the governance, operation, and decision-making processes of decentralized autonomous organizations"
+                },
+                "deed": {
+                    "description": "A protocol for creating deeds and defining the deeds content and structure"
+                },
+                "group": {
+                    "description": "A protocol for creating groups and defining the formation, membership, and governance structures"
+                },
+                "investment": {
+                    "description": "A protocol governing investment processes, including funding, returns, and impact measurement"
+                },
+                "oracle": {
+                    "description": "A protocol for creating oracles and defining the oracles properties"
+                },
+                "project": {
+                    "description": "A protocol for creating project domains and defining the domains properties"
+                },
+                "system": {
+                    "description": "A protocol for creating a cognitive digital twin system"
+                }
+            }
+        },
+        "blockchainAccount": {
+            "AlgorandAccount": {
+                "description": "Represents an account in the Algorand blockchain for ALGO and related assets."
+            },
+            "ArbitrumAccount": {
+                "description": "Represents an account on the Arbitrum Layer 2 Ethereum scaling solution."
+            },
+            "AvalancheAccount": {
+                "description": "Represents an account on the Avalanche network for AVAX and smart contract interactions."
+            },
+            "BinanceSmartChainAccount": {
+                "description": "Represents an account in Binance Smart Chain (BSC) for managing BNB and BEP-20 tokens."
+            },
+            "BitcoinAccount": {
+                "description": "Represents a Bitcoin wallet or address for holding and transacting BTC."
+            },
+            "BitcoinCashAccount": {
+                "description": "Represents an account in the Bitcoin Cash blockchain for BCH transactions."
+            },
+            "Blockchain.comAccount": {
+                "description": "Represents an account in the Blockchain.com wallet system."
+            },
+            "CardanoAccount": {
+                "description": "Represents an account in the Cardano blockchain for ADA and staking purposes."
+            },
+            "CeloAccount": {
+                "description": "Represents an account in the Celo network for mobile-first financial solutions."
+            },
+            "ChainlinkAccount": {
+                "description": "Represents an account for Chainlink-related interactions (mainly for node operators)."
+            },
+            "CosmosAccount": {
+                "description": "Represents an account within the Cosmos ecosystem for staking and token transfers."
+            },
+            "DashAccount": {
+                "description": "Represents an account in the Dash blockchain for private and instant transactions."
+            },
+            "DogecoinAccount": {
+                "description": "Represents an account in the Dogecoin blockchain for DOGE transactions."
+            },
+            "EOSAccount": {
+                "description": "Represents an account in the EOS blockchain for dApps and transactions."
+            },
+            "ElrondAccount": {
+                "description": "Represents an account in the Elrond blockchain for EGLD and related dApps."
+            },
+            "EthereumAccount": {
+                "description": "Represents an Ethereum wallet or address for ETH and ERC tokens."
+            },
+            "FantomAccount": {
+                "description": "Represents an account in the Fantom blockchain for DeFi and smart contracts."
+            },
+            "FilecoinAccount": {
+                "description": "Represents an account in the Filecoin blockchain for decentralized storage payments."
+            },
+            "HarmonyAccount": {
+                "description": "Represents an account in the Harmony blockchain for ONE tokens and transactions."
+            },
+            "HederaAccount": {
+                "description": "Represents an account in Hedera Hashgraph for HBAR and dApps."
+            },
+            "HyperledgerAccount": {
+                "description": "Represents an account in the Hyperledger permissioned blockchain ecosystem."
+            },
+            "IOTAAccount": {
+                "description": "Represents an account in the IOTA Tangle for IoT-focused transactions."
+            },
+            "KuCoinAccount": {
+                "description": "Represents an account in KuCoin for blockchain interactions within their platform."
+            },
+            "KusamaAccount": {
+                "description": "Represents an account in the Kusama network, Polkadot's canary network."
+            },
+            "LitecoinAccount": {
+                "description": "Represents an account in the Litecoin blockchain for LTC transactions."
+            },
+            "MoneroAccount": {
+                "description": "Represents an account in the Monero blockchain for privacy-focused XMR transactions."
+            },
+            "NearAccount": {
+                "description": "Represents an account in the NEAR Protocol for smart contract interactions."
+            },
+            "OptimismAccount": {
+                "description": "Represents an account on the Optimism Layer 2 Ethereum scaling solution."
+            },
+            "PolkadotAccount": {
+                "description": "Represents an account in the Polkadot network for staking, governance, and transactions."
+            },
+            "PolygonAccount": {
+                "description": "Represents an account in the Polygon (Matic) blockchain for Ethereum scaling."
+            },
+            "PrivateChainAccount": {
+                "description": "Represents an account in a custom private blockchain network."
+            },
+            "RippleAccount": {
+                "description": "Represents an account in the Ripple (XRP) ledger for XRP transactions."
+            },
+            "SolanaAccount": {
+                "description": "Represents an account in the Solana blockchain for managing SOL and related assets."
+            },
+            "StellarAccount": {
+                "description": "Represents an account in the Stellar blockchain for managing Lumens (XLM)."
+            },
+            "TerraAccount": {
+                "description": "Represents an account in the Terra blockchain for managing LUNA and stablecoins."
+            },
+            "TezosAccount": {
+                "description": "Represents an account in the Tezos blockchain for staking, baking, and transactions."
+            },
+            "ThetaAccount": {
+                "description": "Represents an account in the Theta blockchain for video streaming and rewards."
+            },
+            "TronAccount": {
+                "description": "Represents an account in the TRON network for TRX and TRC tokens."
+            },
+            "VeChainAccount": {
+                "description": "Represents an account in the VeChainThor blockchain for VET and VeChain tokens."
+            },
+            "ZilliqaAccount": {
+                "description": "Represents an account in the Zilliqa blockchain for ZIL and shard-based transactions."
+            }
+        }
+    }
+} 

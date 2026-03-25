@@ -1,0 +1,20 @@
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+  "metric": {
+    "issued": {
+      "description": "Metric for the amount of units issued",
+      "types": {
+        "carbonCredits": {
+          "description": "A structured framework defining the format and content of credentials."
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,88 @@
-{}
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+    "verifiableClaim": {
+            "accreditation": {  
+                "description": "A claim verifying the official recognition, authorization, or certification status of a domain or process"
+            },
+            "compliance": {
+                "description": "A claim attesting to the adherence to specific regulatory, legal, or protocol requirements"
+            },
+            "contribution": {
+                "description": "A claim documenting verified contributions to projects, initiatives, or common objectives"
+            },
+            "credential": {
+                "description": "A claim establishing the authenticity and validity of qualifications, permissions, or rights"
+            },
+            "credentialAudit": {
+                "description": "A claim documenting the systematic examination and verification of credential issuance and management processes"
+            },
+            "dispute": {
+                "description": "A claim documenting formal disagreements and their resolution processes"
+            },
+            "identity": {
+                "description": "A claim verifying the authentic identity attributes of an individual, organization, or domain"
+            },
+            "impact": {
+                "description": "A claim measuring and validating the social or environmental effects of specific actions",
+                "types": {
+                    "verifiedCleanCooking": {
+                        "description": "A claim validating the implementation and impact of verified clean cooking solutions"
+                    },
+                    "verifiedEmissionsReduction": {
+                        "description": "A claim certifying the verified reduction of greenhouse gas emissions through specific projects"
+                    }
+                }
+            },
+            "investment": {
+                "description": "A claim documenting investment activities, commitments, or outcomes in impact projects"
+            },
+            "invoice": {
+                "description": "A claim validating the authenticity and details of financial transactions or service provisions"
+            },
+            "offset": {
+                "description": "A claim validating the compensation or neutralization of environmental impacts through verified actions"
+            },
+            "outcome": {
+                "description": "A claim documenting measured results or impacts of specific actions or initiatives",
+                "types": {
+                    "carbonEmissionReduction": {
+                        "description": "A claim documenting verified reductions in carbon emissions through specific interventions"
+                    },
+                    "cleanCookingClaim": {
+                        "description": "A claim verifying the implementation and impact of clean cooking solutions"
+                    }
+                }
+            },
+            "ownership": {
+                "description": "A claim validating the rightful possession or control of assets, resources, or rights"
+            },
+            "procurement": {
+                "description": "A claim documenting the acquisition process and compliance with procurement standards",
+                "types": {
+                    "fuelPurchase": {
+                        "description": "A claim verifying the purchase and sourcing of fuel products according to specified standards"
+                    }
+                }
+            },
+            "provenance": {
+                "description": "A claim establishing the origin, history, and chain of custody of assets or resources"
+            },
+            "service": {
+                "description": "A claim validating the delivery, quality, or completion of specific services"
+            },
+            "subscription": {
+                "description": "A claim validating the active subscription status and associated rights of a participant"
+            },
+            "useOfFunds": {
+                "description": "A claim documenting the allocation and utilization of financial resources in accordance with specified purposes"
+            }
+        
+    }
+}

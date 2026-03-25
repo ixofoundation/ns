@@ -1,1 +1,50 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "type": "@type",
+      "@id": "@type",
+      "@version": 1.1
+    }
+  ],
+  "accordedRight": {
+    "capability": {
+      "description": "A capability is a permission or authority granted to an entity to perform specific actions or operations.",
+      "types": {
+        "attest": {
+            "description": "Create attestations."
+        },
+        "cancelToken": {
+            "description": "Invalidate a token."
+        },
+        "createEntity": {
+            "description": "Create a new entity."
+        },
+        "ibcTransfer": {
+            "description": "Transfer ownership to another account on a different blockchain."
+        },
+        "mintToken": {
+            "description": "Create or issue a new token."
+        },
+        "retireToken": {
+            "description": "Render a token unusable."
+        },
+        "sendToken": {
+            "description": "Send token to another account."
+        },
+        "swapToken": {
+            "description": "Exchange one type of token for another."
+        },
+        "transferToken": {
+            "description": "Transfer ownership to another account."
+        },
+        "access": {
+            "description": "Access resources or systems."
+        }
+      }
+    },
+    "legal": {
+      "description": "Display legal documents."
+    }
+  }
+}

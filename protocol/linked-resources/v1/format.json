@@ -1,0 +1,36 @@
+{
+    "@context": [
+        "https://w3id.org/ixo/context/v1",
+        {
+            "type": "@type",
+            "@id": "@type",
+            "@version": 1.1
+        }
+    ],
+    "format": {
+        "application/ld+json": {
+            "description": "A media type for JSON-LD, a JSON-based format for linked data."
+        },
+        "application/html": {
+            "description": "A media type for HTML documents, used for displaying content in web browsers."
+        },
+        "application/json": {
+            "description": "A media type for JSON, a lightweight data-interchange format."
+        },
+        "application/pdf": {
+            "description": "A media type for PDF documents, commonly used for sharing formatted documents."
+        },
+        "image/jpeg": {
+            "description": "A media type for JPEG images, commonly used for digital photographs."
+        },
+        "image/png": {
+            "description": "A media type for PNG images, known for lossless compression."
+        },
+        "text/plain": {
+            "description": "A media type for plain text, containing unformatted text content."
+        },
+        "ld+json": {
+            "description": "A shorthand notation for JSON-LD, used for linked data."
+        }
+    }
+}
