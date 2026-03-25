@@ -3,7 +3,7 @@
     "https://w3id.org/ixo/context/v1",
     {
       "type": "@type",
-      "@id": "@type", 
+      "@id": "@type",
       "@version": 1.1
     }
   ],
@@ -34,11 +34,11 @@
       "description": "A structured framework defining the format and content of credentials.",
       "fragmentIdentifier": "#crs"
     },
-  "documentCollection": {
+    "documentCollection": {
       "description": "A container that groups multiple collaborative documents as a single linked resource (e.g., a folder or workspace).",
       "fragmentIdentifier": "#dcl"
-  },
-     "domainCard": {
+    },
+    "domainCard": {
       "description": "Semantic profile of a domain for research, interoperability, and AI-driven context discovery.",
       "fragmentIdentifier": "#dmn"
     },
@@ -96,44 +96,45 @@
       "fragmentIdentifier": "#obs"
     },
     "page": {
-    "description": "The overview page of a domain containing the title and content.",
-    "fragmentIdentifier": "#pag",
-    "types": {
-      "pageList": {
-        "description": "A list-style page layout that organizes related subpages and process views.",
-        "fragmentIdentifier": "#pgl",
-        "types": {
-          "page": {
-            "description": "List of pages",
-            "fragmentIdentifier": "#lpg"
-          },
-          "members": {
-            "description": "List of members",
-            "fragmentIdentifier": "#lme"
-          },
-          "transactions": {
-            "description": "List of transactions",
-            "fragmentIdentifier": "#ltx"
-          },
-          "flows": {
-            "description": "List of flows",
-            "fragmentIdentifier": "#lfl",
-            "types": {
-              "active": {
-                "description": "List of active flows",
-                "fragmentIdentifier": "#lfa"
-              },
-              "completed": {
-                "description": "List of completed flows",
-                "fragmentIdentifier": "#lfc",
-                "types": {
-                  "failed": {
-                    "description": "List of failed flows",
-                    "fragmentIdentifier": "#lfp"
-                  },
-                  "passed": {
-                    "description": "List of passed flows.",
-                    "fragmentIdentifier": "#lfc"
+      "description": "The overview page of a domain containing the title and content.",
+      "fragmentIdentifier": "#pag",
+      "types": {
+        "pageList": {
+          "description": "A list-style page layout that organizes related subpages and process views.",
+          "fragmentIdentifier": "#pgl",
+          "types": {
+            "page": {
+              "description": "List of pages",
+              "fragmentIdentifier": "#lpg"
+            },
+            "members": {
+              "description": "List of members",
+              "fragmentIdentifier": "#lme"
+            },
+            "transactions": {
+              "description": "List of transactions",
+              "fragmentIdentifier": "#ltx"
+            },
+            "flows": {
+              "description": "List of flows",
+              "fragmentIdentifier": "#lfl",
+              "types": {
+                "active": {
+                  "description": "List of active flows",
+                  "fragmentIdentifier": "#lfa"
+                },
+                "completed": {
+                  "description": "List of completed flows",
+                  "fragmentIdentifier": "#lfc",
+                  "types": {
+                    "failed": {
+                      "description": "List of failed flows",
+                      "fragmentIdentifier": "#lfp"
+                    },
+                    "passed": {
+                      "description": "List of passed flows.",
+                      "fragmentIdentifier": "#lfc"
+                    }
                   }
                 }
               }
@@ -141,13 +142,12 @@
           }
         }
       }
-    }
-  },
+    },
     "pricingList": {
       "description": "A structured list of pricing information for services, resources, or assets.",
       "fragmentIdentifier": "#fee"
     },
-     "profile": {
+    "profile": {
       "description": "Domain profile",
       "fragmentIdentifier": "#pro"
     },
@@ -178,6 +178,14 @@
     "textDocument": {
       "description": "Text document file",
       "fragmentIdentifier": "#txt"
+    },
+    "typeMetadata": {
+      "description": "SD-JWT VC type metadata describing vct, display, and claim disclosure semantics.",
+      "fragmentIdentifier": "#vtm"
+    },
+    "vctSchema": {
+      "description": "JSON schema for SD-JWT VC claims bound to a specific vct.",
+      "fragmentIdentifier": "#vcs"
     },
     "tokenMetadata": {
       "description": "Properties of the token",
