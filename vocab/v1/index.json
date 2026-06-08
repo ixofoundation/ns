@@ -1340,6 +1340,118 @@
       }
     },
     {
+      "@id": "ixo:claimId",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "claimId", "@language": "en" },
+      "rdfs:comment": { "@value": "A unique identifier for a claim.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:projectDid",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "ixo:Entity" },
+      "rdfs:label": { "@value": "projectDid", "@language": "en" },
+      "rdfs:comment": { "@value": "The DID of the project entity the claim is made about or under.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:agentDid",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "ixo:Entity" },
+      "rdfs:label": { "@value": "agentDid", "@language": "en" },
+      "rdfs:comment": { "@value": "The DID of the agent that submitted the claim.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:evaluatorDid",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "ixo:Entity" },
+      "rdfs:label": { "@value": "evaluatorDid", "@language": "en" },
+      "rdfs:comment": { "@value": "The DID of the oracle or agent that evaluated the claim.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:protocol",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "ixo:Entity" },
+      "rdfs:label": { "@value": "protocol", "@language": "en" },
+      "rdfs:comment": { "@value": "The protocol entity that defines and governs the claim or entity.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:entityType",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Entity" },
+      "schema:rangeIncludes": { "@id": "skos:Concept" },
+      "rdfs:label": { "@value": "entityType", "@language": "en" },
+      "rdfs:comment": { "@value": "The kind of entity, as a concept drawn from the entity-types scheme.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:sdgGoal",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "sdgGoal", "@language": "en" },
+      "rdfs:comment": { "@value": "The UN Sustainable Development Goal (1–17) the claim contributes to.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:sdgTarget",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "sdgTarget", "@language": "en" },
+      "rdfs:comment": { "@value": "The UN SDG target (e.g. 3.8) the claim contributes to.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:outcomeIndicator",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "outcomeIndicator", "@language": "en" },
+      "rdfs:comment": { "@value": "The SDG or custom outcome indicator the claim reports against.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:impactVolume",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:decimal" },
+      "rdfs:label": { "@value": "impactVolume", "@language": "en" },
+      "rdfs:comment": { "@value": "The quantity of impact units claimed.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:impactUnit",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "impactUnit", "@language": "en" },
+      "rdfs:comment": { "@value": "The unit of the impact quantity (e.g. households, tCO2e).", "@language": "en" }
+    },
+    {
+      "@id": "ixo:evidenceType",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "evidenceType", "@language": "en" },
+      "rdfs:comment": { "@value": "The kind of evidence supporting the claim.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:serviceType",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "serviceType", "@language": "en" },
+      "rdfs:comment": { "@value": "The kind of service delivered, as reported in a claim.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:beneficiaryId",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Claim" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "beneficiaryId", "@language": "en" },
+      "rdfs:comment": { "@value": "An anonymous identifier for the beneficiary of the claimed activity.", "@language": "en" }
+    },
+    {
       "@id": "ixo:relationship",
       "@type": [
         "rdf:Property",

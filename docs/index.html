@@ -14,7 +14,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <body><div class="wrap">
 <h1>IXO Namespace</h1>
 <p class="lead">Human-readable documentation for the IXO Spatial Web namespace — the core RDFS/OWL vocabulary and the SKOS concept schemes published under <code>https://w3id.org/ixo/</code>. Machine clients receive JSON-LD from the same IRIs via content negotiation.</p>
-<p class="muted">Vocabulary: <a href="https://w3id.org/ixo/vocab/v1">vocab/v1</a> · Context: <a href="https://w3id.org/ixo/context/v1">context/v1</a> · 38 classes · 32 properties · 30 concept schemes</p>
+<p class="muted">Vocabulary: <a href="https://w3id.org/ixo/vocab/v1">vocab/v1</a> · Context: <a href="https://w3id.org/ixo/context/v1">context/v1</a> · 38 classes · 46 properties · 30 concept schemes</p>
 
 <h2 id="vocabulary">Core vocabulary</h2>
 <h3>Classes <span class="pill">38</span></h3>
@@ -57,35 +57,49 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code id="ixo:Settings">ixo:Settings</code></td><td>Settings</td><td>Configuration that governs how an entity behaves or is presented.</td><td></td></tr>
 <tr><td><code id="ixo:Tags">ixo:Tags</code></td><td>Tags</td><td>A set of categorised tags applied to an entity.</td><td></td></tr>
 <tr><td><code id="ixo:TwinSystem">ixo:TwinSystem</code></td><td>Twin System</td><td>A cognitive digital twin system that couples a physical or conceptual subject with its digital representation and reasoning capabilities.</td><td><code>ixo:Entity</code></td></tr></tbody></table>
-<h3>Properties <span class="pill">32</span></h3>
+<h3>Properties <span class="pill">46</span></h3>
 <table><thead><tr><th>Term</th><th>Label</th><th>Comment</th><th>Domain → Range</th></tr></thead>
 <tbody><tr><td><code id="ixo:accordedRight">ixo:accordedRight</code></td><td>accordedRight</td><td>A right or permission granted in relation to this entity.</td><td><code>ixo:Entity</code> → <code>ixo:AccordedRight</code></td></tr>
 <tr><td><code id="ixo:account">ixo:account</code></td><td>account</td><td>A blockchain account associated with and controlled by this entity.</td><td><code>ixo:Entity</code> → <code>ixo:Account</code></td></tr>
+<tr><td><code id="ixo:agentDid">ixo:agentDid</code></td><td>agentDid</td><td>The DID of the agent that submitted the claim.</td><td><code>ixo:Claim</code> → <code>ixo:Entity</code></td></tr>
 <tr><td><code id="ixo:alsoKnownAs">ixo:alsoKnownAs</code></td><td>alsoKnownAs</td><td>An alternative identifier by which the entity is also known.</td><td><code>ixo:Entity</code> → <span class="muted">—</span></td></tr>
 <tr><td><code id="ixo:assertionMethod">ixo:assertionMethod</code></td><td>assertionMethod</td><td>Verification methods this entity may use to issue verifiable claims and credentials.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
 <tr><td><code id="ixo:attributes">ixo:attributes</code></td><td>attributes</td><td>Named attributes attached to an entity or resource.</td><td><span class="muted">—</span> → <code>ixo:Attribute</code></td></tr>
 <tr><td><code id="ixo:authentication">ixo:authentication</code></td><td>authentication</td><td>Verification methods this entity may use to prove control of its identifier.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:beneficiaryId">ixo:beneficiaryId</code></td><td>beneficiaryId</td><td>An anonymous identifier for the beneficiary of the claimed activity.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:blockchainAccountID">ixo:blockchainAccountID</code></td><td>blockchainAccountID</td><td>The on-chain account address bound to a verification method.</td><td><code>sec:VerificationMethod</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:capabilityDelegation">ixo:capabilityDelegation</code></td><td>capabilityDelegation</td><td>Verification methods authorised to delegate authority capabilities to others.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
 <tr><td><code id="ixo:capabilityInvocation">ixo:capabilityInvocation</code></td><td>capabilityInvocation</td><td>Verification methods authorised to invoke authority capabilities held by this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:claimId">ixo:claimId</code></td><td>claimId</td><td>A unique identifier for a claim.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:claimType">ixo:claimType</code></td><td>claimType</td><td>The kind of claim, as a concept drawn from the claim-types scheme.</td><td><code>ixo:Claim</code> → <code>skos:Concept</code></td></tr>
 <tr><td><code id="ixo:controller">ixo:controller</code></td><td>controller</td><td>The entities authorised to update this entity's document and to act on its behalf.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
 <tr><td><code id="ixo:deactivated">ixo:deactivated</code></td><td>deactivated</td><td>Whether the entity document has been deactivated.</td><td><span class="muted">—</span> → <code>xsd:boolean</code></td></tr>
 <tr><td><code id="ixo:encrypted">ixo:encrypted</code></td><td>encrypted</td><td>Whether a linked resource's content is encrypted.</td><td><code>ixo:LinkedResource</code> → <code>xsd:boolean</code></td></tr>
 <tr><td><code id="ixo:entityTags">ixo:entityTags</code></td><td>entityTags</td><td>The set of tag categories and values applied to an entity.</td><td><code>ixo:Tags</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:entityType">ixo:entityType</code></td><td>entityType</td><td>The kind of entity, as a concept drawn from the entity-types scheme.</td><td><code>ixo:Entity</code> → <code>skos:Concept</code></td></tr>
+<tr><td><code id="ixo:evaluatorDid">ixo:evaluatorDid</code></td><td>evaluatorDid</td><td>The DID of the oracle or agent that evaluated the claim.</td><td><code>ixo:Claim</code> → <code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:evidenceType">ixo:evidenceType</code></td><td>evidenceType</td><td>The kind of evidence supporting the claim.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
+<tr><td><code id="ixo:impactUnit">ixo:impactUnit</code></td><td>impactUnit</td><td>The unit of the impact quantity (e.g. households, tCO2e).</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
+<tr><td><code id="ixo:impactVolume">ixo:impactVolume</code></td><td>impactVolume</td><td>The quantity of impact units claimed.</td><td><code>ixo:Claim</code> → <code>xsd:decimal</code></td></tr>
 <tr><td><code id="ixo:keyAgreement">ixo:keyAgreement</code></td><td>keyAgreement</td><td>Verification methods used to establish encrypted communication with this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
 <tr><td><code id="ixo:linkedClaim">ixo:linkedClaim</code></td><td>linkedClaim</td><td>A claim associated with this entity, asserting something about it or made by it.</td><td><code>ixo:Entity</code> → <code>ixo:Claim</code></td></tr>
 <tr><td><code id="ixo:linkedEntity">ixo:linkedEntity</code></td><td>linkedEntity</td><td>Another entity related to this one, establishing a typed relationship in the IXO graph.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
 <tr><td><code id="ixo:linkedResource">ixo:linkedResource</code></td><td>linkedResource</td><td>A resource — such as a credential, document or dataset — referenced by and associated with this entity.</td><td><code>ixo:Entity</code> → <code>ixo:LinkedResource</code></td></tr>
 <tr><td><code id="ixo:metadata">ixo:metadata</code></td><td>metadata</td><td>Document metadata for the entity, such as version identifier and lifecycle state.</td><td><code>ixo:Entity</code> → <span class="muted">—</span></td></tr>
 <tr><td><code id="ixo:metrics">ixo:metrics</code></td><td>metrics</td><td>Quantitative metrics describing an entity's activity or impact.</td><td><code>ixo:Profile</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:outcomeIndicator">ixo:outcomeIndicator</code></td><td>outcomeIndicator</td><td>The SDG or custom outcome indicator the claim reports against.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:page">ixo:page</code></td><td>page</td><td>Presentational page content for an entity.</td><td><code>ixo:Page</code> → <span class="muted">—</span></td></tr>
 <tr><td><code id="ixo:pages">ixo:pages</code></td><td>pages</td><td>A collection of presentational pages for an entity.</td><td><code>ixo:Page</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:projectDid">ixo:projectDid</code></td><td>projectDid</td><td>The DID of the project entity the claim is made about or under.</td><td><code>ixo:Claim</code> → <code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:protocol">ixo:protocol</code></td><td>protocol</td><td>The protocol entity that defines and governs the claim or entity.</td><td><code>ixo:Claim</code> → <code>ixo:Entity</code></td></tr>
 <tr><td><code id="ixo:relationship">ixo:relationship</code></td><td>relationship</td><td>The type of relationship between two entities, drawn from the relationships scheme.</td><td><span class="muted">—</span> → <code>skos:Concept</code></td></tr>
 <tr><td><code id="ixo:relayerNode">ixo:relayerNode</code></td><td>relayerNode</td><td>The relayer node entity through which this entity was registered on-chain.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
 <tr><td><code id="ixo:right">ixo:right</code></td><td>right</td><td>The accorded right that governs access to a linked resource.</td><td><code>ixo:LinkedResource</code> → <code>ixo:AccordedRight</code></td></tr>
+<tr><td><code id="ixo:sdgGoal">ixo:sdgGoal</code></td><td>sdgGoal</td><td>The UN Sustainable Development Goal (1–17) the claim contributes to.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
+<tr><td><code id="ixo:sdgTarget">ixo:sdgTarget</code></td><td>sdgTarget</td><td>The UN SDG target (e.g. 3.8) the claim contributes to.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:service">ixo:service</code></td><td>service</td><td>A network endpoint through which this entity's services or data can be accessed.</td><td><code>ixo:Entity</code> → <code>ixo:Service</code></td></tr>
 <tr><td><code id="ixo:serviceEndpoint">ixo:serviceEndpoint</code></td><td>serviceEndpoint</td><td>The URL or address at which a service or linked resource is accessed.</td><td><span class="muted">—</span> → <code>schema:URL</code></td></tr>
+<tr><td><code id="ixo:serviceType">ixo:serviceType</code></td><td>serviceType</td><td>The kind of service delivered, as reported in a claim.</td><td><code>ixo:Claim</code> → <code>xsd:string</code></td></tr>
 <tr><td><code id="ixo:settings">ixo:settings</code></td><td>settings</td><td>Configuration that governs how this entity behaves or is presented.</td><td><code>ixo:Entity</code> → <code>ixo:Settings</code></td></tr>
 <tr><td><code id="ixo:tags">ixo:tags</code></td><td>tags</td><td>Tags categorising an entity or resource.</td><td><span class="muted">—</span> → <span class="muted">—</span></td></tr>
 <tr><td><code id="ixo:tokenName">ixo:tokenName</code></td><td>tokenName</td><td>The display name of an impact token.</td><td><span class="muted">—</span> → <code>xsd:string</code></td></tr>
