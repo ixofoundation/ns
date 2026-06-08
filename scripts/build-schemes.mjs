@@ -82,7 +82,7 @@ const SCHEMES = {
       c('request', 'Request', 'A standalone request entity.', 'request'),
       // asset sub-types
       c('asset-device', 'Device', 'A physical or virtual device represented as an asset, such as a metered cookstove or sensor.', 'asset/device', 'asset'),
-      c('asset-collection', 'Asset Collection', 'A curated group of related assets managed together (also written asset/collection on-chain).', 'asset-collection', 'asset'),
+      c('asset-collection', 'Asset Collection', 'A curated group of related assets managed together.', 'asset/collection', 'asset'),
       c('asset-voucher', 'Voucher', 'An asset redeemable for goods or services.', 'asset/voucher', 'asset'),
       c('asset-impactcredit', 'Impact Credit', 'A unit representing verified environmental or social impact.', 'asset/impactcredit', 'asset'),
       c('asset-coin', 'Coin', 'A digital or physical currency used as a medium of exchange.', 'asset/coin', 'asset'),

@@ -376,10 +376,10 @@
         "@language": "en"
       },
       "skos:definition": {
-        "@value": "A curated group of related assets managed together (also written asset/collection on-chain).",
+        "@value": "A curated group of related assets managed together.",
         "@language": "en"
       },
-      "skos:notation": "asset-collection",
+      "skos:notation": "asset/collection",
       "skos:broader": {
         "@id": "#asset"
       }

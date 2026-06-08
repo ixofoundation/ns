@@ -1,12 +1,4 @@
 {
-  "@context": [
-    "https://w3id.org/ixo/context/v1",
-    {
-      "type": "@type",
-      "@id": "@type",
-      "@version": 1.1
-    }
-  ],
   "relationship": {
     "admin": {
       "description": "Specifies that the entity has administrative control or oversight over the target"

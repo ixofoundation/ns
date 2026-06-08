@@ -1,108 +1,100 @@
 {
-    "@context": [
-        "https://w3id.org/ixo/context/v1",
-        {
-            "type": "@type",
-            "@id": "@type",
-            "@version": 1.1
-        }
-    ],
-    "service": {
-        "apiEndpoint": {
-            "description": "Primary HTTPS API base URL for service interactions.",
-            "fragmentIdentifier": "#api"
-        },
-        "authenticationService": {
-            "description": "A service that provides authentication mechanisms for verifying identity.",
-            "fragmentIdentifier": "#aut"
-        },
-        "blockSync": {
-            "description": "A service that synchronizes blockchain data across nodes.",
-            "fragmentIdentifier": "#blk"
-        },
-        "botService": {
-            "description": "A service operated by automated bots to perform specific tasks.",
-            "fragmentIdentifier": "#bot"
-        },
-        "cellNode": {
-            "description": "A decentralized infrastructure node providing storage or computation services.",
-            "fragmentIdentifier": "#cel"
-        },
-        "chainService": {
-            "description": "A service supporting blockchain-related operations such as transaction handling.",
-            "fragmentIdentifier": "#chn"
-        },
-        "cloudWorker": {
-            "description": "A cloud-based service that performs tasks on behalf of users or systems.",
-            "fragmentIdentifier": "#clw"
-        },
-        "credentialRegistry": {
-            "description": "A service for managing and verifying credentials.",
-            "fragmentIdentifier": "#crd"
-        },
-        "dataSource": {
-            "description": "A service that provides access to specific datasets or data streams.",
-            "fragmentIdentifier": "#dat"
-        },
-        "dax": {
-            "description": "A service for decentralized autonomous exchanges.",
-            "fragmentIdentifier": "#dax"
-        },
-        "decentralizedKnowledgeGraph": {
-            "description": "A service for managing and querying decentralized knowledge graphs.",
-            "fragmentIdentifier": "#dkg"
-        },
-        "exchange": {
-            "description": "A platform for exchanging digital assets or currencies.",
-            "fragmentIdentifier": "#exc"
-        },
-        "explorer": {
-            "description": "A service for exploring blockchain data and transactions.",
-            "fragmentIdentifier": "#exp"
-        },
-        "ipfsGateway": {
-            "description": "A service utilizing the InterPlanetary File System for decentralized file storage.",
-            "fragmentIdentifier": "#ipf"
-        },
-        "linkedDomain": {
-            "description": "A service linking to domains for additional context or functionality.",
-            "fragmentIdentifier": "#ldm"
-        },
-        "matrix": {
-            "description": "A service for hosting and managing Matrix communication servers.",
-            "fragmentIdentifier": "#mhs"
-        },
-        "messagingService": {
-            "description": "A service for sending and receiving messages in a secure or decentralized manner.",
-            "fragmentIdentifier": "#msg"
-        },
-        "modelContextProtocol": {
-            "description": "A service implementing the Model Context Protocol for data modeling and context management.",
-            "fragmentIdentifier": "#mcp"
-        },
-        "objectCapabilityProxy": {
-            "description": "A service that provides object-capability based access control and delegation.",
-            "fragmentIdentifier": "#ocp"
-        },
-        "oracleService": {
-            "description": "A service that provides external data to blockchain-based smart contracts.",
-            "fragmentIdentifier": "#orc"
-        },
-        "rpcEndpoint": {
-            "description": "A service endpoint for gRPC or JSON-RPC communications.",
-            "fragmentIdentifier": "#rpc"
-        },
-        "verifiableDisplaySource": {
-            "description": "A service for displaying verifiable data or credentials.",
-            "fragmentIdentifier": "#vds"
-        },
-        "webService": {
-            "description": "A generic web-based service accessible via standard internet protocols.",
-            "fragmentIdentifier": "#web"
-        },
-        "websocketEndpoint": {
-            "description": "A secure WebSocket endpoint for real-time communications.",
-            "fragmentIdentifier": "#wss"
-        }
+  "service": {
+    "apiEndpoint": {
+      "description": "Primary HTTPS API base URL for service interactions.",
+      "fragmentIdentifier": "#api"
+    },
+    "authenticationService": {
+      "description": "A service that provides authentication mechanisms for verifying identity.",
+      "fragmentIdentifier": "#aut"
+    },
+    "blockSync": {
+      "description": "A service that synchronizes blockchain data across nodes.",
+      "fragmentIdentifier": "#blk"
+    },
+    "botService": {
+      "description": "A service operated by automated bots to perform specific tasks.",
+      "fragmentIdentifier": "#bot"
+    },
+    "cellNode": {
+      "description": "A decentralized infrastructure node providing storage or computation services.",
+      "fragmentIdentifier": "#cel"
+    },
+    "chainService": {
+      "description": "A service supporting blockchain-related operations such as transaction handling.",
+      "fragmentIdentifier": "#chn"
+    },
+    "cloudWorker": {
+      "description": "A cloud-based service that performs tasks on behalf of users or systems.",
+      "fragmentIdentifier": "#clw"
+    },
+    "credentialRegistry": {
+      "description": "A service for managing and verifying credentials.",
+      "fragmentIdentifier": "#crd"
+    },
+    "dataSource": {
+      "description": "A service that provides access to specific datasets or data streams.",
+      "fragmentIdentifier": "#dat"
+    },
+    "dax": {
+      "description": "A service for decentralized autonomous exchanges.",
+      "fragmentIdentifier": "#dax"
+    },
+    "decentralizedKnowledgeGraph": {
+      "description": "A service for managing and querying decentralized knowledge graphs.",
+      "fragmentIdentifier": "#dkg"
+    },
+    "exchange": {
+      "description": "A platform for exchanging digital assets or currencies.",
+      "fragmentIdentifier": "#exc"
+    },
+    "explorer": {
+      "description": "A service for exploring blockchain data and transactions.",
+      "fragmentIdentifier": "#exp"
+    },
+    "ipfsGateway": {
+      "description": "A service utilizing the InterPlanetary File System for decentralized file storage.",
+      "fragmentIdentifier": "#ipf"
+    },
+    "linkedDomain": {
+      "description": "A service linking to domains for additional context or functionality.",
+      "fragmentIdentifier": "#ldm"
+    },
+    "matrix": {
+      "description": "A service for hosting and managing Matrix communication servers.",
+      "fragmentIdentifier": "#mhs"
+    },
+    "messagingService": {
+      "description": "A service for sending and receiving messages in a secure or decentralized manner.",
+      "fragmentIdentifier": "#msg"
+    },
+    "modelContextProtocol": {
+      "description": "A service implementing the Model Context Protocol for data modeling and context management.",
+      "fragmentIdentifier": "#mcp"
+    },
+    "objectCapabilityProxy": {
+      "description": "A service that provides object-capability based access control and delegation.",
+      "fragmentIdentifier": "#ocp"
+    },
+    "oracleService": {
+      "description": "A service that provides external data to blockchain-based smart contracts.",
+      "fragmentIdentifier": "#orc"
+    },
+    "rpcEndpoint": {
+      "description": "A service endpoint for gRPC or JSON-RPC communications.",
+      "fragmentIdentifier": "#rpc"
+    },
+    "verifiableDisplaySource": {
+      "description": "A service for displaying verifiable data or credentials.",
+      "fragmentIdentifier": "#vds"
+    },
+    "webService": {
+      "description": "A generic web-based service accessible via standard internet protocols.",
+      "fragmentIdentifier": "#web"
+    },
+    "websocketEndpoint": {
+      "description": "A secure WebSocket endpoint for real-time communications.",
+      "fragmentIdentifier": "#wss"
     }
+  }
 }
