@@ -10,7 +10,7 @@
       "@id": "https://w3id.org/ixo/protocol/entities/v1",
       "@type": "skos:ConceptScheme",
       "dcterms:title": "IXO Entity Types",
-      "dcterms:description": "Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively.",
+      "dcterms:description": "Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle, group, pod and project (from the legacy tags catalogue) are folded in as skos:broader children, so this is the single scheme for entity kinds and their sub-types.",
       "dcterms:created": "2026-06-04",
       "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityType) + on-chain entity.type values (ixo-mainnet, May 2026)",
       "skos:hasTopConcept": [
@@ -581,7 +581,7 @@
         "@id": "https://w3id.org/ixo/protocol/entities/v1"
       },
       "skos:prefLabel": {
-        "@value": "Subscription",
+        "@value": "Subscription (Deed)",
         "@language": "en"
       },
       "skos:definition": {
@@ -914,6 +914,1963 @@
       "skos:notation": "protocol/flow",
       "skos:broader": {
         "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#asset-de-pin",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "De PIN",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A decentralized Physical Infrastructure Network that provides real-world services or resources through tokenized incentive mechanisms",
+        "@language": "en"
+      },
+      "skos:notation": "asset/dePIN",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-de-pin-battery-electric-vehicle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Battery Electric Vehicle",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An electric vehicle powered by rechargeable fixed or swappable battery packs.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/dePIN/batteryElectricVehicle",
+      "skos:broader": {
+        "@id": "#asset-de-pin"
+      }
+    },
+    {
+      "@id": "#asset-de-pin-clean-cooking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Clean Cooking",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cooking solutions that reduce emissions and improve health outcomes.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/dePIN/cleanCooking",
+      "skos:broader": {
+        "@id": "#asset-de-pin"
+      }
+    },
+    {
+      "@id": "#asset-de-pin-pv-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pv System",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Photovoltaic systems that convert sunlight into electricity.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/dePIN/pvSystem",
+      "skos:broader": {
+        "@id": "#asset-de-pin"
+      }
+    },
+    {
+      "@id": "#asset-impact-credit-carbon-credit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Carbon Credit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A digital representation of carbon credits.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/impactCredit/carbonCredit",
+      "skos:broader": {
+        "@id": "#asset-impactcredit"
+      }
+    },
+    {
+      "@id": "#asset-impact-credit-water-credit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Water Credit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A digital representation of water credits.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/impactCredit/waterCredit",
+      "skos:broader": {
+        "@id": "#asset-impactcredit"
+      }
+    },
+    {
+      "@id": "#asset-voucher-bean-voucher",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bean Voucher",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A voucher representing a bag of fortified beans.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/voucher/beanVoucher",
+      "skos:broader": {
+        "@id": "#asset-voucher"
+      }
+    },
+    {
+      "@id": "#dao-organisation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Organisation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An organisation",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-organisation-cooperative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cooperative",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO operating as a cooperative, owned and managed by its members for mutual benefit",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/cooperative",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-company",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Company",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A legally registered business entity that operates for profit",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/company",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-hybrid-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Hybrid Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO combining elements of profit and non-profit structures for diversified objectives",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/hybridOrganization",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-liechtenstein-venture-cooperative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Liechtenstein Venture Cooperative",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/liechtensteinVentureCooperative",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-non-government-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Non Government Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO operating as a non-governmental entity to address social, cultural, or environmental issues",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/nonGovernmentOrganization",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-non-profit-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Non Profit Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A business-oriented DAO focused on achieving social or environmental objectives rather than profit",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/nonProfitOrganization",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-public-benefit-corporation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Public Benefit Corporation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO that operates as a public benefit corporation with a focus on public interest",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/publicBenefitCorporation",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-organisation-social-enterprise",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Social Enterprise",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on addressing social challenges while maintaining financial sustainability",
+        "@language": "en"
+      },
+      "skos:notation": "dao/organisation/socialEnterprise",
+      "skos:broader": {
+        "@id": "#dao-organisation"
+      }
+    },
+    {
+      "@id": "#dao-chain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Chain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO managing or operating a blockchain network",
+        "@language": "en"
+      },
+      "skos:notation": "dao/chain",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-chain-validator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Validator",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO serving as a validator within a blockchain network",
+        "@language": "en"
+      },
+      "skos:notation": "dao/chain/validator",
+      "skos:broader": {
+        "@id": "#dao-chain"
+      }
+    },
+    {
+      "@id": "#dao-community",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Community",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO centered around a specific community for collective action or resource sharing",
+        "@language": "en"
+      },
+      "skos:notation": "dao/community",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-developer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Developer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO supporting software developers and technical projects",
+        "@language": "en"
+      },
+      "skos:notation": "dao/developer",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-funding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Funding",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO dedicated to allocating and managing funds for various purposes",
+        "@language": "en"
+      },
+      "skos:notation": "dao/funding",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-investment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investment (Dao)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on managing investments and funding opportunities",
+        "@language": "en"
+      },
+      "skos:notation": "dao/investment",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-market-relayer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Market Relayer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO facilitating market transactions and providing liquidity",
+        "@language": "en"
+      },
+      "skos:notation": "dao/marketRelayer",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-market-place",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Market Place",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets.",
+        "@language": "en"
+      },
+      "skos:notation": "dao/marketPlace",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Product",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on the development, management, and governance of a particular product or set of products",
+        "@language": "en"
+      },
+      "skos:notation": "dao/product",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-research",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Research (Dao)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on conducting and supporting research activities",
+        "@language": "en"
+      },
+      "skos:notation": "dao/research",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#deed-flow-identity",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Identity (Flow)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A flow that establishes, verifies, or manages identities and their attributes",
+        "@language": "en"
+      },
+      "skos:notation": "deed/flow/identity",
+      "skos:broader": {
+        "@id": "#deed-flow"
+      }
+    },
+    {
+      "@id": "#deed-flow-governance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Governance (Flow)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization",
+        "@language": "en"
+      },
+      "skos:notation": "deed/flow/governance",
+      "skos:broader": {
+        "@id": "#deed-flow"
+      }
+    },
+    {
+      "@id": "#deed-flow-payout",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payout",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A flow that coordinates the calculation, approval, and distribution of payments or rewards",
+        "@language": "en"
+      },
+      "skos:notation": "deed/flow/payout",
+      "skos:broader": {
+        "@id": "#deed-flow"
+      }
+    },
+    {
+      "@id": "#deed-flow-domain-creation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Domain Creation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A flow that creates and configures new domains, including their governance, permissions, and resources",
+        "@language": "en"
+      },
+      "skos:notation": "deed/flow/domainCreation",
+      "skos:broader": {
+        "@id": "#deed-flow"
+      }
+    },
+    {
+      "@id": "#deed-proposal-membership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Membership (Proposal)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for managing members",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/membership",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-proposal-governance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Governance (Proposal)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for managing domain governance",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/governance",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-proposal-smart-contract",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Smart Contract",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for managing domain smart contracts",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/smartContract",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-proposal-financial",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Financial",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for managing domain financial resources",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/financial",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-proposal-staking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Staking",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for managing domain staking",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/staking",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-proposal-domain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Domain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A proposal for creating and managing domains",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal/domain",
+      "skos:broader": {
+        "@id": "#deed-proposal"
+      }
+    },
+    {
+      "@id": "#deed-request-ambassador",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ambassador",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request to serve as an ambassedor for an organisation",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/ambassador",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-environmental-steward",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Environmental Steward",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request to serve as a protector and manager of environmental resources",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/environmentalSteward",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-facilitator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Facilitator",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request to guide and enable processes or interactions between parties",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/facilitator",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-payment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payment (Request)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request for payment",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/payment",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-market-solutions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Market Solutions",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Configurations of IXO tools for specific use-cases or sectors.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/marketSolutions",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-marketing-and-adoption",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Marketing And Adoption",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Campaigns, communications assets, and onboarding flows to grow user and developer adoption.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/marketingAndAdoption",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-platform-integration",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Platform Integration",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/platformIntegration",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-product-enhancements",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Product Enhancements",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Core protocol or app-level improvements.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/productEnhancements",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request for a specific service to be provided",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/service",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-strategic-projects",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Strategic Projects",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "High-value internal or partner initiatives.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/strategicProjects",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#deed-request-work-placement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Work Placement (Request)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A request for practical work experience or professional training position",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request/workPlacement",
+      "skos:broader": {
+        "@id": "#deed-request"
+      }
+    },
+    {
+      "@id": "#oracle-subscription",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Subscription (Oracle)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An oracle that provides continuous access to data feeds or information streams through a subscription model",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/subscription",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-participation-of-people",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Participation Of People",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Involves human oversight in decision-making processes",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/participationOfPeople",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-pathfinding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pathfinding",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guides users through complex decision-making processes",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/pathfinding",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-pattern-recognition",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pattern Recognition",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Identifies patterns in data to inform decision-making and optimize strategies",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/patternRecognition",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-payment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payment (Oracle)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Automates payments based on impact goal achievements, using smart contracts to streamline transactions",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/payment",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-performance-monitoring",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Performance Monitoring",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tracks project performance in real-time, providing feedback and analytics",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/performanceMonitoring",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-personalization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Personalization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tailors interactions and recommendations to individual users, enhancing user experience",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/personalization",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Planning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Supports strategic planning by predicting trends and resource needs",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/planning",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-policy-enforcement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Policy Enforcement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures compliance with policies and regulations, enforcing rules automatically",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/policyEnforcement",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-portfolio-management",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Portfolio Management",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Manages and optimizes project portfolios for strategic goals",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/portfolioManagement",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-positioning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Positioning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Determines optimal placement of resources and interventions within the ecosystem",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/positioning",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-prescribing-interventions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prescribing Interventions",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Recommends actions based on data analysis to guide stakeholders towards effective strategies",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/prescribingInterventions",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-prevention-of-risks",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prevention Of Risks",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Anticipates and mitigates potential risks to keep projects on track",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/preventionOfRisks",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-privacy-protection",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Privacy Protection",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Safeguards sensitive information and ensures compliance with regulations",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/privacyProtection",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-problem-detection-and-resolution",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Problem Detection And Resolution",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Monitors systems for potential issues, enabling early detection and resolution",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/problemDetectionAndResolution",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-process-optimization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Process Optimization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Enhances operational efficiency by automating tasks and streamlining workflows",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/processOptimization",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-profiling",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Profiling",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Creates detailed profiles of users and projects for accurate targeting of interventions",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/profiling",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-proofing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Proofing",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/proofing",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#oracle-protocol-adherence",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Protocol Adherence",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures compliance with predefined protocols for consistency and reliability",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/protocolAdherence",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#group-membership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Membership (Group)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees.",
+        "@language": "en"
+      },
+      "skos:notation": "group/membership",
+      "skos:broader": {
+        "@id": "#group"
+      }
+    },
+    {
+      "@id": "#group-custodians",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Custodians",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions.",
+        "@language": "en"
+      },
+      "skos:notation": "group/custodians",
+      "skos:broader": {
+        "@id": "#group"
+      }
+    },
+    {
+      "@id": "#group-security",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Security",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO.",
+        "@language": "en"
+      },
+      "skos:notation": "group/security",
+      "skos:broader": {
+        "@id": "#group"
+      }
+    },
+    {
+      "@id": "#group-finance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Finance (Group)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting.",
+        "@language": "en"
+      },
+      "skos:notation": "group/finance",
+      "skos:broader": {
+        "@id": "#group"
+      }
+    },
+    {
+      "@id": "#group-operations",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Operations",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows.",
+        "@language": "en"
+      },
+      "skos:notation": "group/operations",
+      "skos:broader": {
+        "@id": "#group"
+      }
+    },
+    {
+      "@id": "#pod-agriculture",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Agriculture",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/agriculture",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-community-social-impact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Community Social Impact",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/communitySocialImpact",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-education",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Education",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/education",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-energy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Energy",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/energy",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-enterprise",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Enterprise",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/enterprise",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-environmental-conservation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Environmental Conservation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/environmentalConservation",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-finance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Finance (Pod)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/finance",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-governance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Governance (Pod)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/governance",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-research",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Research (Pod)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/research",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-sme",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Sme",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that",
+        "@language": "en"
+      },
+      "skos:notation": "pod/sme",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#pod-urban-planning-and-infrastructure",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Urban Planning And Infrastructure",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way.",
+        "@language": "en"
+      },
+      "skos:notation": "pod/urbanPlanningAndInfrastructure",
+      "skos:broader": {
+        "@id": "#pod"
+      }
+    },
+    {
+      "@id": "#project-accreditation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Accreditation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focused on certifying that an entity or individual meets specific standards or qualifications",
+        "@language": "en"
+      },
+      "skos:notation": "project/accreditation",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-behaviour-change",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Behaviour Change",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project designed to influence and modify behaviors to achieve desired outcomes or impacts",
+        "@language": "en"
+      },
+      "skos:notation": "project/behaviourChange",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-circular-economy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Circular Economy",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project aimed at promoting resource efficiency, waste reduction, and sustainable economic practices",
+        "@language": "en"
+      },
+      "skos:notation": "project/circularEconomy",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-civic-action",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Civic Action",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project that engages citizens in collective efforts to address community or societal issues",
+        "@language": "en"
+      },
+      "skos:notation": "project/civicAction",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-course",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Course",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project that designs, delivers, and manages structured training programs or courses for learners",
+        "@language": "en"
+      },
+      "skos:notation": "project/course",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-development",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Development",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project providing software development services, including design, implementation, testing, and maintenance of software solutions",
+        "@language": "en"
+      },
+      "skos:notation": "project/development",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-education-and-awareness",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Education And Awareness",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focused on educating and raising awareness about specific topics or issues",
+        "@language": "en"
+      },
+      "skos:notation": "project/educationAndAwareness",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-environmental-monitoring",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Environmental Monitoring",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project that observes, collects, and analyzes data to assess environmental conditions and changes",
+        "@language": "en"
+      },
+      "skos:notation": "project/environmentalMonitoring",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-esg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Esg",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project addressing Environmental, Social, and Governance factors to ensure sustainability and ethical impact",
+        "@language": "en"
+      },
+      "skos:notation": "project/esg",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-esg-cosmos-monitoring",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cosmos Monitoring",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focusing on the sustainable development in Space and on Earth.",
+        "@language": "en"
+      },
+      "skos:notation": "project/esg/cosmosMonitoring",
+      "skos:broader": {
+        "@id": "#project-esg"
+      }
+    },
+    {
+      "@id": "#project-identity",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Identity (Project)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project related to establishing, managing, or verifying individual or organizational identities",
+        "@language": "en"
+      },
+      "skos:notation": "project/identity",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-impact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Impact",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project designed to create, measure, and verify positive social or environmental outcomes with tangible results",
+        "@language": "en"
+      },
+      "skos:notation": "project/impact",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-immune-cell",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Immune Cell",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project involving the study, application, or enhancement of immune cell functions and interactions",
+        "@language": "en"
+      },
+      "skos:notation": "project/immuneCell",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-mitigation-activity",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Mitigation Activity",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project aimed at reducing the severity or impact of specific risks or issues, such as climate change",
+        "@language": "en"
+      },
+      "skos:notation": "project/mitigationActivity",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-mitigation-activity-mecs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Mecs",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project promoting Modern Energy Cooking Services, designed to improve cooking efficiency and reduce reliance on traditional biomass fuels",
+        "@language": "en"
+      },
+      "skos:notation": "project/mitigationActivity/mecs",
+      "skos:broader": {
+        "@id": "#project-mitigation-activity"
+      }
+    },
+    {
+      "@id": "#project-mitigation-activity-solar-pv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Solar PV",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focusing on the implementation and use of solar photovoltaic systems to generate clean and renewable energy",
+        "@language": "en"
+      },
+      "skos:notation": "project/mitigationActivity/solarPV",
+      "skos:broader": {
+        "@id": "#project-mitigation-activity"
+      }
+    },
+    {
+      "@id": "#project-mitigation-activity-mobility",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Mobility",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focused on the development, implementation, or promotion of sustainable mobility solutions",
+        "@language": "en"
+      },
+      "skos:notation": "project/mitigationActivity/mobility",
+      "skos:broader": {
+        "@id": "#project-mitigation-activity"
+      }
+    },
+    {
+      "@id": "#project-oracle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle (Project)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project involving systems that provide data integrity, insights, or automation for decision-making processes",
+        "@language": "en"
+      },
+      "skos:notation": "project/oracle",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-place",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Place",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focusing on a specific geographic place",
+        "@language": "en"
+      },
+      "skos:notation": "project/place",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-relayer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Relayer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project focused on facilitating communication or transactions between different systems or networks",
+        "@language": "en"
+      },
+      "skos:notation": "project/relayer",
+      "skos:broader": {
+        "@id": "#project"
+      }
+    },
+    {
+      "@id": "#project-work-placement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Work Placement (Project)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A project providing practical work experiences to individuals in professional environments",
+        "@language": "en"
+      },
+      "skos:notation": "project/workPlacement",
+      "skos:broader": {
+        "@id": "#project"
       }
     }
   ]

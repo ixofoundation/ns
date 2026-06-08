@@ -48,9 +48,13 @@ function enumToConcepts(node, parentId, parentNotation, out = []) {
 function disambiguateLabels(concepts) {
   const count = new Map();
   for (const x of concepts) count.set(x.label, (count.get(x.label) || 0) + 1);
-  const labelById = new Map(concepts.map((x) => [x.id, x.label]));
+  const byId = new Map(concepts.map((x) => [x.id, x]));
   for (const x of concepts) {
-    if (count.get(x.label) > 1 && x.broader && labelById.has(x.broader)) x.label = `${x.label} (${labelById.get(x.broader)})`;
+    if (count.get(x.label) > 1 && x.broader && byId.has(x.broader)) {
+      const p = byId.get(x.broader);
+      const q = humanize(String(p.notation || '').split('/').pop() || '') || p.label;
+      x.label = `${x.label} (${q})`;
+    }
   }
   return concepts;
 }
@@ -58,7 +62,7 @@ function disambiguateLabels(concepts) {
 const SCHEMES = {
   'entity-types': {
     title: 'IXO Entity Types',
-    description: 'Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively.',
+    description: 'Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle, group, pod and project (from the legacy tags catalogue) are folded in as skos:broader children, so this is the single scheme for entity kinds and their sub-types.',
     source: `${WEBCLIENT} (EntityType) + on-chain entity.type values (ixo-mainnet, May 2026)`,
     concepts: [
       c('project', 'Project', 'A planned undertaking coordinating resources and activities toward defined goals and measurable outcomes.', 'project'),
@@ -527,28 +531,61 @@ const baseFor = (rel) => 'https://w3id.org/ixo/' + rel.replace(/\.(json|jsonld)$
 
 // Salvaged legacy enums (review item P4): broken, 0-triple legacy catalogues rebuilt
 // as proper SKOS schemes. Source data in scripts/salvaged.data.json (keys match).
+// NB: the legacy data files (protocol/blockchain-account/v1, …/linked-resources/v1/format.json,
+// protocol/metric/v1, protocol/tags/v1) are dereferenced by the studio survey-choices API via
+// ?path=<key>, so they STAY in place as plain JSON. These SKOS schemes are their semantic
+// companions. (The entity sub-type groupings from tags are NOT here — they fold into the
+// entity-types scheme instead; see ENTITY_SUBTYPE_SCHEMES / foldSubtypes below.)
 const SALVAGED = {
-  // NB: the legacy data files (protocol/blockchain-account/v1, …/linked-resources/v1/format.json,
-  // protocol/metric/v1, protocol/tags/v1) are dereferenced by the studio survey-choices API via
-  // ?path=<key>, so they STAY in place as plain JSON. These SKOS schemes are the semantic
-  // companions, published at distinct *-types / *-formats paths.
   'blockchain-account-types': { legacy: 'protocol/blockchain-account-types/v1/index.json', title: 'IXO Blockchain Account Types', description: 'Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/blockchain-account/v1 (rebuilt as SKOS)' },
   'media-formats': { legacy: 'protocol/media-formats/v1/index.json', title: 'IXO Linked-Resource Media Formats', description: 'IANA media types used for the format / encoding of a linked resource. Notation is the media type. Semantic companion to the protocol/linked-resources/v1/format.json survey-data file.', source: 'legacy ixofoundation/ns protocol/linked-resources/v1/format.json (rebuilt as SKOS)' },
   'metric-types': { legacy: 'protocol/metric-types/v1/index.json', title: 'IXO Metric Types', description: 'Kinds of quantitative metric tracked for an entity, such as units issued. Semantic companion to the protocol/metric/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/metric/v1 (rebuilt as SKOS)' },
-  'asset-types': { legacy: 'protocol/asset-types/v1/index.json', title: 'IXO Asset Types', description: 'Kinds of asset entity on the IXO Spatial Web. Sub-types specialise a family (slash notation).', source: 'legacy ixofoundation/ns protocol/tags assetType (rebuilt as SKOS)' },
-  'dao-types': { legacy: 'protocol/dao-types/v1/index.json', title: 'IXO DAO Types', description: 'Kinds of DAO entity, with organisational sub-types.', source: 'legacy ixofoundation/ns protocol/tags daoType (rebuilt as SKOS)' },
-  'deed-types': { legacy: 'protocol/deed-types/v1/index.json', title: 'IXO Deed Types', description: 'Kinds of deed (flow / offer / proposal / request / subscription) and their sub-types.', source: 'legacy ixofoundation/ns protocol/tags deedType (rebuilt as SKOS)' },
-  'oracle-types': { legacy: 'protocol/oracle-types/v1/index.json', title: 'IXO Oracle Types', description: 'Kinds of oracle service. Complements protocol/oracle-capabilities/v1 (the P-Function capability families).', source: 'legacy ixofoundation/ns protocol/tags oracleType (rebuilt as SKOS)' },
-  'group-types': { legacy: 'protocol/group-types/v1/index.json', title: 'IXO Group Types', description: 'Kinds of governance group within a DAO or organisation.', source: 'legacy ixofoundation/ns protocol/tags groupType (rebuilt as SKOS)' },
-  'pod-types': { legacy: 'protocol/pod-types/v1/index.json', title: 'IXO POD Types', description: 'Sectors of Protocol-Oriented Domain (POD).', source: 'legacy ixofoundation/ns protocol/tags podType (rebuilt as SKOS)' },
-  'project-types': { legacy: 'protocol/project-types/v1/index.json', title: 'IXO Project Types', description: 'Kinds of project entity, with sub-types for specific domains.', source: 'legacy ixofoundation/ns protocol/tags projectType (rebuilt as SKOS)' },
 };
+
+// Entity sub-type taxonomies (from the legacy protocol/tags groupings) fold directly
+// into the entity-types scheme as skos:broader children of their kind, so entities/v1
+// is the single source of truth for "what kinds of entity exist and their sub-types".
+// Keys → salvaged.data.json.
+const ENTITY_SUBTYPE_SCHEMES = {
+  asset: 'asset-types', dao: 'dao-types', deed: 'deed-types', oracle: 'oracle-types',
+  group: 'group-types', pod: 'pod-types', project: 'project-types',
+};
+
+// Merge salvaged sub-type trees under their entity kind, de-duplicating against the
+// curated sub-types already in the entity-types scheme by case/separator-insensitive
+// id (e.g. salvaged "impactCredit" ≡ curated "asset/impactcredit"), remapping a
+// skipped parent's children onto the kept concept.
+function foldSubtypes(base, salvaged) {
+  const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+  const canonId = new Map(base.map((x) => [norm(x.id), x.id]));
+  const canonNota = new Map(base.filter((x) => x.notation != null).map((x) => [norm(x.notation), x.id]));
+  const out = [...base];
+  for (const [kind, key] of Object.entries(ENTITY_SUBTYPE_SCHEMES)) {
+    if (!salvaged[key]) continue;
+    const remap = new Map();
+    for (const x of enumToConcepts(salvaged[key], kind, kind, [])) {
+      const nId = norm(x.id), nNota = norm(x.notation);
+      const dup = canonId.get(nId) ?? canonNota.get(nNota); // same concept by id OR by notation
+      if (dup) { remap.set(x.id, dup); continue; }
+      if (x.broader && remap.has(x.broader)) x.broader = remap.get(x.broader);
+      out.push(x);
+      canonId.set(nId, x.id);
+      canonNota.set(nNota, x.id);
+      remap.set(x.id, x.id);
+    }
+  }
+  return out;
+}
 
 async function main() {
   let total = 0;
+  const salvaged = JSON.parse(await readFile(path.join(HERE, 'salvaged.data.json'), 'utf8'));
   const order = [...Object.keys(SCHEMES), 'countries'];
   for (const slug of order) {
-    const concepts = slug === 'countries' ? await countryConcepts() : SCHEMES[slug].concepts;
+    const concepts = slug === 'countries' ? await countryConcepts()
+      : slug === 'entity-types' ? disambiguateLabels(foldSubtypes(SCHEMES[slug].concepts, salvaged))
+      : SCHEMES[slug].concepts;
+    if (slug !== 'countries') { const ids = concepts.map((x) => x.id); if (new Set(ids).size !== ids.length) throw new Error(`duplicate concept id in ${slug}`); }
     const meta = slug === 'countries'
       ? { title: 'IXO Country Codes', description: 'Countries and regions, keyed by ISO 3166-1 alpha-2 code. Includes the non-standard AA "Global" pseudo-code used on the IXO Spatial Web. Each concept skos:closeMatch-es a name-derived DBpedia resource.', source: 'ISO 3166-1 alpha-2; refactored from the legacy vocab/v1/countries.json', conformsTo: 'https://www.iso.org/iso-3166-country-codes.html' }
       : SCHEMES[slug];
@@ -562,7 +599,6 @@ async function main() {
   }
 
   // Salvaged legacy enums → SKOS (review item P4).
-  const salvaged = JSON.parse(await readFile(path.join(HERE, 'salvaged.data.json'), 'utf8'));
   for (const [slug, meta] of Object.entries(SALVAGED)) {
     const concepts = disambiguateLabels(enumToConcepts(salvaged[slug]));
     const ids = concepts.map((x) => x.id);

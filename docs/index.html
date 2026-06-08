@@ -14,7 +14,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <body><div class="wrap">
 <h1>IXO Namespace</h1>
 <p class="lead">Human-readable documentation for the IXO Spatial Web namespace — the core RDFS/OWL vocabulary and the SKOS concept schemes published under <code>https://w3id.org/ixo/</code>. Machine clients receive JSON-LD from the same IRIs via content negotiation.</p>
-<p class="muted">Vocabulary: <a href="https://w3id.org/ixo/vocab/v1">vocab/v1</a> · Context: <a href="https://w3id.org/ixo/context/v1">context/v1</a> · 38 classes · 46 properties · 30 concept schemes</p>
+<p class="muted">Vocabulary: <a href="https://w3id.org/ixo/vocab/v1">vocab/v1</a> · Context: <a href="https://w3id.org/ixo/context/v1">context/v1</a> · 38 classes · 46 properties · 23 concept schemes</p>
 
 <h2 id="vocabulary">Core vocabulary</h2>
 <h3>Classes <span class="pill">38</span></h3>
@@ -106,8 +106,8 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code id="ixo:verificationMethod">ixo:verificationMethod</code></td><td>verificationMethod</td><td>A cryptographic key or method that can be used to authenticate or authorise actions for this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
 <tr><td><code id="ixo:versionId">ixo:versionId</code></td><td>versionId</td><td>The version identifier of the entity document.</td><td><span class="muted">—</span> → <code>xsd:string</code></td></tr></tbody></table>
 
-<h2 id="schemes">Concept schemes <span class="pill">30</span></h2>
-<ul class="toc"><li><a href="#scheme-v1">IXO Accorded Right Types</a> <span class="muted">(11)</span></li><li><a href="#scheme-v1">IXO Agent Roles</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Asset Types</a> <span class="muted">(14)</span></li><li><a href="#scheme-v1">IXO Blockchain Account Types</a> <span class="muted">(40)</span></li><li><a href="#scheme-v1">IXO Claim Types</a> <span class="muted">(24)</span></li><li><a href="#scheme-countries">IXO Country Codes</a> <span class="muted">(250)</span></li><li><a href="#scheme-v1">IXO Credential Types</a> <span class="muted">(14)</span></li><li><a href="#scheme-v1">IXO DAO Types</a> <span class="muted">(19)</span></li><li><a href="#scheme-v1">IXO Deed Types</a> <span class="muted">(26)</span></li><li><a href="#scheme-v1">IXO Entity Stage</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Entity Status</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Entity Types</a> <span class="muted">(45)</span></li><li><a href="#scheme-v1">IXO Entity View</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Evaluation Codes</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Group Types</a> <span class="muted">(5)</span></li><li><a href="#scheme-v1">IXO Linked Resource Types</a> <span class="muted">(27)</span></li><li><a href="#scheme-v1">IXO Linked-Resource Media Formats</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Liquidity Sources</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Metric Types</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Node Types</a> <span class="muted">(15)</span></li><li><a href="#scheme-v1">IXO Oracle Capabilities (P-Functions)</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Oracle Types</a> <span class="muted">(20)</span></li><li><a href="#scheme-v1">IXO Page View</a> <span class="muted">(3)</span></li><li><a href="#scheme-v1">IXO Payment Denominations</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Payment Types</a> <span class="muted">(9)</span></li><li><a href="#scheme-v1">IXO POD Types</a> <span class="muted">(11)</span></li><li><a href="#scheme-v1">IXO Project Types</a> <span class="muted">(21)</span></li><li><a href="#scheme-v1">IXO Relationship Types</a> <span class="muted">(22)</span></li><li><a href="#scheme-v1">IXO Slashing Conditions</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Stake Types</a> <span class="muted">(9)</span></li></ul>
+<h2 id="schemes">Concept schemes <span class="pill">23</span></h2>
+<ul class="toc"><li><a href="#scheme-v1">IXO Accorded Right Types</a> <span class="muted">(11)</span></li><li><a href="#scheme-v1">IXO Agent Roles</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Blockchain Account Types</a> <span class="muted">(40)</span></li><li><a href="#scheme-v1">IXO Claim Types</a> <span class="muted">(24)</span></li><li><a href="#scheme-countries">IXO Country Codes</a> <span class="muted">(250)</span></li><li><a href="#scheme-v1">IXO Credential Types</a> <span class="muted">(14)</span></li><li><a href="#scheme-v1">IXO Entity Stage</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Entity Status</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Entity Types</a> <span class="muted">(148)</span></li><li><a href="#scheme-v1">IXO Entity View</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Evaluation Codes</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Linked Resource Types</a> <span class="muted">(27)</span></li><li><a href="#scheme-v1">IXO Linked-Resource Media Formats</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Liquidity Sources</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Metric Types</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Node Types</a> <span class="muted">(15)</span></li><li><a href="#scheme-v1">IXO Oracle Capabilities (P-Functions)</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Page View</a> <span class="muted">(3)</span></li><li><a href="#scheme-v1">IXO Payment Denominations</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Payment Types</a> <span class="muted">(9)</span></li><li><a href="#scheme-v1">IXO Relationship Types</a> <span class="muted">(22)</span></li><li><a href="#scheme-v1">IXO Slashing Conditions</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Stake Types</a> <span class="muted">(9)</span></li></ul>
 <h3 id="scheme-v1">IXO Accorded Right Types <span class="pill">11</span></h3>
 <p class="muted">Kinds of right or capability granted in relation to an entity via the accordedRight property.<br><code>https://w3id.org/ixo/protocol/accorded-rights/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -129,23 +129,6 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>EA</code></td><td>Evaluator</td><td>An agent that evaluates claims (evaluation agent).</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>SA</code></td><td>Service Provider</td><td>An agent that provides services (service agent).</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>IA</code></td><td>Investor</td><td>An agent that invests in an entity (investor agent).</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Asset Types <span class="pill">14</span></h3>
-<p class="muted">Kinds of asset entity on the IXO Spatial Web. Sub-types specialise a family (slash notation).<br><code>https://w3id.org/ixo/protocol/asset-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>coin</code></td><td>Coin</td><td>A digital currency issued by a DAO or blockchain network, representing a unit of value that can be used for transactions and stored in digital wallets.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>collection</code></td><td>Collection</td><td>A collection of digital assets, such as NFTs, that are grouped together for a specific purpose or theme.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>data</code></td><td>Data</td><td>A digital representation of data, such as financial data, scientific data, or other types of data that can be stored and shared in a decentralized manner.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>dePIN</code></td><td>De PIN</td><td>A decentralized Physical Infrastructure Network that provides real-world services or resources through tokenized incentive mechanisms</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>dePIN/batteryElectricVehicle</code></td><td>Battery Electric Vehicle</td><td>An electric vehicle powered by rechargeable fixed or swappable battery packs.</td><td><code>#de-pin</code></td></tr>
-<tr><td><code>dePIN/cleanCooking</code></td><td>Clean Cooking</td><td>Cooking solutions that reduce emissions and improve health outcomes.</td><td><code>#de-pin</code></td></tr>
-<tr><td><code>dePIN/pvSystem</code></td><td>Pv System</td><td>Photovoltaic systems that convert sunlight into electricity.</td><td><code>#de-pin</code></td></tr>
-<tr><td><code>impactCredit</code></td><td>Impact Credit</td><td>A digital representation of a real-world impact, such as carbon credits or social impact credits.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>impactCredit/carbonCredit</code></td><td>Carbon Credit</td><td>A digital representation of carbon credits.</td><td><code>#impact-credit</code></td></tr>
-<tr><td><code>impactCredit/waterCredit</code></td><td>Water Credit</td><td>A digital representation of water credits.</td><td><code>#impact-credit</code></td></tr>
-<tr><td><code>learnership</code></td><td>Learnership</td><td>A digital or physical learning program or opportunity that can be purchased or earned through participation in a DAO or blockchain network.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>membershipAsset</code></td><td>Membership Asset</td><td>An asset signifying membership rights or privileges within a group, organization, or service.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>voucher</code></td><td>Voucher</td><td>An asset representing a voucher exchangeable for goods or services</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>voucher/beanVoucher</code></td><td>Bean Voucher</td><td>A voucher representing a bag of fortified beans.</td><td><code>#voucher</code></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Blockchain Account Types <span class="pill">40</span></h3>
 <p class="muted">Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.<br><code>https://w3id.org/ixo/protocol/blockchain-account-types/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -486,57 +469,6 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>verifiedEmissionsReduction</code></td><td>Verified Emissions Reduction</td><td>A credential certifying the verified reduction of greenhouse gas emissions through specific projects.</td><td><code>#verifiableCredential</code></td></tr>
 <tr><td><code>AdministratorCredential</code></td><td>Administrator</td><td>A credential designating an administrator of an entity.</td><td><code>#verifiableCredential</code></td></tr>
 <tr><td><code>CreatorCredential</code></td><td>Creator</td><td>A credential designating the creator of an entity.</td><td><code>#verifiableCredential</code></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO DAO Types <span class="pill">19</span></h3>
-<p class="muted">Kinds of DAO entity, with organisational sub-types.<br><code>https://w3id.org/ixo/protocol/dao-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>organisation</code></td><td>Organisation</td><td>An organisation</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>organisation/cooperative</code></td><td>Cooperative</td><td>A DAO operating as a cooperative, owned and managed by its members for mutual benefit</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/company</code></td><td>Company</td><td>A legally registered business entity that operates for profit</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/hybridOrganization</code></td><td>Hybrid Organization</td><td>A DAO combining elements of profit and non-profit structures for diversified objectives</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/liechtensteinVentureCooperative</code></td><td>Liechtenstein Venture Cooperative</td><td>A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/nonGovernmentOrganization</code></td><td>Non Government Organization</td><td>A DAO operating as a non-governmental entity to address social, cultural, or environmental issues</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/nonProfitOrganization</code></td><td>Non Profit Organization</td><td>A business-oriented DAO focused on achieving social or environmental objectives rather than profit</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/publicBenefitCorporation</code></td><td>Public Benefit Corporation</td><td>A DAO that operates as a public benefit corporation with a focus on public interest</td><td><code>#organisation</code></td></tr>
-<tr><td><code>organisation/socialEnterprise</code></td><td>Social Enterprise</td><td>A DAO focused on addressing social challenges while maintaining financial sustainability</td><td><code>#organisation</code></td></tr>
-<tr><td><code>chain</code></td><td>Chain</td><td>A DAO managing or operating a blockchain network</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>chain/validator</code></td><td>Validator</td><td>A DAO serving as a validator within a blockchain network</td><td><code>#chain</code></td></tr>
-<tr><td><code>community</code></td><td>Community</td><td>A DAO centered around a specific community for collective action or resource sharing</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>developer</code></td><td>Developer</td><td>A DAO supporting software developers and technical projects</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>funding</code></td><td>Funding</td><td>A DAO dedicated to allocating and managing funds for various purposes</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>investment</code></td><td>Investment</td><td>A DAO focused on managing investments and funding opportunities</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>marketRelayer</code></td><td>Market Relayer</td><td>A DAO facilitating market transactions and providing liquidity</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>marketPlace</code></td><td>Market Place</td><td>A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>product</code></td><td>Product</td><td>A DAO focused on the development, management, and governance of a particular product or set of products</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>research</code></td><td>Research</td><td>A DAO focused on conducting and supporting research activities</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Deed Types <span class="pill">26</span></h3>
-<p class="muted">Kinds of deed (flow / offer / proposal / request / subscription) and their sub-types.<br><code>https://w3id.org/ixo/protocol/deed-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>flow</code></td><td>Flow</td><td>An intent-driven workflow that defines and enables the coordination of a piece of work—or a business process—from start to finish</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>flow/identity</code></td><td>Identity</td><td>A flow that establishes, verifies, or manages identities and their attributes</td><td><code>#flow</code></td></tr>
-<tr><td><code>flow/governance</code></td><td>Governance (Flow)</td><td>A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization</td><td><code>#flow</code></td></tr>
-<tr><td><code>flow/payout</code></td><td>Payout</td><td>A flow that coordinates the calculation, approval, and distribution of payments or rewards</td><td><code>#flow</code></td></tr>
-<tr><td><code>flow/domainCreation</code></td><td>Domain Creation</td><td>A flow that creates and configures new domains, including their governance, permissions, and resources</td><td><code>#flow</code></td></tr>
-<tr><td><code>offer</code></td><td>Offer</td><td>A deed representing a formal expression of willingness to provide or do something</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>proposal</code></td><td>Proposal</td><td>A deed that outlines a suggested plan or action for consideration and approval</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>proposal/membership</code></td><td>Membership</td><td>A proposal for managing members</td><td><code>#proposal</code></td></tr>
-<tr><td><code>proposal/governance</code></td><td>Governance (Proposal)</td><td>A proposal for managing domain governance</td><td><code>#proposal</code></td></tr>
-<tr><td><code>proposal/smartContract</code></td><td>Smart Contract</td><td>A proposal for managing domain smart contracts</td><td><code>#proposal</code></td></tr>
-<tr><td><code>proposal/financial</code></td><td>Financial</td><td>A proposal for managing domain financial resources</td><td><code>#proposal</code></td></tr>
-<tr><td><code>proposal/staking</code></td><td>Staking</td><td>A proposal for managing domain staking</td><td><code>#proposal</code></td></tr>
-<tr><td><code>proposal/domain</code></td><td>Domain</td><td>A proposal for creating and managing domains</td><td><code>#proposal</code></td></tr>
-<tr><td><code>request</code></td><td>Request</td><td>A deed detailing an appeal or demand for something to be provided or done</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>request/ambassador</code></td><td>Ambassador</td><td>A request to serve as an ambassedor for an organisation</td><td><code>#request</code></td></tr>
-<tr><td><code>request/environmentalSteward</code></td><td>Environmental Steward</td><td>A request to serve as a protector and manager of environmental resources</td><td><code>#request</code></td></tr>
-<tr><td><code>request/facilitator</code></td><td>Facilitator</td><td>A request to guide and enable processes or interactions between parties</td><td><code>#request</code></td></tr>
-<tr><td><code>request/payment</code></td><td>Payment</td><td>A request for payment</td><td><code>#request</code></td></tr>
-<tr><td><code>request/marketSolutions</code></td><td>Market Solutions</td><td>Configurations of IXO tools for specific use-cases or sectors.</td><td><code>#request</code></td></tr>
-<tr><td><code>request/marketingAndAdoption</code></td><td>Marketing And Adoption</td><td>Campaigns, communications assets, and onboarding flows to grow user and developer adoption.</td><td><code>#request</code></td></tr>
-<tr><td><code>request/platformIntegration</code></td><td>Platform Integration</td><td>Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules.</td><td><code>#request</code></td></tr>
-<tr><td><code>request/productEnhancements</code></td><td>Product Enhancements</td><td>Core protocol or app-level improvements.</td><td><code>#request</code></td></tr>
-<tr><td><code>request/service</code></td><td>Service</td><td>A request for a specific service to be provided</td><td><code>#request</code></td></tr>
-<tr><td><code>request/strategicProjects</code></td><td>Strategic Projects</td><td>High-value internal or partner initiatives.</td><td><code>#request</code></td></tr>
-<tr><td><code>request/workPlacement</code></td><td>Work Placement</td><td>A request for practical work experience or professional training position</td><td><code>#request</code></td></tr>
-<tr><td><code>subscription</code></td><td>Subscription</td><td>A deed that signifies an agreement to receive or support something regularly, such as a service or membership</td><td><span class="muted">top</span></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Entity Stage <span class="pill">7</span></h3>
 <p class="muted">Lifecycle stages of an entity, from proposal to archival.<br><code>https://w3id.org/ixo/protocol/entity-stage/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -556,8 +488,8 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>Sealed</code></td><td>Sealed</td><td>The entity has been finalised and locked against further change.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>Deleted</code></td><td>Deleted</td><td>The entity has been removed from active use.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>Recruiting</code></td><td>Recruiting</td><td>The entity is open and seeking participants or members.</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Entity Types <span class="pill">45</span></h3>
-<p class="muted">Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively.<br><code>https://w3id.org/ixo/protocol/entities/v1</code></p>
+<h3 id="scheme-v1">IXO Entity Types <span class="pill">148</span></h3>
+<p class="muted">Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle, group, pod and project (from the legacy tags catalogue) are folded in as skos:broader children, so this is the single scheme for entity kinds and their sub-types.<br><code>https://w3id.org/ixo/protocol/entities/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
 <tbody><tr><td><code>project</code></td><td>Project</td><td>A planned undertaking coordinating resources and activities toward defined goals and measurable outcomes.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>dao</code></td><td>DAO</td><td>A Decentralised Autonomous Organisation coordinating members and sub-groups through on-chain governance.</td><td><span class="muted">top</span></td></tr>
@@ -586,7 +518,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>dao/group</code></td><td>Group (in a DAO)</td><td>A functional group within a DAO.</td><td><code>#dao</code></td></tr>
 <tr><td><code>deed/request</code></td><td>Request (Deed)</td><td>A deed appealing or demanding that something be provided or done.</td><td><code>#deed</code></td></tr>
 <tr><td><code>deed/offer</code></td><td>Offer</td><td>A deed expressing a willingness to provide or do something.</td><td><code>#deed</code></td></tr>
-<tr><td><code>deed/subscription</code></td><td>Subscription</td><td>A deed establishing an agreement to receive or support something regularly.</td><td><code>#deed</code></td></tr>
+<tr><td><code>deed/subscription</code></td><td>Subscription (Deed)</td><td>A deed establishing an agreement to receive or support something regularly.</td><td><code>#deed</code></td></tr>
 <tr><td><code>deed/proposal</code></td><td>Proposal</td><td>A deed outlining a suggested plan or action for consideration.</td><td><code>#deed</code></td></tr>
 <tr><td><code>deed/flow</code></td><td>Flow</td><td>An intent-driven workflow coordinating a process from start to finish.</td><td><code>#deed</code></td></tr>
 <tr><td><code>oracle/evaluation</code></td><td>Evaluation Oracle</td><td>An oracle specialised in evaluating claims to produce verified results.</td><td><code>#oracle</code></td></tr>
@@ -603,7 +535,110 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>protocol/verifiableClaim</code></td><td>Verifiable Claim Protocol</td><td>A protocol for creating verifiable claims and defining their content and structure.</td><td><code>#protocol</code></td></tr>
 <tr><td><code>protocol/verifiableCredential</code></td><td>Verifiable Credential Protocol</td><td>A protocol for creating verifiable credentials and defining their content and structure.</td><td><code>#protocol</code></td></tr>
 <tr><td><code>protocol/impact</code></td><td>Impact Protocol</td><td>A protocol defining how impact is claimed and verified.</td><td><code>#protocol</code></td></tr>
-<tr><td><code>protocol/flow</code></td><td>Flow Protocol</td><td>A protocol defining an intent-driven workflow.</td><td><code>#protocol</code></td></tr></tbody></table>
+<tr><td><code>protocol/flow</code></td><td>Flow Protocol</td><td>A protocol defining an intent-driven workflow.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>asset/dePIN</code></td><td>De PIN</td><td>A decentralized Physical Infrastructure Network that provides real-world services or resources through tokenized incentive mechanisms</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/dePIN/batteryElectricVehicle</code></td><td>Battery Electric Vehicle</td><td>An electric vehicle powered by rechargeable fixed or swappable battery packs.</td><td><code>#asset-de-pin</code></td></tr>
+<tr><td><code>asset/dePIN/cleanCooking</code></td><td>Clean Cooking</td><td>Cooking solutions that reduce emissions and improve health outcomes.</td><td><code>#asset-de-pin</code></td></tr>
+<tr><td><code>asset/dePIN/pvSystem</code></td><td>Pv System</td><td>Photovoltaic systems that convert sunlight into electricity.</td><td><code>#asset-de-pin</code></td></tr>
+<tr><td><code>asset/impactCredit/carbonCredit</code></td><td>Carbon Credit</td><td>A digital representation of carbon credits.</td><td><code>#asset-impactcredit</code></td></tr>
+<tr><td><code>asset/impactCredit/waterCredit</code></td><td>Water Credit</td><td>A digital representation of water credits.</td><td><code>#asset-impactcredit</code></td></tr>
+<tr><td><code>asset/voucher/beanVoucher</code></td><td>Bean Voucher</td><td>A voucher representing a bag of fortified beans.</td><td><code>#asset-voucher</code></td></tr>
+<tr><td><code>dao/organisation</code></td><td>Organisation</td><td>An organisation</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/organisation/cooperative</code></td><td>Cooperative</td><td>A DAO operating as a cooperative, owned and managed by its members for mutual benefit</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/company</code></td><td>Company</td><td>A legally registered business entity that operates for profit</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/hybridOrganization</code></td><td>Hybrid Organization</td><td>A DAO combining elements of profit and non-profit structures for diversified objectives</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/liechtensteinVentureCooperative</code></td><td>Liechtenstein Venture Cooperative</td><td>A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/nonGovernmentOrganization</code></td><td>Non Government Organization</td><td>A DAO operating as a non-governmental entity to address social, cultural, or environmental issues</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/nonProfitOrganization</code></td><td>Non Profit Organization</td><td>A business-oriented DAO focused on achieving social or environmental objectives rather than profit</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/publicBenefitCorporation</code></td><td>Public Benefit Corporation</td><td>A DAO that operates as a public benefit corporation with a focus on public interest</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/organisation/socialEnterprise</code></td><td>Social Enterprise</td><td>A DAO focused on addressing social challenges while maintaining financial sustainability</td><td><code>#dao-organisation</code></td></tr>
+<tr><td><code>dao/chain</code></td><td>Chain</td><td>A DAO managing or operating a blockchain network</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/chain/validator</code></td><td>Validator</td><td>A DAO serving as a validator within a blockchain network</td><td><code>#dao-chain</code></td></tr>
+<tr><td><code>dao/community</code></td><td>Community</td><td>A DAO centered around a specific community for collective action or resource sharing</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/developer</code></td><td>Developer</td><td>A DAO supporting software developers and technical projects</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/funding</code></td><td>Funding</td><td>A DAO dedicated to allocating and managing funds for various purposes</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/investment</code></td><td>Investment (Dao)</td><td>A DAO focused on managing investments and funding opportunities</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/marketRelayer</code></td><td>Market Relayer</td><td>A DAO facilitating market transactions and providing liquidity</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/marketPlace</code></td><td>Market Place</td><td>A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets.</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/product</code></td><td>Product</td><td>A DAO focused on the development, management, and governance of a particular product or set of products</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/research</code></td><td>Research (Dao)</td><td>A DAO focused on conducting and supporting research activities</td><td><code>#dao</code></td></tr>
+<tr><td><code>deed/flow/identity</code></td><td>Identity (Flow)</td><td>A flow that establishes, verifies, or manages identities and their attributes</td><td><code>#deed-flow</code></td></tr>
+<tr><td><code>deed/flow/governance</code></td><td>Governance (Flow)</td><td>A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization</td><td><code>#deed-flow</code></td></tr>
+<tr><td><code>deed/flow/payout</code></td><td>Payout</td><td>A flow that coordinates the calculation, approval, and distribution of payments or rewards</td><td><code>#deed-flow</code></td></tr>
+<tr><td><code>deed/flow/domainCreation</code></td><td>Domain Creation</td><td>A flow that creates and configures new domains, including their governance, permissions, and resources</td><td><code>#deed-flow</code></td></tr>
+<tr><td><code>deed/proposal/membership</code></td><td>Membership (Proposal)</td><td>A proposal for managing members</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/proposal/governance</code></td><td>Governance (Proposal)</td><td>A proposal for managing domain governance</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/proposal/smartContract</code></td><td>Smart Contract</td><td>A proposal for managing domain smart contracts</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/proposal/financial</code></td><td>Financial</td><td>A proposal for managing domain financial resources</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/proposal/staking</code></td><td>Staking</td><td>A proposal for managing domain staking</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/proposal/domain</code></td><td>Domain</td><td>A proposal for creating and managing domains</td><td><code>#deed-proposal</code></td></tr>
+<tr><td><code>deed/request/ambassador</code></td><td>Ambassador</td><td>A request to serve as an ambassedor for an organisation</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/environmentalSteward</code></td><td>Environmental Steward</td><td>A request to serve as a protector and manager of environmental resources</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/facilitator</code></td><td>Facilitator</td><td>A request to guide and enable processes or interactions between parties</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/payment</code></td><td>Payment (Request)</td><td>A request for payment</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/marketSolutions</code></td><td>Market Solutions</td><td>Configurations of IXO tools for specific use-cases or sectors.</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/marketingAndAdoption</code></td><td>Marketing And Adoption</td><td>Campaigns, communications assets, and onboarding flows to grow user and developer adoption.</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/platformIntegration</code></td><td>Platform Integration</td><td>Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules.</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/productEnhancements</code></td><td>Product Enhancements</td><td>Core protocol or app-level improvements.</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/service</code></td><td>Service</td><td>A request for a specific service to be provided</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/strategicProjects</code></td><td>Strategic Projects</td><td>High-value internal or partner initiatives.</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>deed/request/workPlacement</code></td><td>Work Placement (Request)</td><td>A request for practical work experience or professional training position</td><td><code>#deed-request</code></td></tr>
+<tr><td><code>oracle/subscription</code></td><td>Subscription (Oracle)</td><td>An oracle that provides continuous access to data feeds or information streams through a subscription model</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/participationOfPeople</code></td><td>Participation Of People</td><td>Involves human oversight in decision-making processes</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/pathfinding</code></td><td>Pathfinding</td><td>Guides users through complex decision-making processes</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/patternRecognition</code></td><td>Pattern Recognition</td><td>Identifies patterns in data to inform decision-making and optimize strategies</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/payment</code></td><td>Payment (Oracle)</td><td>Automates payments based on impact goal achievements, using smart contracts to streamline transactions</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/performanceMonitoring</code></td><td>Performance Monitoring</td><td>Tracks project performance in real-time, providing feedback and analytics</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/personalization</code></td><td>Personalization</td><td>Tailors interactions and recommendations to individual users, enhancing user experience</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/planning</code></td><td>Planning</td><td>Supports strategic planning by predicting trends and resource needs</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/policyEnforcement</code></td><td>Policy Enforcement</td><td>Ensures compliance with policies and regulations, enforcing rules automatically</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/portfolioManagement</code></td><td>Portfolio Management</td><td>Manages and optimizes project portfolios for strategic goals</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/positioning</code></td><td>Positioning</td><td>Determines optimal placement of resources and interventions within the ecosystem</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/prescribingInterventions</code></td><td>Prescribing Interventions</td><td>Recommends actions based on data analysis to guide stakeholders towards effective strategies</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/preventionOfRisks</code></td><td>Prevention Of Risks</td><td>Anticipates and mitigates potential risks to keep projects on track</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/privacyProtection</code></td><td>Privacy Protection</td><td>Safeguards sensitive information and ensures compliance with regulations</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/problemDetectionAndResolution</code></td><td>Problem Detection And Resolution</td><td>Monitors systems for potential issues, enabling early detection and resolution</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/processOptimization</code></td><td>Process Optimization</td><td>Enhances operational efficiency by automating tasks and streamlining workflows</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/profiling</code></td><td>Profiling</td><td>Creates detailed profiles of users and projects for accurate targeting of interventions</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/proofing</code></td><td>Proofing</td><td>Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting</td><td><code>#oracle</code></td></tr>
+<tr><td><code>oracle/protocolAdherence</code></td><td>Protocol Adherence</td><td>Ensures compliance with predefined protocols for consistency and reliability</td><td><code>#oracle</code></td></tr>
+<tr><td><code>group/membership</code></td><td>Membership (Group)</td><td>The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees.</td><td><code>#group</code></td></tr>
+<tr><td><code>group/custodians</code></td><td>Custodians</td><td>A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions.</td><td><code>#group</code></td></tr>
+<tr><td><code>group/security</code></td><td>Security</td><td>A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO.</td><td><code>#group</code></td></tr>
+<tr><td><code>group/finance</code></td><td>Finance (Group)</td><td>An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting.</td><td><code>#group</code></td></tr>
+<tr><td><code>group/operations</code></td><td>Operations</td><td>An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows.</td><td><code>#group</code></td></tr>
+<tr><td><code>pod/agriculture</code></td><td>Agriculture</td><td>A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/communitySocialImpact</code></td><td>Community Social Impact</td><td>A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/education</code></td><td>Education</td><td>A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/energy</code></td><td>Energy</td><td>A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/enterprise</code></td><td>Enterprise</td><td>A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/environmentalConservation</code></td><td>Environmental Conservation</td><td>A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/finance</code></td><td>Finance (Pod)</td><td>A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/governance</code></td><td>Governance (Pod)</td><td>A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/research</code></td><td>Research (Pod)</td><td>A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos.</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/sme</code></td><td>Sme</td><td>A POD that</td><td><code>#pod</code></td></tr>
+<tr><td><code>pod/urbanPlanningAndInfrastructure</code></td><td>Urban Planning And Infrastructure</td><td>A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way.</td><td><code>#pod</code></td></tr>
+<tr><td><code>project/accreditation</code></td><td>Accreditation</td><td>A project focused on certifying that an entity or individual meets specific standards or qualifications</td><td><code>#project</code></td></tr>
+<tr><td><code>project/behaviourChange</code></td><td>Behaviour Change</td><td>A project designed to influence and modify behaviors to achieve desired outcomes or impacts</td><td><code>#project</code></td></tr>
+<tr><td><code>project/circularEconomy</code></td><td>Circular Economy</td><td>A project aimed at promoting resource efficiency, waste reduction, and sustainable economic practices</td><td><code>#project</code></td></tr>
+<tr><td><code>project/civicAction</code></td><td>Civic Action</td><td>A project that engages citizens in collective efforts to address community or societal issues</td><td><code>#project</code></td></tr>
+<tr><td><code>project/course</code></td><td>Course</td><td>A project that designs, delivers, and manages structured training programs or courses for learners</td><td><code>#project</code></td></tr>
+<tr><td><code>project/development</code></td><td>Development</td><td>A project providing software development services, including design, implementation, testing, and maintenance of software solutions</td><td><code>#project</code></td></tr>
+<tr><td><code>project/educationAndAwareness</code></td><td>Education And Awareness</td><td>A project focused on educating and raising awareness about specific topics or issues</td><td><code>#project</code></td></tr>
+<tr><td><code>project/environmentalMonitoring</code></td><td>Environmental Monitoring</td><td>A project that observes, collects, and analyzes data to assess environmental conditions and changes</td><td><code>#project</code></td></tr>
+<tr><td><code>project/esg</code></td><td>Esg</td><td>A project addressing Environmental, Social, and Governance factors to ensure sustainability and ethical impact</td><td><code>#project</code></td></tr>
+<tr><td><code>project/esg/cosmosMonitoring</code></td><td>Cosmos Monitoring</td><td>A project focusing on the sustainable development in Space and on Earth.</td><td><code>#project-esg</code></td></tr>
+<tr><td><code>project/identity</code></td><td>Identity (Project)</td><td>A project related to establishing, managing, or verifying individual or organizational identities</td><td><code>#project</code></td></tr>
+<tr><td><code>project/impact</code></td><td>Impact</td><td>A project designed to create, measure, and verify positive social or environmental outcomes with tangible results</td><td><code>#project</code></td></tr>
+<tr><td><code>project/immuneCell</code></td><td>Immune Cell</td><td>A project involving the study, application, or enhancement of immune cell functions and interactions</td><td><code>#project</code></td></tr>
+<tr><td><code>project/mitigationActivity</code></td><td>Mitigation Activity</td><td>A project aimed at reducing the severity or impact of specific risks or issues, such as climate change</td><td><code>#project</code></td></tr>
+<tr><td><code>project/mitigationActivity/mecs</code></td><td>Mecs</td><td>A project promoting Modern Energy Cooking Services, designed to improve cooking efficiency and reduce reliance on traditional biomass fuels</td><td><code>#project-mitigation-activity</code></td></tr>
+<tr><td><code>project/mitigationActivity/solarPV</code></td><td>Solar PV</td><td>A project focusing on the implementation and use of solar photovoltaic systems to generate clean and renewable energy</td><td><code>#project-mitigation-activity</code></td></tr>
+<tr><td><code>project/mitigationActivity/mobility</code></td><td>Mobility</td><td>A project focused on the development, implementation, or promotion of sustainable mobility solutions</td><td><code>#project-mitigation-activity</code></td></tr>
+<tr><td><code>project/oracle</code></td><td>Oracle (Project)</td><td>A project involving systems that provide data integrity, insights, or automation for decision-making processes</td><td><code>#project</code></td></tr>
+<tr><td><code>project/place</code></td><td>Place</td><td>A project focusing on a specific geographic place</td><td><code>#project</code></td></tr>
+<tr><td><code>project/relayer</code></td><td>Relayer</td><td>A project focused on facilitating communication or transactions between different systems or networks</td><td><code>#project</code></td></tr>
+<tr><td><code>project/workPlacement</code></td><td>Work Placement (Project)</td><td>A project providing practical work experiences to individuals in professional environments</td><td><code>#project</code></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Entity View <span class="pill">2</span></h3>
 <p class="muted">Visibility modes for an entity’s data.<br><code>https://w3id.org/ixo/protocol/entity-view/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -618,14 +653,6 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>D</code></td><td>Grade D</td><td>Marginal — partially meets the required standard.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>E</code></td><td>Grade E</td><td>Poor — falls short of the required standard.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>F</code></td><td>Grade F</td><td>Fail — does not meet the required standard.</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Group Types <span class="pill">5</span></h3>
-<p class="muted">Kinds of governance group within a DAO or organisation.<br><code>https://w3id.org/ixo/protocol/group-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>membership</code></td><td>Membership</td><td>The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>custodians</code></td><td>Custodians</td><td>A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>security</code></td><td>Security</td><td>A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>finance</code></td><td>Finance</td><td>An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>operations</code></td><td>Operations</td><td>An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows.</td><td><span class="muted">top</span></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Linked Resource Types <span class="pill">27</span></h3>
 <p class="muted">Kinds of resource linked from an entity document via the linkedResource property. Notation is the on-chain type string. (A long tail of low-frequency / display: prefixed variants is normalised; see docs/term-coverage.md.)<br><code>https://w3id.org/ixo/protocol/linked-resources/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -710,29 +737,6 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>payments-and-portfolio</code></td><td>Payments and Portfolio</td><td>Managing payments, assets and portfolios.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>policy-and-compliance</code></td><td>Policy and Compliance</td><td>Applying policies and ensuring regulatory and protocol compliance.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>problem-identification-and-resolution</code></td><td>Problem Identification and Resolution</td><td>Detecting problems and coordinating their resolution.</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Oracle Types <span class="pill">20</span></h3>
-<p class="muted">Kinds of oracle service. Complements protocol/oracle-capabilities/v1 (the P-Function capability families).<br><code>https://w3id.org/ixo/protocol/oracle-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>evaluation</code></td><td>Evaluation</td><td>An oracle that evaluates and verifies data, conditions, or outcomes based on predefined criteria</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>subscription</code></td><td>Subscription</td><td>An oracle that provides continuous access to data feeds or information streams through a subscription model</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>participationOfPeople</code></td><td>Participation Of People</td><td>Involves human oversight in decision-making processes</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>pathfinding</code></td><td>Pathfinding</td><td>Guides users through complex decision-making processes</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>patternRecognition</code></td><td>Pattern Recognition</td><td>Identifies patterns in data to inform decision-making and optimize strategies</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>payment</code></td><td>Payment</td><td>Automates payments based on impact goal achievements, using smart contracts to streamline transactions</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>performanceMonitoring</code></td><td>Performance Monitoring</td><td>Tracks project performance in real-time, providing feedback and analytics</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>personalization</code></td><td>Personalization</td><td>Tailors interactions and recommendations to individual users, enhancing user experience</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>planning</code></td><td>Planning</td><td>Supports strategic planning by predicting trends and resource needs</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>policyEnforcement</code></td><td>Policy Enforcement</td><td>Ensures compliance with policies and regulations, enforcing rules automatically</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>portfolioManagement</code></td><td>Portfolio Management</td><td>Manages and optimizes project portfolios for strategic goals</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>positioning</code></td><td>Positioning</td><td>Determines optimal placement of resources and interventions within the ecosystem</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>prescribingInterventions</code></td><td>Prescribing Interventions</td><td>Recommends actions based on data analysis to guide stakeholders towards effective strategies</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>preventionOfRisks</code></td><td>Prevention Of Risks</td><td>Anticipates and mitigates potential risks to keep projects on track</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>privacyProtection</code></td><td>Privacy Protection</td><td>Safeguards sensitive information and ensures compliance with regulations</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>problemDetectionAndResolution</code></td><td>Problem Detection And Resolution</td><td>Monitors systems for potential issues, enabling early detection and resolution</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>processOptimization</code></td><td>Process Optimization</td><td>Enhances operational efficiency by automating tasks and streamlining workflows</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>profiling</code></td><td>Profiling</td><td>Creates detailed profiles of users and projects for accurate targeting of interventions</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>proofing</code></td><td>Proofing</td><td>Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>protocolAdherence</code></td><td>Protocol Adherence</td><td>Ensures compliance with predefined protocols for consistency and reliability</td><td><span class="muted">top</span></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Page View <span class="pill">3</span></h3>
 <p class="muted">Visibility modes for an entity’s page content.<br><code>https://w3id.org/ixo/protocol/page-view/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
@@ -758,44 +762,6 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><td><code>LoanRepayment</code></td><td>Loan Repayment</td><td>A repayment of loan principal.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>IncomeDistribution</code></td><td>Income Distribution</td><td>A distribution of income to stakeholders.</td><td><span class="muted">top</span></td></tr>
 <tr><td><code>DisputeSettlement</code></td><td>Dispute Settlement</td><td>A payment settling a dispute.</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO POD Types <span class="pill">11</span></h3>
-<p class="muted">Sectors of Protocol-Oriented Domain (POD).<br><code>https://w3id.org/ixo/protocol/pod-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>agriculture</code></td><td>Agriculture</td><td>A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>communitySocialImpact</code></td><td>Community Social Impact</td><td>A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>education</code></td><td>Education</td><td>A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>energy</code></td><td>Energy</td><td>A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>enterprise</code></td><td>Enterprise</td><td>A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>environmentalConservation</code></td><td>Environmental Conservation</td><td>A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>finance</code></td><td>Finance</td><td>A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>governance</code></td><td>Governance</td><td>A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>research</code></td><td>Research</td><td>A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos.</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>sme</code></td><td>Sme</td><td>A POD that</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>urbanPlanningAndInfrastructure</code></td><td>Urban Planning And Infrastructure</td><td>A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way.</td><td><span class="muted">top</span></td></tr></tbody></table>
-<h3 id="scheme-v1">IXO Project Types <span class="pill">21</span></h3>
-<p class="muted">Kinds of project entity, with sub-types for specific domains.<br><code>https://w3id.org/ixo/protocol/project-types/v1</code></p>
-<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
-<tbody><tr><td><code>accreditation</code></td><td>Accreditation</td><td>A project focused on certifying that an entity or individual meets specific standards or qualifications</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>behaviourChange</code></td><td>Behaviour Change</td><td>A project designed to influence and modify behaviors to achieve desired outcomes or impacts</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>circularEconomy</code></td><td>Circular Economy</td><td>A project aimed at promoting resource efficiency, waste reduction, and sustainable economic practices</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>civicAction</code></td><td>Civic Action</td><td>A project that engages citizens in collective efforts to address community or societal issues</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>course</code></td><td>Course</td><td>A project that designs, delivers, and manages structured training programs or courses for learners</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>development</code></td><td>Development</td><td>A project providing software development services, including design, implementation, testing, and maintenance of software solutions</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>educationAndAwareness</code></td><td>Education And Awareness</td><td>A project focused on educating and raising awareness about specific topics or issues</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>environmentalMonitoring</code></td><td>Environmental Monitoring</td><td>A project that observes, collects, and analyzes data to assess environmental conditions and changes</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>esg</code></td><td>Esg</td><td>A project addressing Environmental, Social, and Governance factors to ensure sustainability and ethical impact</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>esg/cosmosMonitoring</code></td><td>Cosmos Monitoring</td><td>A project focusing on the sustainable development in Space and on Earth.</td><td><code>#esg</code></td></tr>
-<tr><td><code>identity</code></td><td>Identity</td><td>A project related to establishing, managing, or verifying individual or organizational identities</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>impact</code></td><td>Impact</td><td>A project designed to create, measure, and verify positive social or environmental outcomes with tangible results</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>immuneCell</code></td><td>Immune Cell</td><td>A project involving the study, application, or enhancement of immune cell functions and interactions</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>mitigationActivity</code></td><td>Mitigation Activity</td><td>A project aimed at reducing the severity or impact of specific risks or issues, such as climate change</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>mitigationActivity/mecs</code></td><td>Mecs</td><td>A project promoting Modern Energy Cooking Services, designed to improve cooking efficiency and reduce reliance on traditional biomass fuels</td><td><code>#mitigation-activity</code></td></tr>
-<tr><td><code>mitigationActivity/solarPV</code></td><td>Solar PV</td><td>A project focusing on the implementation and use of solar photovoltaic systems to generate clean and renewable energy</td><td><code>#mitigation-activity</code></td></tr>
-<tr><td><code>mitigationActivity/mobility</code></td><td>Mobility</td><td>A project focused on the development, implementation, or promotion of sustainable mobility solutions</td><td><code>#mitigation-activity</code></td></tr>
-<tr><td><code>oracle</code></td><td>Oracle</td><td>A project involving systems that provide data integrity, insights, or automation for decision-making processes</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>place</code></td><td>Place</td><td>A project focusing on a specific geographic place</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>relayer</code></td><td>Relayer</td><td>A project focused on facilitating communication or transactions between different systems or networks</td><td><span class="muted">top</span></td></tr>
-<tr><td><code>workPlacement</code></td><td>Work Placement</td><td>A project providing practical work experiences to individuals in professional environments</td><td><span class="muted">top</span></td></tr></tbody></table>
 <h3 id="scheme-v1">IXO Relationship Types <span class="pill">22</span></h3>
 <p class="muted">Typed relationships asserted between two entities via ixo:linkedEntity / ixo:relationship. A starter set; to be reconciled with the fuller Relationship Type Ontology outline.<br><code>https://w3id.org/ixo/protocol/relationships/v1</code></p>
 <table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
