@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/ClaimShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:Claim" },
+  "rdfs:comment": "A claim node. Any asserted claimType must be a concept IN the claim-types scheme — checked by skos:inScheme membership rather than a hardcoded value list, so the constraint tracks the scheme automatically (no drift).",
+  "sh:property": [
+    {
+      "sh:path": { "@id": "ixo:claimType" },
+      "sh:maxCount": 1,
+      "sh:nodeKind": { "@id": "sh:IRI" },
+      "sh:name": "claimType",
+      "sh:node": {
+        "rdfs:label": "ClaimTypeConcept",
+        "sh:property": [
+          {
+            "sh:path": { "@id": "skos:inScheme" },
+            "sh:hasValue": { "@id": "https://w3id.org/ixo/protocol/claims/v1" },
+            "sh:minCount": 1,
+            "sh:message": "claimType must be a concept in the claim-types scheme (protocol/claims/v1)."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/ProfileShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:Profile" },
+  "rdfs:comment": "An entity Profile: must carry a name; attributes are name/value resources.",
+  "sh:property": [
+    {
+      "sh:path": { "@id": "schema:name" },
+      "sh:minCount": 1,
+      "sh:datatype": { "@id": "http://www.w3.org/2001/XMLSchema#string" },
+      "sh:name": "name"
+    },
+    {
+      "sh:path": { "@id": "ixo:attributes" },
+      "sh:nodeKind": { "@id": "sh:BlankNodeOrIRI" },
+      "sh:name": "attributes"
+    }
+  ]
+}

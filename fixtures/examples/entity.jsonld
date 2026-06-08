@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:11111111111111111111111111111111",
+  "type": "ixo:Project",
+  "controller": ["did:ixo:entity:11111111111111111111111111111111"],
+  "verificationMethod": [
+    {
+      "id": "did:x:zExampleVerificationKey0000000000000000000",
+      "type": "CosmosAccountAddress",
+      "controller": "did:x:zExampleVerificationKey0000000000000000000",
+      "blockchainAccountID": "cosmos:ixo-5:ixo1exampleaccountaddress00000000000000"
+    }
+  ],
+  "service": [
+    { "id": "did:ixo:entity:11111111111111111111111111111111#cellnode", "type": "CellNode", "serviceEndpoint": "https://cellnode.ixo.world" }
+  ],
+  "linkedResource": [
+    { "id": "did:ixo:entity:11111111111111111111111111111111#profile", "type": "Settings", "description": "Profile", "mediaType": "application/ld+json", "serviceEndpoint": "ipfs:bafyexampleprofilecid000000000000000000000000", "encrypted": false }
+  ],
+  "relayerNode": "did:ixo:entity:22222222222222222222222222222222",
+  "name": "Example Project",
+  "description": "A conformant example IXO entity (project)."
+}

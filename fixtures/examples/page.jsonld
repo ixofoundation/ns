@@ -1,0 +1,6 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa#page",
+  "type": "ixo:Page",
+  "page": { "title": "Home", "description": "Welcome page" }
+}

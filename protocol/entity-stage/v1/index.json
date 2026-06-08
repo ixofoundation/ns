@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/entity-stage/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/entity-stage/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Entity Stage",
+      "dcterms:description": "Lifecycle stages of an entity, from proposal to archival.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityStage)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#proposal"
+        },
+        {
+          "@id": "#planning"
+        },
+        {
+          "@id": "#delivery"
+        },
+        {
+          "@id": "#paused"
+        },
+        {
+          "@id": "#closing"
+        },
+        {
+          "@id": "#ended"
+        },
+        {
+          "@id": "#archived"
+        }
+      ]
+    },
+    {
+      "@id": "#proposal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Proposal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is at the proposal stage, before work begins.",
+        "@language": "en"
+      },
+      "skos:notation": "Proposal",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Planning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is being planned and prepared.",
+        "@language": "en"
+      },
+      "skos:notation": "Planning",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#delivery",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Delivery",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is actively delivering its work.",
+        "@language": "en"
+      },
+      "skos:notation": "Delivery",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#paused",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Paused",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Delivery is temporarily suspended.",
+        "@language": "en"
+      },
+      "skos:notation": "Paused",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#closing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Closing",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is winding down its activities.",
+        "@language": "en"
+      },
+      "skos:notation": "Closing",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#ended",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ended",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s lifecycle has ended.",
+        "@language": "en"
+      },
+      "skos:notation": "Ended",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    },
+    {
+      "@id": "#archived",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Archived",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is archived for record-keeping.",
+        "@language": "en"
+      },
+      "skos:notation": "Archived",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-stage/v1"
+      }
+    }
+  ]
+}

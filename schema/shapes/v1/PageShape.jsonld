@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/PageShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:Page" },
+  "rdfs:comment": "An entity Page resource: must carry either a page or a pages property.",
+  "sh:or": {
+    "@list": [
+      { "sh:path": { "@id": "ixo:page" }, "sh:minCount": 1 },
+      { "sh:path": { "@id": "ixo:pages" }, "sh:minCount": 1 }
+    ]
+  }
+}

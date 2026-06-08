@@ -1,0 +1,4198 @@
+{
+  "corpus": "C:\\Users\\GraemeLeighton\\NS Update\\ixo-mainnet-linked-resources",
+  "byCategory": {
+    "iid": {
+      "files": 200,
+      "withContext": 200,
+      "plain": 0,
+      "zeroTriple": 0,
+      "errors": 0,
+      "totalTriples": 10301
+    },
+    "resource-schema": {
+      "files": 254,
+      "withContext": 181,
+      "plain": 73,
+      "zeroTriple": 166,
+      "errors": 166,
+      "totalTriples": 89
+    },
+    "resource": {
+      "files": 585,
+      "withContext": 477,
+      "plain": 108,
+      "zeroTriple": 381,
+      "errors": 381,
+      "totalTriples": 719
+    }
+  },
+  "undefinedKeys": [
+    {
+      "key": "text",
+      "count": 5001,
+      "sampleValueType": "string",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "ix",
+      "count": 2645,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "a",
+      "count": 2475,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "styles",
+      "count": 2398,
+      "sampleValueType": "object",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "k",
+      "count": 2245,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "content",
+      "count": 1939,
+      "sampleValueType": "array",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "visibleIf",
+      "count": 1922,
+      "sampleValueType": "string",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "textColor",
+      "count": 1855,
+      "sampleValueType": "string",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "props",
+      "count": 1815,
+      "sampleValueType": "object",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "backgroundColor",
+      "count": 1815,
+      "sampleValueType": "string",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "textAlignment",
+      "count": 1809,
+      "sampleValueType": "string",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "children",
+      "count": 1809,
+      "sampleValueType": "array",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "elements",
+      "count": 1504,
+      "sampleValueType": "array",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "proof",
+      "count": 1035,
+      "sampleValueType": "string",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "readOnly",
+      "count": 1032,
+      "sampleValueType": "boolean",
+      "exampleFile": "07e67427077b71a4.json"
+    },
+    {
+      "key": "isRequired",
+      "count": 1000,
+      "sampleValueType": "boolean",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "key",
+      "count": 836,
+      "sampleValueType": "string",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "nm",
+      "count": 835,
+      "sampleValueType": "string",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "ty",
+      "count": 830,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "bold",
+      "count": 743,
+      "sampleValueType": "boolean",
+      "exampleFile": "0fe00b9153f86177.json"
+    },
+    {
+      "key": "o",
+      "count": 655,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "visible",
+      "count": 628,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "templateElements",
+      "count": 625,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "choicesByUrl",
+      "count": 622,
+      "sampleValueType": "object",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "valueName",
+      "count": 622,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "titleName",
+      "count": 622,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "inputType",
+      "count": 618,
+      "sampleValueType": "string",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "mn",
+      "count": 600,
+      "sampleValueType": "string",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "hd",
+      "count": 600,
+      "sampleValueType": "boolean",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "val",
+      "count": 485,
+      "sampleValueType": "string",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "bm",
+      "count": 430,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "data",
+      "count": 401,
+      "sampleValueType": "object",
+      "exampleFile": "1278a691ff65b458.json"
+    },
+    {
+      "key": "seconds",
+      "count": 400,
+      "sampleValueType": "object",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "low",
+      "count": 400,
+      "sampleValueType": "number",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "high",
+      "count": 400,
+      "sampleValueType": "number",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "unsigned",
+      "count": 400,
+      "sampleValueType": "boolean",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "nanos",
+      "count": 400,
+      "sampleValueType": "number",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "c",
+      "count": 400,
+      "sampleValueType": "boolean",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "created",
+      "count": 379,
+      "sampleValueType": "object",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "level",
+      "count": 341,
+      "sampleValueType": "number",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "r",
+      "count": 335,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "default",
+      "count": 326,
+      "sampleValueType": "string",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "choices",
+      "count": 292,
+      "sampleValueType": "array",
+      "exampleFile": "0e23095898d696e4.json"
+    },
+    {
+      "key": "panelCount",
+      "count": 289,
+      "sampleValueType": "number",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "s",
+      "count": 280,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "properties",
+      "count": 267,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "context",
+      "count": 264,
+      "sampleValueType": "array",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "onConnect",
+      "count": 257,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "edgeType",
+      "count": 255,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "category",
+      "count": 251,
+      "sampleValueType": "string",
+      "exampleFile": "07e67427077b71a4.json"
+    },
+    {
+      "key": "defaultValue",
+      "count": 251,
+      "sampleValueType": "string",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "required",
+      "count": 238,
+      "sampleValueType": "array",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "ind",
+      "count": 230,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "ks",
+      "count": 230,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "p",
+      "count": 230,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "updated",
+      "count": 225,
+      "sampleValueType": "object",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "i",
+      "count": 225,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "isVisible",
+      "count": 214,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "onChange",
+      "count": 210,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "source",
+      "count": 208,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "contentUrl",
+      "count": 205,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "v",
+      "count": 205,
+      "sampleValueType": "string",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "createdAt",
+      "count": 203,
+      "sampleValueType": "string",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "_entity",
+      "count": 200,
+      "sampleValueType": "object",
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "key": "it",
+      "count": 200,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "sk",
+      "count": 200,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "sa",
+      "count": 200,
+      "sampleValueType": "object",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "np",
+      "count": 200,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "cix",
+      "count": 200,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "issuer",
+      "count": 195,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "hint",
+      "count": 193,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "onDisconnect",
+      "count": 189,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "items",
+      "count": 184,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "relationship",
+      "count": 173,
+      "sampleValueType": "string",
+      "exampleFile": "0009f49b7459a022f9c5fc89460683fe.jsonld"
+    },
+    {
+      "key": "credentialSubject",
+      "count": 173,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "de",
+      "count": 162,
+      "sampleValueType": "string",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "proofPurpose",
+      "count": 154,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "x",
+      "count": 140,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "y",
+      "count": 140,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "validFrom",
+      "count": 137,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "question",
+      "count": 130,
+      "sampleValueType": "object",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "headerView",
+      "count": 104,
+      "sampleValueType": "string",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "examples",
+      "count": 103,
+      "sampleValueType": "array",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "w",
+      "count": 100,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "web3",
+      "count": 99,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "defaultValueExpression",
+      "count": 98,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "issuanceDate",
+      "count": 97,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "minPanelCount",
+      "count": 97,
+      "sampleValueType": "number",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "addPanelText",
+      "count": 96,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "removePanelText",
+      "count": 96,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "lc",
+      "count": 95,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "lj",
+      "count": 95,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "credentialSchema",
+      "count": 94,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "position",
+      "count": 90,
+      "sampleValueType": "object",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "outputs",
+      "count": 90,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "inputs",
+      "count": 90,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "connections",
+      "count": 90,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "l",
+      "count": 90,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "executionStatus",
+      "count": 88,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "waitForUpload",
+      "count": 87,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "placeholder",
+      "count": 86,
+      "sampleValueType": "string",
+      "exampleFile": "1a1a7fcc051c6b16.json"
+    },
+    {
+      "key": "labelTrue",
+      "count": 84,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "labelFalse",
+      "count": 84,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "logoPosition",
+      "count": 82,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "jws",
+      "count": 81,
+      "sampleValueType": "string",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "email",
+      "count": 81,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "requiredErrorText",
+      "count": 79,
+      "sampleValueType": "string",
+      "exampleFile": "2557d91a6d01e4a9.json"
+    },
+    {
+      "key": "additionalType",
+      "count": 78,
+      "sampleValueType": "array",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "proj",
+      "count": 76,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "autocomplete",
+      "count": 76,
+      "sampleValueType": "string",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "itemOffered",
+      "count": 75,
+      "sampleValueType": "object",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "href",
+      "count": 74,
+      "sampleValueType": "string",
+      "exampleFile": "282d76186efac53f.json"
+    },
+    {
+      "key": "italic",
+      "count": 73,
+      "sampleValueType": "boolean",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "cryptosuite",
+      "count": 73,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "proofValue",
+      "count": 73,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "startDate",
+      "count": 73,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "endDate",
+      "count": 73,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "additionalProperties",
+      "count": 73,
+      "sampleValueType": "boolean",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "alternateName",
+      "count": 71,
+      "sampleValueType": "array",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "validators",
+      "count": 69,
+      "sampleValueType": "array",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "cells",
+      "count": 69,
+      "sampleValueType": "array",
+      "exampleFile": "282d76186efac53f.json"
+    },
+    {
+      "key": "pageTitle",
+      "count": 67,
+      "sampleValueType": "string",
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "key": "onExecuted",
+      "count": 67,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "enum",
+      "count": 66,
+      "sampleValueType": "array",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "survey",
+      "count": 66,
+      "sampleValueType": "null",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "onExecuting",
+      "count": 65,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "domainState",
+      "count": 64,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "domainStateHandler",
+      "count": 64,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "ownerAddress",
+      "count": 64,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "ownerDid",
+      "count": 64,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "verification",
+      "count": 64,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "entityStatus",
+      "count": 64,
+      "sampleValueType": "number",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "typeProp",
+      "count": 64,
+      "sampleValueType": "object",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "keywords",
+      "count": 63,
+      "sampleValueType": "array",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "expirationDate",
+      "count": 62,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "knowsAbout",
+      "count": 62,
+      "sampleValueType": "array",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "accounts",
+      "count": 62,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "sharedWith",
+      "count": 61,
+      "sampleValueType": "array",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "attribute",
+      "count": 59,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "includes",
+      "count": 59,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "imageFit",
+      "count": 58,
+      "sampleValueType": "string",
+      "exampleFile": "0bdfde896bd1328f.json"
+    },
+    {
+      "key": "purpose",
+      "count": 58,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "sameAs",
+      "count": 58,
+      "sampleValueType": "array",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "function",
+      "count": 56,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "systemRole",
+      "count": 56,
+      "sampleValueType": "string",
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "key": "showPreviewBeforeComplete",
+      "count": 56,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "displayName",
+      "count": 56,
+      "sampleValueType": "string",
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "key": "mission",
+      "count": 56,
+      "sampleValueType": "string",
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "key": "website",
+      "count": 56,
+      "sampleValueType": "string",
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "key": "target",
+      "count": 55,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "sourceHandle",
+      "count": 55,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "targetHandle",
+      "count": 55,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "progressBarLocation",
+      "count": 53,
+      "sampleValueType": "string",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "showTOC",
+      "count": 52,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "width",
+      "count": 51,
+      "sampleValueType": "string",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "t",
+      "count": 50,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "readonly",
+      "count": 49,
+      "sampleValueType": "boolean",
+      "exampleFile": "07e67427077b71a4.json"
+    },
+    {
+      "key": "format",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "autoFocusFirstQuestion",
+      "count": 48,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "inputTextAlignment",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "swapOrder",
+      "count": 48,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "filePlaceholder",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "partialSendEnabled",
+      "count": 48,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "autoAdvanceAllowComplete",
+      "count": 48,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "autoGrowComment",
+      "count": 48,
+      "sampleValueType": "boolean",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "previewMode",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "prefix",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "2d819ac0ff520d15.json"
+    },
+    {
+      "key": "metric",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "2d819ac0ff520d15.json"
+    },
+    {
+      "key": "suffix",
+      "count": 48,
+      "sampleValueType": "string",
+      "exampleFile": "2d819ac0ff520d15.json"
+    },
+    {
+      "key": "composition",
+      "count": 47,
+      "sampleValueType": "object",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "hasPart",
+      "count": 47,
+      "sampleValueType": "array",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "makesOffer",
+      "count": 43,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "sourceType",
+      "count": 42,
+      "sampleValueType": "string",
+      "exampleFile": "0e23095898d696e4.json"
+    },
+    {
+      "key": "relationships",
+      "count": 42,
+      "sampleValueType": "object",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "privacy",
+      "count": 41,
+      "sampleValueType": "object",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "expression",
+      "count": 40,
+      "sampleValueType": "string",
+      "exampleFile": "32d002a62c97464d.json"
+    },
+    {
+      "key": "acceptedTypes",
+      "count": 39,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "shareableOption",
+      "count": 38,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "memberOf",
+      "count": 35,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "publisher",
+      "count": 35,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "datePublished",
+      "count": 35,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "ip",
+      "count": 35,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "op",
+      "count": 35,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "ddd",
+      "count": 35,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "address",
+      "count": 34,
+      "sampleValueType": "object",
+      "exampleFile": "2fa0b5d0bb1f4057.json"
+    },
+    {
+      "key": "regex",
+      "count": 34,
+      "sampleValueType": "string",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "blocks",
+      "count": 33,
+      "sampleValueType": "array",
+      "exampleFile": "0fe00b9153f86177.json"
+    },
+    {
+      "key": "date",
+      "count": 32,
+      "sampleValueType": "string",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "maxSize",
+      "count": 31,
+      "sampleValueType": "number",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "caption",
+      "count": 31,
+      "sampleValueType": "string",
+      "exampleFile": "1c9c0843f3699ea9.json"
+    },
+    {
+      "key": "model",
+      "count": 30,
+      "sampleValueType": "string",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "sr",
+      "count": 30,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "ao",
+      "count": 30,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "shapes",
+      "count": 30,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "st",
+      "count": 30,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "ct",
+      "count": 30,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "subjectOf",
+      "count": 29,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "version",
+      "count": 27,
+      "sampleValueType": "object",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "areaServed",
+      "count": 27,
+      "sampleValueType": "object",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "addressLocality",
+      "count": 27,
+      "sampleValueType": "string",
+      "exampleFile": "2fa0b5d0bb1f4057.json"
+    },
+    {
+      "key": "widthMode",
+      "count": 26,
+      "sampleValueType": "string",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "credentials",
+      "count": 26,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "researchProfile",
+      "count": 26,
+      "sampleValueType": "object",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "$schema",
+      "count": 25,
+      "sampleValueType": "string",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "protocol",
+      "count": 25,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "thumbnail",
+      "count": 25,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "nodes",
+      "count": 25,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "edges",
+      "count": 25,
+      "sampleValueType": "array",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "notes",
+      "count": 25,
+      "sampleValueType": "string",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "creator",
+      "count": 25,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "measured",
+      "count": 25,
+      "sampleValueType": "object",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "height",
+      "count": 25,
+      "sampleValueType": "number",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "selected",
+      "count": 25,
+      "sampleValueType": "boolean",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "contactPoint",
+      "count": 25,
+      "sampleValueType": "array",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "showOtherItem",
+      "count": 25,
+      "sampleValueType": "boolean",
+      "exampleFile": "1a1a7fcc051c6b16.json"
+    },
+    {
+      "key": "availableLanguage",
+      "count": 25,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "dateModified",
+      "count": 25,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "dragging",
+      "count": 24,
+      "sampleValueType": "boolean",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "citation",
+      "count": 24,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "proj:activityType",
+      "count": 24,
+      "sampleValueType": "string",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "display",
+      "count": 24,
+      "sampleValueType": "array",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "lang",
+      "count": 24,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "formType",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "form",
+      "count": 23,
+      "sampleValueType": "object",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "updatedAt",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "choicesUrl",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "labelProp",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "valueProp",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "filterProp",
+      "count": 23,
+      "sampleValueType": "array",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "project",
+      "count": 23,
+      "sampleValueType": "object",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "proj:hadObjective",
+      "count": 23,
+      "sampleValueType": "array",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "addressCountry",
+      "count": 23,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "license",
+      "count": 22,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "path",
+      "count": 22,
+      "sampleValueType": "array",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "sd",
+      "count": 22,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "priceCurrency",
+      "count": 21,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "agents",
+      "count": 21,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "allowMultiple",
+      "count": 21,
+      "sampleValueType": "boolean",
+      "exampleFile": "4a4fd4b6e359ed02.json"
+    },
+    {
+      "key": "denom",
+      "count": 21,
+      "sampleValueType": "string",
+      "exampleFile": "93513ebc9fe7f559.json"
+    },
+    {
+      "key": "contactType",
+      "count": 20,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "decimals",
+      "count": 19,
+      "sampleValueType": "number",
+      "exampleFile": "93513ebc9fe7f559.json"
+    },
+    {
+      "key": "icon",
+      "count": 19,
+      "sampleValueType": "string",
+      "exampleFile": "93513ebc9fe7f559.json"
+    },
+    {
+      "key": "maxSupply",
+      "count": 19,
+      "sampleValueType": "string",
+      "exampleFile": "93513ebc9fe7f559.json"
+    },
+    {
+      "key": "product",
+      "count": 18,
+      "sampleValueType": "object",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "options",
+      "count": 18,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "unitCode",
+      "count": 18,
+      "sampleValueType": "string",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "validUntil",
+      "count": 17,
+      "sampleValueType": "string",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "file",
+      "count": 17,
+      "sampleValueType": "object",
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "key": "withBorder",
+      "count": 17,
+      "sampleValueType": "boolean",
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "key": "stretched",
+      "count": 17,
+      "sampleValueType": "boolean",
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "key": "withBackground",
+      "count": 17,
+      "sampleValueType": "boolean",
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "key": "html",
+      "count": 17,
+      "sampleValueType": "string",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "color",
+      "count": 16,
+      "sampleValueType": "string",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "manufacturer",
+      "count": 16,
+      "sampleValueType": "object",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "certification",
+      "count": 16,
+      "sampleValueType": "object",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "code",
+      "count": 16,
+      "sampleValueType": "string",
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "key": "oracle",
+      "count": 16,
+      "sampleValueType": "object",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "serviceType",
+      "count": 16,
+      "sampleValueType": "string",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "maxLength",
+      "count": 15,
+      "sampleValueType": "number",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "oneOf",
+      "count": 14,
+      "sampleValueType": "array",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "showPreview",
+      "count": 14,
+      "sampleValueType": "boolean",
+      "exampleFile": "1c9c0843f3699ea9.json"
+    },
+    {
+      "key": "previewWidth",
+      "count": 14,
+      "sampleValueType": "number",
+      "exampleFile": "1c9c0843f3699ea9.json"
+    },
+    {
+      "key": "rows",
+      "count": 14,
+      "sampleValueType": "array",
+      "exampleFile": "20c2f43c415ff484.json"
+    },
+    {
+      "key": "telephone",
+      "count": 14,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "funding",
+      "count": 14,
+      "sampleValueType": "array",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "surveyJson",
+      "count": 13,
+      "sampleValueType": "object",
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "key": "author",
+      "count": 13,
+      "sampleValueType": "object",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "addressRegion",
+      "count": 13,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "instanceOf",
+      "count": 13,
+      "sampleValueType": "string",
+      "exampleFile": "8292191c074adcc5.json"
+    },
+    {
+      "key": "price",
+      "count": 12,
+      "sampleValueType": "number",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "streetAddress",
+      "count": 12,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "postalCode",
+      "count": 12,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "message",
+      "count": 12,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "gotoName",
+      "count": 12,
+      "sampleValueType": "string",
+      "exampleFile": "f271e8e29b8637c0.json"
+    },
+    {
+      "key": "showProgressBar",
+      "count": 11,
+      "sampleValueType": "boolean",
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "key": "evidence",
+      "count": 11,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "proj:plannedStart",
+      "count": 11,
+      "sampleValueType": "string",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "proj:plannedEnd",
+      "count": 11,
+      "sampleValueType": "string",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "completedHtml",
+      "count": 11,
+      "sampleValueType": "string",
+      "exampleFile": "32d002a62c97464d.json"
+    },
+    {
+      "key": "min",
+      "count": 11,
+      "sampleValueType": "number",
+      "exampleFile": "3315326d03740bec.json"
+    },
+    {
+      "key": "showQuestionNumbers",
+      "count": 10,
+      "sampleValueType": "string",
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "key": "events",
+      "count": 10,
+      "sampleValueType": "array",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "featuredImage",
+      "count": 10,
+      "sampleValueType": "string",
+      "exampleFile": "1f9bcc1e72a178a5.json"
+    },
+    {
+      "key": "checkErrorsMode",
+      "count": 10,
+      "sampleValueType": "string",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "minLength",
+      "count": 10,
+      "sampleValueType": "number",
+      "exampleFile": "5d55962ee2ddd34b.json"
+    },
+    {
+      "key": "textUpdateMode",
+      "count": 10,
+      "sampleValueType": "string",
+      "exampleFile": "7b2f498dcf9debd9.json"
+    },
+    {
+      "key": "underline",
+      "count": 10,
+      "sampleValueType": "boolean",
+      "exampleFile": "b4fb3df1ca3d41a8.json"
+    },
+    {
+      "key": "latitude",
+      "count": 9,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "longitude",
+      "count": 9,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "offers",
+      "count": 9,
+      "sampleValueType": "object",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "priceSpecification",
+      "count": 9,
+      "sampleValueType": "object",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "billingIncrement",
+      "count": 9,
+      "sampleValueType": "number",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "billingPeriod",
+      "count": 9,
+      "sampleValueType": "string",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "priceType",
+      "count": 9,
+      "sampleValueType": "string",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "maxPrice",
+      "count": 9,
+      "sampleValueType": "number",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "eligibleQuantity",
+      "count": 9,
+      "sampleValueType": "object",
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "key": "matrix",
+      "count": 8,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "columns",
+      "count": 8,
+      "sampleValueType": "array",
+      "exampleFile": "20c2f43c415ff484.json"
+    },
+    {
+      "key": "style",
+      "count": 8,
+      "sampleValueType": "string",
+      "exampleFile": "29e4f27e07dafa9e.json"
+    },
+    {
+      "key": "progressBarShowPageTitles",
+      "count": 8,
+      "sampleValueType": "boolean",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "progressBarShowPageNumbers",
+      "count": 8,
+      "sampleValueType": "boolean",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "heading",
+      "count": 8,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "proj:hadOutput",
+      "count": 8,
+      "sampleValueType": "array",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "proj:resultDescription",
+      "count": 8,
+      "sampleValueType": "string",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "proj:hadDeliverable",
+      "count": 8,
+      "sampleValueType": "array",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "proj:deliverableDescription",
+      "count": 8,
+      "sampleValueType": "string",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "proj:deliverableStatus",
+      "count": 8,
+      "sampleValueType": "string",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "validateVisitedEmptyFields",
+      "count": 8,
+      "sampleValueType": "boolean",
+      "exampleFile": "7b2f498dcf9debd9.json"
+    },
+    {
+      "key": "amount",
+      "count": 8,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "region",
+      "count": 7,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "requiredPermissions",
+      "count": 7,
+      "sampleValueType": "array",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "granteeAddress",
+      "count": 7,
+      "sampleValueType": "string",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "granterAddress",
+      "count": 7,
+      "sampleValueType": "string",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "oracleName",
+      "count": 7,
+      "sampleValueType": "string",
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "key": "approvalDate",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "ecs",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "additionalItems",
+      "count": 6,
+      "sampleValueType": "boolean",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "city",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "linkedClaims",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "maxItems",
+      "count": 6,
+      "sampleValueType": "number",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "documentTypes",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "proj:usedResource",
+      "count": 6,
+      "sampleValueType": "array",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:resourceType",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:quantity",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:unit",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:resultMetric",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:resultValue",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:deliverableDueDate",
+      "count": 6,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "geo",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "a9f438cbdd38cf9e.json"
+    },
+    {
+      "key": "units",
+      "count": 6,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "equalTo",
+      "count": 5,
+      "sampleValueType": "string",
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "key": "entity",
+      "count": 5,
+      "sampleValueType": "string",
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "key": "step",
+      "count": 5,
+      "sampleValueType": "number",
+      "exampleFile": "3315326d03740bec.json"
+    },
+    {
+      "key": "distributor",
+      "count": 5,
+      "sampleValueType": "object",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "identifier",
+      "count": 5,
+      "sampleValueType": "array",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "needConfirmRemoveFile",
+      "count": 5,
+      "sampleValueType": "boolean",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "fr",
+      "count": 5,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "h",
+      "count": 5,
+      "sampleValueType": "number",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "assets",
+      "count": 5,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "layers",
+      "count": 5,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "markers",
+      "count": 5,
+      "sampleValueType": "array",
+      "exampleFile": "f18ad1b5c08c4180.json"
+    },
+    {
+      "key": "$id",
+      "count": 5,
+      "sampleValueType": "string",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "claim",
+      "count": 5,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "credential",
+      "count": 5,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "setting",
+      "count": 5,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "quantity",
+      "count": 5,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "investmentRegion",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "pepStatus",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "investmentLimit",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "province",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "autoGenerate",
+      "count": 4,
+      "sampleValueType": "boolean",
+      "exampleFile": "18a1a0e49c522699.json"
+    },
+    {
+      "key": "rateCount",
+      "count": 4,
+      "sampleValueType": "number",
+      "exampleFile": "18a1a0e49c522699.json"
+    },
+    {
+      "key": "rateValues",
+      "count": 4,
+      "sampleValueType": "array",
+      "exampleFile": "18a1a0e49c522699.json"
+    },
+    {
+      "key": "eachRowRequired",
+      "count": 4,
+      "sampleValueType": "boolean",
+      "exampleFile": "20c2f43c415ff484.json"
+    },
+    {
+      "key": "triggers",
+      "count": 4,
+      "sampleValueType": "array",
+      "exampleFile": "32d002a62c97464d.json"
+    },
+    {
+      "key": "questionErrorLocation",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "startSurveyText",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "pagePrevText",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "pageNextText",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "completeText",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "firstPageIsStartPage",
+      "count": 4,
+      "sampleValueType": "boolean",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "sdk",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "startButtonText",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "crossDeviceOnly",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "passport",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "driving_license",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "national_identity_card",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "residence_permit",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "mode",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "checks",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "standard_screening_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "extensive_screening_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "document_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "identity_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "enhanced_identity_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "proof_of_address_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "multi_bureau_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "face_authentication_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "age_estimation_check",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "autoGrow",
+      "count": 4,
+      "sampleValueType": "boolean",
+      "exampleFile": "6a4e66ce69d06d37.json"
+    },
+    {
+      "key": "vct",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "targetProperty",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "sourceOutputType",
+      "count": 4,
+      "sampleValueType": "string",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "entityClaims",
+      "count": 3,
+      "sampleValueType": "array",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "template",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "isEncrypted",
+      "count": 3,
+      "sampleValueType": "boolean",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "isHeadlineMetric",
+      "count": 3,
+      "sampleValueType": "boolean",
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "key": "organizer",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "key": "otherPlaceholder",
+      "count": 3,
+      "sampleValueType": "string",
+      "exampleFile": "1a1a7fcc051c6b16.json"
+    },
+    {
+      "key": "otherText",
+      "count": 3,
+      "sampleValueType": "string",
+      "exampleFile": "1a1a7fcc051c6b16.json"
+    },
+    {
+      "key": "quota",
+      "count": 3,
+      "sampleValueType": "number",
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "key": "payments",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "key": "withHeadings",
+      "count": 3,
+      "sampleValueType": "boolean",
+      "exampleFile": "29e4f27e07dafa9e.json"
+    },
+    {
+      "key": "leaseLength",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "unitText",
+      "count": 3,
+      "sampleValueType": "string",
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "key": "showCommentArea",
+      "count": 3,
+      "sampleValueType": "boolean",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "proj:hadSubActivity",
+      "count": 3,
+      "sampleValueType": "array",
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "key": "geoCoordinates",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "reEnableKeys",
+      "count": 3,
+      "sampleValueType": "boolean",
+      "exampleFile": "945c2fb00ac47e2e.json"
+    },
+    {
+      "key": "keys",
+      "count": 3,
+      "sampleValueType": "array",
+      "exampleFile": "945c2fb00ac47e2e.json"
+    },
+    {
+      "key": "evaluation",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "evaluator",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "impact",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "period",
+      "count": 3,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "investorCredential",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "key": "clearInvisibleValues",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "key": "customerCredential",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "customerId",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "clientType",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "dataWaiver",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "dataWaiverDate",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "signedContract",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "signedContractDate",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "14a6c18c9d54f0e5.json"
+    },
+    {
+      "key": "householdCredential",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "31344ad326ba610a.json"
+    },
+    {
+      "key": "density",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "31344ad326ba610a.json"
+    },
+    {
+      "key": "district",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "31344ad326ba610a.json"
+    },
+    {
+      "key": "linkedCredentials",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "31344ad326ba610a.json"
+    },
+    {
+      "key": "minProperties",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "31344ad326ba610a.json"
+    },
+    {
+      "key": "isPublic",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "48416d8257d674f9.json"
+    },
+    {
+      "key": "maxSelectedChoices",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "minSelectedChoices",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "commentPlaceholder",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "commentText",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "autoFocusFirstError",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "useDisplayValuesInDynamicTexts",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "key": "bank_statement",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "utility_bill",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "690e7f61926e2eb2.json"
+    },
+    {
+      "key": "const",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "kyc_level",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "document_verified",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "liveness_verified",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "given_name",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "family_name",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "birth_date",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "nationality",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "birth_country",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "document_type",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "issuing_country",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "resident_address",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "street_address",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "locality",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "postal_code",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "proj:actualStart",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:actualEnd",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "minItems",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "kycamlLevel1",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "responses",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "givenName",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "additionalName",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "familyName",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "country_1",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "country_2",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "identifier_1",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "birthDate",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "81b5b85403ae7d37.json"
+    },
+    {
+      "key": "rendering",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "simple",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "uri",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "alt_text",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "background_color",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "text_color",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "claims",
+      "count": 2,
+      "sampleValueType": "array",
+      "exampleFile": "8b349ebf9e71793f.json"
+    },
+    {
+      "key": "leadGeneratorCredential",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "93434e49c08990fb.json"
+    },
+    {
+      "key": "leadGeneratorID",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "93434e49c08990fb.json"
+    },
+    {
+      "key": "partnerType",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "93434e49c08990fb.json"
+    },
+    {
+      "key": "isLedgered",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "requiresUpdate",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "coreAddress",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "executables",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "blockchain",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "handlers",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "Survey",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "Target",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "currentExecutable",
+      "count": 2,
+      "sampleValueType": "null",
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "key": "sendResultOnPageNext",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "a05fe605bcd222cc.json"
+    },
+    {
+      "key": "choicesFromQuestion",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "a5ca99a64940ee8d.json"
+    },
+    {
+      "key": "funder",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "aa382771236897fa.json"
+    },
+    {
+      "key": "kycamlAttestation",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "abf449fc961356bb.json"
+    },
+    {
+      "key": "max",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "bc2d3647a36c4a60.json"
+    },
+    {
+      "key": "cellType",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "cae23c48daf7f832.json"
+    },
+    {
+      "key": "evaluationDate",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "results",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "verified",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "reason",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "narrative",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "zkProof",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "trace",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "cfd4042214413051.json"
+    },
+    {
+      "key": "imageHeight",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "d239c8f741f58d02.json"
+    },
+    {
+      "key": "imageWidth",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "d239c8f741f58d02.json"
+    },
+    {
+      "key": "gridPrecision",
+      "count": 2,
+      "sampleValueType": "number",
+      "exampleFile": "d377900c0a677fb4.json"
+    },
+    {
+      "key": "investorCredentialLevel1",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "e82d57448ccd5fd5.json"
+    },
+    {
+      "key": "representation",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "key": "credits",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "key": "unit",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "key": "supply",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "key": "calculatedValues",
+      "count": 2,
+      "sampleValueType": "array",
+      "exampleFile": "f271e8e29b8637c0.json"
+    },
+    {
+      "key": "includeIntoResult",
+      "count": 2,
+      "sampleValueType": "boolean",
+      "exampleFile": "f271e8e29b8637c0.json"
+    },
+    {
+      "key": "errcode",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "f2d38160fe9c210f.json"
+    },
+    {
+      "key": "error",
+      "count": 2,
+      "sampleValueType": "string",
+      "exampleFile": "f2d38160fe9c210f.json"
+    },
+    {
+      "key": "measure",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "producer",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "customer",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "payment",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "method",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "provider",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "currency",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "dateTime",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--fuelPurchase.json"
+    },
+    {
+      "key": "legalName",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "propertyID",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "4e4f63d4988dd52d.json"
+    },
+    {
+      "key": "closeOnSelect",
+      "count": 1,
+      "sampleValueType": "boolean",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "choicesMin",
+      "count": 1,
+      "sampleValueType": "number",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "choicesMax",
+      "count": 1,
+      "sampleValueType": "number",
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "key": "correctAnswer",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "60cdde3a3e324ee5.json"
+    },
+    {
+      "key": "proj:wasFundedThrough",
+      "count": 1,
+      "sampleValueType": "array",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:fundsProvided",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:moneyAmount",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "proj:moneyCurrency",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "key": "titleLocation",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "9f867c9ebca79a89.json"
+    },
+    {
+      "key": "templateTitle",
+      "count": 1,
+      "sampleValueType": "string",
+      "exampleFile": "9f867c9ebca79a89.json"
+    },
+    {
+      "key": "containsPlace",
+      "count": 1,
+      "sampleValueType": "array",
+      "exampleFile": "a9f438cbdd38cf9e.json"
+    },
+    {
+      "key": "methodology",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "outcome",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "calculation",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "factor",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "result",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "collectionId",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "claimEvaluation",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "submitted",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "pending",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "approved",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "rejected",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    },
+    {
+      "key": "disputed",
+      "count": 1,
+      "sampleValueType": "object",
+      "exampleFile": "f4427ae632de60a6f7ed47f46da32fa2--VERX.json"
+    }
+  ],
+  "coveredVc": [
+    {
+      "key": "digestMultibase",
+      "count": 4,
+      "sampleValueType": "object",
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "key": "iss",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "sub",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "iat",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "nbf",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    },
+    {
+      "key": "exp",
+      "count": 2,
+      "sampleValueType": "object",
+      "exampleFile": "6f8986443a07f683.json"
+    }
+  ],
+  "coveredIxoCount": 64,
+  "typeValues": [
+    {
+      "value": "text",
+      "count": 7940,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "paragraph",
+      "count": 1038,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "dropdown",
+      "count": 810,
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "value": "@type",
+      "count": 689,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "boolean",
+      "count": 647,
+      "exampleFile": "0bdfde896bd1328f.json"
+    },
+    {
+      "value": "paneldynamic",
+      "count": 625,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "string",
+      "count": 621,
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "value": "bulletListItem",
+      "count": 526,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "EcdsaSecp256k1VerificationKey2019",
+      "count": 399,
+      "exampleFile": "001a6c579b5157134849d8e8d40e498d.jsonld"
+    },
+    {
+      "value": "panel",
+      "count": 361,
+      "exampleFile": "0634a00f58efb6f3.json"
+    },
+    {
+      "value": "VerifiableCredential",
+      "count": 347,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "ixo:Attribute",
+      "count": 331,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "CosmosAccountAddress",
+      "count": 261,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "object",
+      "count": 253,
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "value": "schema:ImageObject",
+      "count": 244,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "heading",
+      "count": 240,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "Settings",
+      "count": 226,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "asset/device",
+      "count": 181,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "WebDashboard",
+      "count": 178,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "TokenMetadata",
+      "count": 178,
+      "exampleFile": "00046b59059562e773694ea495bc1b23.jsonld"
+    },
+    {
+      "value": "profile",
+      "count": 172,
+      "exampleFile": "0c0cb23484001ffc.json"
+    },
+    {
+      "value": "collection",
+      "count": 166,
+      "exampleFile": "0009f49b7459a022f9c5fc89460683fe.jsonld"
+    },
+    {
+      "value": "file",
+      "count": 133,
+      "exampleFile": "0e23095898d696e4.json"
+    },
+    {
+      "value": "ixo:entity#surveyTemplate",
+      "count": 129,
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "value": "Domain",
+      "count": 128,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "comment",
+      "count": 122,
+      "exampleFile": "08d1d12e8ce73ec7.json"
+    },
+    {
+      "value": "radiogroup",
+      "count": 116,
+      "exampleFile": "0e23095898d696e4.json"
+    },
+    {
+      "value": "schema:Organization",
+      "count": 115,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "schema:CreativeWork",
+      "count": 105,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "schema:PropertyValue",
+      "count": 99,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "multipletext",
+      "count": 96,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "ixo:entity#page",
+      "count": 89,
+      "exampleFile": "059c71391fc49145.json"
+    },
+    {
+      "value": "array",
+      "count": 80,
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "value": "JsonSchema",
+      "count": 80,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "ixo:Tags",
+      "count": 75,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "schema:Offer",
+      "count": 75,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "ixo:DomainCard",
+      "count": 74,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "link",
+      "count": 74,
+      "exampleFile": "282d76186efac53f.json"
+    },
+    {
+      "value": "DataIntegrityProof",
+      "count": 73,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "numberedListItem",
+      "count": 70,
+      "exampleFile": "19393b0138193637.json"
+    },
+    {
+      "value": "schema:DefinedTerm",
+      "count": 68,
+      "exampleFile": "3ace5a8b1f38fe0e.json"
+    },
+    {
+      "value": "Survey",
+      "count": 64,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "DomainSelector",
+      "count": 64,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "Class",
+      "count": 64,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "LinkedResources",
+      "count": 64,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "LinkedDomains",
+      "count": 64,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "LinkedClaims",
+      "count": 62,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "schema:Service",
+      "count": 59,
+      "exampleFile": "3ace5a8b1f38fe0e.json"
+    },
+    {
+      "value": "imagepicker",
+      "count": 56,
+      "exampleFile": "0bdfde896bd1328f.json"
+    },
+    {
+      "value": "EcdsaSecp256k1Signature2019",
+      "count": 56,
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "value": "standard",
+      "count": 48,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "schema:Collection",
+      "count": 47,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "LinkedResource",
+      "count": 46,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "surveyTemplate",
+      "count": 41,
+      "exampleFile": "00bab28624751a2c607f311b970794bf.jsonld"
+    },
+    {
+      "value": "ixo:entity#tags",
+      "count": 34,
+      "exampleFile": "07e67427077b71a4.json"
+    },
+    {
+      "value": "regex",
+      "count": 34,
+      "exampleFile": "597296dded872305.json"
+    },
+    {
+      "value": "AdministratorCredential",
+      "count": 33,
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "value": "administrator",
+      "count": 33,
+      "exampleFile": "a132b86f9897a63c.json"
+    },
+    {
+      "value": "header",
+      "count": 31,
+      "exampleFile": "29e4f27e07dafa9e.json"
+    },
+    {
+      "value": "schema:PostalAddress",
+      "count": 31,
+      "exampleFile": "2fa0b5d0bb1f4057.json"
+    },
+    {
+      "value": "ixo:dao/pod",
+      "count": 30,
+      "exampleFile": "3ace5a8b1f38fe0e.json"
+    },
+    {
+      "value": "checkbox",
+      "count": 28,
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "value": "protocol/verifiableClaim",
+      "count": 27,
+      "exampleFile": "004a597633a1012a6c785209ae0b627d.jsonld"
+    },
+    {
+      "value": "protocol/deed",
+      "count": 27,
+      "exampleFile": "029ef4fe6261ae3710ddc73d29d8d57e.jsonld"
+    },
+    {
+      "value": "image",
+      "count": 26,
+      "exampleFile": "1c9c0843f3699ea9.json"
+    },
+    {
+      "value": "ixo:ResearchProfile",
+      "count": 26,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "Page",
+      "count": 25,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "schema:ContactPoint",
+      "count": 25,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "number",
+      "count": 24,
+      "exampleFile": "0d3802cec91960de.json"
+    },
+    {
+      "value": "prov:Activity",
+      "count": 24,
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "value": "FormSelector",
+      "count": 23,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "Choices",
+      "count": 23,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "Privacy",
+      "count": 23,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "CreatorCredential",
+      "count": 23,
+      "exampleFile": "57777112545193c948ea5600abc95726--creator.json"
+    },
+    {
+      "value": "creator",
+      "count": 23,
+      "exampleFile": "57777112545193c948ea5600abc95726--creator.json"
+    },
+    {
+      "value": "schema:AdministrativeArea",
+      "count": 22,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "expression",
+      "count": 22,
+      "exampleFile": "95b464ecc402b7a0.json"
+    },
+    {
+      "value": "ImpactNFT",
+      "count": 19,
+      "exampleFile": "93513ebc9fe7f559.json"
+    },
+    {
+      "value": "ixo:Profile",
+      "count": 18,
+      "exampleFile": "2ee269c50b0dfc86.json"
+    },
+    {
+      "value": "Ed25519Signature2018",
+      "count": 17,
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "value": "html",
+      "count": 17,
+      "exampleFile": "5b6c5a399ba56d21.json"
+    },
+    {
+      "value": "DeviceCredential",
+      "count": 16,
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "value": "PerformanceTestingCertificate",
+      "count": 16,
+      "exampleFile": "1184c58483916a60.json"
+    },
+    {
+      "value": "@id",
+      "count": 16,
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "value": "Service",
+      "count": 16,
+      "exampleFile": "991d542780bb3d3b.json"
+    },
+    {
+      "value": "schema:City",
+      "count": 16,
+      "exampleFile": "a9f438cbdd38cf9e.json"
+    },
+    {
+      "value": "ixo:Organization",
+      "count": 14,
+      "exampleFile": "0ea592f340b92f38.json"
+    },
+    {
+      "value": "schema:SoftwareApplication",
+      "count": 13,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "ixo:Embedding",
+      "count": 12,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "skip",
+      "count": 12,
+      "exampleFile": "f271e8e29b8637c0.json"
+    },
+    {
+      "value": "integer",
+      "count": 12,
+      "exampleFile": "8fcbc757e75c120dd4beae0e5696fd38--CER.json"
+    },
+    {
+      "value": "email",
+      "count": 11,
+      "exampleFile": "130f3f773040589e.json"
+    },
+    {
+      "value": "bidContributor",
+      "count": 10,
+      "exampleFile": "96c24f45a650e8a8.json"
+    },
+    {
+      "value": "ixo:Page",
+      "count": 9,
+      "exampleFile": "1278a691ff65b458.json"
+    },
+    {
+      "value": "rating",
+      "count": 9,
+      "exampleFile": "18a1a0e49c522699.json"
+    },
+    {
+      "value": "pageTitle",
+      "count": 9,
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "value": "xsd:double",
+      "count": 9,
+      "exampleFile": "2fa0b5d0bb1f4057.json"
+    },
+    {
+      "value": "Offer",
+      "count": 9,
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "value": "PaymentChargeSpecification",
+      "count": 9,
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "value": "QuantitativeValue",
+      "count": 9,
+      "exampleFile": "f0c0c1d5a7f11592.json"
+    },
+    {
+      "value": "claim",
+      "count": 8,
+      "exampleFile": "01c7fce7be12233623158bc6c52444c0.jsonld"
+    },
+    {
+      "value": "domainCard",
+      "count": 8,
+      "exampleFile": "023e3fd2c519443c3130660cc2cdaab0.jsonld"
+    },
+    {
+      "value": "list",
+      "count": 8,
+      "exampleFile": "29e4f27e07dafa9e.json"
+    },
+    {
+      "value": "schema:WebPage",
+      "count": 8,
+      "exampleFile": "6e4e9b9caad5adfc.json"
+    },
+    {
+      "value": "proj:Result",
+      "count": 8,
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "value": "proj:Deliverable",
+      "count": 8,
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "value": "Ipfs",
+      "count": 7,
+      "exampleFile": "00603e08ff955177eac0bddbce6d14ba.jsonld"
+    },
+    {
+      "value": "standardEdge",
+      "count": 7,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "proj:Project",
+      "count": 7,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "tagbox",
+      "count": 7,
+      "exampleFile": "1a1a7fcc051c6b16.json"
+    },
+    {
+      "value": "matrix",
+      "count": 7,
+      "exampleFile": "20c2f43c415ff484.json"
+    },
+    {
+      "value": "heroImage",
+      "count": 7,
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "value": "table",
+      "count": 7,
+      "exampleFile": "282d76186efac53f.json"
+    },
+    {
+      "value": "ixo:AgentCard",
+      "count": 7,
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "value": "deed",
+      "count": 6,
+      "exampleFile": "00603e08ff955177eac0bddbce6d14ba.jsonld"
+    },
+    {
+      "value": "project",
+      "count": 6,
+      "exampleFile": "01c7fce7be12233623158bc6c52444c0.jsonld"
+    },
+    {
+      "value": "Date",
+      "count": 6,
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "value": "proj:Resource",
+      "count": 6,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "schema:GeoCoordinates",
+      "count": 6,
+      "exampleFile": "a9f438cbdd38cf9e.json"
+    },
+    {
+      "value": "protocol/protocol",
+      "count": 5,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "ixo:DeedRequest",
+      "count": 5,
+      "exampleFile": "aa382771236897fa.json"
+    },
+    {
+      "value": "ixo#Tags",
+      "count": 5,
+      "exampleFile": "3d079ebc0b332aad3305bb4a51c72edb--tags.json"
+    },
+    {
+      "value": "CellNode",
+      "count": 4,
+      "exampleFile": "0160a613cbe9ce375070037072c23079.jsonld"
+    },
+    {
+      "value": "imageProfile",
+      "count": 4,
+      "exampleFile": "01c7fce7be12233623158bc6c52444c0.jsonld"
+    },
+    {
+      "value": "MatrixHomeServer",
+      "count": 4,
+      "exampleFile": "023e3fd2c519443c3130660cc2cdaab0.jsonld"
+    },
+    {
+      "value": "ClaimCollection",
+      "count": 4,
+      "exampleFile": "04b4ece7cc06d84fd32928e7b9aa2c32.jsonld"
+    },
+    {
+      "value": "schema:Place",
+      "count": 4,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "tableContent",
+      "count": 4,
+      "exampleFile": "282d76186efac53f.json"
+    },
+    {
+      "value": "ixo:oracle",
+      "count": 4,
+      "exampleFile": "2fa0b5d0bb1f4057.json"
+    },
+    {
+      "value": "complete",
+      "count": 4,
+      "exampleFile": "32d002a62c97464d.json"
+    },
+    {
+      "value": "ixo:asset/collection",
+      "count": 4,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "schema:Organisation",
+      "count": 4,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "ixo:ProtocolDeed",
+      "count": 4,
+      "exampleFile": "3c922415350d088f.json"
+    },
+    {
+      "value": "map-grid-selector",
+      "count": 4,
+      "exampleFile": "5d55962ee2ddd34b.json"
+    },
+    {
+      "value": "dao/pod",
+      "count": 3,
+      "exampleFile": "023e3fd2c519443c3130660cc2cdaab0.jsonld"
+    },
+    {
+      "value": "LegalContract",
+      "count": 3,
+      "exampleFile": "02e0fa6e4f457bb6fb56c6f23f8d4df4.jsonld"
+    },
+    {
+      "value": "protocol/flow",
+      "count": 3,
+      "exampleFile": "1564ce7125c3398e.json"
+    },
+    {
+      "value": "ixo:Claims",
+      "count": 3,
+      "exampleFile": "15f99a60f7842cc8.json"
+    },
+    {
+      "value": "schema:Event",
+      "count": 3,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "ClaimCollectionProtocol",
+      "count": 3,
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "value": "Number",
+      "count": 3,
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "value": "Payments",
+      "count": 3,
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "value": "ClaimCollectionParent",
+      "count": 3,
+      "exampleFile": "2556ef142e200b68.json"
+    },
+    {
+      "value": "schema:Product",
+      "count": 3,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "schema:Brand",
+      "count": 3,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "schema:QuantitativeValue",
+      "count": 3,
+      "exampleFile": "338f3e7f4fd7f8af.json"
+    },
+    {
+      "value": "ixo:Protocol/VerifiableClaim",
+      "count": 3,
+      "exampleFile": "ba43bb8ef6f279e5.json"
+    },
+    {
+      "value": "ixo:Project",
+      "count": 3,
+      "exampleFile": "c0fd60dcb5465696.json"
+    },
+    {
+      "value": "user",
+      "count": 2,
+      "exampleFile": "001acff5f18db27cdf0a21f39747968a.jsonld"
+    },
+    {
+      "value": "imageLogo",
+      "count": 2,
+      "exampleFile": "01c7fce7be12233623158bc6c52444c0.jsonld"
+    },
+    {
+      "value": "protocol/claim",
+      "count": 2,
+      "exampleFile": "01dcabd7af8f0fa87775f3d7f043a11e.jsonld"
+    },
+    {
+      "value": "ixo:project",
+      "count": 2,
+      "exampleFile": "16339341065a269f.json"
+    },
+    {
+      "value": "pageContent",
+      "count": 2,
+      "exampleFile": "21d9861721df58d8.json"
+    },
+    {
+      "value": "pod",
+      "count": 2,
+      "exampleFile": "36c74b27db89774a.json"
+    },
+    {
+      "value": "ixo:Protocol",
+      "count": 2,
+      "exampleFile": "76d131f16945d9b3.json"
+    },
+    {
+      "value": "ixo:dao",
+      "count": 2,
+      "exampleFile": "8ba819e83166534a.json"
+    },
+    {
+      "value": "quote",
+      "count": 2,
+      "exampleFile": "93af2ee4458533d1.json"
+    },
+    {
+      "value": "asset",
+      "count": 2,
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "value": "blockchain",
+      "count": 2,
+      "exampleFile": "9a3ec2db6784dacd.json"
+    },
+    {
+      "value": "ixo:Oracle",
+      "count": 2,
+      "exampleFile": "9cff988bbfd1087f.json"
+    },
+    {
+      "value": "ixo:Request",
+      "count": 2,
+      "exampleFile": "aa382771236897fa.json"
+    },
+    {
+      "value": "schema:Grant",
+      "count": 2,
+      "exampleFile": "aa382771236897fa.json"
+    },
+    {
+      "value": "bidEvaluator",
+      "count": 2,
+      "exampleFile": "eb6f5cc8bf754b69.json"
+    },
+    {
+      "value": "ixo:Impact Credit",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:representation",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:denom",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:issuanceDate",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:credits",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:unit",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "ixo:supply",
+      "count": 2,
+      "exampleFile": "ec9bf24ac9f75b0e.json"
+    },
+    {
+      "value": "deed/subscription",
+      "count": 1,
+      "exampleFile": "001acff5f18db27cdf0a21f39747968a.jsonld"
+    },
+    {
+      "value": "protocol/request",
+      "count": 1,
+      "exampleFile": "018186d4dea1ee8f00417318ccedf55e.jsonld"
+    },
+    {
+      "value": "ClaimSchema",
+      "count": 1,
+      "exampleFile": "01dcabd7af8f0fa87775f3d7f043a11e.jsonld"
+    },
+    {
+      "value": "protocol/system",
+      "count": 1,
+      "exampleFile": "025ab058134a0e2f75f28739e9ccfffe.jsonld"
+    },
+    {
+      "value": "protocol",
+      "count": 1,
+      "exampleFile": "03b6153faeb426519cf789d16e88834a.jsonld"
+    },
+    {
+      "value": "Invoice",
+      "count": 1,
+      "exampleFile": "04760bee0fafc1dfcf57646c3706f787.jsonld"
+    },
+    {
+      "value": "protocol/dao",
+      "count": 1,
+      "exampleFile": "049c5e1f23c3a8b9970cc9b6bf16e8d2.jsonld"
+    },
+    {
+      "value": "deed/offer",
+      "count": 1,
+      "exampleFile": "04b4ece7cc06d84fd32928e7b9aa2c32.jsonld"
+    },
+    {
+      "value": "ixo:entity#claimSchema",
+      "count": 1,
+      "exampleFile": "4a4fd4b6e359ed02.json"
+    },
+    {
+      "value": "ixo:Programme",
+      "count": 1,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "schema:Person",
+      "count": 1,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "proj:FundingAssociation",
+      "count": 1,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "proj:SumOfMoney",
+      "count": 1,
+      "exampleFile": "7d1434a6612a6eac.json"
+    },
+    {
+      "value": "schema:Country",
+      "count": 1,
+      "exampleFile": "a9f438cbdd38cf9e.json"
+    },
+    {
+      "value": "matrixdropdown",
+      "count": 1,
+      "exampleFile": "cae23c48daf7f832.json"
+    },
+    {
+      "value": "ixo:DAO",
+      "count": 1,
+      "exampleFile": "ce922bc02fec3117.json"
+    },
+    {
+      "value": "ranking",
+      "count": 1,
+      "exampleFile": "da6ea6370ec6521e.json"
+    },
+    {
+      "value": "ixo:asset/device",
+      "count": 1,
+      "exampleFile": "fcb6bf67646a738b.json"
+    }
+  ]
+}

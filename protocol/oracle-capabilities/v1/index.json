@@ -1,0 +1,196 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Oracle Capabilities (P-Functions)",
+      "dcterms:description": "The capability classes (P-Functions) that an agentic oracle or cognitive digital twin can perform.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "ixofoundation docs — articles/cdt-systems.md (P-Functions)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#prediction-and-perception"
+        },
+        {
+          "@id": "#prescription-and-planning"
+        },
+        {
+          "@id": "#proving-and-protocol-conformance"
+        },
+        {
+          "@id": "#protection-and-risk"
+        },
+        {
+          "@id": "#participation"
+        },
+        {
+          "@id": "#payments-and-portfolio"
+        },
+        {
+          "@id": "#policy-and-compliance"
+        },
+        {
+          "@id": "#problem-identification-and-resolution"
+        }
+      ]
+    },
+    {
+      "@id": "#prediction-and-perception",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prediction and Perception",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sensing, monitoring and forecasting the state of a system or environment.",
+        "@language": "en"
+      },
+      "skos:notation": "prediction-and-perception",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#prescription-and-planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prescription and Planning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Recommending and planning actions to achieve goals.",
+        "@language": "en"
+      },
+      "skos:notation": "prescription-and-planning",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#proving-and-protocol-conformance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Proving and Protocol Conformance",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Verifying that claims, processes and outputs conform to defined protocols.",
+        "@language": "en"
+      },
+      "skos:notation": "proving-and-protocol-conformance",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#protection-and-risk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Protection and Risk",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Identifying, assessing and mitigating risks and threats.",
+        "@language": "en"
+      },
+      "skos:notation": "protection-and-risk",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#participation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Participation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Enabling, coordinating and rewarding the participation of agents.",
+        "@language": "en"
+      },
+      "skos:notation": "participation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#payments-and-portfolio",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payments and Portfolio",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Managing payments, assets and portfolios.",
+        "@language": "en"
+      },
+      "skos:notation": "payments-and-portfolio",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#policy-and-compliance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Policy and Compliance",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Applying policies and ensuring regulatory and protocol compliance.",
+        "@language": "en"
+      },
+      "skos:notation": "policy-and-compliance",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    },
+    {
+      "@id": "#problem-identification-and-resolution",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Problem Identification and Resolution",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Detecting problems and coordinating their resolution.",
+        "@language": "en"
+      },
+      "skos:notation": "problem-identification-and-resolution",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-capabilities/v1"
+      }
+    }
+  ]
+}

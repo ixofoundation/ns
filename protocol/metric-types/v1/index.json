@@ -1,0 +1,61 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/metric-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/metric-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Metric Types",
+      "dcterms:description": "Kinds of quantitative metric tracked for an entity, such as units issued. Semantic companion to the protocol/metric/v1 survey-data file.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "legacy ixofoundation/ns protocol/metric/v1 (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#issued"
+        }
+      ]
+    },
+    {
+      "@id": "#issued",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/metric-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Issued",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Metric for the amount of units issued",
+        "@language": "en"
+      },
+      "skos:notation": "issued",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/metric-types/v1"
+      }
+    },
+    {
+      "@id": "#issued-carbon-credits",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/metric-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Carbon Credits",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A structured framework defining the format and content of credentials.",
+        "@language": "en"
+      },
+      "skos:notation": "issued/carbonCredits",
+      "skos:broader": {
+        "@id": "#issued"
+      }
+    }
+  ]
+}

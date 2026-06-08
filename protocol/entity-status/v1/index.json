@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/entity-status/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/entity-status/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Entity Status",
+      "dcterms:description": "Operational status codes for an entity on the IXO Spatial Web.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityStatus)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#pending"
+        },
+        {
+          "@id": "#live"
+        },
+        {
+          "@id": "#stopped"
+        },
+        {
+          "@id": "#sealed"
+        },
+        {
+          "@id": "#deleted"
+        },
+        {
+          "@id": "#recruiting"
+        }
+      ]
+    },
+    {
+      "@id": "#pending",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pending",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity has been created but is not yet active.",
+        "@language": "en"
+      },
+      "skos:notation": "Pending",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    },
+    {
+      "@id": "#live",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Live",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is active and operational.",
+        "@language": "en"
+      },
+      "skos:notation": "Live",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    },
+    {
+      "@id": "#stopped",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Stopped",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s operation has been halted.",
+        "@language": "en"
+      },
+      "skos:notation": "Stopped",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    },
+    {
+      "@id": "#sealed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Sealed",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity has been finalised and locked against further change.",
+        "@language": "en"
+      },
+      "skos:notation": "Sealed",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    },
+    {
+      "@id": "#deleted",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Deleted",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity has been removed from active use.",
+        "@language": "en"
+      },
+      "skos:notation": "Deleted",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    },
+    {
+      "@id": "#recruiting",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Recruiting",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity is open and seeking participants or members.",
+        "@language": "en"
+      },
+      "skos:notation": "Recruiting",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-status/v1"
+      }
+    }
+  ]
+}

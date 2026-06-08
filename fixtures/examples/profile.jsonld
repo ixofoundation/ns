@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:88888888888888888888888888888888#profile",
+  "type": "ixo:Profile",
+  "name": "Example Org",
+  "orgName": "Example Organisation",
+  "description": "A conformant example profile.",
+  "brand": "Example",
+  "logo": "https://example.org/logo.png",
+  "image": "https://example.org/image.png",
+  "location": "AA",
+  "attributes": [{ "type": "ixo:Attribute", "name": "sector", "value": "energy" }]
+}

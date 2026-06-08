@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/ixo/schema/v1/tags",
+  "title": "IXO Entity Tags",
+  "description": "Document-shape schema for an entity Tags linked resource. Graph-shape rules live in shapes/v1/TagsShape.jsonld.",
+  "type": "object",
+  "required": ["@context", "type", "entityTags"],
+  "properties": {
+    "@context": { "oneOf": [{ "type": "string" }, { "type": "array", "minItems": 1 }] },
+    "id": { "type": "string" },
+    "type": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] },
+    "settings": { "type": "string" },
+    "entityTags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "tags"],
+        "properties": {
+          "category": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

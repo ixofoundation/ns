@@ -1,0 +1,900 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Blockchain Account Types",
+      "dcterms:description": "Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "legacy ixofoundation/ns protocol/blockchain-account/v1 (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#algorand-account"
+        },
+        {
+          "@id": "#arbitrum-account"
+        },
+        {
+          "@id": "#avalanche-account"
+        },
+        {
+          "@id": "#binance-smart-chain-account"
+        },
+        {
+          "@id": "#bitcoin-account"
+        },
+        {
+          "@id": "#bitcoin-cash-account"
+        },
+        {
+          "@id": "#blockchain-com-account"
+        },
+        {
+          "@id": "#cardano-account"
+        },
+        {
+          "@id": "#celo-account"
+        },
+        {
+          "@id": "#chainlink-account"
+        },
+        {
+          "@id": "#cosmos-account"
+        },
+        {
+          "@id": "#dash-account"
+        },
+        {
+          "@id": "#dogecoin-account"
+        },
+        {
+          "@id": "#eosaccount"
+        },
+        {
+          "@id": "#elrond-account"
+        },
+        {
+          "@id": "#ethereum-account"
+        },
+        {
+          "@id": "#fantom-account"
+        },
+        {
+          "@id": "#filecoin-account"
+        },
+        {
+          "@id": "#harmony-account"
+        },
+        {
+          "@id": "#hedera-account"
+        },
+        {
+          "@id": "#hyperledger-account"
+        },
+        {
+          "@id": "#iotaaccount"
+        },
+        {
+          "@id": "#ku-coin-account"
+        },
+        {
+          "@id": "#kusama-account"
+        },
+        {
+          "@id": "#litecoin-account"
+        },
+        {
+          "@id": "#monero-account"
+        },
+        {
+          "@id": "#near-account"
+        },
+        {
+          "@id": "#optimism-account"
+        },
+        {
+          "@id": "#polkadot-account"
+        },
+        {
+          "@id": "#polygon-account"
+        },
+        {
+          "@id": "#private-chain-account"
+        },
+        {
+          "@id": "#ripple-account"
+        },
+        {
+          "@id": "#solana-account"
+        },
+        {
+          "@id": "#stellar-account"
+        },
+        {
+          "@id": "#terra-account"
+        },
+        {
+          "@id": "#tezos-account"
+        },
+        {
+          "@id": "#theta-account"
+        },
+        {
+          "@id": "#tron-account"
+        },
+        {
+          "@id": "#ve-chain-account"
+        },
+        {
+          "@id": "#zilliqa-account"
+        }
+      ]
+    },
+    {
+      "@id": "#algorand-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Algorand Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Algorand blockchain for ALGO and related assets.",
+        "@language": "en"
+      },
+      "skos:notation": "AlgorandAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#arbitrum-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Arbitrum Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account on the Arbitrum Layer 2 Ethereum scaling solution.",
+        "@language": "en"
+      },
+      "skos:notation": "ArbitrumAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#avalanche-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Avalanche Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account on the Avalanche network for AVAX and smart contract interactions.",
+        "@language": "en"
+      },
+      "skos:notation": "AvalancheAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#binance-smart-chain-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Binance Smart Chain Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in Binance Smart Chain (BSC) for managing BNB and BEP-20 tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "BinanceSmartChainAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#bitcoin-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bitcoin Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents a Bitcoin wallet or address for holding and transacting BTC.",
+        "@language": "en"
+      },
+      "skos:notation": "BitcoinAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#bitcoin-cash-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bitcoin Cash Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Bitcoin Cash blockchain for BCH transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "BitcoinCashAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#blockchain-com-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Blockchain com Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Blockchain.com wallet system.",
+        "@language": "en"
+      },
+      "skos:notation": "Blockchain.comAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#cardano-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cardano Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Cardano blockchain for ADA and staking purposes.",
+        "@language": "en"
+      },
+      "skos:notation": "CardanoAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#celo-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Celo Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Celo network for mobile-first financial solutions.",
+        "@language": "en"
+      },
+      "skos:notation": "CeloAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#chainlink-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Chainlink Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account for Chainlink-related interactions (mainly for node operators).",
+        "@language": "en"
+      },
+      "skos:notation": "ChainlinkAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#cosmos-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cosmos Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account within the Cosmos ecosystem for staking and token transfers.",
+        "@language": "en"
+      },
+      "skos:notation": "CosmosAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#dash-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Dash Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Dash blockchain for private and instant transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "DashAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#dogecoin-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Dogecoin Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Dogecoin blockchain for DOGE transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "DogecoinAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#eosaccount",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "EOSAccount",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the EOS blockchain for dApps and transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "EOSAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#elrond-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Elrond Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Elrond blockchain for EGLD and related dApps.",
+        "@language": "en"
+      },
+      "skos:notation": "ElrondAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#ethereum-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ethereum Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an Ethereum wallet or address for ETH and ERC tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "EthereumAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#fantom-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Fantom Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Fantom blockchain for DeFi and smart contracts.",
+        "@language": "en"
+      },
+      "skos:notation": "FantomAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#filecoin-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Filecoin Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Filecoin blockchain for decentralized storage payments.",
+        "@language": "en"
+      },
+      "skos:notation": "FilecoinAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#harmony-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Harmony Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Harmony blockchain for ONE tokens and transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "HarmonyAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#hedera-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Hedera Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in Hedera Hashgraph for HBAR and dApps.",
+        "@language": "en"
+      },
+      "skos:notation": "HederaAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#hyperledger-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Hyperledger Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Hyperledger permissioned blockchain ecosystem.",
+        "@language": "en"
+      },
+      "skos:notation": "HyperledgerAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#iotaaccount",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "IOTAAccount",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the IOTA Tangle for IoT-focused transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "IOTAAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#ku-coin-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ku Coin Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in KuCoin for blockchain interactions within their platform.",
+        "@language": "en"
+      },
+      "skos:notation": "KuCoinAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#kusama-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Kusama Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Kusama network, Polkadot's canary network.",
+        "@language": "en"
+      },
+      "skos:notation": "KusamaAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#litecoin-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Litecoin Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Litecoin blockchain for LTC transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "LitecoinAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#monero-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Monero Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Monero blockchain for privacy-focused XMR transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "MoneroAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#near-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Near Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the NEAR Protocol for smart contract interactions.",
+        "@language": "en"
+      },
+      "skos:notation": "NearAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#optimism-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Optimism Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account on the Optimism Layer 2 Ethereum scaling solution.",
+        "@language": "en"
+      },
+      "skos:notation": "OptimismAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#polkadot-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Polkadot Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Polkadot network for staking, governance, and transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "PolkadotAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#polygon-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Polygon Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Polygon (Matic) blockchain for Ethereum scaling.",
+        "@language": "en"
+      },
+      "skos:notation": "PolygonAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#private-chain-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Private Chain Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in a custom private blockchain network.",
+        "@language": "en"
+      },
+      "skos:notation": "PrivateChainAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#ripple-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ripple Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Ripple (XRP) ledger for XRP transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "RippleAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#solana-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Solana Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Solana blockchain for managing SOL and related assets.",
+        "@language": "en"
+      },
+      "skos:notation": "SolanaAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#stellar-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Stellar Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Stellar blockchain for managing Lumens (XLM).",
+        "@language": "en"
+      },
+      "skos:notation": "StellarAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#terra-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Terra Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Terra blockchain for managing LUNA and stablecoins.",
+        "@language": "en"
+      },
+      "skos:notation": "TerraAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#tezos-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Tezos Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Tezos blockchain for staking, baking, and transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "TezosAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#theta-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Theta Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Theta blockchain for video streaming and rewards.",
+        "@language": "en"
+      },
+      "skos:notation": "ThetaAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#tron-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Tron Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the TRON network for TRX and TRC tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "TronAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#ve-chain-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ve Chain Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the VeChainThor blockchain for VET and VeChain tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "VeChainAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    },
+    {
+      "@id": "#zilliqa-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Zilliqa Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Represents an account in the Zilliqa blockchain for ZIL and shard-based transactions.",
+        "@language": "en"
+      },
+      "skos:notation": "ZilliqaAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/blockchain-account-types/v1"
+      }
+    }
+  ]
+}

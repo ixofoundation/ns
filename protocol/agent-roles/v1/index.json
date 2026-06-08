@@ -1,0 +1,108 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/agent-roles/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/agent-roles/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Agent Roles",
+      "dcterms:description": "Roles an agent can hold in relation to an entity. Notation is the two-letter on-chain code.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "ixo-webclient AgentRole (src/redux/account/account.types.ts)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#owner"
+        },
+        {
+          "@id": "#evaluator"
+        },
+        {
+          "@id": "#service-provider"
+        },
+        {
+          "@id": "#investor"
+        }
+      ]
+    },
+    {
+      "@id": "#owner",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Owner",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The owner of an entity (project owner).",
+        "@language": "en"
+      },
+      "skos:notation": "PO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      }
+    },
+    {
+      "@id": "#evaluator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluator",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An agent that evaluates claims (evaluation agent).",
+        "@language": "en"
+      },
+      "skos:notation": "EA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      }
+    },
+    {
+      "@id": "#service-provider",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Service Provider",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An agent that provides services (service agent).",
+        "@language": "en"
+      },
+      "skos:notation": "SA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      }
+    },
+    {
+      "@id": "#investor",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investor",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An agent that invests in an entity (investor agent).",
+        "@language": "en"
+      },
+      "skos:notation": "IA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/agent-roles/v1"
+      }
+    }
+  ]
+}

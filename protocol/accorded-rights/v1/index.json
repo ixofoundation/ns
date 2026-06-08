@@ -1,1 +1,238 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Accorded Right Types",
+      "dcterms:description": "Kinds of right or capability granted in relation to an entity via the accordedRight property.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "on-chain accordedRight.type values (ixo-mainnet)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#capability"
+        },
+        {
+          "@id": "#legal"
+        },
+        {
+          "@id": "#access-token"
+        }
+      ]
+    },
+    {
+      "@id": "#capability",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Capability",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An authority capability granted in relation to an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "capability",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      }
+    },
+    {
+      "@id": "#capability-mint-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Mint Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to mint tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/mintToken",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-create-entity",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Create Entity",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to create entities.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/createEntity",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-attest",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Attest",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to attest claims.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/attest",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-access",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Access",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to access a resource.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/access",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-swap-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Swap Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to swap tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/swapToken",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-transfer-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Transfer Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to transfer tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/transferToken",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-retire-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Retire Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to retire tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/retireToken",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#capability-cancel-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cancel Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Capability to cancel tokens.",
+        "@language": "en"
+      },
+      "skos:notation": "capability/cancelToken",
+      "skos:broader": {
+        "@id": "#capability"
+      }
+    },
+    {
+      "@id": "#legal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Legal Right",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A legal right governing the entity or resource.",
+        "@language": "en"
+      },
+      "skos:notation": "legal",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      }
+    },
+    {
+      "@id": "#access-token",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Access Token",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An access-token-based right.",
+        "@language": "en"
+      },
+      "skos:notation": "AccessToken",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1"
+      }
+    }
+  ]
+}

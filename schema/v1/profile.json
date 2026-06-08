@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/ixo/schema/v1/profile",
+  "title": "IXO Entity Profile",
+  "description": "Document-shape schema for an entity Profile linked resource. Graph-shape rules live in shapes/v1/ProfileShape.jsonld.",
+  "type": "object",
+  "required": ["@context", "type", "name"],
+  "properties": {
+    "@context": { "oneOf": [{ "type": "string" }, { "type": "array", "minItems": 1 }] },
+    "id": { "type": "string" },
+    "type": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }] },
+    "name": { "type": "string", "minLength": 1 },
+    "orgName": { "type": "string" },
+    "description": { "type": "string" },
+    "brand": { "type": "string" },
+    "logo": { "type": "string" },
+    "image": { "type": "string" },
+    "location": { "type": "string" },
+    "metrics": { "type": "array", "items": { "type": "object" } },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { "name": { "type": "string" }, "value": {} }
+      }
+    }
+  }
+}

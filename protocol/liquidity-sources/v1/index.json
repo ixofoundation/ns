@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Liquidity Sources",
+      "dcterms:description": "Sources from which liquidity or funds can be drawn.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (LiquiditySource)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#alphabond"
+        },
+        {
+          "@id": "#wallet-address"
+        },
+        {
+          "@id": "#bank-account"
+        },
+        {
+          "@id": "#payment-contract"
+        },
+        {
+          "@id": "#nft-asset"
+        },
+        {
+          "@id": "#liquidity-pool"
+        }
+      ]
+    },
+    {
+      "@id": "#alphabond",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Alphabond",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from an Alphabond bonding curve.",
+        "@language": "en"
+      },
+      "skos:notation": "Alphabond",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    },
+    {
+      "@id": "#wallet-address",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Wallet Address",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from a wallet address.",
+        "@language": "en"
+      },
+      "skos:notation": "WalletAddress",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    },
+    {
+      "@id": "#bank-account",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bank Account",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from a bank account.",
+        "@language": "en"
+      },
+      "skos:notation": "BankAccount",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    },
+    {
+      "@id": "#payment-contract",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payment Contract",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from a payment contract.",
+        "@language": "en"
+      },
+      "skos:notation": "PaymentContract",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    },
+    {
+      "@id": "#nft-asset",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "NFT Asset",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from a non-fungible token asset.",
+        "@language": "en"
+      },
+      "skos:notation": "NFTAsset",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    },
+    {
+      "@id": "#liquidity-pool",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Liquidity Pool",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liquidity sourced from a liquidity pool.",
+        "@language": "en"
+      },
+      "skos:notation": "LiquidityPool",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/liquidity-sources/v1"
+      }
+    }
+  ]
+}

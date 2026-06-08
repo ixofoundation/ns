@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "cred": "https://www.w3.org/2018/credentials#",
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/DomainCardShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:DomainCard" },
+  "sh:nodeKind": { "@id": "sh:IRI" },
+  "rdfs:comment": "A Domain Card credential: an IRI node typed ixo:DomainCard with exactly one credential subject (an IRI). Required subject fields (name, type) are enforced by schemas/v1/domainCard.json — not duplicated here.",
+  "sh:property": [
+    {
+      "sh:path": { "@id": "cred:credentialSubject" },
+      "sh:minCount": 1,
+      "sh:maxCount": 1,
+      "sh:nodeKind": { "@id": "sh:IRI" },
+      "sh:name": "credentialSubject"
+    }
+  ]
+}

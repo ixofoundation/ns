@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Evaluation Codes",
+      "dcterms:description": "Grades A–F used to score the result of an evaluation.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "emerging-eco/ns codes/index.jsonld",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#a"
+        },
+        {
+          "@id": "#b"
+        },
+        {
+          "@id": "#c"
+        },
+        {
+          "@id": "#d"
+        },
+        {
+          "@id": "#e"
+        },
+        {
+          "@id": "#f"
+        }
+      ]
+    },
+    {
+      "@id": "#a",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade A",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Excellent — meets all criteria at the highest standard.",
+        "@language": "en"
+      },
+      "skos:notation": "A",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    },
+    {
+      "@id": "#b",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade B",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Good — meets criteria above the required standard.",
+        "@language": "en"
+      },
+      "skos:notation": "B",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    },
+    {
+      "@id": "#c",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade C",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Satisfactory — meets the required standard.",
+        "@language": "en"
+      },
+      "skos:notation": "C",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    },
+    {
+      "@id": "#d",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade D",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Marginal — partially meets the required standard.",
+        "@language": "en"
+      },
+      "skos:notation": "D",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    },
+    {
+      "@id": "#e",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade E",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Poor — falls short of the required standard.",
+        "@language": "en"
+      },
+      "skos:notation": "E",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    },
+    {
+      "@id": "#f",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Grade F",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Fail — does not meet the required standard.",
+        "@language": "en"
+      },
+      "skos:notation": "F",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/evaluation-codes/v1"
+      }
+    }
+  ]
+}

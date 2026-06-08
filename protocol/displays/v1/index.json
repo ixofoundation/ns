@@ -1,0 +1,15 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "display": "https://w3c.github.io/dpv/2.0/dpv/#Display",
+      "type": "@type",
+      "@id": "@type",
+      "@version": 1.1
+    }
+  ],
+  "display": {
+    "description": "Visual representation of information in the interface",
+    "fragmentIdentifier": "#dsp"
+  }
+}

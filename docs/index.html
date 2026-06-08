@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IXO Namespace</title><style>:root{--fg:#1a1a2e;--mut:#5b6472;--line:#e4e7ec;--accent:#3a0ca3;--bg:#fff;--code:#f4f4f8}
+*{box-sizing:border-box}body{font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+h1{font-size:2rem;margin:0 0 .25rem}h2{font-size:1.4rem;margin:2.5rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.75rem 0 .35rem}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.lead{color:var(--mut);font-size:1.05rem;max-width:70ch}.muted{color:var(--mut)}code{background:var(--code);padding:.1em .35em;border-radius:4px;font-size:.85em}
+table{border-collapse:collapse;width:100%;margin:.5rem 0 1rem;font-size:.9rem}th,td{text-align:left;vertical-align:top;padding:.45rem .6rem;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}td code{white-space:nowrap}
+.toc{columns:2;gap:1.5rem;margin:1rem 0 0;padding:0;list-style:none}.toc li{margin:.15rem 0}
+.pill{display:inline-block;background:var(--code);color:var(--mut);border-radius:999px;padding:.05rem .55rem;font-size:.78rem;margin-left:.4rem}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}</style></head>
+<body><div class="wrap">
+<h1>IXO Namespace</h1>
+<p class="lead">Human-readable documentation for the IXO Spatial Web namespace — the core RDFS/OWL vocabulary and the SKOS concept schemes published under <code>https://w3id.org/ixo/</code>. Machine clients receive JSON-LD from the same IRIs via content negotiation.</p>
+<p class="muted">Vocabulary: <a href="https://w3id.org/ixo/vocab/v1">vocab/v1</a> · Context: <a href="https://w3id.org/ixo/context/v1">context/v1</a> · 38 classes · 32 properties · 30 concept schemes</p>
+
+<h2 id="vocabulary">Core vocabulary</h2>
+<h3>Classes <span class="pill">38</span></h3>
+<table><thead><tr><th>Term</th><th>Label</th><th>Comment</th><th>Subclass of</th></tr></thead>
+<tbody><tr><td><code id="ixo:AccordedRight">ixo:AccordedRight</code></td><td>Accorded Right</td><td>A right or permission granted in relation to an entity, often enforced by an external authority, capability or contract.</td><td></td></tr>
+<tr><td><code id="ixo:Account">ixo:Account</code></td><td>Account</td><td>A blockchain account associated with and controlled by an entity.</td><td></td></tr>
+<tr><td><code id="ixo:AgentCard">ixo:AgentCard</code></td><td>Agent Card</td><td>A descriptor of an agent associated with an entity — its name, endpoint and contact point.</td><td></td></tr>
+<tr><td><code id="ixo:Asset">ixo:Asset</code></td><td>Asset</td><td>An item or resource of value that is owned or controlled by an entity, whether physical, digital or financial.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:AssetCollection">ixo:AssetCollection</code></td><td>Asset Collection</td><td>A curated group of related assets organised and managed under a common theme or purpose.</td><td><code>ixo:Asset</code></td></tr>
+<tr><td><code id="ixo:Attribute">ixo:Attribute</code></td><td>Attribute</td><td>A named attribute — a name/value pair — attached to an entity or resource.</td><td></td></tr>
+<tr><td><code id="ixo:Blueprint">ixo:Blueprint</code></td><td>Blueprint</td><td>A template that prescribes the structure and content of entities, claims or credentials produced from it.</td><td><code>ixo:Protocol</code></td></tr>
+<tr><td><code id="ixo:Claim">ixo:Claim</code></td><td>Claim</td><td>A structured assertion made by or about an entity, which may be evaluated and verified to produce a credential.</td><td></td></tr>
+<tr><td><code id="ixo:CognitiveTwin">ixo:CognitiveTwin</code></td><td>Cognitive Twin</td><td>The reasoning and decision-making representation of a subject within a twin system, able to interpret data and act.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:Credential">ixo:Credential</code></td><td>Credential</td><td>A verifiable attestation issued by an authority about a subject, cryptographically bound to its issuer.</td><td><code>cred:VerifiableCredential</code></td></tr>
+<tr><td><code id="ixo:DAO">ixo:DAO</code></td><td>DAO</td><td>A Decentralised Autonomous Organisation that coordinates members and sub-groups through on-chain governance.</td><td><code>ixo:Entity</code> <code>schema:Organization</code></td></tr>
+<tr><td><code id="ixo:Deed">ixo:Deed</code></td><td>Deed</td><td>A recorded act or agreement — such as a request, offer, proposal or subscription — that expresses intent or commitment between entities.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:Domain">ixo:Domain</code></td><td>Domain</td><td>The identity and namespace boundary owned by an entity, under which its resources, claims and relationships are organised and resolved.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:DomainCard">ixo:DomainCard</code></td><td>Domain Card</td><td>A verifiable credential describing an entity's domain — its canonical profile, relationships and resources.</td><td><code>cred:VerifiableCredential</code></td></tr>
+<tr><td><code id="ixo:Embedding">ixo:Embedding</code></td><td>Embedding</td><td>A vector embedding of an entity's content, used for semantic search and retrieval.</td><td></td></tr>
+<tr><td><code id="ixo:Entity">ixo:Entity</code></td><td>Entity</td><td>A self-sovereign digital domain on the IXO Spatial Web, identified by a Decentralised Identifier (DID) and described by an on-chain IID document.</td><td></td></tr>
+<tr><td><code id="ixo:Evaluation">ixo:Evaluation</code></td><td>Evaluation</td><td>The act of assessing a claim or entity against a rubric or method to determine a verified result.</td><td><code>prov:Activity</code></td></tr>
+<tr><td><code id="ixo:Evidence">ixo:Evidence</code></td><td>Evidence</td><td>Supporting information or data that substantiates a claim, credential or evaluation.</td><td><code>prov:Entity</code></td></tr>
+<tr><td><code id="ixo:Flow">ixo:Flow</code></td><td>Flow</td><td>An intent-driven workflow that coordinates a piece of work or business process from start to finish.</td><td><code>ixo:Deed</code></td></tr>
+<tr><td><code id="ixo:Indicator">ixo:Indicator</code></td><td>Indicator</td><td>A defined metric used to measure progress, performance or impact.</td><td></td></tr>
+<tr><td><code id="ixo:Investment">ixo:Investment</code></td><td>Investment</td><td>An allocation of capital or resources made in expectation of a future financial or impact return.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:LinkedResource">ixo:LinkedResource</code></td><td>Linked Resource</td><td>A described, addressable resource — such as a document, dataset or credential — referenced from an entity's document.</td><td></td></tr>
+<tr><td><code id="ixo:Market">ixo:Market</code></td><td>Market</td><td>A venue and mechanism through which assets, rights or outcomes are exchanged between participants.</td><td></td></tr>
+<tr><td><code id="ixo:Oracle">ixo:Oracle</code></td><td>Oracle</td><td>An agentic service that evaluates claims, computes results or supplies external information to the network, often as a cognitive digital twin.</td><td><code>ixo:Entity</code> <code>prov:Agent</code></td></tr>
+<tr><td><code id="ixo:OracleTwin">ixo:OracleTwin</code></td><td>Oracle Twin</td><td>A cognitive twin that performs oracle functions — evaluating claims and supplying verified results to the network.</td><td><code>ixo:Entity</code> <code>ixo:Oracle</code></td></tr>
+<tr><td><code id="ixo:Organisation">ixo:Organisation</code></td><td>Organisation</td><td>A group of people or agents organised toward a shared purpose, acting as a single accountable entity.</td><td><code>ixo:Entity</code> <code>schema:Organization</code> <code>foaf:Organization</code></td></tr>
+<tr><td><code id="ixo:Page">ixo:Page</code></td><td>Page</td><td>A page of presentational content for an entity.</td><td></td></tr>
+<tr><td><code id="ixo:PhysicalTwin">ixo:PhysicalTwin</code></td><td>Physical Twin</td><td>The digital representation of a real-world physical subject, such as a device or facility, within a twin system.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:POD">ixo:POD</code></td><td>POD</td><td>A small, autonomous sub-group within a DAO that can act independently while remaining accountable to the parent organisation.</td><td><code>ixo:DAO</code></td></tr>
+<tr><td><code id="ixo:Profile">ixo:Profile</code></td><td>Profile</td><td>An entity's public profile resource — name, description, image, brand, location and metrics.</td><td></td></tr>
+<tr><td><code id="ixo:Project">ixo:Project</code></td><td>Project</td><td>A planned undertaking that coordinates resources and activities toward defined goals and measurable outcomes.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:Protocol">ixo:Protocol</code></td><td>Protocol</td><td>A reusable definition of rules, content and structure used to create and govern other entities, claims or credentials of a given kind.</td><td><code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:ResearchProfile">ixo:ResearchProfile</code></td><td>Research Profile</td><td>A profile describing an entity's research interests, seed queries, citations and embeddings.</td><td></td></tr>
+<tr><td><code id="ixo:Rubric">ixo:Rubric</code></td><td>Rubric</td><td>A structured set of criteria and scoring rules against which claims are evaluated.</td><td></td></tr>
+<tr><td><code id="ixo:Service">ixo:Service</code></td><td>Service</td><td>A network endpoint through which an entity's services or data can be accessed.</td><td><code>did:ServiceEndpoint</code></td></tr>
+<tr><td><code id="ixo:Settings">ixo:Settings</code></td><td>Settings</td><td>Configuration that governs how an entity behaves or is presented.</td><td></td></tr>
+<tr><td><code id="ixo:Tags">ixo:Tags</code></td><td>Tags</td><td>A set of categorised tags applied to an entity.</td><td></td></tr>
+<tr><td><code id="ixo:TwinSystem">ixo:TwinSystem</code></td><td>Twin System</td><td>A cognitive digital twin system that couples a physical or conceptual subject with its digital representation and reasoning capabilities.</td><td><code>ixo:Entity</code></td></tr></tbody></table>
+<h3>Properties <span class="pill">32</span></h3>
+<table><thead><tr><th>Term</th><th>Label</th><th>Comment</th><th>Domain → Range</th></tr></thead>
+<tbody><tr><td><code id="ixo:accordedRight">ixo:accordedRight</code></td><td>accordedRight</td><td>A right or permission granted in relation to this entity.</td><td><code>ixo:Entity</code> → <code>ixo:AccordedRight</code></td></tr>
+<tr><td><code id="ixo:account">ixo:account</code></td><td>account</td><td>A blockchain account associated with and controlled by this entity.</td><td><code>ixo:Entity</code> → <code>ixo:Account</code></td></tr>
+<tr><td><code id="ixo:alsoKnownAs">ixo:alsoKnownAs</code></td><td>alsoKnownAs</td><td>An alternative identifier by which the entity is also known.</td><td><code>ixo:Entity</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:assertionMethod">ixo:assertionMethod</code></td><td>assertionMethod</td><td>Verification methods this entity may use to issue verifiable claims and credentials.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:attributes">ixo:attributes</code></td><td>attributes</td><td>Named attributes attached to an entity or resource.</td><td><span class="muted">—</span> → <code>ixo:Attribute</code></td></tr>
+<tr><td><code id="ixo:authentication">ixo:authentication</code></td><td>authentication</td><td>Verification methods this entity may use to prove control of its identifier.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:blockchainAccountID">ixo:blockchainAccountID</code></td><td>blockchainAccountID</td><td>The on-chain account address bound to a verification method.</td><td><code>sec:VerificationMethod</code> → <code>xsd:string</code></td></tr>
+<tr><td><code id="ixo:capabilityDelegation">ixo:capabilityDelegation</code></td><td>capabilityDelegation</td><td>Verification methods authorised to delegate authority capabilities to others.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:capabilityInvocation">ixo:capabilityInvocation</code></td><td>capabilityInvocation</td><td>Verification methods authorised to invoke authority capabilities held by this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:claimType">ixo:claimType</code></td><td>claimType</td><td>The kind of claim, as a concept drawn from the claim-types scheme.</td><td><code>ixo:Claim</code> → <code>skos:Concept</code></td></tr>
+<tr><td><code id="ixo:controller">ixo:controller</code></td><td>controller</td><td>The entities authorised to update this entity's document and to act on its behalf.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:deactivated">ixo:deactivated</code></td><td>deactivated</td><td>Whether the entity document has been deactivated.</td><td><span class="muted">—</span> → <code>xsd:boolean</code></td></tr>
+<tr><td><code id="ixo:encrypted">ixo:encrypted</code></td><td>encrypted</td><td>Whether a linked resource's content is encrypted.</td><td><code>ixo:LinkedResource</code> → <code>xsd:boolean</code></td></tr>
+<tr><td><code id="ixo:entityTags">ixo:entityTags</code></td><td>entityTags</td><td>The set of tag categories and values applied to an entity.</td><td><code>ixo:Tags</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:keyAgreement">ixo:keyAgreement</code></td><td>keyAgreement</td><td>Verification methods used to establish encrypted communication with this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:linkedClaim">ixo:linkedClaim</code></td><td>linkedClaim</td><td>A claim associated with this entity, asserting something about it or made by it.</td><td><code>ixo:Entity</code> → <code>ixo:Claim</code></td></tr>
+<tr><td><code id="ixo:linkedEntity">ixo:linkedEntity</code></td><td>linkedEntity</td><td>Another entity related to this one, establishing a typed relationship in the IXO graph.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:linkedResource">ixo:linkedResource</code></td><td>linkedResource</td><td>A resource — such as a credential, document or dataset — referenced by and associated with this entity.</td><td><code>ixo:Entity</code> → <code>ixo:LinkedResource</code></td></tr>
+<tr><td><code id="ixo:metadata">ixo:metadata</code></td><td>metadata</td><td>Document metadata for the entity, such as version identifier and lifecycle state.</td><td><code>ixo:Entity</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:metrics">ixo:metrics</code></td><td>metrics</td><td>Quantitative metrics describing an entity's activity or impact.</td><td><code>ixo:Profile</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:page">ixo:page</code></td><td>page</td><td>Presentational page content for an entity.</td><td><code>ixo:Page</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:pages">ixo:pages</code></td><td>pages</td><td>A collection of presentational pages for an entity.</td><td><code>ixo:Page</code> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:relationship">ixo:relationship</code></td><td>relationship</td><td>The type of relationship between two entities, drawn from the relationships scheme.</td><td><span class="muted">—</span> → <code>skos:Concept</code></td></tr>
+<tr><td><code id="ixo:relayerNode">ixo:relayerNode</code></td><td>relayerNode</td><td>The relayer node entity through which this entity was registered on-chain.</td><td><code>ixo:Entity</code> → <code>ixo:Entity</code></td></tr>
+<tr><td><code id="ixo:right">ixo:right</code></td><td>right</td><td>The accorded right that governs access to a linked resource.</td><td><code>ixo:LinkedResource</code> → <code>ixo:AccordedRight</code></td></tr>
+<tr><td><code id="ixo:service">ixo:service</code></td><td>service</td><td>A network endpoint through which this entity's services or data can be accessed.</td><td><code>ixo:Entity</code> → <code>ixo:Service</code></td></tr>
+<tr><td><code id="ixo:serviceEndpoint">ixo:serviceEndpoint</code></td><td>serviceEndpoint</td><td>The URL or address at which a service or linked resource is accessed.</td><td><span class="muted">—</span> → <code>schema:URL</code></td></tr>
+<tr><td><code id="ixo:settings">ixo:settings</code></td><td>settings</td><td>Configuration that governs how this entity behaves or is presented.</td><td><code>ixo:Entity</code> → <code>ixo:Settings</code></td></tr>
+<tr><td><code id="ixo:tags">ixo:tags</code></td><td>tags</td><td>Tags categorising an entity or resource.</td><td><span class="muted">—</span> → <span class="muted">—</span></td></tr>
+<tr><td><code id="ixo:tokenName">ixo:tokenName</code></td><td>tokenName</td><td>The display name of an impact token.</td><td><span class="muted">—</span> → <code>xsd:string</code></td></tr>
+<tr><td><code id="ixo:verificationMethod">ixo:verificationMethod</code></td><td>verificationMethod</td><td>A cryptographic key or method that can be used to authenticate or authorise actions for this entity.</td><td><code>ixo:Entity</code> → <code>sec:VerificationMethod</code></td></tr>
+<tr><td><code id="ixo:versionId">ixo:versionId</code></td><td>versionId</td><td>The version identifier of the entity document.</td><td><span class="muted">—</span> → <code>xsd:string</code></td></tr></tbody></table>
+
+<h2 id="schemes">Concept schemes <span class="pill">30</span></h2>
+<ul class="toc"><li><a href="#scheme-v1">IXO Accorded Right Types</a> <span class="muted">(11)</span></li><li><a href="#scheme-v1">IXO Agent Roles</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Asset Types</a> <span class="muted">(14)</span></li><li><a href="#scheme-v1">IXO Blockchain Account Types</a> <span class="muted">(40)</span></li><li><a href="#scheme-v1">IXO Claim Types</a> <span class="muted">(24)</span></li><li><a href="#scheme-countries">IXO Country Codes</a> <span class="muted">(250)</span></li><li><a href="#scheme-v1">IXO Credential Types</a> <span class="muted">(14)</span></li><li><a href="#scheme-v1">IXO DAO Types</a> <span class="muted">(19)</span></li><li><a href="#scheme-v1">IXO Deed Types</a> <span class="muted">(26)</span></li><li><a href="#scheme-v1">IXO Entity Stage</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Entity Status</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Entity Types</a> <span class="muted">(45)</span></li><li><a href="#scheme-v1">IXO Entity View</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Evaluation Codes</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Group Types</a> <span class="muted">(5)</span></li><li><a href="#scheme-v1">IXO Linked Resource Types</a> <span class="muted">(27)</span></li><li><a href="#scheme-v1">IXO Linked-Resource Media Formats</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Liquidity Sources</a> <span class="muted">(6)</span></li><li><a href="#scheme-v1">IXO Metric Types</a> <span class="muted">(2)</span></li><li><a href="#scheme-v1">IXO Node Types</a> <span class="muted">(15)</span></li><li><a href="#scheme-v1">IXO Oracle Capabilities (P-Functions)</a> <span class="muted">(8)</span></li><li><a href="#scheme-v1">IXO Oracle Types</a> <span class="muted">(20)</span></li><li><a href="#scheme-v1">IXO Page View</a> <span class="muted">(3)</span></li><li><a href="#scheme-v1">IXO Payment Denominations</a> <span class="muted">(4)</span></li><li><a href="#scheme-v1">IXO Payment Types</a> <span class="muted">(9)</span></li><li><a href="#scheme-v1">IXO POD Types</a> <span class="muted">(11)</span></li><li><a href="#scheme-v1">IXO Project Types</a> <span class="muted">(21)</span></li><li><a href="#scheme-v1">IXO Relationship Types</a> <span class="muted">(22)</span></li><li><a href="#scheme-v1">IXO Slashing Conditions</a> <span class="muted">(7)</span></li><li><a href="#scheme-v1">IXO Stake Types</a> <span class="muted">(9)</span></li></ul>
+<h3 id="scheme-v1">IXO Accorded Right Types <span class="pill">11</span></h3>
+<p class="muted">Kinds of right or capability granted in relation to an entity via the accordedRight property.<br><code>https://w3id.org/ixo/protocol/accorded-rights/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>capability</code></td><td>Capability</td><td>An authority capability granted in relation to an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>capability/mintToken</code></td><td>Mint Token</td><td>Capability to mint tokens.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/createEntity</code></td><td>Create Entity</td><td>Capability to create entities.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/attest</code></td><td>Attest</td><td>Capability to attest claims.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/access</code></td><td>Access</td><td>Capability to access a resource.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/swapToken</code></td><td>Swap Token</td><td>Capability to swap tokens.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/transferToken</code></td><td>Transfer Token</td><td>Capability to transfer tokens.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/retireToken</code></td><td>Retire Token</td><td>Capability to retire tokens.</td><td><code>#capability</code></td></tr>
+<tr><td><code>capability/cancelToken</code></td><td>Cancel Token</td><td>Capability to cancel tokens.</td><td><code>#capability</code></td></tr>
+<tr><td><code>legal</code></td><td>Legal Right</td><td>A legal right governing the entity or resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AccessToken</code></td><td>Access Token</td><td>An access-token-based right.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Agent Roles <span class="pill">4</span></h3>
+<p class="muted">Roles an agent can hold in relation to an entity. Notation is the two-letter on-chain code.<br><code>https://w3id.org/ixo/protocol/agent-roles/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>PO</code></td><td>Owner</td><td>The owner of an entity (project owner).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EA</code></td><td>Evaluator</td><td>An agent that evaluates claims (evaluation agent).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SA</code></td><td>Service Provider</td><td>An agent that provides services (service agent).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IA</code></td><td>Investor</td><td>An agent that invests in an entity (investor agent).</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Asset Types <span class="pill">14</span></h3>
+<p class="muted">Kinds of asset entity on the IXO Spatial Web. Sub-types specialise a family (slash notation).<br><code>https://w3id.org/ixo/protocol/asset-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>coin</code></td><td>Coin</td><td>A digital currency issued by a DAO or blockchain network, representing a unit of value that can be used for transactions and stored in digital wallets.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>collection</code></td><td>Collection</td><td>A collection of digital assets, such as NFTs, that are grouped together for a specific purpose or theme.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>data</code></td><td>Data</td><td>A digital representation of data, such as financial data, scientific data, or other types of data that can be stored and shared in a decentralized manner.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>dePIN</code></td><td>De PIN</td><td>A decentralized Physical Infrastructure Network that provides real-world services or resources through tokenized incentive mechanisms</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>dePIN/batteryElectricVehicle</code></td><td>Battery Electric Vehicle</td><td>An electric vehicle powered by rechargeable fixed or swappable battery packs.</td><td><code>#de-pin</code></td></tr>
+<tr><td><code>dePIN/cleanCooking</code></td><td>Clean Cooking</td><td>Cooking solutions that reduce emissions and improve health outcomes.</td><td><code>#de-pin</code></td></tr>
+<tr><td><code>dePIN/pvSystem</code></td><td>Pv System</td><td>Photovoltaic systems that convert sunlight into electricity.</td><td><code>#de-pin</code></td></tr>
+<tr><td><code>impactCredit</code></td><td>Impact Credit</td><td>A digital representation of a real-world impact, such as carbon credits or social impact credits.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>impactCredit/carbonCredit</code></td><td>Carbon Credit</td><td>A digital representation of carbon credits.</td><td><code>#impact-credit</code></td></tr>
+<tr><td><code>impactCredit/waterCredit</code></td><td>Water Credit</td><td>A digital representation of water credits.</td><td><code>#impact-credit</code></td></tr>
+<tr><td><code>learnership</code></td><td>Learnership</td><td>A digital or physical learning program or opportunity that can be purchased or earned through participation in a DAO or blockchain network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>membershipAsset</code></td><td>Membership Asset</td><td>An asset signifying membership rights or privileges within a group, organization, or service.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>voucher</code></td><td>Voucher</td><td>An asset representing a voucher exchangeable for goods or services</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>voucher/beanVoucher</code></td><td>Bean Voucher</td><td>A voucher representing a bag of fortified beans.</td><td><code>#voucher</code></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Blockchain Account Types <span class="pill">40</span></h3>
+<p class="muted">Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.<br><code>https://w3id.org/ixo/protocol/blockchain-account-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>AlgorandAccount</code></td><td>Algorand Account</td><td>Represents an account in the Algorand blockchain for ALGO and related assets.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ArbitrumAccount</code></td><td>Arbitrum Account</td><td>Represents an account on the Arbitrum Layer 2 Ethereum scaling solution.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AvalancheAccount</code></td><td>Avalanche Account</td><td>Represents an account on the Avalanche network for AVAX and smart contract interactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BinanceSmartChainAccount</code></td><td>Binance Smart Chain Account</td><td>Represents an account in Binance Smart Chain (BSC) for managing BNB and BEP-20 tokens.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BitcoinAccount</code></td><td>Bitcoin Account</td><td>Represents a Bitcoin wallet or address for holding and transacting BTC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BitcoinCashAccount</code></td><td>Bitcoin Cash Account</td><td>Represents an account in the Bitcoin Cash blockchain for BCH transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Blockchain.comAccount</code></td><td>Blockchain com Account</td><td>Represents an account in the Blockchain.com wallet system.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CardanoAccount</code></td><td>Cardano Account</td><td>Represents an account in the Cardano blockchain for ADA and staking purposes.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CeloAccount</code></td><td>Celo Account</td><td>Represents an account in the Celo network for mobile-first financial solutions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ChainlinkAccount</code></td><td>Chainlink Account</td><td>Represents an account for Chainlink-related interactions (mainly for node operators).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CosmosAccount</code></td><td>Cosmos Account</td><td>Represents an account within the Cosmos ecosystem for staking and token transfers.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DashAccount</code></td><td>Dash Account</td><td>Represents an account in the Dash blockchain for private and instant transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DogecoinAccount</code></td><td>Dogecoin Account</td><td>Represents an account in the Dogecoin blockchain for DOGE transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EOSAccount</code></td><td>EOSAccount</td><td>Represents an account in the EOS blockchain for dApps and transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ElrondAccount</code></td><td>Elrond Account</td><td>Represents an account in the Elrond blockchain for EGLD and related dApps.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EthereumAccount</code></td><td>Ethereum Account</td><td>Represents an Ethereum wallet or address for ETH and ERC tokens.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FantomAccount</code></td><td>Fantom Account</td><td>Represents an account in the Fantom blockchain for DeFi and smart contracts.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FilecoinAccount</code></td><td>Filecoin Account</td><td>Represents an account in the Filecoin blockchain for decentralized storage payments.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HarmonyAccount</code></td><td>Harmony Account</td><td>Represents an account in the Harmony blockchain for ONE tokens and transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HederaAccount</code></td><td>Hedera Account</td><td>Represents an account in Hedera Hashgraph for HBAR and dApps.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HyperledgerAccount</code></td><td>Hyperledger Account</td><td>Represents an account in the Hyperledger permissioned blockchain ecosystem.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IOTAAccount</code></td><td>IOTAAccount</td><td>Represents an account in the IOTA Tangle for IoT-focused transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KuCoinAccount</code></td><td>Ku Coin Account</td><td>Represents an account in KuCoin for blockchain interactions within their platform.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KusamaAccount</code></td><td>Kusama Account</td><td>Represents an account in the Kusama network, Polkadot's canary network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LitecoinAccount</code></td><td>Litecoin Account</td><td>Represents an account in the Litecoin blockchain for LTC transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MoneroAccount</code></td><td>Monero Account</td><td>Represents an account in the Monero blockchain for privacy-focused XMR transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NearAccount</code></td><td>Near Account</td><td>Represents an account in the NEAR Protocol for smart contract interactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>OptimismAccount</code></td><td>Optimism Account</td><td>Represents an account on the Optimism Layer 2 Ethereum scaling solution.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PolkadotAccount</code></td><td>Polkadot Account</td><td>Represents an account in the Polkadot network for staking, governance, and transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PolygonAccount</code></td><td>Polygon Account</td><td>Represents an account in the Polygon (Matic) blockchain for Ethereum scaling.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PrivateChainAccount</code></td><td>Private Chain Account</td><td>Represents an account in a custom private blockchain network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RippleAccount</code></td><td>Ripple Account</td><td>Represents an account in the Ripple (XRP) ledger for XRP transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SolanaAccount</code></td><td>Solana Account</td><td>Represents an account in the Solana blockchain for managing SOL and related assets.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>StellarAccount</code></td><td>Stellar Account</td><td>Represents an account in the Stellar blockchain for managing Lumens (XLM).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TerraAccount</code></td><td>Terra Account</td><td>Represents an account in the Terra blockchain for managing LUNA and stablecoins.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TezosAccount</code></td><td>Tezos Account</td><td>Represents an account in the Tezos blockchain for staking, baking, and transactions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ThetaAccount</code></td><td>Theta Account</td><td>Represents an account in the Theta blockchain for video streaming and rewards.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TronAccount</code></td><td>Tron Account</td><td>Represents an account in the TRON network for TRX and TRC tokens.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VeChainAccount</code></td><td>Ve Chain Account</td><td>Represents an account in the VeChainThor blockchain for VET and VeChain tokens.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ZilliqaAccount</code></td><td>Zilliqa Account</td><td>Represents an account in the Zilliqa blockchain for ZIL and shard-based transactions.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Claim Types <span class="pill">24</span></h3>
+<p class="muted">Kinds of verifiable claim made by or about entities. Top concepts are claim families; sub-types specialise a family for a particular domain.<br><code>https://w3id.org/ixo/protocol/claims/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>accreditation</code></td><td>Accreditation</td><td>A claim verifying the official recognition, authorization, or certification status of a domain or process.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>compliance</code></td><td>Compliance</td><td>A claim attesting to adherence to specific regulatory, legal, or protocol requirements.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>contribution</code></td><td>Contribution</td><td>A claim documenting verified contributions to projects, initiatives, or common objectives.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>credential</code></td><td>Credential</td><td>A claim establishing the authenticity and validity of qualifications, permissions, or rights.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>credentialAudit</code></td><td>Credential Audit</td><td>A claim documenting the systematic examination and verification of credential issuance and management.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>dispute</code></td><td>Dispute</td><td>A claim documenting formal disagreements and their resolution processes.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>identity</code></td><td>Identity</td><td>A claim verifying the authentic identity attributes of an individual, organization, or domain.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>impact</code></td><td>Impact</td><td>A claim measuring and validating the social or environmental effects of specific actions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>investment</code></td><td>Investment</td><td>A claim documenting investment activities, commitments, or outcomes in impact projects.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>invoice</code></td><td>Invoice</td><td>A claim validating the authenticity and details of financial transactions or service provisions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>offset</code></td><td>Offset</td><td>A claim validating the compensation or neutralization of environmental impacts through verified actions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>outcome</code></td><td>Outcome</td><td>A claim documenting measured results or impacts of specific actions or initiatives.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ownership</code></td><td>Ownership</td><td>A claim validating the rightful possession or control of assets, resources, or rights.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>procurement</code></td><td>Procurement</td><td>A claim documenting the acquisition process and compliance with procurement standards.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>provenance</code></td><td>Provenance</td><td>A claim establishing the origin, history, and chain of custody of assets or resources.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>service</code></td><td>Service</td><td>A claim validating the delivery, quality, or completion of specific services.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>subscription</code></td><td>Subscription</td><td>A claim validating the active subscription status and associated rights of a participant.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>useOfFunds</code></td><td>Use of Funds</td><td>A claim documenting the allocation and utilization of financial resources in accordance with specified purposes.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>payment</code></td><td>Payment</td><td>A claim documenting a payment made or received.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>verifiedCleanCooking</code></td><td>Verified Clean Cooking</td><td>A claim validating the implementation and impact of verified clean cooking solutions.</td><td><code>#impact</code></td></tr>
+<tr><td><code>verifiedEmissionsReduction</code></td><td>Verified Emissions Reduction</td><td>A claim certifying the verified reduction of greenhouse gas emissions through specific projects.</td><td><code>#impact</code></td></tr>
+<tr><td><code>carbonEmissionReduction</code></td><td>Carbon Emission Reduction</td><td>A claim documenting verified reductions in carbon emissions through specific interventions.</td><td><code>#outcome</code></td></tr>
+<tr><td><code>cleanCookingClaim</code></td><td>Clean Cooking Claim</td><td>A claim verifying the implementation and impact of clean cooking solutions.</td><td><code>#outcome</code></td></tr>
+<tr><td><code>fuelPurchase</code></td><td>Fuel Purchase</td><td>A claim verifying the purchase and sourcing of fuel products according to specified standards.</td><td><code>#procurement</code></td></tr></tbody></table>
+<h3 id="scheme-countries">IXO Country Codes <span class="pill">250</span></h3>
+<p class="muted">Countries and regions, keyed by ISO 3166-1 alpha-2 code. Includes the non-standard AA "Global" pseudo-code used on the IXO Spatial Web. Each concept skos:closeMatch-es a name-derived DBpedia resource.<br><code>https://w3id.org/ixo/vocab/v1/countries</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>AA</code></td><td>Global</td><td>Global — a non-standard pseudo-code denoting worldwide / no specific country.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AF</code></td><td>Afghanistan</td><td>Afghanistan — ISO 3166-1 alpha-2 code AF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AL</code></td><td>Albania</td><td>Albania — ISO 3166-1 alpha-2 code AL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DZ</code></td><td>Algeria</td><td>Algeria — ISO 3166-1 alpha-2 code DZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AS</code></td><td>American Samoa</td><td>American Samoa — ISO 3166-1 alpha-2 code AS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AD</code></td><td>Andorra</td><td>Andorra — ISO 3166-1 alpha-2 code AD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AO</code></td><td>Angola</td><td>Angola — ISO 3166-1 alpha-2 code AO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AI</code></td><td>Anguilla</td><td>Anguilla — ISO 3166-1 alpha-2 code AI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AQ</code></td><td>Antarctica</td><td>Antarctica — ISO 3166-1 alpha-2 code AQ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AG</code></td><td>Antigua and Barbuda</td><td>Antigua and Barbuda — ISO 3166-1 alpha-2 code AG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AR</code></td><td>Argentina</td><td>Argentina — ISO 3166-1 alpha-2 code AR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AM</code></td><td>Armenia</td><td>Armenia — ISO 3166-1 alpha-2 code AM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AW</code></td><td>Aruba</td><td>Aruba — ISO 3166-1 alpha-2 code AW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AU</code></td><td>Australia</td><td>Australia — ISO 3166-1 alpha-2 code AU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AT</code></td><td>Austria</td><td>Austria — ISO 3166-1 alpha-2 code AT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AZ</code></td><td>Azerbaijan</td><td>Azerbaijan — ISO 3166-1 alpha-2 code AZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BS</code></td><td>Bahamas (the)</td><td>Bahamas (the) — ISO 3166-1 alpha-2 code BS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BH</code></td><td>Bahrain</td><td>Bahrain — ISO 3166-1 alpha-2 code BH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BD</code></td><td>Bangladesh</td><td>Bangladesh — ISO 3166-1 alpha-2 code BD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BB</code></td><td>Barbados</td><td>Barbados — ISO 3166-1 alpha-2 code BB.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BY</code></td><td>Belarus</td><td>Belarus — ISO 3166-1 alpha-2 code BY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BE</code></td><td>Belgium</td><td>Belgium — ISO 3166-1 alpha-2 code BE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BZ</code></td><td>Belize</td><td>Belize — ISO 3166-1 alpha-2 code BZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BJ</code></td><td>Benin</td><td>Benin — ISO 3166-1 alpha-2 code BJ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BM</code></td><td>Bermuda</td><td>Bermuda — ISO 3166-1 alpha-2 code BM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BT</code></td><td>Bhutan</td><td>Bhutan — ISO 3166-1 alpha-2 code BT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BO</code></td><td>Bolivia (Plurinational State of)</td><td>Bolivia (Plurinational State of) — ISO 3166-1 alpha-2 code BO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BQ</code></td><td>Bonaire, Sint Eustatius and Saba</td><td>Bonaire, Sint Eustatius and Saba — ISO 3166-1 alpha-2 code BQ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BA</code></td><td>Bosnia and Herzegovina</td><td>Bosnia and Herzegovina — ISO 3166-1 alpha-2 code BA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BW</code></td><td>Botswana</td><td>Botswana — ISO 3166-1 alpha-2 code BW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BV</code></td><td>Bouvet Island</td><td>Bouvet Island — ISO 3166-1 alpha-2 code BV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BR</code></td><td>Brazil</td><td>Brazil — ISO 3166-1 alpha-2 code BR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IO</code></td><td>British Indian Ocean Territory (the)</td><td>British Indian Ocean Territory (the) — ISO 3166-1 alpha-2 code IO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BN</code></td><td>Brunei Darussalam</td><td>Brunei Darussalam — ISO 3166-1 alpha-2 code BN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BG</code></td><td>Bulgaria</td><td>Bulgaria — ISO 3166-1 alpha-2 code BG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BF</code></td><td>Burkina Faso</td><td>Burkina Faso — ISO 3166-1 alpha-2 code BF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BI</code></td><td>Burundi</td><td>Burundi — ISO 3166-1 alpha-2 code BI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CV</code></td><td>Cabo Verde</td><td>Cabo Verde — ISO 3166-1 alpha-2 code CV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KH</code></td><td>Cambodia</td><td>Cambodia — ISO 3166-1 alpha-2 code KH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CM</code></td><td>Cameroon</td><td>Cameroon — ISO 3166-1 alpha-2 code CM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CA</code></td><td>Canada</td><td>Canada — ISO 3166-1 alpha-2 code CA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KY</code></td><td>Cayman Islands (the)</td><td>Cayman Islands (the) — ISO 3166-1 alpha-2 code KY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CF</code></td><td>Central African Republic (the)</td><td>Central African Republic (the) — ISO 3166-1 alpha-2 code CF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TD</code></td><td>Chad</td><td>Chad — ISO 3166-1 alpha-2 code TD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CL</code></td><td>Chile</td><td>Chile — ISO 3166-1 alpha-2 code CL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CN</code></td><td>China</td><td>China — ISO 3166-1 alpha-2 code CN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CX</code></td><td>Christmas Island</td><td>Christmas Island — ISO 3166-1 alpha-2 code CX.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CC</code></td><td>Cocos (Keeling) Islands (the)</td><td>Cocos (Keeling) Islands (the) — ISO 3166-1 alpha-2 code CC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CO</code></td><td>Colombia</td><td>Colombia — ISO 3166-1 alpha-2 code CO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KM</code></td><td>Comoros (the)</td><td>Comoros (the) — ISO 3166-1 alpha-2 code KM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CD</code></td><td>Congo (the Democratic Republic of the)</td><td>Congo (the Democratic Republic of the) — ISO 3166-1 alpha-2 code CD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CG</code></td><td>Congo (the)</td><td>Congo (the) — ISO 3166-1 alpha-2 code CG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CK</code></td><td>Cook Islands (the)</td><td>Cook Islands (the) — ISO 3166-1 alpha-2 code CK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CR</code></td><td>Costa Rica</td><td>Costa Rica — ISO 3166-1 alpha-2 code CR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HR</code></td><td>Croatia</td><td>Croatia — ISO 3166-1 alpha-2 code HR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CU</code></td><td>Cuba</td><td>Cuba — ISO 3166-1 alpha-2 code CU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CW</code></td><td>Curaçao</td><td>Curaçao — ISO 3166-1 alpha-2 code CW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CY</code></td><td>Cyprus</td><td>Cyprus — ISO 3166-1 alpha-2 code CY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CZ</code></td><td>Czechia</td><td>Czechia — ISO 3166-1 alpha-2 code CZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CI</code></td><td>Côte d'Ivoire</td><td>Côte d'Ivoire — ISO 3166-1 alpha-2 code CI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DK</code></td><td>Denmark</td><td>Denmark — ISO 3166-1 alpha-2 code DK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DJ</code></td><td>Djibouti</td><td>Djibouti — ISO 3166-1 alpha-2 code DJ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DM</code></td><td>Dominica</td><td>Dominica — ISO 3166-1 alpha-2 code DM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DO</code></td><td>Dominican Republic (the)</td><td>Dominican Republic (the) — ISO 3166-1 alpha-2 code DO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EC</code></td><td>Ecuador</td><td>Ecuador — ISO 3166-1 alpha-2 code EC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EG</code></td><td>Egypt</td><td>Egypt — ISO 3166-1 alpha-2 code EG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SV</code></td><td>El Salvador</td><td>El Salvador — ISO 3166-1 alpha-2 code SV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GQ</code></td><td>Equatorial Guinea</td><td>Equatorial Guinea — ISO 3166-1 alpha-2 code GQ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ER</code></td><td>Eritrea</td><td>Eritrea — ISO 3166-1 alpha-2 code ER.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EE</code></td><td>Estonia</td><td>Estonia — ISO 3166-1 alpha-2 code EE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SZ</code></td><td>Eswatini</td><td>Eswatini — ISO 3166-1 alpha-2 code SZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ET</code></td><td>Ethiopia</td><td>Ethiopia — ISO 3166-1 alpha-2 code ET.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FK</code></td><td>Falkland Islands (the) [Malvinas]</td><td>Falkland Islands (the) [Malvinas] — ISO 3166-1 alpha-2 code FK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FO</code></td><td>Faroe Islands (the)</td><td>Faroe Islands (the) — ISO 3166-1 alpha-2 code FO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FJ</code></td><td>Fiji</td><td>Fiji — ISO 3166-1 alpha-2 code FJ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FI</code></td><td>Finland</td><td>Finland — ISO 3166-1 alpha-2 code FI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FR</code></td><td>France</td><td>France — ISO 3166-1 alpha-2 code FR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GF</code></td><td>French Guiana</td><td>French Guiana — ISO 3166-1 alpha-2 code GF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PF</code></td><td>French Polynesia</td><td>French Polynesia — ISO 3166-1 alpha-2 code PF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TF</code></td><td>French Southern Territories (the)</td><td>French Southern Territories (the) — ISO 3166-1 alpha-2 code TF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GA</code></td><td>Gabon</td><td>Gabon — ISO 3166-1 alpha-2 code GA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GM</code></td><td>Gambia (the)</td><td>Gambia (the) — ISO 3166-1 alpha-2 code GM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GE</code></td><td>Georgia</td><td>Georgia — ISO 3166-1 alpha-2 code GE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DE</code></td><td>Germany</td><td>Germany — ISO 3166-1 alpha-2 code DE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GH</code></td><td>Ghana</td><td>Ghana — ISO 3166-1 alpha-2 code GH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GI</code></td><td>Gibraltar</td><td>Gibraltar — ISO 3166-1 alpha-2 code GI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GR</code></td><td>Greece</td><td>Greece — ISO 3166-1 alpha-2 code GR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GL</code></td><td>Greenland</td><td>Greenland — ISO 3166-1 alpha-2 code GL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GD</code></td><td>Grenada</td><td>Grenada — ISO 3166-1 alpha-2 code GD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GP</code></td><td>Guadeloupe</td><td>Guadeloupe — ISO 3166-1 alpha-2 code GP.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GU</code></td><td>Guam</td><td>Guam — ISO 3166-1 alpha-2 code GU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GT</code></td><td>Guatemala</td><td>Guatemala — ISO 3166-1 alpha-2 code GT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GG</code></td><td>Guernsey</td><td>Guernsey — ISO 3166-1 alpha-2 code GG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GN</code></td><td>Guinea</td><td>Guinea — ISO 3166-1 alpha-2 code GN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GW</code></td><td>Guinea-Bissau</td><td>Guinea-Bissau — ISO 3166-1 alpha-2 code GW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GY</code></td><td>Guyana</td><td>Guyana — ISO 3166-1 alpha-2 code GY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HT</code></td><td>Haiti</td><td>Haiti — ISO 3166-1 alpha-2 code HT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HM</code></td><td>Heard Island and McDonald Islands</td><td>Heard Island and McDonald Islands — ISO 3166-1 alpha-2 code HM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VA</code></td><td>Holy See (the)</td><td>Holy See (the) — ISO 3166-1 alpha-2 code VA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HN</code></td><td>Honduras</td><td>Honduras — ISO 3166-1 alpha-2 code HN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HK</code></td><td>Hong Kong</td><td>Hong Kong — ISO 3166-1 alpha-2 code HK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>HU</code></td><td>Hungary</td><td>Hungary — ISO 3166-1 alpha-2 code HU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IS</code></td><td>Iceland</td><td>Iceland — ISO 3166-1 alpha-2 code IS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IN</code></td><td>India</td><td>India — ISO 3166-1 alpha-2 code IN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ID</code></td><td>Indonesia</td><td>Indonesia — ISO 3166-1 alpha-2 code ID.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IR</code></td><td>Iran (Islamic Republic of)</td><td>Iran (Islamic Republic of) — ISO 3166-1 alpha-2 code IR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IQ</code></td><td>Iraq</td><td>Iraq — ISO 3166-1 alpha-2 code IQ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IE</code></td><td>Ireland</td><td>Ireland — ISO 3166-1 alpha-2 code IE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IM</code></td><td>Isle of Man</td><td>Isle of Man — ISO 3166-1 alpha-2 code IM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IL</code></td><td>Israel</td><td>Israel — ISO 3166-1 alpha-2 code IL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IT</code></td><td>Italy</td><td>Italy — ISO 3166-1 alpha-2 code IT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>JM</code></td><td>Jamaica</td><td>Jamaica — ISO 3166-1 alpha-2 code JM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>JP</code></td><td>Japan</td><td>Japan — ISO 3166-1 alpha-2 code JP.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>JE</code></td><td>Jersey</td><td>Jersey — ISO 3166-1 alpha-2 code JE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>JO</code></td><td>Jordan</td><td>Jordan — ISO 3166-1 alpha-2 code JO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KZ</code></td><td>Kazakhstan</td><td>Kazakhstan — ISO 3166-1 alpha-2 code KZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KE</code></td><td>Kenya</td><td>Kenya — ISO 3166-1 alpha-2 code KE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KI</code></td><td>Kiribati</td><td>Kiribati — ISO 3166-1 alpha-2 code KI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KP</code></td><td>Korea (the Democratic People's Republic of)</td><td>Korea (the Democratic People's Republic of) — ISO 3166-1 alpha-2 code KP.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KR</code></td><td>Korea (the Republic of)</td><td>Korea (the Republic of) — ISO 3166-1 alpha-2 code KR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KW</code></td><td>Kuwait</td><td>Kuwait — ISO 3166-1 alpha-2 code KW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KG</code></td><td>Kyrgyzstan</td><td>Kyrgyzstan — ISO 3166-1 alpha-2 code KG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LA</code></td><td>Lao People's Democratic Republic (the)</td><td>Lao People's Democratic Republic (the) — ISO 3166-1 alpha-2 code LA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LV</code></td><td>Latvia</td><td>Latvia — ISO 3166-1 alpha-2 code LV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LB</code></td><td>Lebanon</td><td>Lebanon — ISO 3166-1 alpha-2 code LB.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LS</code></td><td>Lesotho</td><td>Lesotho — ISO 3166-1 alpha-2 code LS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LR</code></td><td>Liberia</td><td>Liberia — ISO 3166-1 alpha-2 code LR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LY</code></td><td>Libya</td><td>Libya — ISO 3166-1 alpha-2 code LY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LI</code></td><td>Liechtenstein</td><td>Liechtenstein — ISO 3166-1 alpha-2 code LI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LT</code></td><td>Lithuania</td><td>Lithuania — ISO 3166-1 alpha-2 code LT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LU</code></td><td>Luxembourg</td><td>Luxembourg — ISO 3166-1 alpha-2 code LU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MO</code></td><td>Macao</td><td>Macao — ISO 3166-1 alpha-2 code MO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MG</code></td><td>Madagascar</td><td>Madagascar — ISO 3166-1 alpha-2 code MG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MW</code></td><td>Malawi</td><td>Malawi — ISO 3166-1 alpha-2 code MW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MY</code></td><td>Malaysia</td><td>Malaysia — ISO 3166-1 alpha-2 code MY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MV</code></td><td>Maldives</td><td>Maldives — ISO 3166-1 alpha-2 code MV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ML</code></td><td>Mali</td><td>Mali — ISO 3166-1 alpha-2 code ML.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MT</code></td><td>Malta</td><td>Malta — ISO 3166-1 alpha-2 code MT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MH</code></td><td>Marshall Islands (the)</td><td>Marshall Islands (the) — ISO 3166-1 alpha-2 code MH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MQ</code></td><td>Martinique</td><td>Martinique — ISO 3166-1 alpha-2 code MQ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MR</code></td><td>Mauritania</td><td>Mauritania — ISO 3166-1 alpha-2 code MR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MU</code></td><td>Mauritius</td><td>Mauritius — ISO 3166-1 alpha-2 code MU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>YT</code></td><td>Mayotte</td><td>Mayotte — ISO 3166-1 alpha-2 code YT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MX</code></td><td>Mexico</td><td>Mexico — ISO 3166-1 alpha-2 code MX.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FM</code></td><td>Micronesia (Federated States of)</td><td>Micronesia (Federated States of) — ISO 3166-1 alpha-2 code FM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MD</code></td><td>Moldova (the Republic of)</td><td>Moldova (the Republic of) — ISO 3166-1 alpha-2 code MD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MC</code></td><td>Monaco</td><td>Monaco — ISO 3166-1 alpha-2 code MC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MN</code></td><td>Mongolia</td><td>Mongolia — ISO 3166-1 alpha-2 code MN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ME</code></td><td>Montenegro</td><td>Montenegro — ISO 3166-1 alpha-2 code ME.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MS</code></td><td>Montserrat</td><td>Montserrat — ISO 3166-1 alpha-2 code MS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MA</code></td><td>Morocco</td><td>Morocco — ISO 3166-1 alpha-2 code MA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MZ</code></td><td>Mozambique</td><td>Mozambique — ISO 3166-1 alpha-2 code MZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MM</code></td><td>Myanmar</td><td>Myanmar — ISO 3166-1 alpha-2 code MM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NA</code></td><td>Namibia</td><td>Namibia — ISO 3166-1 alpha-2 code NA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NR</code></td><td>Nauru</td><td>Nauru — ISO 3166-1 alpha-2 code NR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NP</code></td><td>Nepal</td><td>Nepal — ISO 3166-1 alpha-2 code NP.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NL</code></td><td>Netherlands (Kingdom of the)</td><td>Netherlands (Kingdom of the) — ISO 3166-1 alpha-2 code NL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NC</code></td><td>New Caledonia</td><td>New Caledonia — ISO 3166-1 alpha-2 code NC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NZ</code></td><td>New Zealand</td><td>New Zealand — ISO 3166-1 alpha-2 code NZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NI</code></td><td>Nicaragua</td><td>Nicaragua — ISO 3166-1 alpha-2 code NI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NE</code></td><td>Niger (the)</td><td>Niger (the) — ISO 3166-1 alpha-2 code NE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NG</code></td><td>Nigeria</td><td>Nigeria — ISO 3166-1 alpha-2 code NG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NU</code></td><td>Niue</td><td>Niue — ISO 3166-1 alpha-2 code NU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NF</code></td><td>Norfolk Island</td><td>Norfolk Island — ISO 3166-1 alpha-2 code NF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MK</code></td><td>North Macedonia</td><td>North Macedonia — ISO 3166-1 alpha-2 code MK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MP</code></td><td>Northern Mariana Islands (the)</td><td>Northern Mariana Islands (the) — ISO 3166-1 alpha-2 code MP.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NO</code></td><td>Norway</td><td>Norway — ISO 3166-1 alpha-2 code NO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>OM</code></td><td>Oman</td><td>Oman — ISO 3166-1 alpha-2 code OM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PK</code></td><td>Pakistan</td><td>Pakistan — ISO 3166-1 alpha-2 code PK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PW</code></td><td>Palau</td><td>Palau — ISO 3166-1 alpha-2 code PW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PS</code></td><td>Palestine, State of</td><td>Palestine, State of — ISO 3166-1 alpha-2 code PS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PA</code></td><td>Panama</td><td>Panama — ISO 3166-1 alpha-2 code PA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PG</code></td><td>Papua New Guinea</td><td>Papua New Guinea — ISO 3166-1 alpha-2 code PG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PY</code></td><td>Paraguay</td><td>Paraguay — ISO 3166-1 alpha-2 code PY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PE</code></td><td>Peru</td><td>Peru — ISO 3166-1 alpha-2 code PE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PH</code></td><td>Philippines (the)</td><td>Philippines (the) — ISO 3166-1 alpha-2 code PH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PN</code></td><td>Pitcairn</td><td>Pitcairn — ISO 3166-1 alpha-2 code PN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PL</code></td><td>Poland</td><td>Poland — ISO 3166-1 alpha-2 code PL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PT</code></td><td>Portugal</td><td>Portugal — ISO 3166-1 alpha-2 code PT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PR</code></td><td>Puerto Rico</td><td>Puerto Rico — ISO 3166-1 alpha-2 code PR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>QA</code></td><td>Qatar</td><td>Qatar — ISO 3166-1 alpha-2 code QA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RO</code></td><td>Romania</td><td>Romania — ISO 3166-1 alpha-2 code RO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RU</code></td><td>Russian Federation (the)</td><td>Russian Federation (the) — ISO 3166-1 alpha-2 code RU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RW</code></td><td>Rwanda</td><td>Rwanda — ISO 3166-1 alpha-2 code RW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RE</code></td><td>Réunion</td><td>Réunion — ISO 3166-1 alpha-2 code RE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BL</code></td><td>Saint Barthélemy</td><td>Saint Barthélemy — ISO 3166-1 alpha-2 code BL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SH</code></td><td>Saint Helena, Ascension and Tristan da Cunha</td><td>Saint Helena, Ascension and Tristan da Cunha — ISO 3166-1 alpha-2 code SH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>KN</code></td><td>Saint Kitts and Nevis</td><td>Saint Kitts and Nevis — ISO 3166-1 alpha-2 code KN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LC</code></td><td>Saint Lucia</td><td>Saint Lucia — ISO 3166-1 alpha-2 code LC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MF</code></td><td>Saint Martin (French part)</td><td>Saint Martin (French part) — ISO 3166-1 alpha-2 code MF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PM</code></td><td>Saint Pierre and Miquelon</td><td>Saint Pierre and Miquelon — ISO 3166-1 alpha-2 code PM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VC</code></td><td>Saint Vincent and the Grenadines</td><td>Saint Vincent and the Grenadines — ISO 3166-1 alpha-2 code VC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>WS</code></td><td>Samoa</td><td>Samoa — ISO 3166-1 alpha-2 code WS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SM</code></td><td>San Marino</td><td>San Marino — ISO 3166-1 alpha-2 code SM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ST</code></td><td>Sao Tome and Principe</td><td>Sao Tome and Principe — ISO 3166-1 alpha-2 code ST.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SA</code></td><td>Saudi Arabia</td><td>Saudi Arabia — ISO 3166-1 alpha-2 code SA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SN</code></td><td>Senegal</td><td>Senegal — ISO 3166-1 alpha-2 code SN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RS</code></td><td>Serbia</td><td>Serbia — ISO 3166-1 alpha-2 code RS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SC</code></td><td>Seychelles</td><td>Seychelles — ISO 3166-1 alpha-2 code SC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SL</code></td><td>Sierra Leone</td><td>Sierra Leone — ISO 3166-1 alpha-2 code SL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SG</code></td><td>Singapore</td><td>Singapore — ISO 3166-1 alpha-2 code SG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SX</code></td><td>Sint Maarten (Dutch part)</td><td>Sint Maarten (Dutch part) — ISO 3166-1 alpha-2 code SX.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SK</code></td><td>Slovakia</td><td>Slovakia — ISO 3166-1 alpha-2 code SK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SI</code></td><td>Slovenia</td><td>Slovenia — ISO 3166-1 alpha-2 code SI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SB</code></td><td>Solomon Islands</td><td>Solomon Islands — ISO 3166-1 alpha-2 code SB.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SO</code></td><td>Somalia</td><td>Somalia — ISO 3166-1 alpha-2 code SO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ZA</code></td><td>South Africa</td><td>South Africa — ISO 3166-1 alpha-2 code ZA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GS</code></td><td>South Georgia and the South Sandwich Islands</td><td>South Georgia and the South Sandwich Islands — ISO 3166-1 alpha-2 code GS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SS</code></td><td>South Sudan</td><td>South Sudan — ISO 3166-1 alpha-2 code SS.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ES</code></td><td>Spain</td><td>Spain — ISO 3166-1 alpha-2 code ES.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LK</code></td><td>Sri Lanka</td><td>Sri Lanka — ISO 3166-1 alpha-2 code LK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SD</code></td><td>Sudan (the)</td><td>Sudan (the) — ISO 3166-1 alpha-2 code SD.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SR</code></td><td>Suriname</td><td>Suriname — ISO 3166-1 alpha-2 code SR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SJ</code></td><td>Svalbard and Jan Mayen</td><td>Svalbard and Jan Mayen — ISO 3166-1 alpha-2 code SJ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SE</code></td><td>Sweden</td><td>Sweden — ISO 3166-1 alpha-2 code SE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CH</code></td><td>Switzerland</td><td>Switzerland — ISO 3166-1 alpha-2 code CH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>SY</code></td><td>Syrian Arab Republic (the)</td><td>Syrian Arab Republic (the) — ISO 3166-1 alpha-2 code SY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TW</code></td><td>Taiwan (Province of China)</td><td>Taiwan (Province of China) — ISO 3166-1 alpha-2 code TW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TJ</code></td><td>Tajikistan</td><td>Tajikistan — ISO 3166-1 alpha-2 code TJ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TZ</code></td><td>Tanzania, the United Republic of</td><td>Tanzania, the United Republic of — ISO 3166-1 alpha-2 code TZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TH</code></td><td>Thailand</td><td>Thailand — ISO 3166-1 alpha-2 code TH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TL</code></td><td>Timor-Leste</td><td>Timor-Leste — ISO 3166-1 alpha-2 code TL.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TG</code></td><td>Togo</td><td>Togo — ISO 3166-1 alpha-2 code TG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TK</code></td><td>Tokelau</td><td>Tokelau — ISO 3166-1 alpha-2 code TK.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TO</code></td><td>Tonga</td><td>Tonga — ISO 3166-1 alpha-2 code TO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TT</code></td><td>Trinidad and Tobago</td><td>Trinidad and Tobago — ISO 3166-1 alpha-2 code TT.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TN</code></td><td>Tunisia</td><td>Tunisia — ISO 3166-1 alpha-2 code TN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TM</code></td><td>Turkmenistan</td><td>Turkmenistan — ISO 3166-1 alpha-2 code TM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TC</code></td><td>Turks and Caicos Islands (the)</td><td>Turks and Caicos Islands (the) — ISO 3166-1 alpha-2 code TC.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TV</code></td><td>Tuvalu</td><td>Tuvalu — ISO 3166-1 alpha-2 code TV.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TR</code></td><td>Türkiye</td><td>Türkiye — ISO 3166-1 alpha-2 code TR.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>UG</code></td><td>Uganda</td><td>Uganda — ISO 3166-1 alpha-2 code UG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>UA</code></td><td>Ukraine</td><td>Ukraine — ISO 3166-1 alpha-2 code UA.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AE</code></td><td>United Arab Emirates (the)</td><td>United Arab Emirates (the) — ISO 3166-1 alpha-2 code AE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>GB</code></td><td>United Kingdom of Great Britain and Northern Ireland (the)</td><td>United Kingdom of Great Britain and Northern Ireland (the) — ISO 3166-1 alpha-2 code GB.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>UM</code></td><td>United States Minor Outlying Islands (the)</td><td>United States Minor Outlying Islands (the) — ISO 3166-1 alpha-2 code UM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>US</code></td><td>United States of America (the)</td><td>United States of America (the) — ISO 3166-1 alpha-2 code US.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>UY</code></td><td>Uruguay</td><td>Uruguay — ISO 3166-1 alpha-2 code UY.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>UZ</code></td><td>Uzbekistan</td><td>Uzbekistan — ISO 3166-1 alpha-2 code UZ.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VU</code></td><td>Vanuatu</td><td>Vanuatu — ISO 3166-1 alpha-2 code VU.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VE</code></td><td>Venezuela (Bolivarian Republic of)</td><td>Venezuela (Bolivarian Republic of) — ISO 3166-1 alpha-2 code VE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VN</code></td><td>Viet Nam</td><td>Viet Nam — ISO 3166-1 alpha-2 code VN.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VG</code></td><td>Virgin Islands (British)</td><td>Virgin Islands (British) — ISO 3166-1 alpha-2 code VG.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VI</code></td><td>Virgin Islands (U.S.)</td><td>Virgin Islands (U.S.) — ISO 3166-1 alpha-2 code VI.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>WF</code></td><td>Wallis and Futuna</td><td>Wallis and Futuna — ISO 3166-1 alpha-2 code WF.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>EH</code></td><td>Western Sahara*</td><td>Western Sahara* — ISO 3166-1 alpha-2 code EH.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>YE</code></td><td>Yemen</td><td>Yemen — ISO 3166-1 alpha-2 code YE.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ZM</code></td><td>Zambia</td><td>Zambia — ISO 3166-1 alpha-2 code ZM.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ZW</code></td><td>Zimbabwe</td><td>Zimbabwe — ISO 3166-1 alpha-2 code ZW.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AX</code></td><td>Åland Islands</td><td>Åland Islands — ISO 3166-1 alpha-2 code AX.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Credential Types <span class="pill">14</span></h3>
+<p class="muted">Kinds of verifiable credential issued about a subject. All specialise the verifiableCredential family.<br><code>https://w3id.org/ixo/protocol/credentials/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>verifiableCredential</code></td><td>Verifiable Credential</td><td>A digital credential that can be cryptographically verified and contains claims about a subject.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>academic</code></td><td>Academic</td><td>A credential validating academic qualifications, degrees, or educational achievements.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>attendance</code></td><td>Attendance</td><td>A credential confirming participation or presence at an event, meeting, or gathering.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>certification</code></td><td>Certification</td><td>A credential validating professional certifications or specialized training completions.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>investorCredential</code></td><td>Investor Credential</td><td>A credential validating an entity’s status as an accredited or qualified investor.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>kycamlAttestation</code></td><td>KYC/AML Attestation</td><td>A credential confirming completion of Know Your Customer and Anti-Money Laundering verification.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>KYCAMLLevel1</code></td><td>KYC/AML Level 1</td><td>An identity-verification credential issued after KYC/AML Level 1 checks — document verification, liveness detection, and standard AML screening. Defined by protocol/credentials/v1/KYCAMLLevel1.json.</td><td><code>#kycamlAttestation</code></td></tr>
+<tr><td><code>license</code></td><td>License</td><td>A credential validating official permissions to perform specific activities or services.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>membership</code></td><td>Membership</td><td>A credential validating affiliation with organizations, communities, or professional bodies.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>professional</code></td><td>Professional</td><td>A credential validating professional qualifications, experience, or expertise in specific domains.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>verifiedCleanCooking</code></td><td>Verified Clean Cooking</td><td>A credential validating the implementation and impact of verified clean cooking solutions.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>verifiedEmissionsReduction</code></td><td>Verified Emissions Reduction</td><td>A credential certifying the verified reduction of greenhouse gas emissions through specific projects.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>AdministratorCredential</code></td><td>Administrator</td><td>A credential designating an administrator of an entity.</td><td><code>#verifiableCredential</code></td></tr>
+<tr><td><code>CreatorCredential</code></td><td>Creator</td><td>A credential designating the creator of an entity.</td><td><code>#verifiableCredential</code></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO DAO Types <span class="pill">19</span></h3>
+<p class="muted">Kinds of DAO entity, with organisational sub-types.<br><code>https://w3id.org/ixo/protocol/dao-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>organisation</code></td><td>Organisation</td><td>An organisation</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>organisation/cooperative</code></td><td>Cooperative</td><td>A DAO operating as a cooperative, owned and managed by its members for mutual benefit</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/company</code></td><td>Company</td><td>A legally registered business entity that operates for profit</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/hybridOrganization</code></td><td>Hybrid Organization</td><td>A DAO combining elements of profit and non-profit structures for diversified objectives</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/liechtensteinVentureCooperative</code></td><td>Liechtenstein Venture Cooperative</td><td>A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/nonGovernmentOrganization</code></td><td>Non Government Organization</td><td>A DAO operating as a non-governmental entity to address social, cultural, or environmental issues</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/nonProfitOrganization</code></td><td>Non Profit Organization</td><td>A business-oriented DAO focused on achieving social or environmental objectives rather than profit</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/publicBenefitCorporation</code></td><td>Public Benefit Corporation</td><td>A DAO that operates as a public benefit corporation with a focus on public interest</td><td><code>#organisation</code></td></tr>
+<tr><td><code>organisation/socialEnterprise</code></td><td>Social Enterprise</td><td>A DAO focused on addressing social challenges while maintaining financial sustainability</td><td><code>#organisation</code></td></tr>
+<tr><td><code>chain</code></td><td>Chain</td><td>A DAO managing or operating a blockchain network</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>chain/validator</code></td><td>Validator</td><td>A DAO serving as a validator within a blockchain network</td><td><code>#chain</code></td></tr>
+<tr><td><code>community</code></td><td>Community</td><td>A DAO centered around a specific community for collective action or resource sharing</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>developer</code></td><td>Developer</td><td>A DAO supporting software developers and technical projects</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>funding</code></td><td>Funding</td><td>A DAO dedicated to allocating and managing funds for various purposes</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>investment</code></td><td>Investment</td><td>A DAO focused on managing investments and funding opportunities</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>marketRelayer</code></td><td>Market Relayer</td><td>A DAO facilitating market transactions and providing liquidity</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>marketPlace</code></td><td>Market Place</td><td>A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>product</code></td><td>Product</td><td>A DAO focused on the development, management, and governance of a particular product or set of products</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>research</code></td><td>Research</td><td>A DAO focused on conducting and supporting research activities</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Deed Types <span class="pill">26</span></h3>
+<p class="muted">Kinds of deed (flow / offer / proposal / request / subscription) and their sub-types.<br><code>https://w3id.org/ixo/protocol/deed-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>flow</code></td><td>Flow</td><td>An intent-driven workflow that defines and enables the coordination of a piece of work—or a business process—from start to finish</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>flow/identity</code></td><td>Identity</td><td>A flow that establishes, verifies, or manages identities and their attributes</td><td><code>#flow</code></td></tr>
+<tr><td><code>flow/governance</code></td><td>Governance (Flow)</td><td>A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization</td><td><code>#flow</code></td></tr>
+<tr><td><code>flow/payout</code></td><td>Payout</td><td>A flow that coordinates the calculation, approval, and distribution of payments or rewards</td><td><code>#flow</code></td></tr>
+<tr><td><code>flow/domainCreation</code></td><td>Domain Creation</td><td>A flow that creates and configures new domains, including their governance, permissions, and resources</td><td><code>#flow</code></td></tr>
+<tr><td><code>offer</code></td><td>Offer</td><td>A deed representing a formal expression of willingness to provide or do something</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>proposal</code></td><td>Proposal</td><td>A deed that outlines a suggested plan or action for consideration and approval</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>proposal/membership</code></td><td>Membership</td><td>A proposal for managing members</td><td><code>#proposal</code></td></tr>
+<tr><td><code>proposal/governance</code></td><td>Governance (Proposal)</td><td>A proposal for managing domain governance</td><td><code>#proposal</code></td></tr>
+<tr><td><code>proposal/smartContract</code></td><td>Smart Contract</td><td>A proposal for managing domain smart contracts</td><td><code>#proposal</code></td></tr>
+<tr><td><code>proposal/financial</code></td><td>Financial</td><td>A proposal for managing domain financial resources</td><td><code>#proposal</code></td></tr>
+<tr><td><code>proposal/staking</code></td><td>Staking</td><td>A proposal for managing domain staking</td><td><code>#proposal</code></td></tr>
+<tr><td><code>proposal/domain</code></td><td>Domain</td><td>A proposal for creating and managing domains</td><td><code>#proposal</code></td></tr>
+<tr><td><code>request</code></td><td>Request</td><td>A deed detailing an appeal or demand for something to be provided or done</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>request/ambassador</code></td><td>Ambassador</td><td>A request to serve as an ambassedor for an organisation</td><td><code>#request</code></td></tr>
+<tr><td><code>request/environmentalSteward</code></td><td>Environmental Steward</td><td>A request to serve as a protector and manager of environmental resources</td><td><code>#request</code></td></tr>
+<tr><td><code>request/facilitator</code></td><td>Facilitator</td><td>A request to guide and enable processes or interactions between parties</td><td><code>#request</code></td></tr>
+<tr><td><code>request/payment</code></td><td>Payment</td><td>A request for payment</td><td><code>#request</code></td></tr>
+<tr><td><code>request/marketSolutions</code></td><td>Market Solutions</td><td>Configurations of IXO tools for specific use-cases or sectors.</td><td><code>#request</code></td></tr>
+<tr><td><code>request/marketingAndAdoption</code></td><td>Marketing And Adoption</td><td>Campaigns, communications assets, and onboarding flows to grow user and developer adoption.</td><td><code>#request</code></td></tr>
+<tr><td><code>request/platformIntegration</code></td><td>Platform Integration</td><td>Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules.</td><td><code>#request</code></td></tr>
+<tr><td><code>request/productEnhancements</code></td><td>Product Enhancements</td><td>Core protocol or app-level improvements.</td><td><code>#request</code></td></tr>
+<tr><td><code>request/service</code></td><td>Service</td><td>A request for a specific service to be provided</td><td><code>#request</code></td></tr>
+<tr><td><code>request/strategicProjects</code></td><td>Strategic Projects</td><td>High-value internal or partner initiatives.</td><td><code>#request</code></td></tr>
+<tr><td><code>request/workPlacement</code></td><td>Work Placement</td><td>A request for practical work experience or professional training position</td><td><code>#request</code></td></tr>
+<tr><td><code>subscription</code></td><td>Subscription</td><td>A deed that signifies an agreement to receive or support something regularly, such as a service or membership</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Entity Stage <span class="pill">7</span></h3>
+<p class="muted">Lifecycle stages of an entity, from proposal to archival.<br><code>https://w3id.org/ixo/protocol/entity-stage/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Proposal</code></td><td>Proposal</td><td>The entity is at the proposal stage, before work begins.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Planning</code></td><td>Planning</td><td>The entity is being planned and prepared.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Delivery</code></td><td>Delivery</td><td>The entity is actively delivering its work.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Paused</code></td><td>Paused</td><td>Delivery is temporarily suspended.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Closing</code></td><td>Closing</td><td>The entity is winding down its activities.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Ended</code></td><td>Ended</td><td>The entity’s lifecycle has ended.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Archived</code></td><td>Archived</td><td>The entity is archived for record-keeping.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Entity Status <span class="pill">6</span></h3>
+<p class="muted">Operational status codes for an entity on the IXO Spatial Web.<br><code>https://w3id.org/ixo/protocol/entity-status/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Pending</code></td><td>Pending</td><td>The entity has been created but is not yet active.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Live</code></td><td>Live</td><td>The entity is active and operational.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Stopped</code></td><td>Stopped</td><td>The entity’s operation has been halted.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Sealed</code></td><td>Sealed</td><td>The entity has been finalised and locked against further change.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Deleted</code></td><td>Deleted</td><td>The entity has been removed from active use.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Recruiting</code></td><td>Recruiting</td><td>The entity is open and seeking participants or members.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Entity Types <span class="pill">45</span></h3>
+<p class="muted">Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively.<br><code>https://w3id.org/ixo/protocol/entities/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>project</code></td><td>Project</td><td>A planned undertaking coordinating resources and activities toward defined goals and measurable outcomes.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>dao</code></td><td>DAO</td><td>A Decentralised Autonomous Organisation coordinating members and sub-groups through on-chain governance.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>oracle</code></td><td>Oracle</td><td>An agentic service that evaluates claims and supplies verified results to the network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>asset</code></td><td>Asset</td><td>An item or resource of value owned or controlled by an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>protocol</code></td><td>Protocol</td><td>A reusable definition used to create and govern entities, claims or credentials of a given kind.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>deed</code></td><td>Deed</td><td>A recorded act or agreement expressing intent or commitment between entities.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>investment</code></td><td>Investment</td><td>An allocation of capital or resources made in expectation of a future return.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>group</code></td><td>Group</td><td>An organisational unit grouping members or entities under shared coordination.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>pod</code></td><td>POD</td><td>A small autonomous sub-group that can act independently while remaining accountable to a parent organisation.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>user</code></td><td>User</td><td>An individual user account represented as an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>agent</code></td><td>Agent</td><td>A human or autonomous agent that acts within the network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>document</code></td><td>Document</td><td>A document resource registered as an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>image</code></td><td>Image</td><td>An image resource registered as an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>text</code></td><td>Text</td><td>A text resource registered as an entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>request</code></td><td>Request</td><td>A standalone request entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>asset/device</code></td><td>Device</td><td>A physical or virtual device represented as an asset, such as a metered cookstove or sensor.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset-collection</code></td><td>Asset Collection</td><td>A curated group of related assets managed together (also written asset/collection on-chain).</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/voucher</code></td><td>Voucher</td><td>An asset redeemable for goods or services.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/impactcredit</code></td><td>Impact Credit</td><td>A unit representing verified environmental or social impact.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/coin</code></td><td>Coin</td><td>A digital or physical currency used as a medium of exchange.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/data</code></td><td>Data Asset</td><td>A data asset that can be stored, shared or traded.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/learnership</code></td><td>Learnership</td><td>An asset representing a structured learning programme.</td><td><code>#asset</code></td></tr>
+<tr><td><code>asset/membershipAsset</code></td><td>Membership Asset</td><td>An asset signifying membership rights or privileges.</td><td><code>#asset</code></td></tr>
+<tr><td><code>dao/pod</code></td><td>POD (in a DAO)</td><td>A POD operating within a parent DAO.</td><td><code>#dao</code></td></tr>
+<tr><td><code>dao/group</code></td><td>Group (in a DAO)</td><td>A functional group within a DAO.</td><td><code>#dao</code></td></tr>
+<tr><td><code>deed/request</code></td><td>Request (Deed)</td><td>A deed appealing or demanding that something be provided or done.</td><td><code>#deed</code></td></tr>
+<tr><td><code>deed/offer</code></td><td>Offer</td><td>A deed expressing a willingness to provide or do something.</td><td><code>#deed</code></td></tr>
+<tr><td><code>deed/subscription</code></td><td>Subscription</td><td>A deed establishing an agreement to receive or support something regularly.</td><td><code>#deed</code></td></tr>
+<tr><td><code>deed/proposal</code></td><td>Proposal</td><td>A deed outlining a suggested plan or action for consideration.</td><td><code>#deed</code></td></tr>
+<tr><td><code>deed/flow</code></td><td>Flow</td><td>An intent-driven workflow coordinating a process from start to finish.</td><td><code>#deed</code></td></tr>
+<tr><td><code>oracle/evaluation</code></td><td>Evaluation Oracle</td><td>An oracle specialised in evaluating claims to produce verified results.</td><td><code>#oracle</code></td></tr>
+<tr><td><code>protocol/claim</code></td><td>Claim Protocol</td><td>A protocol defining the content and structure of a class of claims.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/deed</code></td><td>Deed Protocol</td><td>A protocol defining the content and structure of a class of deeds.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/dao</code></td><td>DAO Protocol</td><td>A protocol defining the governance and operation of a class of DAOs.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/system</code></td><td>System Protocol</td><td>A protocol defining a cognitive digital twin system.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/asset</code></td><td>Asset Protocol</td><td>A protocol defining the properties of a class of assets.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/project</code></td><td>Project Protocol</td><td>A protocol defining a class of project domains.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/oracle</code></td><td>Oracle Protocol</td><td>A protocol defining the properties of a class of oracles.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/investment</code></td><td>Investment Protocol</td><td>A protocol governing a class of investment processes.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/group</code></td><td>Group Protocol</td><td>A protocol defining the formation and governance of a class of groups.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/request</code></td><td>Request Protocol</td><td>A protocol defining a class of requests.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/verifiableClaim</code></td><td>Verifiable Claim Protocol</td><td>A protocol for creating verifiable claims and defining their content and structure.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/verifiableCredential</code></td><td>Verifiable Credential Protocol</td><td>A protocol for creating verifiable credentials and defining their content and structure.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/impact</code></td><td>Impact Protocol</td><td>A protocol defining how impact is claimed and verified.</td><td><code>#protocol</code></td></tr>
+<tr><td><code>protocol/flow</code></td><td>Flow Protocol</td><td>A protocol defining an intent-driven workflow.</td><td><code>#protocol</code></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Entity View <span class="pill">2</span></h3>
+<p class="muted">Visibility modes for an entity’s data.<br><code>https://w3id.org/ixo/protocol/entity-view/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Visible</code></td><td>Visible</td><td>Entity data is publicly visible.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Encrypted</code></td><td>Encrypted</td><td>Entity data is encrypted and access-controlled.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Evaluation Codes <span class="pill">6</span></h3>
+<p class="muted">Grades A–F used to score the result of an evaluation.<br><code>https://w3id.org/ixo/protocol/evaluation-codes/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>A</code></td><td>Grade A</td><td>Excellent — meets all criteria at the highest standard.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>B</code></td><td>Grade B</td><td>Good — meets criteria above the required standard.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>C</code></td><td>Grade C</td><td>Satisfactory — meets the required standard.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>D</code></td><td>Grade D</td><td>Marginal — partially meets the required standard.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>E</code></td><td>Grade E</td><td>Poor — falls short of the required standard.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>F</code></td><td>Grade F</td><td>Fail — does not meet the required standard.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Group Types <span class="pill">5</span></h3>
+<p class="muted">Kinds of governance group within a DAO or organisation.<br><code>https://w3id.org/ixo/protocol/group-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>membership</code></td><td>Membership</td><td>The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>custodians</code></td><td>Custodians</td><td>A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>security</code></td><td>Security</td><td>A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>finance</code></td><td>Finance</td><td>An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>operations</code></td><td>Operations</td><td>An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Linked Resource Types <span class="pill">27</span></h3>
+<p class="muted">Kinds of resource linked from an entity document via the linkedResource property. Notation is the on-chain type string. (A long tail of low-frequency / display: prefixed variants is normalised; see docs/term-coverage.md.)<br><code>https://w3id.org/ixo/protocol/linked-resources/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Settings</code></td><td>Settings</td><td>Entity settings and profile configuration linked from the entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VerifiableCredential</code></td><td>Verifiable Credential</td><td>A verifiable credential linked from the entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>WebDashboard</code></td><td>Web Dashboard</td><td>A web dashboard presenting the entity’s data.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>TokenMetadata</code></td><td>Token Metadata</td><td>Metadata describing the entity’s impact token.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>domainCard</code></td><td>Domain Card</td><td>The entity’s domain card credential.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>surveyTemplate</code></td><td>Survey Template</td><td>A survey / form template used to collect claims.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ClaimSchema</code></td><td>Claim Schema</td><td>A schema defining the structure of a claim.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>credentialSchema</code></td><td>Credential Schema</td><td>A schema defining the structure of a credential.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>evaluationTemplate</code></td><td>Evaluation Template</td><td>A template for evaluating claims.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LegalContract</code></td><td>Legal Contract</td><td>A legal contract document linked from the entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Page</code></td><td>Page</td><td>A presentational page linked from the entity.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>pricingList</code></td><td>Pricing List</td><td>A list of prices for the entity’s offerings.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>oracleAuthZConfig</code></td><td>Oracle AuthZ Config</td><td>Authorization configuration for an oracle.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>bidContributor</code></td><td>Bid (Contributor)</td><td>A contributor bid template.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>bidEvaluator</code></td><td>Bid (Evaluator)</td><td>An evaluator bid template.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VerificationMethods</code></td><td>Verification Methods</td><td>A linked resource listing verification methods.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>imageProfile</code></td><td>Profile Image</td><td>The entity’s profile image.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>imageLogo</code></td><td>Logo Image</td><td>The entity’s logo image.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>imageHeader</code></td><td>Header Image</td><td>The entity’s header image.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>imageIcon</code></td><td>Icon Image</td><td>The entity’s icon image.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>image</code></td><td>Image</td><td>An image resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>document</code></td><td>Document</td><td>A document resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>textDocument</code></td><td>Text Document</td><td>A text document resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>text</code></td><td>Text</td><td>A text resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Lottie</code></td><td>Lottie Animation</td><td>A Lottie animation asset.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Template</code></td><td>Template</td><td>A generic template resource.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ProjectCredential</code></td><td>Project Credential</td><td>A credential about a project.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Linked-Resource Media Formats <span class="pill">8</span></h3>
+<p class="muted">IANA media types used for the format / encoding of a linked resource. Notation is the media type. Semantic companion to the protocol/linked-resources/v1/format.json survey-data file.<br><code>https://w3id.org/ixo/protocol/media-formats/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>application/ld+json</code></td><td>Application ld+json</td><td>A media type for JSON-LD, a JSON-based format for linked data.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>application/html</code></td><td>Application html</td><td>A media type for HTML documents, used for displaying content in web browsers.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>application/json</code></td><td>Application json</td><td>A media type for JSON, a lightweight data-interchange format.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>application/pdf</code></td><td>Application pdf</td><td>A media type for PDF documents, commonly used for sharing formatted documents.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>image/jpeg</code></td><td>Image jpeg</td><td>A media type for JPEG images, commonly used for digital photographs.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>image/png</code></td><td>Image png</td><td>A media type for PNG images, known for lossless compression.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>text/plain</code></td><td>Text plain</td><td>A media type for plain text, containing unformatted text content.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ld+json</code></td><td>Ld+json</td><td>A shorthand notation for JSON-LD, used for linked data.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Liquidity Sources <span class="pill">6</span></h3>
+<p class="muted">Sources from which liquidity or funds can be drawn.<br><code>https://w3id.org/ixo/protocol/liquidity-sources/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Alphabond</code></td><td>Alphabond</td><td>Liquidity sourced from an Alphabond bonding curve.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>WalletAddress</code></td><td>Wallet Address</td><td>Liquidity sourced from a wallet address.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BankAccount</code></td><td>Bank Account</td><td>Liquidity sourced from a bank account.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PaymentContract</code></td><td>Payment Contract</td><td>Liquidity sourced from a payment contract.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>NFTAsset</code></td><td>NFT Asset</td><td>Liquidity sourced from a non-fungible token asset.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LiquidityPool</code></td><td>Liquidity Pool</td><td>Liquidity sourced from a liquidity pool.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Metric Types <span class="pill">2</span></h3>
+<p class="muted">Kinds of quantitative metric tracked for an entity, such as units issued. Semantic companion to the protocol/metric/v1 survey-data file.<br><code>https://w3id.org/ixo/protocol/metric-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>issued</code></td><td>Issued</td><td>Metric for the amount of units issued</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>issued/carbonCredits</code></td><td>Carbon Credits</td><td>A structured framework defining the format and content of credentials.</td><td><code>#issued</code></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Node Types <span class="pill">15</span></h3>
+<p class="muted">Kinds of service node referenced from an entity’s service endpoints.<br><code>https://w3id.org/ixo/protocol/node-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>CellNode</code></td><td>Cell Node</td><td>A data node that stores and serves entity data.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CellNodeEncrypted</code></td><td>Encrypted Cell Node</td><td>An encrypted data node.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Blockchain</code></td><td>Blockchain</td><td>A blockchain node.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>WebService</code></td><td>Web Service</td><td>A general web service endpoint.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>BotService</code></td><td>Bot Service</td><td>An automated bot service.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>AuthenticationService</code></td><td>Authentication Service</td><td>A service providing authentication.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CloudWorker</code></td><td>Cloud Worker</td><td>A cloud compute worker.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Ipfs</code></td><td>IPFS</td><td>An InterPlanetary File System node.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>CredentialRegistry</code></td><td>Credential Registry</td><td>A registry of credentials.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MatrixHomeServer</code></td><td>Matrix Home Server</td><td>A Matrix homeserver hosting encrypted entity communications and data.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Matrix</code></td><td>Matrix</td><td>A Matrix service node.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>oracleService</code></td><td>Oracle Service</td><td>An oracle service endpoint.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>wsService</code></td><td>WebSocket Service</td><td>A WebSocket service endpoint.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>chainService</code></td><td>Chain Service</td><td>A blockchain RPC / chain service endpoint.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>linkedDomains</code></td><td>Linked Domains</td><td>A linked-domains service asserting domains controlled by the entity.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Oracle Capabilities (P-Functions) <span class="pill">8</span></h3>
+<p class="muted">The capability classes (P-Functions) that an agentic oracle or cognitive digital twin can perform.<br><code>https://w3id.org/ixo/protocol/oracle-capabilities/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>prediction-and-perception</code></td><td>Prediction and Perception</td><td>Sensing, monitoring and forecasting the state of a system or environment.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>prescription-and-planning</code></td><td>Prescription and Planning</td><td>Recommending and planning actions to achieve goals.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>proving-and-protocol-conformance</code></td><td>Proving and Protocol Conformance</td><td>Verifying that claims, processes and outputs conform to defined protocols.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>protection-and-risk</code></td><td>Protection and Risk</td><td>Identifying, assessing and mitigating risks and threats.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>participation</code></td><td>Participation</td><td>Enabling, coordinating and rewarding the participation of agents.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>payments-and-portfolio</code></td><td>Payments and Portfolio</td><td>Managing payments, assets and portfolios.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>policy-and-compliance</code></td><td>Policy and Compliance</td><td>Applying policies and ensuring regulatory and protocol compliance.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>problem-identification-and-resolution</code></td><td>Problem Identification and Resolution</td><td>Detecting problems and coordinating their resolution.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Oracle Types <span class="pill">20</span></h3>
+<p class="muted">Kinds of oracle service. Complements protocol/oracle-capabilities/v1 (the P-Function capability families).<br><code>https://w3id.org/ixo/protocol/oracle-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>evaluation</code></td><td>Evaluation</td><td>An oracle that evaluates and verifies data, conditions, or outcomes based on predefined criteria</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>subscription</code></td><td>Subscription</td><td>An oracle that provides continuous access to data feeds or information streams through a subscription model</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>participationOfPeople</code></td><td>Participation Of People</td><td>Involves human oversight in decision-making processes</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>pathfinding</code></td><td>Pathfinding</td><td>Guides users through complex decision-making processes</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>patternRecognition</code></td><td>Pattern Recognition</td><td>Identifies patterns in data to inform decision-making and optimize strategies</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>payment</code></td><td>Payment</td><td>Automates payments based on impact goal achievements, using smart contracts to streamline transactions</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>performanceMonitoring</code></td><td>Performance Monitoring</td><td>Tracks project performance in real-time, providing feedback and analytics</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>personalization</code></td><td>Personalization</td><td>Tailors interactions and recommendations to individual users, enhancing user experience</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>planning</code></td><td>Planning</td><td>Supports strategic planning by predicting trends and resource needs</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>policyEnforcement</code></td><td>Policy Enforcement</td><td>Ensures compliance with policies and regulations, enforcing rules automatically</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>portfolioManagement</code></td><td>Portfolio Management</td><td>Manages and optimizes project portfolios for strategic goals</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>positioning</code></td><td>Positioning</td><td>Determines optimal placement of resources and interventions within the ecosystem</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>prescribingInterventions</code></td><td>Prescribing Interventions</td><td>Recommends actions based on data analysis to guide stakeholders towards effective strategies</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>preventionOfRisks</code></td><td>Prevention Of Risks</td><td>Anticipates and mitigates potential risks to keep projects on track</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>privacyProtection</code></td><td>Privacy Protection</td><td>Safeguards sensitive information and ensures compliance with regulations</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>problemDetectionAndResolution</code></td><td>Problem Detection And Resolution</td><td>Monitors systems for potential issues, enabling early detection and resolution</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>processOptimization</code></td><td>Process Optimization</td><td>Enhances operational efficiency by automating tasks and streamlining workflows</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>profiling</code></td><td>Profiling</td><td>Creates detailed profiles of users and projects for accurate targeting of interventions</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>proofing</code></td><td>Proofing</td><td>Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>protocolAdherence</code></td><td>Protocol Adherence</td><td>Ensures compliance with predefined protocols for consistency and reliability</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Page View <span class="pill">3</span></h3>
+<p class="muted">Visibility modes for an entity’s page content.<br><code>https://w3id.org/ixo/protocol/page-view/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>Public</code></td><td>Public</td><td>The page is visible to everyone.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Private</code></td><td>Private</td><td>The page is visible only to authorised members.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Secret</code></td><td>Secret</td><td>The page is hidden and shared only with explicitly granted parties.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Payment Denominations <span class="pill">4</span></h3>
+<p class="muted">Currencies and tokens in which payments can be denominated.<br><code>https://w3id.org/ixo/protocol/payment-denominations/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>IXO</code></td><td>IXO</td><td>The native IXO token.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>eEUR</code></td><td>eEUR</td><td>A Euro-denominated stable token.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>eCHF</code></td><td>eCHF</td><td>A Swiss-Franc-denominated stable token.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>eUSD</code></td><td>eUSD</td><td>A US-Dollar-denominated stable token.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Payment Types <span class="pill">9</span></h3>
+<p class="muted">Kinds of payment that can be configured on the IXO Spatial Web.<br><code>https://w3id.org/ixo/protocol/payments/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>FeeForService</code></td><td>Fee for Service</td><td>A payment made in exchange for a specific service rendered.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>OracleFee</code></td><td>Oracle Fee</td><td>A fee paid to an oracle for evaluation or data services.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>Subscription</code></td><td>Subscription</td><td>A recurring payment for ongoing access or membership.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>RentalFee</code></td><td>Rental Fee</td><td>A payment for the temporary use of an asset.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>OutcomePayment</code></td><td>Outcome Payment</td><td>A payment contingent on the achievement of a verified outcome.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>InterestRepayment</code></td><td>Interest Repayment</td><td>A payment of interest on a loan.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LoanRepayment</code></td><td>Loan Repayment</td><td>A repayment of loan principal.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>IncomeDistribution</code></td><td>Income Distribution</td><td>A distribution of income to stakeholders.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DisputeSettlement</code></td><td>Dispute Settlement</td><td>A payment settling a dispute.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO POD Types <span class="pill">11</span></h3>
+<p class="muted">Sectors of Protocol-Oriented Domain (POD).<br><code>https://w3id.org/ixo/protocol/pod-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>agriculture</code></td><td>Agriculture</td><td>A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>communitySocialImpact</code></td><td>Community Social Impact</td><td>A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>education</code></td><td>Education</td><td>A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>energy</code></td><td>Energy</td><td>A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>enterprise</code></td><td>Enterprise</td><td>A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>environmentalConservation</code></td><td>Environmental Conservation</td><td>A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>finance</code></td><td>Finance</td><td>A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>governance</code></td><td>Governance</td><td>A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>research</code></td><td>Research</td><td>A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>sme</code></td><td>Sme</td><td>A POD that</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>urbanPlanningAndInfrastructure</code></td><td>Urban Planning And Infrastructure</td><td>A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Project Types <span class="pill">21</span></h3>
+<p class="muted">Kinds of project entity, with sub-types for specific domains.<br><code>https://w3id.org/ixo/protocol/project-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>accreditation</code></td><td>Accreditation</td><td>A project focused on certifying that an entity or individual meets specific standards or qualifications</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>behaviourChange</code></td><td>Behaviour Change</td><td>A project designed to influence and modify behaviors to achieve desired outcomes or impacts</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>circularEconomy</code></td><td>Circular Economy</td><td>A project aimed at promoting resource efficiency, waste reduction, and sustainable economic practices</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>civicAction</code></td><td>Civic Action</td><td>A project that engages citizens in collective efforts to address community or societal issues</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>course</code></td><td>Course</td><td>A project that designs, delivers, and manages structured training programs or courses for learners</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>development</code></td><td>Development</td><td>A project providing software development services, including design, implementation, testing, and maintenance of software solutions</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>educationAndAwareness</code></td><td>Education And Awareness</td><td>A project focused on educating and raising awareness about specific topics or issues</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>environmentalMonitoring</code></td><td>Environmental Monitoring</td><td>A project that observes, collects, and analyzes data to assess environmental conditions and changes</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>esg</code></td><td>Esg</td><td>A project addressing Environmental, Social, and Governance factors to ensure sustainability and ethical impact</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>esg/cosmosMonitoring</code></td><td>Cosmos Monitoring</td><td>A project focusing on the sustainable development in Space and on Earth.</td><td><code>#esg</code></td></tr>
+<tr><td><code>identity</code></td><td>Identity</td><td>A project related to establishing, managing, or verifying individual or organizational identities</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>impact</code></td><td>Impact</td><td>A project designed to create, measure, and verify positive social or environmental outcomes with tangible results</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>immuneCell</code></td><td>Immune Cell</td><td>A project involving the study, application, or enhancement of immune cell functions and interactions</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>mitigationActivity</code></td><td>Mitigation Activity</td><td>A project aimed at reducing the severity or impact of specific risks or issues, such as climate change</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>mitigationActivity/mecs</code></td><td>Mecs</td><td>A project promoting Modern Energy Cooking Services, designed to improve cooking efficiency and reduce reliance on traditional biomass fuels</td><td><code>#mitigation-activity</code></td></tr>
+<tr><td><code>mitigationActivity/solarPV</code></td><td>Solar PV</td><td>A project focusing on the implementation and use of solar photovoltaic systems to generate clean and renewable energy</td><td><code>#mitigation-activity</code></td></tr>
+<tr><td><code>mitigationActivity/mobility</code></td><td>Mobility</td><td>A project focused on the development, implementation, or promotion of sustainable mobility solutions</td><td><code>#mitigation-activity</code></td></tr>
+<tr><td><code>oracle</code></td><td>Oracle</td><td>A project involving systems that provide data integrity, insights, or automation for decision-making processes</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>place</code></td><td>Place</td><td>A project focusing on a specific geographic place</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>relayer</code></td><td>Relayer</td><td>A project focused on facilitating communication or transactions between different systems or networks</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>workPlacement</code></td><td>Work Placement</td><td>A project providing practical work experiences to individuals in professional environments</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Relationship Types <span class="pill">22</span></h3>
+<p class="muted">Typed relationships asserted between two entities via ixo:linkedEntity / ixo:relationship. A starter set; to be reconciled with the fuller Relationship Type Ontology outline.<br><code>https://w3id.org/ixo/protocol/relationships/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>memberOf</code></td><td>Member Of</td><td>The subject entity is a member of the object entity (inverse of has-member).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>hasMember</code></td><td>Has Member</td><td>The subject entity has the object entity as a member (inverse of member-of).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>partOf</code></td><td>Part Of</td><td>The subject entity is a constituent part of the object entity (inverse of has-part).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>hasPart</code></td><td>Has Part</td><td>The subject entity has the object entity as a constituent part (inverse of part-of).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>controls</code></td><td>Controls</td><td>The subject entity controls the object entity (inverse of controlled-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>controlledBy</code></td><td>Controlled By</td><td>The subject entity is controlled by the object entity (inverse of controls).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>delegatesTo</code></td><td>Delegates To</td><td>The subject entity delegates authority to the object entity (inverse of delegated-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>delegatedBy</code></td><td>Delegated By</td><td>The subject entity holds authority delegated by the object entity (inverse of delegates-to).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>issuedBy</code></td><td>Issued By</td><td>The subject was issued by the object entity (inverse of issuer-of).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>issuerOf</code></td><td>Issuer Of</td><td>The subject entity is the issuer of the object (inverse of issued-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>evaluates</code></td><td>Evaluates</td><td>The subject entity evaluates the object (inverse of evaluated-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>evaluatedBy</code></td><td>Evaluated By</td><td>The subject is evaluated by the object entity (inverse of evaluates).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>owns</code></td><td>Owns</td><td>The subject entity owns the object (inverse of owned-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ownedBy</code></td><td>Owned By</td><td>The subject is owned by the object entity (inverse of owns).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>funds</code></td><td>Funds</td><td>The subject entity funds the object (inverse of funded-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>fundedBy</code></td><td>Funded By</td><td>The subject is funded by the object entity (inverse of funds).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>parentOf</code></td><td>Parent Of</td><td>The subject entity is the parent of the object (inverse of child-of).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>childOf</code></td><td>Child Of</td><td>The subject entity is a child of the object (inverse of parent-of).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>verifies</code></td><td>Verifies</td><td>The subject entity verifies the object (inverse of verified-by).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>verifiedBy</code></td><td>Verified By</td><td>The subject is verified by the object entity (inverse of verifies).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>collaboratesWith</code></td><td>Collaborates With</td><td>The subject and object entities collaborate (symmetric).</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>derivedFrom</code></td><td>Derived From</td><td>The subject entity was derived from the object entity.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Slashing Conditions <span class="pill">7</span></h3>
+<p class="muted">Conditions under which a stake is slashed.<br><code>https://w3id.org/ixo/protocol/slashing-conditions/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>FailedService</code></td><td>Failed Service</td><td>Slashing triggered by failure to deliver a service.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FailedSecurity</code></td><td>Failed Security</td><td>Slashing triggered by a security failure.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LoanDefault</code></td><td>Loan Default</td><td>Slashing triggered by default on a loan.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FailedProposal</code></td><td>Failed Proposal</td><td>Slashing triggered by a failed governance proposal.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FailedDispute</code></td><td>Failed Dispute</td><td>Slashing triggered by losing a dispute.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>InsuredEvent</code></td><td>Insured Event</td><td>Slashing triggered by an insured event occurring.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>FailedMembership</code></td><td>Failed Membership</td><td>Slashing triggered by breach of membership obligations.</td><td><span class="muted">top</span></td></tr></tbody></table>
+<h3 id="scheme-v1">IXO Stake Types <span class="pill">9</span></h3>
+<p class="muted">Kinds of stake or deposit that back an obligation on the network.<br><code>https://w3id.org/ixo/protocol/stake-types/v1</code></p>
+<table><thead><tr><th>Notation</th><th>Label</th><th>Definition</th><th>Broader</th></tr></thead>
+<tbody><tr><td><code>SecurityGuarantee</code></td><td>Security Guarantee</td><td>A stake guaranteeing the security of a service or network.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>PerformanceGuarantee</code></td><td>Performance Guarantee</td><td>A stake guaranteeing performance of an obligation.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>LoanGuarantee</code></td><td>Loan Guarantee</td><td>A stake guaranteeing repayment of a loan.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ClaimGuarantee</code></td><td>Claim Guarantee</td><td>A stake guaranteeing the validity of a claim.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>DisputeGuarantee</code></td><td>Dispute Guarantee</td><td>A stake backing a party in a dispute.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>VotingProposalDeposit</code></td><td>Voting Proposal Deposit</td><td>A deposit required to submit a governance proposal.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>MembershipDeposit</code></td><td>Membership Deposit</td><td>A deposit required to join a group or organisation.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>ServicesDeposit</code></td><td>Services Deposit</td><td>A deposit securing the provision of services.</td><td><span class="muted">top</span></td></tr>
+<tr><td><code>InsuranceGuarantee</code></td><td>Insurance Guarantee</td><td>A stake backing an insurance commitment.</td><td><span class="muted">top</span></td></tr></tbody></table>
+
+<footer>Generated from the namespace sources by <code>scripts/build-docs.mjs</code>. This page is regenerated from the JSON-LD; do not edit by hand.</footer>
+</div></body></html>

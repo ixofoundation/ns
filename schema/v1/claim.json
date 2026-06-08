@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/ixo/schema/v1/claim",
+  "title": "IXO Claim",
+  "description": "Document-shape schema for a claim — a structured assertion made by or about an entity, which may be evaluated to produce a credential. Graph-shape rules live in shapes/v1/ClaimShape.jsonld.",
+  "type": "object",
+  "required": ["@context", "type", "claimSubject"],
+  "properties": {
+    "@context": { "oneOf": [{ "type": "string" }, { "type": "array", "minItems": 1 }, { "type": "object" }] },
+    "id": { "type": "string" },
+    "type": { "oneOf": [{ "type": "string" }, { "type": "array", "minItems": 1, "items": { "type": "string" } }] },
+    "claimType": { "type": "string" },
+    "issuanceDate": { "type": "string", "format": "date-time" },
+    "claimSubject": {
+      "type": "object",
+      "required": ["id"],
+      "properties": { "id": { "type": "string", "pattern": "^did:[a-z0-9]+:.+" } }
+    },
+    "evidence": { "type": ["object", "array"] },
+    "proof": { "type": ["object", "array"] }
+  }
+}

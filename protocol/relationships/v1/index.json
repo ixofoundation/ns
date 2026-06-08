@@ -1,0 +1,696 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/relationships/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/relationships/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Relationship Types",
+      "dcterms:description": "Typed relationships asserted between two entities via ixo:linkedEntity / ixo:relationship. A starter set; to be reconciled with the fuller Relationship Type Ontology outline.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "PLAN.md Phase 8 (Relationship Type Ontology); IID linkedEntity relationships",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#member-of"
+        },
+        {
+          "@id": "#has-member"
+        },
+        {
+          "@id": "#part-of"
+        },
+        {
+          "@id": "#has-part"
+        },
+        {
+          "@id": "#controls"
+        },
+        {
+          "@id": "#controlled-by"
+        },
+        {
+          "@id": "#delegates-to"
+        },
+        {
+          "@id": "#delegated-by"
+        },
+        {
+          "@id": "#issued-by"
+        },
+        {
+          "@id": "#issuer-of"
+        },
+        {
+          "@id": "#evaluates"
+        },
+        {
+          "@id": "#evaluated-by"
+        },
+        {
+          "@id": "#owns"
+        },
+        {
+          "@id": "#owned-by"
+        },
+        {
+          "@id": "#funds"
+        },
+        {
+          "@id": "#funded-by"
+        },
+        {
+          "@id": "#parent-of"
+        },
+        {
+          "@id": "#child-of"
+        },
+        {
+          "@id": "#verifies"
+        },
+        {
+          "@id": "#verified-by"
+        },
+        {
+          "@id": "#collaborates-with"
+        },
+        {
+          "@id": "#derived-from"
+        }
+      ]
+    },
+    {
+      "@id": "#member-of",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Member Of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is a member of the object entity (inverse of has-member).",
+        "@language": "en"
+      },
+      "skos:notation": "memberOf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#has-member"
+      }
+    },
+    {
+      "@id": "#has-member",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Has Member",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity has the object entity as a member (inverse of member-of).",
+        "@language": "en"
+      },
+      "skos:notation": "hasMember",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#member-of"
+      }
+    },
+    {
+      "@id": "#part-of",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Part Of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is a constituent part of the object entity (inverse of has-part).",
+        "@language": "en"
+      },
+      "skos:notation": "partOf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#has-part"
+      }
+    },
+    {
+      "@id": "#has-part",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Has Part",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity has the object entity as a constituent part (inverse of part-of).",
+        "@language": "en"
+      },
+      "skos:notation": "hasPart",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#part-of"
+      }
+    },
+    {
+      "@id": "#controls",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Controls",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity controls the object entity (inverse of controlled-by).",
+        "@language": "en"
+      },
+      "skos:notation": "controls",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#controlled-by"
+      }
+    },
+    {
+      "@id": "#controlled-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Controlled By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is controlled by the object entity (inverse of controls).",
+        "@language": "en"
+      },
+      "skos:notation": "controlledBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#controls"
+      }
+    },
+    {
+      "@id": "#delegates-to",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Delegates To",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity delegates authority to the object entity (inverse of delegated-by).",
+        "@language": "en"
+      },
+      "skos:notation": "delegatesTo",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#delegated-by"
+      }
+    },
+    {
+      "@id": "#delegated-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Delegated By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity holds authority delegated by the object entity (inverse of delegates-to).",
+        "@language": "en"
+      },
+      "skos:notation": "delegatedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#delegates-to"
+      }
+    },
+    {
+      "@id": "#issued-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Issued By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject was issued by the object entity (inverse of issuer-of).",
+        "@language": "en"
+      },
+      "skos:notation": "issuedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#issuer-of"
+      }
+    },
+    {
+      "@id": "#issuer-of",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Issuer Of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is the issuer of the object (inverse of issued-by).",
+        "@language": "en"
+      },
+      "skos:notation": "issuerOf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#issued-by"
+      }
+    },
+    {
+      "@id": "#evaluates",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluates",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity evaluates the object (inverse of evaluated-by).",
+        "@language": "en"
+      },
+      "skos:notation": "evaluates",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#evaluated-by"
+      }
+    },
+    {
+      "@id": "#evaluated-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluated By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject is evaluated by the object entity (inverse of evaluates).",
+        "@language": "en"
+      },
+      "skos:notation": "evaluatedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#evaluates"
+      }
+    },
+    {
+      "@id": "#owns",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Owns",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity owns the object (inverse of owned-by).",
+        "@language": "en"
+      },
+      "skos:notation": "owns",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#owned-by"
+      }
+    },
+    {
+      "@id": "#owned-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Owned By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject is owned by the object entity (inverse of owns).",
+        "@language": "en"
+      },
+      "skos:notation": "ownedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#owns"
+      }
+    },
+    {
+      "@id": "#funds",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Funds",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity funds the object (inverse of funded-by).",
+        "@language": "en"
+      },
+      "skos:notation": "funds",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#funded-by"
+      }
+    },
+    {
+      "@id": "#funded-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Funded By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject is funded by the object entity (inverse of funds).",
+        "@language": "en"
+      },
+      "skos:notation": "fundedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#funds"
+      }
+    },
+    {
+      "@id": "#parent-of",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Parent Of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is the parent of the object (inverse of child-of).",
+        "@language": "en"
+      },
+      "skos:notation": "parentOf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#child-of"
+      }
+    },
+    {
+      "@id": "#child-of",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Child Of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity is a child of the object (inverse of parent-of).",
+        "@language": "en"
+      },
+      "skos:notation": "childOf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#parent-of"
+      }
+    },
+    {
+      "@id": "#verifies",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verifies",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity verifies the object (inverse of verified-by).",
+        "@language": "en"
+      },
+      "skos:notation": "verifies",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#verified-by"
+      }
+    },
+    {
+      "@id": "#verified-by",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verified By",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject is verified by the object entity (inverse of verifies).",
+        "@language": "en"
+      },
+      "skos:notation": "verifiedBy",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "owl:inverseOf": {
+        "@id": "#verifies"
+      }
+    },
+    {
+      "@id": "#collaborates-with",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Collaborates With",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject and object entities collaborate (symmetric).",
+        "@language": "en"
+      },
+      "skos:notation": "collaboratesWith",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      }
+    },
+    {
+      "@id": "#derived-from",
+      "@type": [
+        "skos:Concept",
+        "owl:ObjectProperty"
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Derived From",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The subject entity was derived from the object entity.",
+        "@language": "en"
+      },
+      "skos:notation": "derivedFrom",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/relationships/v1"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      }
+    }
+  ]
+}

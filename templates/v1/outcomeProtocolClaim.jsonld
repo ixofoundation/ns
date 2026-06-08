@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:REPLACE-CLAIM-ID#outcome",
+  "type": "ixo:Claim",
+  "hasClaimType": "claimType:outcome",
+  "claimSubject": { "id": "did:ixo:entity:REPLACE-SUBJECT-ID" },
+  "name": "<<<Outcome claim name>>>",
+  "description": "<<<Measured outcome produced by an activity, per the outcome protocol>>>",
+  "outcomeType": "<<<Outcome type>>>",
+  "indicator": "<<<Indicator measured>>>",
+  "value": "<<<Measured value>>>",
+  "unit": "<<<Unit of measure>>>",
+  "period": { "start": "<<<ISO 8601 date>>>", "end": "<<<ISO 8601 date>>>" }
+}

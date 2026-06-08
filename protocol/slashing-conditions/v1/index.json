@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Slashing Conditions",
+      "dcterms:description": "Conditions under which a stake is slashed.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (SlashingCondition)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#failed-service"
+        },
+        {
+          "@id": "#failed-security"
+        },
+        {
+          "@id": "#loan-default"
+        },
+        {
+          "@id": "#failed-proposal"
+        },
+        {
+          "@id": "#failed-dispute"
+        },
+        {
+          "@id": "#insured-event"
+        },
+        {
+          "@id": "#failed-membership"
+        }
+      ]
+    },
+    {
+      "@id": "#failed-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Failed Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by failure to deliver a service.",
+        "@language": "en"
+      },
+      "skos:notation": "FailedService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#failed-security",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Failed Security",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by a security failure.",
+        "@language": "en"
+      },
+      "skos:notation": "FailedSecurity",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#loan-default",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Loan Default",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by default on a loan.",
+        "@language": "en"
+      },
+      "skos:notation": "LoanDefault",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#failed-proposal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Failed Proposal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by a failed governance proposal.",
+        "@language": "en"
+      },
+      "skos:notation": "FailedProposal",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#failed-dispute",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Failed Dispute",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by losing a dispute.",
+        "@language": "en"
+      },
+      "skos:notation": "FailedDispute",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#insured-event",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Insured Event",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by an insured event occurring.",
+        "@language": "en"
+      },
+      "skos:notation": "InsuredEvent",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    },
+    {
+      "@id": "#failed-membership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Failed Membership",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slashing triggered by breach of membership obligations.",
+        "@language": "en"
+      },
+      "skos:notation": "FailedMembership",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/slashing-conditions/v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/node-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/node-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Node Types",
+      "dcterms:description": "Kinds of service node referenced from an entity’s service endpoints.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (NodeType)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#cell-node"
+        },
+        {
+          "@id": "#cell-node-encrypted"
+        },
+        {
+          "@id": "#blockchain"
+        },
+        {
+          "@id": "#web-service"
+        },
+        {
+          "@id": "#bot-service"
+        },
+        {
+          "@id": "#authentication-service"
+        },
+        {
+          "@id": "#cloud-worker"
+        },
+        {
+          "@id": "#ipfs"
+        },
+        {
+          "@id": "#credential-registry"
+        },
+        {
+          "@id": "#matrix-home-server"
+        },
+        {
+          "@id": "#matrix"
+        },
+        {
+          "@id": "#oracle-service"
+        },
+        {
+          "@id": "#websocket-service"
+        },
+        {
+          "@id": "#chain-service"
+        },
+        {
+          "@id": "#linked-domains"
+        }
+      ]
+    },
+    {
+      "@id": "#cell-node",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cell Node",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A data node that stores and serves entity data.",
+        "@language": "en"
+      },
+      "skos:notation": "CellNode",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#cell-node-encrypted",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Encrypted Cell Node",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An encrypted data node.",
+        "@language": "en"
+      },
+      "skos:notation": "CellNodeEncrypted",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#blockchain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Blockchain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A blockchain node.",
+        "@language": "en"
+      },
+      "skos:notation": "Blockchain",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#web-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Web Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A general web service endpoint.",
+        "@language": "en"
+      },
+      "skos:notation": "WebService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#bot-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bot Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An automated bot service.",
+        "@language": "en"
+      },
+      "skos:notation": "BotService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#authentication-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Authentication Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A service providing authentication.",
+        "@language": "en"
+      },
+      "skos:notation": "AuthenticationService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#cloud-worker",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cloud Worker",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A cloud compute worker.",
+        "@language": "en"
+      },
+      "skos:notation": "CloudWorker",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#ipfs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "IPFS",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An InterPlanetary File System node.",
+        "@language": "en"
+      },
+      "skos:notation": "Ipfs",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#credential-registry",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Credential Registry",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A registry of credentials.",
+        "@language": "en"
+      },
+      "skos:notation": "CredentialRegistry",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#matrix-home-server",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Matrix Home Server",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Matrix homeserver hosting encrypted entity communications and data.",
+        "@language": "en"
+      },
+      "skos:notation": "MatrixHomeServer",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#matrix",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Matrix",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Matrix service node.",
+        "@language": "en"
+      },
+      "skos:notation": "Matrix",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#oracle-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An oracle service endpoint.",
+        "@language": "en"
+      },
+      "skos:notation": "oracleService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#websocket-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "WebSocket Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A WebSocket service endpoint.",
+        "@language": "en"
+      },
+      "skos:notation": "wsService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#chain-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Chain Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A blockchain RPC / chain service endpoint.",
+        "@language": "en"
+      },
+      "skos:notation": "chainService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    },
+    {
+      "@id": "#linked-domains",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Linked Domains",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A linked-domains service asserting domains controlled by the entity.",
+        "@language": "en"
+      },
+      "skos:notation": "linkedDomains",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/node-types/v1"
+      }
+    }
+  ]
+}

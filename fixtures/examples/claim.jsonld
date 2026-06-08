@@ -1,0 +1,7 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:77777777777777777777777777777777#claim",
+  "type": "ixo:Claim",
+  "hasClaimType": "claimType:impact",
+  "claimSubject": { "id": "did:ixo:entity:77777777777777777777777777777777" }
+}

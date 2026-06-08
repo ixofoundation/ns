@@ -1,0 +1,460 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/oracle-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/oracle-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Oracle Types",
+      "dcterms:description": "Kinds of oracle service. Complements protocol/oracle-capabilities/v1 (the P-Function capability families).",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "legacy ixofoundation/ns protocol/tags oracleType (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#evaluation"
+        },
+        {
+          "@id": "#subscription"
+        },
+        {
+          "@id": "#participation-of-people"
+        },
+        {
+          "@id": "#pathfinding"
+        },
+        {
+          "@id": "#pattern-recognition"
+        },
+        {
+          "@id": "#payment"
+        },
+        {
+          "@id": "#performance-monitoring"
+        },
+        {
+          "@id": "#personalization"
+        },
+        {
+          "@id": "#planning"
+        },
+        {
+          "@id": "#policy-enforcement"
+        },
+        {
+          "@id": "#portfolio-management"
+        },
+        {
+          "@id": "#positioning"
+        },
+        {
+          "@id": "#prescribing-interventions"
+        },
+        {
+          "@id": "#prevention-of-risks"
+        },
+        {
+          "@id": "#privacy-protection"
+        },
+        {
+          "@id": "#problem-detection-and-resolution"
+        },
+        {
+          "@id": "#process-optimization"
+        },
+        {
+          "@id": "#profiling"
+        },
+        {
+          "@id": "#proofing"
+        },
+        {
+          "@id": "#protocol-adherence"
+        }
+      ]
+    },
+    {
+      "@id": "#evaluation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An oracle that evaluates and verifies data, conditions, or outcomes based on predefined criteria",
+        "@language": "en"
+      },
+      "skos:notation": "evaluation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#subscription",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Subscription",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An oracle that provides continuous access to data feeds or information streams through a subscription model",
+        "@language": "en"
+      },
+      "skos:notation": "subscription",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#participation-of-people",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Participation Of People",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Involves human oversight in decision-making processes",
+        "@language": "en"
+      },
+      "skos:notation": "participationOfPeople",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#pathfinding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pathfinding",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guides users through complex decision-making processes",
+        "@language": "en"
+      },
+      "skos:notation": "pathfinding",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#pattern-recognition",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pattern Recognition",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Identifies patterns in data to inform decision-making and optimize strategies",
+        "@language": "en"
+      },
+      "skos:notation": "patternRecognition",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#payment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Automates payments based on impact goal achievements, using smart contracts to streamline transactions",
+        "@language": "en"
+      },
+      "skos:notation": "payment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#performance-monitoring",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Performance Monitoring",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tracks project performance in real-time, providing feedback and analytics",
+        "@language": "en"
+      },
+      "skos:notation": "performanceMonitoring",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#personalization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Personalization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tailors interactions and recommendations to individual users, enhancing user experience",
+        "@language": "en"
+      },
+      "skos:notation": "personalization",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Planning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Supports strategic planning by predicting trends and resource needs",
+        "@language": "en"
+      },
+      "skos:notation": "planning",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#policy-enforcement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Policy Enforcement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures compliance with policies and regulations, enforcing rules automatically",
+        "@language": "en"
+      },
+      "skos:notation": "policyEnforcement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#portfolio-management",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Portfolio Management",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Manages and optimizes project portfolios for strategic goals",
+        "@language": "en"
+      },
+      "skos:notation": "portfolioManagement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#positioning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Positioning",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Determines optimal placement of resources and interventions within the ecosystem",
+        "@language": "en"
+      },
+      "skos:notation": "positioning",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#prescribing-interventions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prescribing Interventions",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Recommends actions based on data analysis to guide stakeholders towards effective strategies",
+        "@language": "en"
+      },
+      "skos:notation": "prescribingInterventions",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#prevention-of-risks",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Prevention Of Risks",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Anticipates and mitigates potential risks to keep projects on track",
+        "@language": "en"
+      },
+      "skos:notation": "preventionOfRisks",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#privacy-protection",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Privacy Protection",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Safeguards sensitive information and ensures compliance with regulations",
+        "@language": "en"
+      },
+      "skos:notation": "privacyProtection",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#problem-detection-and-resolution",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Problem Detection And Resolution",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Monitors systems for potential issues, enabling early detection and resolution",
+        "@language": "en"
+      },
+      "skos:notation": "problemDetectionAndResolution",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#process-optimization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Process Optimization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Enhances operational efficiency by automating tasks and streamlining workflows",
+        "@language": "en"
+      },
+      "skos:notation": "processOptimization",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#profiling",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Profiling",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Creates detailed profiles of users and projects for accurate targeting of interventions",
+        "@language": "en"
+      },
+      "skos:notation": "profiling",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#proofing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Proofing",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting",
+        "@language": "en"
+      },
+      "skos:notation": "proofing",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    },
+    {
+      "@id": "#protocol-adherence",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Protocol Adherence",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ensures compliance with predefined protocols for consistency and reliability",
+        "@language": "en"
+      },
+      "skos:notation": "protocolAdherence",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/oracle-types/v1"
+      }
+    }
+  ]
+}

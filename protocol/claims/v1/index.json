@@ -1,1 +1,533 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/claims/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/claims/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Claim Types",
+      "dcterms:description": "Kinds of verifiable claim made by or about entities. Top concepts are claim families; sub-types specialise a family for a particular domain.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "ixofoundation/ns protocol/claims/v1 + #ixo-data design discussions",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#accreditation"
+        },
+        {
+          "@id": "#compliance"
+        },
+        {
+          "@id": "#contribution"
+        },
+        {
+          "@id": "#credential"
+        },
+        {
+          "@id": "#credentialAudit"
+        },
+        {
+          "@id": "#dispute"
+        },
+        {
+          "@id": "#identity"
+        },
+        {
+          "@id": "#impact"
+        },
+        {
+          "@id": "#investment"
+        },
+        {
+          "@id": "#invoice"
+        },
+        {
+          "@id": "#offset"
+        },
+        {
+          "@id": "#outcome"
+        },
+        {
+          "@id": "#ownership"
+        },
+        {
+          "@id": "#procurement"
+        },
+        {
+          "@id": "#provenance"
+        },
+        {
+          "@id": "#service"
+        },
+        {
+          "@id": "#subscription"
+        },
+        {
+          "@id": "#useOfFunds"
+        },
+        {
+          "@id": "#payment"
+        }
+      ]
+    },
+    {
+      "@id": "#accreditation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Accreditation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim verifying the official recognition, authorization, or certification status of a domain or process.",
+        "@language": "en"
+      },
+      "skos:notation": "accreditation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#compliance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Compliance",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim attesting to adherence to specific regulatory, legal, or protocol requirements.",
+        "@language": "en"
+      },
+      "skos:notation": "compliance",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#contribution",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Contribution",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting verified contributions to projects, initiatives, or common objectives.",
+        "@language": "en"
+      },
+      "skos:notation": "contribution",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#credential",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Credential",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim establishing the authenticity and validity of qualifications, permissions, or rights.",
+        "@language": "en"
+      },
+      "skos:notation": "credential",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#credentialAudit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Credential Audit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting the systematic examination and verification of credential issuance and management.",
+        "@language": "en"
+      },
+      "skos:notation": "credentialAudit",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#dispute",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Dispute",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting formal disagreements and their resolution processes.",
+        "@language": "en"
+      },
+      "skos:notation": "dispute",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#identity",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Identity",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim verifying the authentic identity attributes of an individual, organization, or domain.",
+        "@language": "en"
+      },
+      "skos:notation": "identity",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#impact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Impact",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim measuring and validating the social or environmental effects of specific actions.",
+        "@language": "en"
+      },
+      "skos:notation": "impact",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#investment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting investment activities, commitments, or outcomes in impact projects.",
+        "@language": "en"
+      },
+      "skos:notation": "investment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#invoice",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Invoice",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the authenticity and details of financial transactions or service provisions.",
+        "@language": "en"
+      },
+      "skos:notation": "invoice",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#offset",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Offset",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the compensation or neutralization of environmental impacts through verified actions.",
+        "@language": "en"
+      },
+      "skos:notation": "offset",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#outcome",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Outcome",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting measured results or impacts of specific actions or initiatives.",
+        "@language": "en"
+      },
+      "skos:notation": "outcome",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#ownership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ownership",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the rightful possession or control of assets, resources, or rights.",
+        "@language": "en"
+      },
+      "skos:notation": "ownership",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#procurement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Procurement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting the acquisition process and compliance with procurement standards.",
+        "@language": "en"
+      },
+      "skos:notation": "procurement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#provenance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Provenance",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim establishing the origin, history, and chain of custody of assets or resources.",
+        "@language": "en"
+      },
+      "skos:notation": "provenance",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the delivery, quality, or completion of specific services.",
+        "@language": "en"
+      },
+      "skos:notation": "service",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#subscription",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Subscription",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the active subscription status and associated rights of a participant.",
+        "@language": "en"
+      },
+      "skos:notation": "subscription",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#useOfFunds",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Use of Funds",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting the allocation and utilization of financial resources in accordance with specified purposes.",
+        "@language": "en"
+      },
+      "skos:notation": "useOfFunds",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#payment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Payment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting a payment made or received.",
+        "@language": "en"
+      },
+      "skos:notation": "payment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      }
+    },
+    {
+      "@id": "#verifiedCleanCooking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verified Clean Cooking",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim validating the implementation and impact of verified clean cooking solutions.",
+        "@language": "en"
+      },
+      "skos:notation": "verifiedCleanCooking",
+      "skos:broader": {
+        "@id": "#impact"
+      }
+    },
+    {
+      "@id": "#verifiedEmissionsReduction",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verified Emissions Reduction",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim certifying the verified reduction of greenhouse gas emissions through specific projects.",
+        "@language": "en"
+      },
+      "skos:notation": "verifiedEmissionsReduction",
+      "skos:broader": {
+        "@id": "#impact"
+      }
+    },
+    {
+      "@id": "#carbonEmissionReduction",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Carbon Emission Reduction",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim documenting verified reductions in carbon emissions through specific interventions.",
+        "@language": "en"
+      },
+      "skos:notation": "carbonEmissionReduction",
+      "skos:broader": {
+        "@id": "#outcome"
+      }
+    },
+    {
+      "@id": "#cleanCookingClaim",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Clean Cooking Claim",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim verifying the implementation and impact of clean cooking solutions.",
+        "@language": "en"
+      },
+      "skos:notation": "cleanCookingClaim",
+      "skos:broader": {
+        "@id": "#outcome"
+      }
+    },
+    {
+      "@id": "#fuelPurchase",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/claims/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Fuel Purchase",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A claim verifying the purchase and sourcing of fuel products according to specified standards.",
+        "@language": "en"
+      },
+      "skos:notation": "fuelPurchase",
+      "skos:broader": {
+        "@id": "#procurement"
+      }
+    }
+  ]
+}

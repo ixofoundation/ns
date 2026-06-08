@@ -1,0 +1,108 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Payment Denominations",
+      "dcterms:description": "Currencies and tokens in which payments can be denominated.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (PaymentDenomination)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#ixo"
+        },
+        {
+          "@id": "#eeur"
+        },
+        {
+          "@id": "#echf"
+        },
+        {
+          "@id": "#eusd"
+        }
+      ]
+    },
+    {
+      "@id": "#ixo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "IXO",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The native IXO token.",
+        "@language": "en"
+      },
+      "skos:notation": "IXO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      }
+    },
+    {
+      "@id": "#eeur",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "eEUR",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Euro-denominated stable token.",
+        "@language": "en"
+      },
+      "skos:notation": "eEUR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      }
+    },
+    {
+      "@id": "#echf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "eCHF",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Swiss-Franc-denominated stable token.",
+        "@language": "en"
+      },
+      "skos:notation": "eCHF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      }
+    },
+    {
+      "@id": "#eusd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "eUSD",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A US-Dollar-denominated stable token.",
+        "@language": "en"
+      },
+      "skos:notation": "eUSD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payment-denominations/v1"
+      }
+    }
+  ]
+}

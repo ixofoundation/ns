@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/entity-view/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/entity-view/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Entity View",
+      "dcterms:description": "Visibility modes for an entity’s data.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityView)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#visible"
+        },
+        {
+          "@id": "#encrypted"
+        }
+      ]
+    },
+    {
+      "@id": "#visible",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-view/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Visible",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Entity data is publicly visible.",
+        "@language": "en"
+      },
+      "skos:notation": "Visible",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-view/v1"
+      }
+    },
+    {
+      "@id": "#encrypted",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entity-view/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Encrypted",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Entity data is encrypted and access-controlled.",
+        "@language": "en"
+      },
+      "skos:notation": "Encrypted",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entity-view/v1"
+      }
+    }
+  ]
+}

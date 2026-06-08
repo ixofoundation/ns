@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/page-view/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/page-view/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Page View",
+      "dcterms:description": "Visibility modes for an entity’s page content.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (PageView)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#public"
+        },
+        {
+          "@id": "#private"
+        },
+        {
+          "@id": "#secret"
+        }
+      ]
+    },
+    {
+      "@id": "#public",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Public",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The page is visible to everyone.",
+        "@language": "en"
+      },
+      "skos:notation": "Public",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      }
+    },
+    {
+      "@id": "#private",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Private",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The page is visible only to authorised members.",
+        "@language": "en"
+      },
+      "skos:notation": "Private",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      }
+    },
+    {
+      "@id": "#secret",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Secret",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The page is hidden and shared only with explicitly granted parties.",
+        "@language": "en"
+      },
+      "skos:notation": "Secret",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/page-view/v1"
+      }
+    }
+  ]
+}

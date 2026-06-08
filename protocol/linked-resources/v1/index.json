@@ -1,1 +1,614 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/linked-resources/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/linked-resources/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Linked Resource Types",
+      "dcterms:description": "Kinds of resource linked from an entity document via the linkedResource property. Notation is the on-chain type string. (A long tail of low-frequency / display: prefixed variants is normalised; see docs/term-coverage.md.)",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "on-chain linkedResource.type values (ixo-mainnet, 9270 IID docs)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#settings"
+        },
+        {
+          "@id": "#verifiable-credential"
+        },
+        {
+          "@id": "#web-dashboard"
+        },
+        {
+          "@id": "#token-metadata"
+        },
+        {
+          "@id": "#domain-card"
+        },
+        {
+          "@id": "#survey-template"
+        },
+        {
+          "@id": "#claim-schema"
+        },
+        {
+          "@id": "#credential-schema"
+        },
+        {
+          "@id": "#evaluation-template"
+        },
+        {
+          "@id": "#legal-contract"
+        },
+        {
+          "@id": "#page"
+        },
+        {
+          "@id": "#pricing-list"
+        },
+        {
+          "@id": "#oracle-authz-config"
+        },
+        {
+          "@id": "#bid-contributor"
+        },
+        {
+          "@id": "#bid-evaluator"
+        },
+        {
+          "@id": "#verification-methods"
+        },
+        {
+          "@id": "#image-profile"
+        },
+        {
+          "@id": "#image-logo"
+        },
+        {
+          "@id": "#image-header"
+        },
+        {
+          "@id": "#image-icon"
+        },
+        {
+          "@id": "#image"
+        },
+        {
+          "@id": "#document"
+        },
+        {
+          "@id": "#text-document"
+        },
+        {
+          "@id": "#text"
+        },
+        {
+          "@id": "#lottie"
+        },
+        {
+          "@id": "#template"
+        },
+        {
+          "@id": "#project-credential"
+        }
+      ]
+    },
+    {
+      "@id": "#settings",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Settings",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Entity settings and profile configuration linked from the entity.",
+        "@language": "en"
+      },
+      "skos:notation": "Settings",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#verifiable-credential",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verifiable Credential",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A verifiable credential linked from the entity.",
+        "@language": "en"
+      },
+      "skos:notation": "VerifiableCredential",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#web-dashboard",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Web Dashboard",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A web dashboard presenting the entity’s data.",
+        "@language": "en"
+      },
+      "skos:notation": "WebDashboard",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#token-metadata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Token Metadata",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Metadata describing the entity’s impact token.",
+        "@language": "en"
+      },
+      "skos:notation": "TokenMetadata",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#domain-card",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Domain Card",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s domain card credential.",
+        "@language": "en"
+      },
+      "skos:notation": "domainCard",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#survey-template",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Survey Template",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A survey / form template used to collect claims.",
+        "@language": "en"
+      },
+      "skos:notation": "surveyTemplate",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#claim-schema",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Claim Schema",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A schema defining the structure of a claim.",
+        "@language": "en"
+      },
+      "skos:notation": "ClaimSchema",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#credential-schema",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Credential Schema",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A schema defining the structure of a credential.",
+        "@language": "en"
+      },
+      "skos:notation": "credentialSchema",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#evaluation-template",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluation Template",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A template for evaluating claims.",
+        "@language": "en"
+      },
+      "skos:notation": "evaluationTemplate",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#legal-contract",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Legal Contract",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A legal contract document linked from the entity.",
+        "@language": "en"
+      },
+      "skos:notation": "LegalContract",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#page",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Page",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A presentational page linked from the entity.",
+        "@language": "en"
+      },
+      "skos:notation": "Page",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#pricing-list",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Pricing List",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A list of prices for the entity’s offerings.",
+        "@language": "en"
+      },
+      "skos:notation": "pricingList",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#oracle-authz-config",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle AuthZ Config",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Authorization configuration for an oracle.",
+        "@language": "en"
+      },
+      "skos:notation": "oracleAuthZConfig",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#bid-contributor",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bid (Contributor)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A contributor bid template.",
+        "@language": "en"
+      },
+      "skos:notation": "bidContributor",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#bid-evaluator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Bid (Evaluator)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An evaluator bid template.",
+        "@language": "en"
+      },
+      "skos:notation": "bidEvaluator",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#verification-methods",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verification Methods",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A linked resource listing verification methods.",
+        "@language": "en"
+      },
+      "skos:notation": "VerificationMethods",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#image-profile",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Profile Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s profile image.",
+        "@language": "en"
+      },
+      "skos:notation": "imageProfile",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#image-logo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Logo Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s logo image.",
+        "@language": "en"
+      },
+      "skos:notation": "imageLogo",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#image-header",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Header Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s header image.",
+        "@language": "en"
+      },
+      "skos:notation": "imageHeader",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#image-icon",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Icon Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The entity’s icon image.",
+        "@language": "en"
+      },
+      "skos:notation": "imageIcon",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#image",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An image resource.",
+        "@language": "en"
+      },
+      "skos:notation": "image",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#document",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Document",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A document resource.",
+        "@language": "en"
+      },
+      "skos:notation": "document",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#text-document",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Text Document",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A text document resource.",
+        "@language": "en"
+      },
+      "skos:notation": "textDocument",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#text",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Text",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A text resource.",
+        "@language": "en"
+      },
+      "skos:notation": "text",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#lottie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Lottie Animation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Lottie animation asset.",
+        "@language": "en"
+      },
+      "skos:notation": "Lottie",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#template",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Template",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A generic template resource.",
+        "@language": "en"
+      },
+      "skos:notation": "Template",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    },
+    {
+      "@id": "#project-credential",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Project Credential",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A credential about a project.",
+        "@language": "en"
+      },
+      "skos:notation": "ProjectCredential",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/linked-resources/v1"
+      }
+    }
+  ]
+}

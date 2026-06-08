@@ -1,0 +1,196 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/media-formats/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/media-formats/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Linked-Resource Media Formats",
+      "dcterms:description": "IANA media types used for the format / encoding of a linked resource. Notation is the media type. Semantic companion to the protocol/linked-resources/v1/format.json survey-data file.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "legacy ixofoundation/ns protocol/linked-resources/v1/format.json (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#application-ld-json"
+        },
+        {
+          "@id": "#application-html"
+        },
+        {
+          "@id": "#application-json"
+        },
+        {
+          "@id": "#application-pdf"
+        },
+        {
+          "@id": "#image-jpeg"
+        },
+        {
+          "@id": "#image-png"
+        },
+        {
+          "@id": "#text-plain"
+        },
+        {
+          "@id": "#ld-json"
+        }
+      ]
+    },
+    {
+      "@id": "#application-ld-json",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Application ld+json",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for JSON-LD, a JSON-based format for linked data.",
+        "@language": "en"
+      },
+      "skos:notation": "application/ld+json",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#application-html",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Application html",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for HTML documents, used for displaying content in web browsers.",
+        "@language": "en"
+      },
+      "skos:notation": "application/html",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#application-json",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Application json",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for JSON, a lightweight data-interchange format.",
+        "@language": "en"
+      },
+      "skos:notation": "application/json",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#application-pdf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Application pdf",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for PDF documents, commonly used for sharing formatted documents.",
+        "@language": "en"
+      },
+      "skos:notation": "application/pdf",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#image-jpeg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Image jpeg",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for JPEG images, commonly used for digital photographs.",
+        "@language": "en"
+      },
+      "skos:notation": "image/jpeg",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#image-png",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Image png",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for PNG images, known for lossless compression.",
+        "@language": "en"
+      },
+      "skos:notation": "image/png",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#text-plain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Text plain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A media type for plain text, containing unformatted text content.",
+        "@language": "en"
+      },
+      "skos:notation": "text/plain",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    },
+    {
+      "@id": "#ld-json",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ld+json",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A shorthand notation for JSON-LD, used for linked data.",
+        "@language": "en"
+      },
+      "skos:notation": "ld+json",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/media-formats/v1"
+      }
+    }
+  ]
+}

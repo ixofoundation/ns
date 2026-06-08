@@ -1,1 +1,218 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/payments/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/payments/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Payment Types",
+      "dcterms:description": "Kinds of payment that can be configured on the IXO Spatial Web.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (PaymentType)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#fee-for-service"
+        },
+        {
+          "@id": "#oracle-fee"
+        },
+        {
+          "@id": "#subscription"
+        },
+        {
+          "@id": "#rental-fee"
+        },
+        {
+          "@id": "#outcome-payment"
+        },
+        {
+          "@id": "#interest-repayment"
+        },
+        {
+          "@id": "#loan-repayment"
+        },
+        {
+          "@id": "#income-distribution"
+        },
+        {
+          "@id": "#dispute-settlement"
+        }
+      ]
+    },
+    {
+      "@id": "#fee-for-service",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Fee for Service",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A payment made in exchange for a specific service rendered.",
+        "@language": "en"
+      },
+      "skos:notation": "FeeForService",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#oracle-fee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle Fee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A fee paid to an oracle for evaluation or data services.",
+        "@language": "en"
+      },
+      "skos:notation": "OracleFee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#subscription",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Subscription",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A recurring payment for ongoing access or membership.",
+        "@language": "en"
+      },
+      "skos:notation": "Subscription",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#rental-fee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Rental Fee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A payment for the temporary use of an asset.",
+        "@language": "en"
+      },
+      "skos:notation": "RentalFee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#outcome-payment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Outcome Payment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A payment contingent on the achievement of a verified outcome.",
+        "@language": "en"
+      },
+      "skos:notation": "OutcomePayment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#interest-repayment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Interest Repayment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A payment of interest on a loan.",
+        "@language": "en"
+      },
+      "skos:notation": "InterestRepayment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#loan-repayment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Loan Repayment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A repayment of loan principal.",
+        "@language": "en"
+      },
+      "skos:notation": "LoanRepayment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#income-distribution",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Income Distribution",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A distribution of income to stakeholders.",
+        "@language": "en"
+      },
+      "skos:notation": "IncomeDistribution",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    },
+    {
+      "@id": "#dispute-settlement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Dispute Settlement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A payment settling a dispute.",
+        "@language": "en"
+      },
+      "skos:notation": "DisputeSettlement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/payments/v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/EntityShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:Entity" },
+  "sh:nodeKind": { "@id": "sh:IRI" },
+  "rdfs:comment": "An IXO entity is an IRI-identified node typed in the ixo:Entity hierarchy with at least one controller. Shaun's dual-@id rule (a did:ixo:* subject must carry an ixo:Entity-hierarchy type) is enforced at document ingress / in JSON Schema; the converse regex-target requires SHACL-SPARQL.",
+  "sh:property": [
+    {
+      "sh:path": { "@id": "ixo:controller" },
+      "sh:minCount": 1,
+      "sh:nodeKind": { "@id": "sh:IRI" },
+      "sh:name": "controller",
+      "sh:message": "An entity must have at least one controller, identified by an IRI (a DID)."
+    },
+    {
+      "sh:path": { "@id": "ixo:verificationMethod" },
+      "sh:nodeKind": { "@id": "sh:BlankNodeOrIRI" },
+      "sh:name": "verificationMethod"
+    },
+    {
+      "sh:path": { "@id": "ixo:relayerNode" },
+      "sh:maxCount": 1,
+      "sh:nodeKind": { "@id": "sh:IRI" },
+      "sh:name": "relayerNode"
+    }
+  ]
+}

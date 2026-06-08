@@ -1,0 +1,411 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/dao-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/dao-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO DAO Types",
+      "dcterms:description": "Kinds of DAO entity, with organisational sub-types.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "legacy ixofoundation/ns protocol/tags daoType (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#organisation"
+        },
+        {
+          "@id": "#chain"
+        },
+        {
+          "@id": "#community"
+        },
+        {
+          "@id": "#developer"
+        },
+        {
+          "@id": "#funding"
+        },
+        {
+          "@id": "#investment"
+        },
+        {
+          "@id": "#market-relayer"
+        },
+        {
+          "@id": "#market-place"
+        },
+        {
+          "@id": "#product"
+        },
+        {
+          "@id": "#research"
+        }
+      ]
+    },
+    {
+      "@id": "#organisation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Organisation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An organisation",
+        "@language": "en"
+      },
+      "skos:notation": "organisation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#organisation-cooperative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cooperative",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO operating as a cooperative, owned and managed by its members for mutual benefit",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/cooperative",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-company",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Company",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A legally registered business entity that operates for profit",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/company",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-hybrid-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Hybrid Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO combining elements of profit and non-profit structures for diversified objectives",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/hybridOrganization",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-liechtenstein-venture-cooperative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Liechtenstein Venture Cooperative",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/liechtensteinVentureCooperative",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-non-government-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Non Government Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO operating as a non-governmental entity to address social, cultural, or environmental issues",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/nonGovernmentOrganization",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-non-profit-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Non Profit Organization",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A business-oriented DAO focused on achieving social or environmental objectives rather than profit",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/nonProfitOrganization",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-public-benefit-corporation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Public Benefit Corporation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO that operates as a public benefit corporation with a focus on public interest",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/publicBenefitCorporation",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#organisation-social-enterprise",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Social Enterprise",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on addressing social challenges while maintaining financial sustainability",
+        "@language": "en"
+      },
+      "skos:notation": "organisation/socialEnterprise",
+      "skos:broader": {
+        "@id": "#organisation"
+      }
+    },
+    {
+      "@id": "#chain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Chain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO managing or operating a blockchain network",
+        "@language": "en"
+      },
+      "skos:notation": "chain",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#chain-validator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Validator",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO serving as a validator within a blockchain network",
+        "@language": "en"
+      },
+      "skos:notation": "chain/validator",
+      "skos:broader": {
+        "@id": "#chain"
+      }
+    },
+    {
+      "@id": "#community",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Community",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO centered around a specific community for collective action or resource sharing",
+        "@language": "en"
+      },
+      "skos:notation": "community",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#developer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Developer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO supporting software developers and technical projects",
+        "@language": "en"
+      },
+      "skos:notation": "developer",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#funding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Funding",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO dedicated to allocating and managing funds for various purposes",
+        "@language": "en"
+      },
+      "skos:notation": "funding",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#investment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on managing investments and funding opportunities",
+        "@language": "en"
+      },
+      "skos:notation": "investment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#market-relayer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Market Relayer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO facilitating market transactions and providing liquidity",
+        "@language": "en"
+      },
+      "skos:notation": "marketRelayer",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#market-place",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Market Place",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets.",
+        "@language": "en"
+      },
+      "skos:notation": "marketPlace",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Product",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on the development, management, and governance of a particular product or set of products",
+        "@language": "en"
+      },
+      "skos:notation": "product",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    },
+    {
+      "@id": "#research",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Research",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A DAO focused on conducting and supporting research activities",
+        "@language": "en"
+      },
+      "skos:notation": "research",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/dao-types/v1"
+      }
+    }
+  ]
+}

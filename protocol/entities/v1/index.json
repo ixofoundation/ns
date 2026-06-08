@@ -1,1 +1,920 @@
-{}
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/entities/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/entities/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Entity Types",
+      "dcterms:description": "Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityType) + on-chain entity.type values (ixo-mainnet, May 2026)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#project"
+        },
+        {
+          "@id": "#dao"
+        },
+        {
+          "@id": "#oracle"
+        },
+        {
+          "@id": "#asset"
+        },
+        {
+          "@id": "#protocol"
+        },
+        {
+          "@id": "#deed"
+        },
+        {
+          "@id": "#investment"
+        },
+        {
+          "@id": "#group"
+        },
+        {
+          "@id": "#pod"
+        },
+        {
+          "@id": "#user"
+        },
+        {
+          "@id": "#agent"
+        },
+        {
+          "@id": "#document"
+        },
+        {
+          "@id": "#image"
+        },
+        {
+          "@id": "#text"
+        },
+        {
+          "@id": "#request"
+        }
+      ]
+    },
+    {
+      "@id": "#project",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Project",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A planned undertaking coordinating resources and activities toward defined goals and measurable outcomes.",
+        "@language": "en"
+      },
+      "skos:notation": "project",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#dao",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "DAO",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A Decentralised Autonomous Organisation coordinating members and sub-groups through on-chain governance.",
+        "@language": "en"
+      },
+      "skos:notation": "dao",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#oracle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An agentic service that evaluates claims and supplies verified results to the network.",
+        "@language": "en"
+      },
+      "skos:notation": "oracle",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#asset",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Asset",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An item or resource of value owned or controlled by an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "asset",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#protocol",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A reusable definition used to create and govern entities, claims or credentials of a given kind.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#deed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Deed",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A recorded act or agreement expressing intent or commitment between entities.",
+        "@language": "en"
+      },
+      "skos:notation": "deed",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#investment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investment",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An allocation of capital or resources made in expectation of a future return.",
+        "@language": "en"
+      },
+      "skos:notation": "investment",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Group",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An organisational unit grouping members or entities under shared coordination.",
+        "@language": "en"
+      },
+      "skos:notation": "group",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#pod",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "POD",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A small autonomous sub-group that can act independently while remaining accountable to a parent organisation.",
+        "@language": "en"
+      },
+      "skos:notation": "pod",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#user",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "User",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An individual user account represented as an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "user",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#agent",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Agent",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A human or autonomous agent that acts within the network.",
+        "@language": "en"
+      },
+      "skos:notation": "agent",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#document",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Document",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A document resource registered as an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "document",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#image",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Image",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An image resource registered as an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "image",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#text",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Text",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A text resource registered as an entity.",
+        "@language": "en"
+      },
+      "skos:notation": "text",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#request",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Request",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A standalone request entity.",
+        "@language": "en"
+      },
+      "skos:notation": "request",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      }
+    },
+    {
+      "@id": "#asset-device",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Device",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A physical or virtual device represented as an asset, such as a metered cookstove or sensor.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/device",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-collection",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Asset Collection",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A curated group of related assets managed together (also written asset/collection on-chain).",
+        "@language": "en"
+      },
+      "skos:notation": "asset-collection",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-voucher",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Voucher",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An asset redeemable for goods or services.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/voucher",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-impactcredit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Impact Credit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A unit representing verified environmental or social impact.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/impactcredit",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-coin",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Coin",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A digital or physical currency used as a medium of exchange.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/coin",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-data",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Data Asset",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A data asset that can be stored, shared or traded.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/data",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-learnership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Learnership",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An asset representing a structured learning programme.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/learnership",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#asset-membership",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Membership Asset",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An asset signifying membership rights or privileges.",
+        "@language": "en"
+      },
+      "skos:notation": "asset/membershipAsset",
+      "skos:broader": {
+        "@id": "#asset"
+      }
+    },
+    {
+      "@id": "#dao-pod",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "POD (in a DAO)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A POD operating within a parent DAO.",
+        "@language": "en"
+      },
+      "skos:notation": "dao/pod",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#dao-group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Group (in a DAO)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A functional group within a DAO.",
+        "@language": "en"
+      },
+      "skos:notation": "dao/group",
+      "skos:broader": {
+        "@id": "#dao"
+      }
+    },
+    {
+      "@id": "#deed-request",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Request (Deed)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deed appealing or demanding that something be provided or done.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/request",
+      "skos:broader": {
+        "@id": "#deed"
+      }
+    },
+    {
+      "@id": "#deed-offer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Offer",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deed expressing a willingness to provide or do something.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/offer",
+      "skos:broader": {
+        "@id": "#deed"
+      }
+    },
+    {
+      "@id": "#deed-subscription",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Subscription",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deed establishing an agreement to receive or support something regularly.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/subscription",
+      "skos:broader": {
+        "@id": "#deed"
+      }
+    },
+    {
+      "@id": "#deed-proposal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Proposal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deed outlining a suggested plan or action for consideration.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/proposal",
+      "skos:broader": {
+        "@id": "#deed"
+      }
+    },
+    {
+      "@id": "#deed-flow",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Flow",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An intent-driven workflow coordinating a process from start to finish.",
+        "@language": "en"
+      },
+      "skos:notation": "deed/flow",
+      "skos:broader": {
+        "@id": "#deed"
+      }
+    },
+    {
+      "@id": "#oracle-evaluation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Evaluation Oracle",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "An oracle specialised in evaluating claims to produce verified results.",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/evaluation",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
+      "@id": "#protocol-claim",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Claim Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the content and structure of a class of claims.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/claim",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-deed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Deed Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the content and structure of a class of deeds.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/deed",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-dao",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "DAO Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the governance and operation of a class of DAOs.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/dao",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "System Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining a cognitive digital twin system.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/system",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-asset",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Asset Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the properties of a class of assets.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/asset",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-project",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Project Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining a class of project domains.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/project",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-oracle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Oracle Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the properties of a class of oracles.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/oracle",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-investment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Investment Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol governing a class of investment processes.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/investment",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Group Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining the formation and governance of a class of groups.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/group",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-request",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Request Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining a class of requests.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/request",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-verifiableclaim",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verifiable Claim Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol for creating verifiable claims and defining their content and structure.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/verifiableClaim",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-verifiablecredential",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Verifiable Credential Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol for creating verifiable credentials and defining their content and structure.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/verifiableCredential",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-impact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Impact Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining how impact is claimed and verified.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/impact",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    },
+    {
+      "@id": "#protocol-flow",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Flow Protocol",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A protocol defining an intent-driven workflow.",
+        "@language": "en"
+      },
+      "skos:notation": "protocol/flow",
+      "skos:broader": {
+        "@id": "#protocol"
+      }
+    }
+  ]
+}

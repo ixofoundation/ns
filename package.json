@@ -1,0 +1,30 @@
+{
+  "name": "@ixo/ns",
+  "version": "2.0.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "IXO Namespace — JSON-LD contexts, vocabularies, SKOS concept schemes, JSON Schemas and SHACL shapes for the IXO Spatial Web. Published at https://w3id.org/ixo/*.",
+  "license": "MIT",
+  "homepage": "https://github.com/ixofoundation/ns",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs && node scripts/validate-schemas.mjs && node scripts/validate-shapes.mjs && node scripts/validate-skos.mjs && node scripts/validate-vocab.mjs",
+    "validate:jsonld": "node scripts/validate.mjs",
+    "validate:schemas": "node scripts/validate-schemas.mjs",
+    "validate:shapes": "node scripts/validate-shapes.mjs",
+    "validate:skos": "node scripts/validate-skos.mjs",
+    "validate:vocab": "node scripts/validate-vocab.mjs",
+    "build:schemes": "node scripts/build-schemes.mjs",
+    "build:docs": "node scripts/build-docs.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "jsonld": "^8.3.2",
+    "n3": "^1.23.1",
+    "rdf-ext": "^2.5.1",
+    "rdf-validate-shacl": "^0.5.6"
+  }
+}

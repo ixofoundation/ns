@@ -1,0 +1,6270 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/vocab/v1/countries"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1/countries",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Country Codes",
+      "dcterms:description": "Countries and regions, keyed by ISO 3166-1 alpha-2 code. Includes the non-standard AA \"Global\" pseudo-code used on the IXO Spatial Web. Each concept skos:closeMatch-es a name-derived DBpedia resource.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "ISO 3166-1 alpha-2; refactored from the legacy vocab/v1/countries.json",
+      "dcterms:conformsTo": {
+        "@id": "https://www.iso.org/iso-3166-country-codes.html"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "#aa"
+        },
+        {
+          "@id": "#af"
+        },
+        {
+          "@id": "#al"
+        },
+        {
+          "@id": "#dz"
+        },
+        {
+          "@id": "#as"
+        },
+        {
+          "@id": "#ad"
+        },
+        {
+          "@id": "#ao"
+        },
+        {
+          "@id": "#ai"
+        },
+        {
+          "@id": "#aq"
+        },
+        {
+          "@id": "#ag"
+        },
+        {
+          "@id": "#ar"
+        },
+        {
+          "@id": "#am"
+        },
+        {
+          "@id": "#aw"
+        },
+        {
+          "@id": "#au"
+        },
+        {
+          "@id": "#at"
+        },
+        {
+          "@id": "#az"
+        },
+        {
+          "@id": "#bs"
+        },
+        {
+          "@id": "#bh"
+        },
+        {
+          "@id": "#bd"
+        },
+        {
+          "@id": "#bb"
+        },
+        {
+          "@id": "#by"
+        },
+        {
+          "@id": "#be"
+        },
+        {
+          "@id": "#bz"
+        },
+        {
+          "@id": "#bj"
+        },
+        {
+          "@id": "#bm"
+        },
+        {
+          "@id": "#bt"
+        },
+        {
+          "@id": "#bo"
+        },
+        {
+          "@id": "#bq"
+        },
+        {
+          "@id": "#ba"
+        },
+        {
+          "@id": "#bw"
+        },
+        {
+          "@id": "#bv"
+        },
+        {
+          "@id": "#br"
+        },
+        {
+          "@id": "#io"
+        },
+        {
+          "@id": "#bn"
+        },
+        {
+          "@id": "#bg"
+        },
+        {
+          "@id": "#bf"
+        },
+        {
+          "@id": "#bi"
+        },
+        {
+          "@id": "#cv"
+        },
+        {
+          "@id": "#kh"
+        },
+        {
+          "@id": "#cm"
+        },
+        {
+          "@id": "#ca"
+        },
+        {
+          "@id": "#ky"
+        },
+        {
+          "@id": "#cf"
+        },
+        {
+          "@id": "#td"
+        },
+        {
+          "@id": "#cl"
+        },
+        {
+          "@id": "#cn"
+        },
+        {
+          "@id": "#cx"
+        },
+        {
+          "@id": "#cc"
+        },
+        {
+          "@id": "#co"
+        },
+        {
+          "@id": "#km"
+        },
+        {
+          "@id": "#cd"
+        },
+        {
+          "@id": "#cg"
+        },
+        {
+          "@id": "#ck"
+        },
+        {
+          "@id": "#cr"
+        },
+        {
+          "@id": "#hr"
+        },
+        {
+          "@id": "#cu"
+        },
+        {
+          "@id": "#cw"
+        },
+        {
+          "@id": "#cy"
+        },
+        {
+          "@id": "#cz"
+        },
+        {
+          "@id": "#ci"
+        },
+        {
+          "@id": "#dk"
+        },
+        {
+          "@id": "#dj"
+        },
+        {
+          "@id": "#dm"
+        },
+        {
+          "@id": "#do"
+        },
+        {
+          "@id": "#ec"
+        },
+        {
+          "@id": "#eg"
+        },
+        {
+          "@id": "#sv"
+        },
+        {
+          "@id": "#gq"
+        },
+        {
+          "@id": "#er"
+        },
+        {
+          "@id": "#ee"
+        },
+        {
+          "@id": "#sz"
+        },
+        {
+          "@id": "#et"
+        },
+        {
+          "@id": "#fk"
+        },
+        {
+          "@id": "#fo"
+        },
+        {
+          "@id": "#fj"
+        },
+        {
+          "@id": "#fi"
+        },
+        {
+          "@id": "#fr"
+        },
+        {
+          "@id": "#gf"
+        },
+        {
+          "@id": "#pf"
+        },
+        {
+          "@id": "#tf"
+        },
+        {
+          "@id": "#ga"
+        },
+        {
+          "@id": "#gm"
+        },
+        {
+          "@id": "#ge"
+        },
+        {
+          "@id": "#de"
+        },
+        {
+          "@id": "#gh"
+        },
+        {
+          "@id": "#gi"
+        },
+        {
+          "@id": "#gr"
+        },
+        {
+          "@id": "#gl"
+        },
+        {
+          "@id": "#gd"
+        },
+        {
+          "@id": "#gp"
+        },
+        {
+          "@id": "#gu"
+        },
+        {
+          "@id": "#gt"
+        },
+        {
+          "@id": "#gg"
+        },
+        {
+          "@id": "#gn"
+        },
+        {
+          "@id": "#gw"
+        },
+        {
+          "@id": "#gy"
+        },
+        {
+          "@id": "#ht"
+        },
+        {
+          "@id": "#hm"
+        },
+        {
+          "@id": "#va"
+        },
+        {
+          "@id": "#hn"
+        },
+        {
+          "@id": "#hk"
+        },
+        {
+          "@id": "#hu"
+        },
+        {
+          "@id": "#is"
+        },
+        {
+          "@id": "#in"
+        },
+        {
+          "@id": "#id"
+        },
+        {
+          "@id": "#ir"
+        },
+        {
+          "@id": "#iq"
+        },
+        {
+          "@id": "#ie"
+        },
+        {
+          "@id": "#im"
+        },
+        {
+          "@id": "#il"
+        },
+        {
+          "@id": "#it"
+        },
+        {
+          "@id": "#jm"
+        },
+        {
+          "@id": "#jp"
+        },
+        {
+          "@id": "#je"
+        },
+        {
+          "@id": "#jo"
+        },
+        {
+          "@id": "#kz"
+        },
+        {
+          "@id": "#ke"
+        },
+        {
+          "@id": "#ki"
+        },
+        {
+          "@id": "#kp"
+        },
+        {
+          "@id": "#kr"
+        },
+        {
+          "@id": "#kw"
+        },
+        {
+          "@id": "#kg"
+        },
+        {
+          "@id": "#la"
+        },
+        {
+          "@id": "#lv"
+        },
+        {
+          "@id": "#lb"
+        },
+        {
+          "@id": "#ls"
+        },
+        {
+          "@id": "#lr"
+        },
+        {
+          "@id": "#ly"
+        },
+        {
+          "@id": "#li"
+        },
+        {
+          "@id": "#lt"
+        },
+        {
+          "@id": "#lu"
+        },
+        {
+          "@id": "#mo"
+        },
+        {
+          "@id": "#mg"
+        },
+        {
+          "@id": "#mw"
+        },
+        {
+          "@id": "#my"
+        },
+        {
+          "@id": "#mv"
+        },
+        {
+          "@id": "#ml"
+        },
+        {
+          "@id": "#mt"
+        },
+        {
+          "@id": "#mh"
+        },
+        {
+          "@id": "#mq"
+        },
+        {
+          "@id": "#mr"
+        },
+        {
+          "@id": "#mu"
+        },
+        {
+          "@id": "#yt"
+        },
+        {
+          "@id": "#mx"
+        },
+        {
+          "@id": "#fm"
+        },
+        {
+          "@id": "#md"
+        },
+        {
+          "@id": "#mc"
+        },
+        {
+          "@id": "#mn"
+        },
+        {
+          "@id": "#me"
+        },
+        {
+          "@id": "#ms"
+        },
+        {
+          "@id": "#ma"
+        },
+        {
+          "@id": "#mz"
+        },
+        {
+          "@id": "#mm"
+        },
+        {
+          "@id": "#na"
+        },
+        {
+          "@id": "#nr"
+        },
+        {
+          "@id": "#np"
+        },
+        {
+          "@id": "#nl"
+        },
+        {
+          "@id": "#nc"
+        },
+        {
+          "@id": "#nz"
+        },
+        {
+          "@id": "#ni"
+        },
+        {
+          "@id": "#ne"
+        },
+        {
+          "@id": "#ng"
+        },
+        {
+          "@id": "#nu"
+        },
+        {
+          "@id": "#nf"
+        },
+        {
+          "@id": "#mk"
+        },
+        {
+          "@id": "#mp"
+        },
+        {
+          "@id": "#no"
+        },
+        {
+          "@id": "#om"
+        },
+        {
+          "@id": "#pk"
+        },
+        {
+          "@id": "#pw"
+        },
+        {
+          "@id": "#ps"
+        },
+        {
+          "@id": "#pa"
+        },
+        {
+          "@id": "#pg"
+        },
+        {
+          "@id": "#py"
+        },
+        {
+          "@id": "#pe"
+        },
+        {
+          "@id": "#ph"
+        },
+        {
+          "@id": "#pn"
+        },
+        {
+          "@id": "#pl"
+        },
+        {
+          "@id": "#pt"
+        },
+        {
+          "@id": "#pr"
+        },
+        {
+          "@id": "#qa"
+        },
+        {
+          "@id": "#ro"
+        },
+        {
+          "@id": "#ru"
+        },
+        {
+          "@id": "#rw"
+        },
+        {
+          "@id": "#re"
+        },
+        {
+          "@id": "#bl"
+        },
+        {
+          "@id": "#sh"
+        },
+        {
+          "@id": "#kn"
+        },
+        {
+          "@id": "#lc"
+        },
+        {
+          "@id": "#mf"
+        },
+        {
+          "@id": "#pm"
+        },
+        {
+          "@id": "#vc"
+        },
+        {
+          "@id": "#ws"
+        },
+        {
+          "@id": "#sm"
+        },
+        {
+          "@id": "#st"
+        },
+        {
+          "@id": "#sa"
+        },
+        {
+          "@id": "#sn"
+        },
+        {
+          "@id": "#rs"
+        },
+        {
+          "@id": "#sc"
+        },
+        {
+          "@id": "#sl"
+        },
+        {
+          "@id": "#sg"
+        },
+        {
+          "@id": "#sx"
+        },
+        {
+          "@id": "#sk"
+        },
+        {
+          "@id": "#si"
+        },
+        {
+          "@id": "#sb"
+        },
+        {
+          "@id": "#so"
+        },
+        {
+          "@id": "#za"
+        },
+        {
+          "@id": "#gs"
+        },
+        {
+          "@id": "#ss"
+        },
+        {
+          "@id": "#es"
+        },
+        {
+          "@id": "#lk"
+        },
+        {
+          "@id": "#sd"
+        },
+        {
+          "@id": "#sr"
+        },
+        {
+          "@id": "#sj"
+        },
+        {
+          "@id": "#se"
+        },
+        {
+          "@id": "#ch"
+        },
+        {
+          "@id": "#sy"
+        },
+        {
+          "@id": "#tw"
+        },
+        {
+          "@id": "#tj"
+        },
+        {
+          "@id": "#tz"
+        },
+        {
+          "@id": "#th"
+        },
+        {
+          "@id": "#tl"
+        },
+        {
+          "@id": "#tg"
+        },
+        {
+          "@id": "#tk"
+        },
+        {
+          "@id": "#to"
+        },
+        {
+          "@id": "#tt"
+        },
+        {
+          "@id": "#tn"
+        },
+        {
+          "@id": "#tm"
+        },
+        {
+          "@id": "#tc"
+        },
+        {
+          "@id": "#tv"
+        },
+        {
+          "@id": "#tr"
+        },
+        {
+          "@id": "#ug"
+        },
+        {
+          "@id": "#ua"
+        },
+        {
+          "@id": "#ae"
+        },
+        {
+          "@id": "#gb"
+        },
+        {
+          "@id": "#um"
+        },
+        {
+          "@id": "#us"
+        },
+        {
+          "@id": "#uy"
+        },
+        {
+          "@id": "#uz"
+        },
+        {
+          "@id": "#vu"
+        },
+        {
+          "@id": "#ve"
+        },
+        {
+          "@id": "#vn"
+        },
+        {
+          "@id": "#vg"
+        },
+        {
+          "@id": "#vi"
+        },
+        {
+          "@id": "#wf"
+        },
+        {
+          "@id": "#eh"
+        },
+        {
+          "@id": "#ye"
+        },
+        {
+          "@id": "#zm"
+        },
+        {
+          "@id": "#zw"
+        },
+        {
+          "@id": "#ax"
+        }
+      ]
+    },
+    {
+      "@id": "#aa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Global",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Global — a non-standard pseudo-code denoting worldwide / no specific country.",
+        "@language": "en"
+      },
+      "skos:notation": "AA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      }
+    },
+    {
+      "@id": "#af",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Afghanistan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Afghanistan — ISO 3166-1 alpha-2 code AF.",
+        "@language": "en"
+      },
+      "skos:notation": "AF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Afghanistan"
+      }
+    },
+    {
+      "@id": "#al",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Albania",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Albania — ISO 3166-1 alpha-2 code AL.",
+        "@language": "en"
+      },
+      "skos:notation": "AL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Albania"
+      }
+    },
+    {
+      "@id": "#dz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Algeria",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Algeria — ISO 3166-1 alpha-2 code DZ.",
+        "@language": "en"
+      },
+      "skos:notation": "DZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Algeria"
+      }
+    },
+    {
+      "@id": "#as",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "American Samoa",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "American Samoa — ISO 3166-1 alpha-2 code AS.",
+        "@language": "en"
+      },
+      "skos:notation": "AS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/American_Samoa"
+      }
+    },
+    {
+      "@id": "#ad",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Andorra",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Andorra — ISO 3166-1 alpha-2 code AD.",
+        "@language": "en"
+      },
+      "skos:notation": "AD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Andorra"
+      }
+    },
+    {
+      "@id": "#ao",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Angola",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Angola — ISO 3166-1 alpha-2 code AO.",
+        "@language": "en"
+      },
+      "skos:notation": "AO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Angola"
+      }
+    },
+    {
+      "@id": "#ai",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Anguilla",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Anguilla — ISO 3166-1 alpha-2 code AI.",
+        "@language": "en"
+      },
+      "skos:notation": "AI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Anguilla"
+      }
+    },
+    {
+      "@id": "#aq",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Antarctica",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Antarctica — ISO 3166-1 alpha-2 code AQ.",
+        "@language": "en"
+      },
+      "skos:notation": "AQ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Antarctica"
+      }
+    },
+    {
+      "@id": "#ag",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Antigua and Barbuda",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Antigua and Barbuda — ISO 3166-1 alpha-2 code AG.",
+        "@language": "en"
+      },
+      "skos:notation": "AG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Antigua_and_Barbuda"
+      }
+    },
+    {
+      "@id": "#ar",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Argentina",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Argentina — ISO 3166-1 alpha-2 code AR.",
+        "@language": "en"
+      },
+      "skos:notation": "AR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Argentina"
+      }
+    },
+    {
+      "@id": "#am",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Armenia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Armenia — ISO 3166-1 alpha-2 code AM.",
+        "@language": "en"
+      },
+      "skos:notation": "AM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Armenia"
+      }
+    },
+    {
+      "@id": "#aw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Aruba",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Aruba — ISO 3166-1 alpha-2 code AW.",
+        "@language": "en"
+      },
+      "skos:notation": "AW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Aruba"
+      }
+    },
+    {
+      "@id": "#au",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Australia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Australia — ISO 3166-1 alpha-2 code AU.",
+        "@language": "en"
+      },
+      "skos:notation": "AU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Australia"
+      }
+    },
+    {
+      "@id": "#at",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Austria",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Austria — ISO 3166-1 alpha-2 code AT.",
+        "@language": "en"
+      },
+      "skos:notation": "AT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Austria"
+      }
+    },
+    {
+      "@id": "#az",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Azerbaijan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Azerbaijan — ISO 3166-1 alpha-2 code AZ.",
+        "@language": "en"
+      },
+      "skos:notation": "AZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Azerbaijan"
+      }
+    },
+    {
+      "@id": "#bs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bahamas (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bahamas (the) — ISO 3166-1 alpha-2 code BS.",
+        "@language": "en"
+      },
+      "skos:notation": "BS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bahamas_(the)"
+      }
+    },
+    {
+      "@id": "#bh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bahrain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bahrain — ISO 3166-1 alpha-2 code BH.",
+        "@language": "en"
+      },
+      "skos:notation": "BH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bahrain"
+      }
+    },
+    {
+      "@id": "#bd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bangladesh",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bangladesh — ISO 3166-1 alpha-2 code BD.",
+        "@language": "en"
+      },
+      "skos:notation": "BD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bangladesh"
+      }
+    },
+    {
+      "@id": "#bb",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Barbados",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Barbados — ISO 3166-1 alpha-2 code BB.",
+        "@language": "en"
+      },
+      "skos:notation": "BB",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Barbados"
+      }
+    },
+    {
+      "@id": "#by",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Belarus",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Belarus — ISO 3166-1 alpha-2 code BY.",
+        "@language": "en"
+      },
+      "skos:notation": "BY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Belarus"
+      }
+    },
+    {
+      "@id": "#be",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Belgium",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Belgium — ISO 3166-1 alpha-2 code BE.",
+        "@language": "en"
+      },
+      "skos:notation": "BE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Belgium"
+      }
+    },
+    {
+      "@id": "#bz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Belize",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Belize — ISO 3166-1 alpha-2 code BZ.",
+        "@language": "en"
+      },
+      "skos:notation": "BZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Belize"
+      }
+    },
+    {
+      "@id": "#bj",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Benin",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Benin — ISO 3166-1 alpha-2 code BJ.",
+        "@language": "en"
+      },
+      "skos:notation": "BJ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Benin"
+      }
+    },
+    {
+      "@id": "#bm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bermuda",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bermuda — ISO 3166-1 alpha-2 code BM.",
+        "@language": "en"
+      },
+      "skos:notation": "BM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bermuda"
+      }
+    },
+    {
+      "@id": "#bt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bhutan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bhutan — ISO 3166-1 alpha-2 code BT.",
+        "@language": "en"
+      },
+      "skos:notation": "BT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bhutan"
+      }
+    },
+    {
+      "@id": "#bo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bolivia (Plurinational State of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bolivia (Plurinational State of) — ISO 3166-1 alpha-2 code BO.",
+        "@language": "en"
+      },
+      "skos:notation": "BO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bolivia_(Plurinational_State_of)"
+      }
+    },
+    {
+      "@id": "#bq",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bonaire, Sint Eustatius and Saba",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bonaire, Sint Eustatius and Saba — ISO 3166-1 alpha-2 code BQ.",
+        "@language": "en"
+      },
+      "skos:notation": "BQ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bonaire,_Sint_Eustatius_and_Saba"
+      }
+    },
+    {
+      "@id": "#ba",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bosnia and Herzegovina",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bosnia and Herzegovina — ISO 3166-1 alpha-2 code BA.",
+        "@language": "en"
+      },
+      "skos:notation": "BA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bosnia_and_Herzegovina"
+      }
+    },
+    {
+      "@id": "#bw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Botswana",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Botswana — ISO 3166-1 alpha-2 code BW.",
+        "@language": "en"
+      },
+      "skos:notation": "BW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Botswana"
+      }
+    },
+    {
+      "@id": "#bv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bouvet Island",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bouvet Island — ISO 3166-1 alpha-2 code BV.",
+        "@language": "en"
+      },
+      "skos:notation": "BV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bouvet_Island"
+      }
+    },
+    {
+      "@id": "#br",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Brazil",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Brazil — ISO 3166-1 alpha-2 code BR.",
+        "@language": "en"
+      },
+      "skos:notation": "BR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Brazil"
+      }
+    },
+    {
+      "@id": "#io",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "British Indian Ocean Territory (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "British Indian Ocean Territory (the) — ISO 3166-1 alpha-2 code IO.",
+        "@language": "en"
+      },
+      "skos:notation": "IO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/British_Indian_Ocean_Territory_(the)"
+      }
+    },
+    {
+      "@id": "#bn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Brunei Darussalam",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Brunei Darussalam — ISO 3166-1 alpha-2 code BN.",
+        "@language": "en"
+      },
+      "skos:notation": "BN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Brunei_Darussalam"
+      }
+    },
+    {
+      "@id": "#bg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Bulgaria",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Bulgaria — ISO 3166-1 alpha-2 code BG.",
+        "@language": "en"
+      },
+      "skos:notation": "BG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Bulgaria"
+      }
+    },
+    {
+      "@id": "#bf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Burkina Faso",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Burkina Faso — ISO 3166-1 alpha-2 code BF.",
+        "@language": "en"
+      },
+      "skos:notation": "BF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Burkina_Faso"
+      }
+    },
+    {
+      "@id": "#bi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Burundi",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Burundi — ISO 3166-1 alpha-2 code BI.",
+        "@language": "en"
+      },
+      "skos:notation": "BI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Burundi"
+      }
+    },
+    {
+      "@id": "#cv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cabo Verde",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cabo Verde — ISO 3166-1 alpha-2 code CV.",
+        "@language": "en"
+      },
+      "skos:notation": "CV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cabo_Verde"
+      }
+    },
+    {
+      "@id": "#kh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cambodia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cambodia — ISO 3166-1 alpha-2 code KH.",
+        "@language": "en"
+      },
+      "skos:notation": "KH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cambodia"
+      }
+    },
+    {
+      "@id": "#cm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cameroon",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cameroon — ISO 3166-1 alpha-2 code CM.",
+        "@language": "en"
+      },
+      "skos:notation": "CM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cameroon"
+      }
+    },
+    {
+      "@id": "#ca",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Canada",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Canada — ISO 3166-1 alpha-2 code CA.",
+        "@language": "en"
+      },
+      "skos:notation": "CA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Canada"
+      }
+    },
+    {
+      "@id": "#ky",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cayman Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cayman Islands (the) — ISO 3166-1 alpha-2 code KY.",
+        "@language": "en"
+      },
+      "skos:notation": "KY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cayman_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#cf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Central African Republic (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Central African Republic (the) — ISO 3166-1 alpha-2 code CF.",
+        "@language": "en"
+      },
+      "skos:notation": "CF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Central_African_Republic_(the)"
+      }
+    },
+    {
+      "@id": "#td",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Chad",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Chad — ISO 3166-1 alpha-2 code TD.",
+        "@language": "en"
+      },
+      "skos:notation": "TD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Chad"
+      }
+    },
+    {
+      "@id": "#cl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Chile",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Chile — ISO 3166-1 alpha-2 code CL.",
+        "@language": "en"
+      },
+      "skos:notation": "CL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Chile"
+      }
+    },
+    {
+      "@id": "#cn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "China",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "China — ISO 3166-1 alpha-2 code CN.",
+        "@language": "en"
+      },
+      "skos:notation": "CN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/China"
+      }
+    },
+    {
+      "@id": "#cx",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Christmas Island",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Christmas Island — ISO 3166-1 alpha-2 code CX.",
+        "@language": "en"
+      },
+      "skos:notation": "CX",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Christmas_Island"
+      }
+    },
+    {
+      "@id": "#cc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cocos (Keeling) Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cocos (Keeling) Islands (the) — ISO 3166-1 alpha-2 code CC.",
+        "@language": "en"
+      },
+      "skos:notation": "CC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cocos_(Keeling)_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#co",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Colombia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Colombia — ISO 3166-1 alpha-2 code CO.",
+        "@language": "en"
+      },
+      "skos:notation": "CO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Colombia"
+      }
+    },
+    {
+      "@id": "#km",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Comoros (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Comoros (the) — ISO 3166-1 alpha-2 code KM.",
+        "@language": "en"
+      },
+      "skos:notation": "KM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Comoros_(the)"
+      }
+    },
+    {
+      "@id": "#cd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Congo (the Democratic Republic of the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Congo (the Democratic Republic of the) — ISO 3166-1 alpha-2 code CD.",
+        "@language": "en"
+      },
+      "skos:notation": "CD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Congo_(the_Democratic_Republic_of_the)"
+      }
+    },
+    {
+      "@id": "#cg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Congo (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Congo (the) — ISO 3166-1 alpha-2 code CG.",
+        "@language": "en"
+      },
+      "skos:notation": "CG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Congo_(the)"
+      }
+    },
+    {
+      "@id": "#ck",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cook Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cook Islands (the) — ISO 3166-1 alpha-2 code CK.",
+        "@language": "en"
+      },
+      "skos:notation": "CK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cook_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#cr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Costa Rica",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Costa Rica — ISO 3166-1 alpha-2 code CR.",
+        "@language": "en"
+      },
+      "skos:notation": "CR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Costa_Rica"
+      }
+    },
+    {
+      "@id": "#hr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Croatia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Croatia — ISO 3166-1 alpha-2 code HR.",
+        "@language": "en"
+      },
+      "skos:notation": "HR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Croatia"
+      }
+    },
+    {
+      "@id": "#cu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cuba",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cuba — ISO 3166-1 alpha-2 code CU.",
+        "@language": "en"
+      },
+      "skos:notation": "CU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cuba"
+      }
+    },
+    {
+      "@id": "#cw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Curaçao",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Curaçao — ISO 3166-1 alpha-2 code CW.",
+        "@language": "en"
+      },
+      "skos:notation": "CW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Curaçao"
+      }
+    },
+    {
+      "@id": "#cy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Cyprus",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Cyprus — ISO 3166-1 alpha-2 code CY.",
+        "@language": "en"
+      },
+      "skos:notation": "CY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Cyprus"
+      }
+    },
+    {
+      "@id": "#cz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Czechia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Czechia — ISO 3166-1 alpha-2 code CZ.",
+        "@language": "en"
+      },
+      "skos:notation": "CZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Czechia"
+      }
+    },
+    {
+      "@id": "#ci",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Côte d'Ivoire",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Côte d'Ivoire — ISO 3166-1 alpha-2 code CI.",
+        "@language": "en"
+      },
+      "skos:notation": "CI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Côte_d'Ivoire"
+      }
+    },
+    {
+      "@id": "#dk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Denmark",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Denmark — ISO 3166-1 alpha-2 code DK.",
+        "@language": "en"
+      },
+      "skos:notation": "DK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Denmark"
+      }
+    },
+    {
+      "@id": "#dj",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Djibouti",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Djibouti — ISO 3166-1 alpha-2 code DJ.",
+        "@language": "en"
+      },
+      "skos:notation": "DJ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Djibouti"
+      }
+    },
+    {
+      "@id": "#dm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Dominica",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Dominica — ISO 3166-1 alpha-2 code DM.",
+        "@language": "en"
+      },
+      "skos:notation": "DM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Dominica"
+      }
+    },
+    {
+      "@id": "#do",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Dominican Republic (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Dominican Republic (the) — ISO 3166-1 alpha-2 code DO.",
+        "@language": "en"
+      },
+      "skos:notation": "DO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Dominican_Republic_(the)"
+      }
+    },
+    {
+      "@id": "#ec",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Ecuador",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ecuador — ISO 3166-1 alpha-2 code EC.",
+        "@language": "en"
+      },
+      "skos:notation": "EC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Ecuador"
+      }
+    },
+    {
+      "@id": "#eg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Egypt",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Egypt — ISO 3166-1 alpha-2 code EG.",
+        "@language": "en"
+      },
+      "skos:notation": "EG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Egypt"
+      }
+    },
+    {
+      "@id": "#sv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "El Salvador",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "El Salvador — ISO 3166-1 alpha-2 code SV.",
+        "@language": "en"
+      },
+      "skos:notation": "SV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/El_Salvador"
+      }
+    },
+    {
+      "@id": "#gq",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Equatorial Guinea",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Equatorial Guinea — ISO 3166-1 alpha-2 code GQ.",
+        "@language": "en"
+      },
+      "skos:notation": "GQ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Equatorial_Guinea"
+      }
+    },
+    {
+      "@id": "#er",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Eritrea",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Eritrea — ISO 3166-1 alpha-2 code ER.",
+        "@language": "en"
+      },
+      "skos:notation": "ER",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Eritrea"
+      }
+    },
+    {
+      "@id": "#ee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Estonia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Estonia — ISO 3166-1 alpha-2 code EE.",
+        "@language": "en"
+      },
+      "skos:notation": "EE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Estonia"
+      }
+    },
+    {
+      "@id": "#sz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Eswatini",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Eswatini — ISO 3166-1 alpha-2 code SZ.",
+        "@language": "en"
+      },
+      "skos:notation": "SZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Eswatini"
+      }
+    },
+    {
+      "@id": "#et",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Ethiopia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ethiopia — ISO 3166-1 alpha-2 code ET.",
+        "@language": "en"
+      },
+      "skos:notation": "ET",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Ethiopia"
+      }
+    },
+    {
+      "@id": "#fk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Falkland Islands (the) [Malvinas]",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Falkland Islands (the) [Malvinas] — ISO 3166-1 alpha-2 code FK.",
+        "@language": "en"
+      },
+      "skos:notation": "FK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Falkland_Islands_(the)_[Malvinas]"
+      }
+    },
+    {
+      "@id": "#fo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Faroe Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Faroe Islands (the) — ISO 3166-1 alpha-2 code FO.",
+        "@language": "en"
+      },
+      "skos:notation": "FO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Faroe_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#fj",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Fiji",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Fiji — ISO 3166-1 alpha-2 code FJ.",
+        "@language": "en"
+      },
+      "skos:notation": "FJ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Fiji"
+      }
+    },
+    {
+      "@id": "#fi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Finland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Finland — ISO 3166-1 alpha-2 code FI.",
+        "@language": "en"
+      },
+      "skos:notation": "FI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Finland"
+      }
+    },
+    {
+      "@id": "#fr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "France",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "France — ISO 3166-1 alpha-2 code FR.",
+        "@language": "en"
+      },
+      "skos:notation": "FR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/France"
+      }
+    },
+    {
+      "@id": "#gf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "French Guiana",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "French Guiana — ISO 3166-1 alpha-2 code GF.",
+        "@language": "en"
+      },
+      "skos:notation": "GF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/French_Guiana"
+      }
+    },
+    {
+      "@id": "#pf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "French Polynesia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "French Polynesia — ISO 3166-1 alpha-2 code PF.",
+        "@language": "en"
+      },
+      "skos:notation": "PF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/French_Polynesia"
+      }
+    },
+    {
+      "@id": "#tf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "French Southern Territories (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "French Southern Territories (the) — ISO 3166-1 alpha-2 code TF.",
+        "@language": "en"
+      },
+      "skos:notation": "TF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/French_Southern_Territories_(the)"
+      }
+    },
+    {
+      "@id": "#ga",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Gabon",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Gabon — ISO 3166-1 alpha-2 code GA.",
+        "@language": "en"
+      },
+      "skos:notation": "GA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Gabon"
+      }
+    },
+    {
+      "@id": "#gm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Gambia (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Gambia (the) — ISO 3166-1 alpha-2 code GM.",
+        "@language": "en"
+      },
+      "skos:notation": "GM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Gambia_(the)"
+      }
+    },
+    {
+      "@id": "#ge",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Georgia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Georgia — ISO 3166-1 alpha-2 code GE.",
+        "@language": "en"
+      },
+      "skos:notation": "GE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Georgia"
+      }
+    },
+    {
+      "@id": "#de",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Germany",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Germany — ISO 3166-1 alpha-2 code DE.",
+        "@language": "en"
+      },
+      "skos:notation": "DE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Germany"
+      }
+    },
+    {
+      "@id": "#gh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Ghana",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ghana — ISO 3166-1 alpha-2 code GH.",
+        "@language": "en"
+      },
+      "skos:notation": "GH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Ghana"
+      }
+    },
+    {
+      "@id": "#gi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Gibraltar",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Gibraltar — ISO 3166-1 alpha-2 code GI.",
+        "@language": "en"
+      },
+      "skos:notation": "GI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Gibraltar"
+      }
+    },
+    {
+      "@id": "#gr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Greece",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Greece — ISO 3166-1 alpha-2 code GR.",
+        "@language": "en"
+      },
+      "skos:notation": "GR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Greece"
+      }
+    },
+    {
+      "@id": "#gl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Greenland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Greenland — ISO 3166-1 alpha-2 code GL.",
+        "@language": "en"
+      },
+      "skos:notation": "GL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Greenland"
+      }
+    },
+    {
+      "@id": "#gd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Grenada",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Grenada — ISO 3166-1 alpha-2 code GD.",
+        "@language": "en"
+      },
+      "skos:notation": "GD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Grenada"
+      }
+    },
+    {
+      "@id": "#gp",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guadeloupe",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guadeloupe — ISO 3166-1 alpha-2 code GP.",
+        "@language": "en"
+      },
+      "skos:notation": "GP",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guadeloupe"
+      }
+    },
+    {
+      "@id": "#gu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guam",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guam — ISO 3166-1 alpha-2 code GU.",
+        "@language": "en"
+      },
+      "skos:notation": "GU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guam"
+      }
+    },
+    {
+      "@id": "#gt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guatemala",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guatemala — ISO 3166-1 alpha-2 code GT.",
+        "@language": "en"
+      },
+      "skos:notation": "GT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guatemala"
+      }
+    },
+    {
+      "@id": "#gg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guernsey",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guernsey — ISO 3166-1 alpha-2 code GG.",
+        "@language": "en"
+      },
+      "skos:notation": "GG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guernsey"
+      }
+    },
+    {
+      "@id": "#gn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guinea",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guinea — ISO 3166-1 alpha-2 code GN.",
+        "@language": "en"
+      },
+      "skos:notation": "GN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guinea"
+      }
+    },
+    {
+      "@id": "#gw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guinea-Bissau",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guinea-Bissau — ISO 3166-1 alpha-2 code GW.",
+        "@language": "en"
+      },
+      "skos:notation": "GW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guinea-Bissau"
+      }
+    },
+    {
+      "@id": "#gy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Guyana",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Guyana — ISO 3166-1 alpha-2 code GY.",
+        "@language": "en"
+      },
+      "skos:notation": "GY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Guyana"
+      }
+    },
+    {
+      "@id": "#ht",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Haiti",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Haiti — ISO 3166-1 alpha-2 code HT.",
+        "@language": "en"
+      },
+      "skos:notation": "HT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Haiti"
+      }
+    },
+    {
+      "@id": "#hm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Heard Island and McDonald Islands",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Heard Island and McDonald Islands — ISO 3166-1 alpha-2 code HM.",
+        "@language": "en"
+      },
+      "skos:notation": "HM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Heard_Island_and_McDonald_Islands"
+      }
+    },
+    {
+      "@id": "#va",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Holy See (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Holy See (the) — ISO 3166-1 alpha-2 code VA.",
+        "@language": "en"
+      },
+      "skos:notation": "VA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Holy_See_(the)"
+      }
+    },
+    {
+      "@id": "#hn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Honduras",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Honduras — ISO 3166-1 alpha-2 code HN.",
+        "@language": "en"
+      },
+      "skos:notation": "HN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Honduras"
+      }
+    },
+    {
+      "@id": "#hk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Hong Kong",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Hong Kong — ISO 3166-1 alpha-2 code HK.",
+        "@language": "en"
+      },
+      "skos:notation": "HK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Hong_Kong"
+      }
+    },
+    {
+      "@id": "#hu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Hungary",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Hungary — ISO 3166-1 alpha-2 code HU.",
+        "@language": "en"
+      },
+      "skos:notation": "HU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Hungary"
+      }
+    },
+    {
+      "@id": "#is",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Iceland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Iceland — ISO 3166-1 alpha-2 code IS.",
+        "@language": "en"
+      },
+      "skos:notation": "IS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Iceland"
+      }
+    },
+    {
+      "@id": "#in",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "India",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "India — ISO 3166-1 alpha-2 code IN.",
+        "@language": "en"
+      },
+      "skos:notation": "IN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/India"
+      }
+    },
+    {
+      "@id": "#id",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Indonesia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Indonesia — ISO 3166-1 alpha-2 code ID.",
+        "@language": "en"
+      },
+      "skos:notation": "ID",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Indonesia"
+      }
+    },
+    {
+      "@id": "#ir",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Iran (Islamic Republic of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Iran (Islamic Republic of) — ISO 3166-1 alpha-2 code IR.",
+        "@language": "en"
+      },
+      "skos:notation": "IR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Iran_(Islamic_Republic_of)"
+      }
+    },
+    {
+      "@id": "#iq",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Iraq",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Iraq — ISO 3166-1 alpha-2 code IQ.",
+        "@language": "en"
+      },
+      "skos:notation": "IQ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Iraq"
+      }
+    },
+    {
+      "@id": "#ie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Ireland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ireland — ISO 3166-1 alpha-2 code IE.",
+        "@language": "en"
+      },
+      "skos:notation": "IE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Ireland"
+      }
+    },
+    {
+      "@id": "#im",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Isle of Man",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Isle of Man — ISO 3166-1 alpha-2 code IM.",
+        "@language": "en"
+      },
+      "skos:notation": "IM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Isle_of_Man"
+      }
+    },
+    {
+      "@id": "#il",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Israel",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Israel — ISO 3166-1 alpha-2 code IL.",
+        "@language": "en"
+      },
+      "skos:notation": "IL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Israel"
+      }
+    },
+    {
+      "@id": "#it",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Italy",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Italy — ISO 3166-1 alpha-2 code IT.",
+        "@language": "en"
+      },
+      "skos:notation": "IT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Italy"
+      }
+    },
+    {
+      "@id": "#jm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Jamaica",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Jamaica — ISO 3166-1 alpha-2 code JM.",
+        "@language": "en"
+      },
+      "skos:notation": "JM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Jamaica"
+      }
+    },
+    {
+      "@id": "#jp",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Japan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Japan — ISO 3166-1 alpha-2 code JP.",
+        "@language": "en"
+      },
+      "skos:notation": "JP",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Japan"
+      }
+    },
+    {
+      "@id": "#je",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Jersey",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Jersey — ISO 3166-1 alpha-2 code JE.",
+        "@language": "en"
+      },
+      "skos:notation": "JE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Jersey"
+      }
+    },
+    {
+      "@id": "#jo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Jordan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Jordan — ISO 3166-1 alpha-2 code JO.",
+        "@language": "en"
+      },
+      "skos:notation": "JO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Jordan"
+      }
+    },
+    {
+      "@id": "#kz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Kazakhstan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Kazakhstan — ISO 3166-1 alpha-2 code KZ.",
+        "@language": "en"
+      },
+      "skos:notation": "KZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Kazakhstan"
+      }
+    },
+    {
+      "@id": "#ke",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Kenya",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Kenya — ISO 3166-1 alpha-2 code KE.",
+        "@language": "en"
+      },
+      "skos:notation": "KE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Kenya"
+      }
+    },
+    {
+      "@id": "#ki",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Kiribati",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Kiribati — ISO 3166-1 alpha-2 code KI.",
+        "@language": "en"
+      },
+      "skos:notation": "KI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Kiribati"
+      }
+    },
+    {
+      "@id": "#kp",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Korea (the Democratic People's Republic of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Korea (the Democratic People's Republic of) — ISO 3166-1 alpha-2 code KP.",
+        "@language": "en"
+      },
+      "skos:notation": "KP",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Korea_(the_Democratic_People's_Republic_of)"
+      }
+    },
+    {
+      "@id": "#kr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Korea (the Republic of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Korea (the Republic of) — ISO 3166-1 alpha-2 code KR.",
+        "@language": "en"
+      },
+      "skos:notation": "KR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Korea_(the_Republic_of)"
+      }
+    },
+    {
+      "@id": "#kw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Kuwait",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Kuwait — ISO 3166-1 alpha-2 code KW.",
+        "@language": "en"
+      },
+      "skos:notation": "KW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Kuwait"
+      }
+    },
+    {
+      "@id": "#kg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Kyrgyzstan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Kyrgyzstan — ISO 3166-1 alpha-2 code KG.",
+        "@language": "en"
+      },
+      "skos:notation": "KG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Kyrgyzstan"
+      }
+    },
+    {
+      "@id": "#la",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Lao People's Democratic Republic (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Lao People's Democratic Republic (the) — ISO 3166-1 alpha-2 code LA.",
+        "@language": "en"
+      },
+      "skos:notation": "LA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Lao_People's_Democratic_Republic_(the)"
+      }
+    },
+    {
+      "@id": "#lv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Latvia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Latvia — ISO 3166-1 alpha-2 code LV.",
+        "@language": "en"
+      },
+      "skos:notation": "LV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Latvia"
+      }
+    },
+    {
+      "@id": "#lb",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Lebanon",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Lebanon — ISO 3166-1 alpha-2 code LB.",
+        "@language": "en"
+      },
+      "skos:notation": "LB",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Lebanon"
+      }
+    },
+    {
+      "@id": "#ls",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Lesotho",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Lesotho — ISO 3166-1 alpha-2 code LS.",
+        "@language": "en"
+      },
+      "skos:notation": "LS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Lesotho"
+      }
+    },
+    {
+      "@id": "#lr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Liberia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liberia — ISO 3166-1 alpha-2 code LR.",
+        "@language": "en"
+      },
+      "skos:notation": "LR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Liberia"
+      }
+    },
+    {
+      "@id": "#ly",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Libya",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Libya — ISO 3166-1 alpha-2 code LY.",
+        "@language": "en"
+      },
+      "skos:notation": "LY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Libya"
+      }
+    },
+    {
+      "@id": "#li",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Liechtenstein",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Liechtenstein — ISO 3166-1 alpha-2 code LI.",
+        "@language": "en"
+      },
+      "skos:notation": "LI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Liechtenstein"
+      }
+    },
+    {
+      "@id": "#lt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Lithuania",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Lithuania — ISO 3166-1 alpha-2 code LT.",
+        "@language": "en"
+      },
+      "skos:notation": "LT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Lithuania"
+      }
+    },
+    {
+      "@id": "#lu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Luxembourg",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Luxembourg — ISO 3166-1 alpha-2 code LU.",
+        "@language": "en"
+      },
+      "skos:notation": "LU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Luxembourg"
+      }
+    },
+    {
+      "@id": "#mo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Macao",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Macao — ISO 3166-1 alpha-2 code MO.",
+        "@language": "en"
+      },
+      "skos:notation": "MO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Macao"
+      }
+    },
+    {
+      "@id": "#mg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Madagascar",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Madagascar — ISO 3166-1 alpha-2 code MG.",
+        "@language": "en"
+      },
+      "skos:notation": "MG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Madagascar"
+      }
+    },
+    {
+      "@id": "#mw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Malawi",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Malawi — ISO 3166-1 alpha-2 code MW.",
+        "@language": "en"
+      },
+      "skos:notation": "MW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Malawi"
+      }
+    },
+    {
+      "@id": "#my",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Malaysia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Malaysia — ISO 3166-1 alpha-2 code MY.",
+        "@language": "en"
+      },
+      "skos:notation": "MY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Malaysia"
+      }
+    },
+    {
+      "@id": "#mv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Maldives",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Maldives — ISO 3166-1 alpha-2 code MV.",
+        "@language": "en"
+      },
+      "skos:notation": "MV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Maldives"
+      }
+    },
+    {
+      "@id": "#ml",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mali",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mali — ISO 3166-1 alpha-2 code ML.",
+        "@language": "en"
+      },
+      "skos:notation": "ML",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mali"
+      }
+    },
+    {
+      "@id": "#mt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Malta",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Malta — ISO 3166-1 alpha-2 code MT.",
+        "@language": "en"
+      },
+      "skos:notation": "MT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Malta"
+      }
+    },
+    {
+      "@id": "#mh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Marshall Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Marshall Islands (the) — ISO 3166-1 alpha-2 code MH.",
+        "@language": "en"
+      },
+      "skos:notation": "MH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Marshall_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#mq",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Martinique",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Martinique — ISO 3166-1 alpha-2 code MQ.",
+        "@language": "en"
+      },
+      "skos:notation": "MQ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Martinique"
+      }
+    },
+    {
+      "@id": "#mr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mauritania",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mauritania — ISO 3166-1 alpha-2 code MR.",
+        "@language": "en"
+      },
+      "skos:notation": "MR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mauritania"
+      }
+    },
+    {
+      "@id": "#mu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mauritius",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mauritius — ISO 3166-1 alpha-2 code MU.",
+        "@language": "en"
+      },
+      "skos:notation": "MU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mauritius"
+      }
+    },
+    {
+      "@id": "#yt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mayotte",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mayotte — ISO 3166-1 alpha-2 code YT.",
+        "@language": "en"
+      },
+      "skos:notation": "YT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mayotte"
+      }
+    },
+    {
+      "@id": "#mx",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mexico",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mexico — ISO 3166-1 alpha-2 code MX.",
+        "@language": "en"
+      },
+      "skos:notation": "MX",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mexico"
+      }
+    },
+    {
+      "@id": "#fm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Micronesia (Federated States of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Micronesia (Federated States of) — ISO 3166-1 alpha-2 code FM.",
+        "@language": "en"
+      },
+      "skos:notation": "FM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Micronesia_(Federated_States_of)"
+      }
+    },
+    {
+      "@id": "#md",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Moldova (the Republic of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Moldova (the Republic of) — ISO 3166-1 alpha-2 code MD.",
+        "@language": "en"
+      },
+      "skos:notation": "MD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Moldova_(the_Republic_of)"
+      }
+    },
+    {
+      "@id": "#mc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Monaco",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Monaco — ISO 3166-1 alpha-2 code MC.",
+        "@language": "en"
+      },
+      "skos:notation": "MC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Monaco"
+      }
+    },
+    {
+      "@id": "#mn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mongolia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mongolia — ISO 3166-1 alpha-2 code MN.",
+        "@language": "en"
+      },
+      "skos:notation": "MN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mongolia"
+      }
+    },
+    {
+      "@id": "#me",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Montenegro",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Montenegro — ISO 3166-1 alpha-2 code ME.",
+        "@language": "en"
+      },
+      "skos:notation": "ME",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Montenegro"
+      }
+    },
+    {
+      "@id": "#ms",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Montserrat",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Montserrat — ISO 3166-1 alpha-2 code MS.",
+        "@language": "en"
+      },
+      "skos:notation": "MS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Montserrat"
+      }
+    },
+    {
+      "@id": "#ma",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Morocco",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Morocco — ISO 3166-1 alpha-2 code MA.",
+        "@language": "en"
+      },
+      "skos:notation": "MA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Morocco"
+      }
+    },
+    {
+      "@id": "#mz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Mozambique",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mozambique — ISO 3166-1 alpha-2 code MZ.",
+        "@language": "en"
+      },
+      "skos:notation": "MZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Mozambique"
+      }
+    },
+    {
+      "@id": "#mm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Myanmar",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Myanmar — ISO 3166-1 alpha-2 code MM.",
+        "@language": "en"
+      },
+      "skos:notation": "MM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Myanmar"
+      }
+    },
+    {
+      "@id": "#na",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Namibia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Namibia — ISO 3166-1 alpha-2 code NA.",
+        "@language": "en"
+      },
+      "skos:notation": "NA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Namibia"
+      }
+    },
+    {
+      "@id": "#nr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Nauru",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Nauru — ISO 3166-1 alpha-2 code NR.",
+        "@language": "en"
+      },
+      "skos:notation": "NR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Nauru"
+      }
+    },
+    {
+      "@id": "#np",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Nepal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Nepal — ISO 3166-1 alpha-2 code NP.",
+        "@language": "en"
+      },
+      "skos:notation": "NP",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Nepal"
+      }
+    },
+    {
+      "@id": "#nl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Netherlands (Kingdom of the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Netherlands (Kingdom of the) — ISO 3166-1 alpha-2 code NL.",
+        "@language": "en"
+      },
+      "skos:notation": "NL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Netherlands_(Kingdom_of_the)"
+      }
+    },
+    {
+      "@id": "#nc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "New Caledonia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "New Caledonia — ISO 3166-1 alpha-2 code NC.",
+        "@language": "en"
+      },
+      "skos:notation": "NC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/New_Caledonia"
+      }
+    },
+    {
+      "@id": "#nz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "New Zealand",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "New Zealand — ISO 3166-1 alpha-2 code NZ.",
+        "@language": "en"
+      },
+      "skos:notation": "NZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/New_Zealand"
+      }
+    },
+    {
+      "@id": "#ni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Nicaragua",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Nicaragua — ISO 3166-1 alpha-2 code NI.",
+        "@language": "en"
+      },
+      "skos:notation": "NI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Nicaragua"
+      }
+    },
+    {
+      "@id": "#ne",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Niger (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Niger (the) — ISO 3166-1 alpha-2 code NE.",
+        "@language": "en"
+      },
+      "skos:notation": "NE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Niger_(the)"
+      }
+    },
+    {
+      "@id": "#ng",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Nigeria",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Nigeria — ISO 3166-1 alpha-2 code NG.",
+        "@language": "en"
+      },
+      "skos:notation": "NG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Nigeria"
+      }
+    },
+    {
+      "@id": "#nu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Niue",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Niue — ISO 3166-1 alpha-2 code NU.",
+        "@language": "en"
+      },
+      "skos:notation": "NU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Niue"
+      }
+    },
+    {
+      "@id": "#nf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Norfolk Island",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Norfolk Island — ISO 3166-1 alpha-2 code NF.",
+        "@language": "en"
+      },
+      "skos:notation": "NF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Norfolk_Island"
+      }
+    },
+    {
+      "@id": "#mk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "North Macedonia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "North Macedonia — ISO 3166-1 alpha-2 code MK.",
+        "@language": "en"
+      },
+      "skos:notation": "MK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/North_Macedonia"
+      }
+    },
+    {
+      "@id": "#mp",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Northern Mariana Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Northern Mariana Islands (the) — ISO 3166-1 alpha-2 code MP.",
+        "@language": "en"
+      },
+      "skos:notation": "MP",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Northern_Mariana_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#no",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Norway",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Norway — ISO 3166-1 alpha-2 code NO.",
+        "@language": "en"
+      },
+      "skos:notation": "NO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Norway"
+      }
+    },
+    {
+      "@id": "#om",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Oman",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Oman — ISO 3166-1 alpha-2 code OM.",
+        "@language": "en"
+      },
+      "skos:notation": "OM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Oman"
+      }
+    },
+    {
+      "@id": "#pk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Pakistan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Pakistan — ISO 3166-1 alpha-2 code PK.",
+        "@language": "en"
+      },
+      "skos:notation": "PK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Pakistan"
+      }
+    },
+    {
+      "@id": "#pw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Palau",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Palau — ISO 3166-1 alpha-2 code PW.",
+        "@language": "en"
+      },
+      "skos:notation": "PW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Palau"
+      }
+    },
+    {
+      "@id": "#ps",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Palestine, State of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Palestine, State of — ISO 3166-1 alpha-2 code PS.",
+        "@language": "en"
+      },
+      "skos:notation": "PS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Palestine,_State_of"
+      }
+    },
+    {
+      "@id": "#pa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Panama",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Panama — ISO 3166-1 alpha-2 code PA.",
+        "@language": "en"
+      },
+      "skos:notation": "PA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Panama"
+      }
+    },
+    {
+      "@id": "#pg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Papua New Guinea",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Papua New Guinea — ISO 3166-1 alpha-2 code PG.",
+        "@language": "en"
+      },
+      "skos:notation": "PG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Papua_New_Guinea"
+      }
+    },
+    {
+      "@id": "#py",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Paraguay",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Paraguay — ISO 3166-1 alpha-2 code PY.",
+        "@language": "en"
+      },
+      "skos:notation": "PY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Paraguay"
+      }
+    },
+    {
+      "@id": "#pe",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Peru",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Peru — ISO 3166-1 alpha-2 code PE.",
+        "@language": "en"
+      },
+      "skos:notation": "PE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Peru"
+      }
+    },
+    {
+      "@id": "#ph",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Philippines (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Philippines (the) — ISO 3166-1 alpha-2 code PH.",
+        "@language": "en"
+      },
+      "skos:notation": "PH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Philippines_(the)"
+      }
+    },
+    {
+      "@id": "#pn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Pitcairn",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Pitcairn — ISO 3166-1 alpha-2 code PN.",
+        "@language": "en"
+      },
+      "skos:notation": "PN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Pitcairn"
+      }
+    },
+    {
+      "@id": "#pl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Poland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Poland — ISO 3166-1 alpha-2 code PL.",
+        "@language": "en"
+      },
+      "skos:notation": "PL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Poland"
+      }
+    },
+    {
+      "@id": "#pt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Portugal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Portugal — ISO 3166-1 alpha-2 code PT.",
+        "@language": "en"
+      },
+      "skos:notation": "PT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Portugal"
+      }
+    },
+    {
+      "@id": "#pr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Puerto Rico",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Puerto Rico — ISO 3166-1 alpha-2 code PR.",
+        "@language": "en"
+      },
+      "skos:notation": "PR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Puerto_Rico"
+      }
+    },
+    {
+      "@id": "#qa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Qatar",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Qatar — ISO 3166-1 alpha-2 code QA.",
+        "@language": "en"
+      },
+      "skos:notation": "QA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Qatar"
+      }
+    },
+    {
+      "@id": "#ro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Romania",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Romania — ISO 3166-1 alpha-2 code RO.",
+        "@language": "en"
+      },
+      "skos:notation": "RO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Romania"
+      }
+    },
+    {
+      "@id": "#ru",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Russian Federation (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Russian Federation (the) — ISO 3166-1 alpha-2 code RU.",
+        "@language": "en"
+      },
+      "skos:notation": "RU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Russian_Federation_(the)"
+      }
+    },
+    {
+      "@id": "#rw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Rwanda",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Rwanda — ISO 3166-1 alpha-2 code RW.",
+        "@language": "en"
+      },
+      "skos:notation": "RW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Rwanda"
+      }
+    },
+    {
+      "@id": "#re",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Réunion",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Réunion — ISO 3166-1 alpha-2 code RE.",
+        "@language": "en"
+      },
+      "skos:notation": "RE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Réunion"
+      }
+    },
+    {
+      "@id": "#bl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Barthélemy",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Barthélemy — ISO 3166-1 alpha-2 code BL.",
+        "@language": "en"
+      },
+      "skos:notation": "BL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Barthélemy"
+      }
+    },
+    {
+      "@id": "#sh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Helena, Ascension and Tristan da Cunha",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Helena, Ascension and Tristan da Cunha — ISO 3166-1 alpha-2 code SH.",
+        "@language": "en"
+      },
+      "skos:notation": "SH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Helena,_Ascension_and_Tristan_da_Cunha"
+      }
+    },
+    {
+      "@id": "#kn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Kitts and Nevis",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Kitts and Nevis — ISO 3166-1 alpha-2 code KN.",
+        "@language": "en"
+      },
+      "skos:notation": "KN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Kitts_and_Nevis"
+      }
+    },
+    {
+      "@id": "#lc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Lucia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Lucia — ISO 3166-1 alpha-2 code LC.",
+        "@language": "en"
+      },
+      "skos:notation": "LC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Lucia"
+      }
+    },
+    {
+      "@id": "#mf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Martin (French part)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Martin (French part) — ISO 3166-1 alpha-2 code MF.",
+        "@language": "en"
+      },
+      "skos:notation": "MF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Martin_(French_part)"
+      }
+    },
+    {
+      "@id": "#pm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Pierre and Miquelon",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Pierre and Miquelon — ISO 3166-1 alpha-2 code PM.",
+        "@language": "en"
+      },
+      "skos:notation": "PM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Pierre_and_Miquelon"
+      }
+    },
+    {
+      "@id": "#vc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saint Vincent and the Grenadines",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saint Vincent and the Grenadines — ISO 3166-1 alpha-2 code VC.",
+        "@language": "en"
+      },
+      "skos:notation": "VC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saint_Vincent_and_the_Grenadines"
+      }
+    },
+    {
+      "@id": "#ws",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Samoa",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Samoa — ISO 3166-1 alpha-2 code WS.",
+        "@language": "en"
+      },
+      "skos:notation": "WS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Samoa"
+      }
+    },
+    {
+      "@id": "#sm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "San Marino",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "San Marino — ISO 3166-1 alpha-2 code SM.",
+        "@language": "en"
+      },
+      "skos:notation": "SM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/San_Marino"
+      }
+    },
+    {
+      "@id": "#st",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sao Tome and Principe",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sao Tome and Principe — ISO 3166-1 alpha-2 code ST.",
+        "@language": "en"
+      },
+      "skos:notation": "ST",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sao_Tome_and_Principe"
+      }
+    },
+    {
+      "@id": "#sa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Saudi Arabia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Saudi Arabia — ISO 3166-1 alpha-2 code SA.",
+        "@language": "en"
+      },
+      "skos:notation": "SA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Saudi_Arabia"
+      }
+    },
+    {
+      "@id": "#sn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Senegal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Senegal — ISO 3166-1 alpha-2 code SN.",
+        "@language": "en"
+      },
+      "skos:notation": "SN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Senegal"
+      }
+    },
+    {
+      "@id": "#rs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Serbia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Serbia — ISO 3166-1 alpha-2 code RS.",
+        "@language": "en"
+      },
+      "skos:notation": "RS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Serbia"
+      }
+    },
+    {
+      "@id": "#sc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Seychelles",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Seychelles — ISO 3166-1 alpha-2 code SC.",
+        "@language": "en"
+      },
+      "skos:notation": "SC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Seychelles"
+      }
+    },
+    {
+      "@id": "#sl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sierra Leone",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sierra Leone — ISO 3166-1 alpha-2 code SL.",
+        "@language": "en"
+      },
+      "skos:notation": "SL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sierra_Leone"
+      }
+    },
+    {
+      "@id": "#sg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Singapore",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Singapore — ISO 3166-1 alpha-2 code SG.",
+        "@language": "en"
+      },
+      "skos:notation": "SG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Singapore"
+      }
+    },
+    {
+      "@id": "#sx",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sint Maarten (Dutch part)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sint Maarten (Dutch part) — ISO 3166-1 alpha-2 code SX.",
+        "@language": "en"
+      },
+      "skos:notation": "SX",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sint_Maarten_(Dutch_part)"
+      }
+    },
+    {
+      "@id": "#sk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Slovakia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slovakia — ISO 3166-1 alpha-2 code SK.",
+        "@language": "en"
+      },
+      "skos:notation": "SK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Slovakia"
+      }
+    },
+    {
+      "@id": "#si",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Slovenia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Slovenia — ISO 3166-1 alpha-2 code SI.",
+        "@language": "en"
+      },
+      "skos:notation": "SI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Slovenia"
+      }
+    },
+    {
+      "@id": "#sb",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Solomon Islands",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Solomon Islands — ISO 3166-1 alpha-2 code SB.",
+        "@language": "en"
+      },
+      "skos:notation": "SB",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Solomon_Islands"
+      }
+    },
+    {
+      "@id": "#so",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Somalia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Somalia — ISO 3166-1 alpha-2 code SO.",
+        "@language": "en"
+      },
+      "skos:notation": "SO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Somalia"
+      }
+    },
+    {
+      "@id": "#za",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "South Africa",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "South Africa — ISO 3166-1 alpha-2 code ZA.",
+        "@language": "en"
+      },
+      "skos:notation": "ZA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/South_Africa"
+      }
+    },
+    {
+      "@id": "#gs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "South Georgia and the South Sandwich Islands",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "South Georgia and the South Sandwich Islands — ISO 3166-1 alpha-2 code GS.",
+        "@language": "en"
+      },
+      "skos:notation": "GS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/South_Georgia_and_the_South_Sandwich_Islands"
+      }
+    },
+    {
+      "@id": "#ss",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "South Sudan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "South Sudan — ISO 3166-1 alpha-2 code SS.",
+        "@language": "en"
+      },
+      "skos:notation": "SS",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/South_Sudan"
+      }
+    },
+    {
+      "@id": "#es",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Spain",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Spain — ISO 3166-1 alpha-2 code ES.",
+        "@language": "en"
+      },
+      "skos:notation": "ES",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Spain"
+      }
+    },
+    {
+      "@id": "#lk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sri Lanka",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sri Lanka — ISO 3166-1 alpha-2 code LK.",
+        "@language": "en"
+      },
+      "skos:notation": "LK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sri_Lanka"
+      }
+    },
+    {
+      "@id": "#sd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sudan (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sudan (the) — ISO 3166-1 alpha-2 code SD.",
+        "@language": "en"
+      },
+      "skos:notation": "SD",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sudan_(the)"
+      }
+    },
+    {
+      "@id": "#sr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Suriname",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Suriname — ISO 3166-1 alpha-2 code SR.",
+        "@language": "en"
+      },
+      "skos:notation": "SR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Suriname"
+      }
+    },
+    {
+      "@id": "#sj",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Svalbard and Jan Mayen",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Svalbard and Jan Mayen — ISO 3166-1 alpha-2 code SJ.",
+        "@language": "en"
+      },
+      "skos:notation": "SJ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Svalbard_and_Jan_Mayen"
+      }
+    },
+    {
+      "@id": "#se",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Sweden",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Sweden — ISO 3166-1 alpha-2 code SE.",
+        "@language": "en"
+      },
+      "skos:notation": "SE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Sweden"
+      }
+    },
+    {
+      "@id": "#ch",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Switzerland",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Switzerland — ISO 3166-1 alpha-2 code CH.",
+        "@language": "en"
+      },
+      "skos:notation": "CH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Switzerland"
+      }
+    },
+    {
+      "@id": "#sy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Syrian Arab Republic (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Syrian Arab Republic (the) — ISO 3166-1 alpha-2 code SY.",
+        "@language": "en"
+      },
+      "skos:notation": "SY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Syrian_Arab_Republic_(the)"
+      }
+    },
+    {
+      "@id": "#tw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Taiwan (Province of China)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Taiwan (Province of China) — ISO 3166-1 alpha-2 code TW.",
+        "@language": "en"
+      },
+      "skos:notation": "TW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Taiwan_(Province_of_China)"
+      }
+    },
+    {
+      "@id": "#tj",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tajikistan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tajikistan — ISO 3166-1 alpha-2 code TJ.",
+        "@language": "en"
+      },
+      "skos:notation": "TJ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tajikistan"
+      }
+    },
+    {
+      "@id": "#tz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tanzania, the United Republic of",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tanzania, the United Republic of — ISO 3166-1 alpha-2 code TZ.",
+        "@language": "en"
+      },
+      "skos:notation": "TZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tanzania,_the_United_Republic_of"
+      }
+    },
+    {
+      "@id": "#th",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Thailand",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Thailand — ISO 3166-1 alpha-2 code TH.",
+        "@language": "en"
+      },
+      "skos:notation": "TH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Thailand"
+      }
+    },
+    {
+      "@id": "#tl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Timor-Leste",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Timor-Leste — ISO 3166-1 alpha-2 code TL.",
+        "@language": "en"
+      },
+      "skos:notation": "TL",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Timor-Leste"
+      }
+    },
+    {
+      "@id": "#tg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Togo",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Togo — ISO 3166-1 alpha-2 code TG.",
+        "@language": "en"
+      },
+      "skos:notation": "TG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Togo"
+      }
+    },
+    {
+      "@id": "#tk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tokelau",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tokelau — ISO 3166-1 alpha-2 code TK.",
+        "@language": "en"
+      },
+      "skos:notation": "TK",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tokelau"
+      }
+    },
+    {
+      "@id": "#to",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tonga",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tonga — ISO 3166-1 alpha-2 code TO.",
+        "@language": "en"
+      },
+      "skos:notation": "TO",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tonga"
+      }
+    },
+    {
+      "@id": "#tt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Trinidad and Tobago",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Trinidad and Tobago — ISO 3166-1 alpha-2 code TT.",
+        "@language": "en"
+      },
+      "skos:notation": "TT",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Trinidad_and_Tobago"
+      }
+    },
+    {
+      "@id": "#tn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tunisia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tunisia — ISO 3166-1 alpha-2 code TN.",
+        "@language": "en"
+      },
+      "skos:notation": "TN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tunisia"
+      }
+    },
+    {
+      "@id": "#tm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Turkmenistan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Turkmenistan — ISO 3166-1 alpha-2 code TM.",
+        "@language": "en"
+      },
+      "skos:notation": "TM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Turkmenistan"
+      }
+    },
+    {
+      "@id": "#tc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Turks and Caicos Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Turks and Caicos Islands (the) — ISO 3166-1 alpha-2 code TC.",
+        "@language": "en"
+      },
+      "skos:notation": "TC",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Turks_and_Caicos_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#tv",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Tuvalu",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Tuvalu — ISO 3166-1 alpha-2 code TV.",
+        "@language": "en"
+      },
+      "skos:notation": "TV",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Tuvalu"
+      }
+    },
+    {
+      "@id": "#tr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Türkiye",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Türkiye — ISO 3166-1 alpha-2 code TR.",
+        "@language": "en"
+      },
+      "skos:notation": "TR",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Türkiye"
+      }
+    },
+    {
+      "@id": "#ug",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Uganda",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Uganda — ISO 3166-1 alpha-2 code UG.",
+        "@language": "en"
+      },
+      "skos:notation": "UG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Uganda"
+      }
+    },
+    {
+      "@id": "#ua",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Ukraine",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Ukraine — ISO 3166-1 alpha-2 code UA.",
+        "@language": "en"
+      },
+      "skos:notation": "UA",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Ukraine"
+      }
+    },
+    {
+      "@id": "#ae",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "United Arab Emirates (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "United Arab Emirates (the) — ISO 3166-1 alpha-2 code AE.",
+        "@language": "en"
+      },
+      "skos:notation": "AE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/United_Arab_Emirates_(the)"
+      }
+    },
+    {
+      "@id": "#gb",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "United Kingdom of Great Britain and Northern Ireland (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "United Kingdom of Great Britain and Northern Ireland (the) — ISO 3166-1 alpha-2 code GB.",
+        "@language": "en"
+      },
+      "skos:notation": "GB",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Northern_Ireland_(the)"
+      }
+    },
+    {
+      "@id": "#um",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "United States Minor Outlying Islands (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "United States Minor Outlying Islands (the) — ISO 3166-1 alpha-2 code UM.",
+        "@language": "en"
+      },
+      "skos:notation": "UM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/United_States_Minor_Outlying_Islands_(the)"
+      }
+    },
+    {
+      "@id": "#us",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "United States of America (the)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "United States of America (the) — ISO 3166-1 alpha-2 code US.",
+        "@language": "en"
+      },
+      "skos:notation": "US",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/United_States_of_America_(the)"
+      }
+    },
+    {
+      "@id": "#uy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Uruguay",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Uruguay — ISO 3166-1 alpha-2 code UY.",
+        "@language": "en"
+      },
+      "skos:notation": "UY",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Uruguay"
+      }
+    },
+    {
+      "@id": "#uz",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Uzbekistan",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Uzbekistan — ISO 3166-1 alpha-2 code UZ.",
+        "@language": "en"
+      },
+      "skos:notation": "UZ",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Uzbekistan"
+      }
+    },
+    {
+      "@id": "#vu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Vanuatu",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Vanuatu — ISO 3166-1 alpha-2 code VU.",
+        "@language": "en"
+      },
+      "skos:notation": "VU",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Vanuatu"
+      }
+    },
+    {
+      "@id": "#ve",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Venezuela (Bolivarian Republic of)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Venezuela (Bolivarian Republic of) — ISO 3166-1 alpha-2 code VE.",
+        "@language": "en"
+      },
+      "skos:notation": "VE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Venezuela_(Bolivarian_Republic_of)"
+      }
+    },
+    {
+      "@id": "#vn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Viet Nam",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Viet Nam — ISO 3166-1 alpha-2 code VN.",
+        "@language": "en"
+      },
+      "skos:notation": "VN",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Viet_Nam"
+      }
+    },
+    {
+      "@id": "#vg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Virgin Islands (British)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Virgin Islands (British) — ISO 3166-1 alpha-2 code VG.",
+        "@language": "en"
+      },
+      "skos:notation": "VG",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Virgin_Islands_(British)"
+      }
+    },
+    {
+      "@id": "#vi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Virgin Islands (U.S.)",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Virgin Islands (U.S.) — ISO 3166-1 alpha-2 code VI.",
+        "@language": "en"
+      },
+      "skos:notation": "VI",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Virgin_Islands_(U.S.)"
+      }
+    },
+    {
+      "@id": "#wf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Wallis and Futuna",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Wallis and Futuna — ISO 3166-1 alpha-2 code WF.",
+        "@language": "en"
+      },
+      "skos:notation": "WF",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Wallis_and_Futuna"
+      }
+    },
+    {
+      "@id": "#eh",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Western Sahara*",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Western Sahara* — ISO 3166-1 alpha-2 code EH.",
+        "@language": "en"
+      },
+      "skos:notation": "EH",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Western_Sahara*"
+      }
+    },
+    {
+      "@id": "#ye",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Yemen",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Yemen — ISO 3166-1 alpha-2 code YE.",
+        "@language": "en"
+      },
+      "skos:notation": "YE",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Yemen"
+      }
+    },
+    {
+      "@id": "#zm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Zambia",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Zambia — ISO 3166-1 alpha-2 code ZM.",
+        "@language": "en"
+      },
+      "skos:notation": "ZM",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Zambia"
+      }
+    },
+    {
+      "@id": "#zw",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Zimbabwe",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Zimbabwe — ISO 3166-1 alpha-2 code ZW.",
+        "@language": "en"
+      },
+      "skos:notation": "ZW",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Zimbabwe"
+      }
+    },
+    {
+      "@id": "#ax",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:prefLabel": {
+        "@value": "Åland Islands",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Åland Islands — ISO 3166-1 alpha-2 code AX.",
+        "@language": "en"
+      },
+      "skos:notation": "AX",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1/countries"
+      },
+      "skos:closeMatch": {
+        "@id": "http://dbpedia.org/resource/Åland_Islands"
+      }
+    }
+  ]
+}

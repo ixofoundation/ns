@@ -1,0 +1,542 @@
+{
+  "blockchain-account-types": {
+    "AlgorandAccount": {
+      "description": "Represents an account in the Algorand blockchain for ALGO and related assets."
+    },
+    "ArbitrumAccount": {
+      "description": "Represents an account on the Arbitrum Layer 2 Ethereum scaling solution."
+    },
+    "AvalancheAccount": {
+      "description": "Represents an account on the Avalanche network for AVAX and smart contract interactions."
+    },
+    "BinanceSmartChainAccount": {
+      "description": "Represents an account in Binance Smart Chain (BSC) for managing BNB and BEP-20 tokens."
+    },
+    "BitcoinAccount": {
+      "description": "Represents a Bitcoin wallet or address for holding and transacting BTC."
+    },
+    "BitcoinCashAccount": {
+      "description": "Represents an account in the Bitcoin Cash blockchain for BCH transactions."
+    },
+    "Blockchain.comAccount": {
+      "description": "Represents an account in the Blockchain.com wallet system."
+    },
+    "CardanoAccount": {
+      "description": "Represents an account in the Cardano blockchain for ADA and staking purposes."
+    },
+    "CeloAccount": {
+      "description": "Represents an account in the Celo network for mobile-first financial solutions."
+    },
+    "ChainlinkAccount": {
+      "description": "Represents an account for Chainlink-related interactions (mainly for node operators)."
+    },
+    "CosmosAccount": {
+      "description": "Represents an account within the Cosmos ecosystem for staking and token transfers."
+    },
+    "DashAccount": {
+      "description": "Represents an account in the Dash blockchain for private and instant transactions."
+    },
+    "DogecoinAccount": {
+      "description": "Represents an account in the Dogecoin blockchain for DOGE transactions."
+    },
+    "EOSAccount": {
+      "description": "Represents an account in the EOS blockchain for dApps and transactions."
+    },
+    "ElrondAccount": {
+      "description": "Represents an account in the Elrond blockchain for EGLD and related dApps."
+    },
+    "EthereumAccount": {
+      "description": "Represents an Ethereum wallet or address for ETH and ERC tokens."
+    },
+    "FantomAccount": {
+      "description": "Represents an account in the Fantom blockchain for DeFi and smart contracts."
+    },
+    "FilecoinAccount": {
+      "description": "Represents an account in the Filecoin blockchain for decentralized storage payments."
+    },
+    "HarmonyAccount": {
+      "description": "Represents an account in the Harmony blockchain for ONE tokens and transactions."
+    },
+    "HederaAccount": {
+      "description": "Represents an account in Hedera Hashgraph for HBAR and dApps."
+    },
+    "HyperledgerAccount": {
+      "description": "Represents an account in the Hyperledger permissioned blockchain ecosystem."
+    },
+    "IOTAAccount": {
+      "description": "Represents an account in the IOTA Tangle for IoT-focused transactions."
+    },
+    "KuCoinAccount": {
+      "description": "Represents an account in KuCoin for blockchain interactions within their platform."
+    },
+    "KusamaAccount": {
+      "description": "Represents an account in the Kusama network, Polkadot's canary network."
+    },
+    "LitecoinAccount": {
+      "description": "Represents an account in the Litecoin blockchain for LTC transactions."
+    },
+    "MoneroAccount": {
+      "description": "Represents an account in the Monero blockchain for privacy-focused XMR transactions."
+    },
+    "NearAccount": {
+      "description": "Represents an account in the NEAR Protocol for smart contract interactions."
+    },
+    "OptimismAccount": {
+      "description": "Represents an account on the Optimism Layer 2 Ethereum scaling solution."
+    },
+    "PolkadotAccount": {
+      "description": "Represents an account in the Polkadot network for staking, governance, and transactions."
+    },
+    "PolygonAccount": {
+      "description": "Represents an account in the Polygon (Matic) blockchain for Ethereum scaling."
+    },
+    "PrivateChainAccount": {
+      "description": "Represents an account in a custom private blockchain network."
+    },
+    "RippleAccount": {
+      "description": "Represents an account in the Ripple (XRP) ledger for XRP transactions."
+    },
+    "SolanaAccount": {
+      "description": "Represents an account in the Solana blockchain for managing SOL and related assets."
+    },
+    "StellarAccount": {
+      "description": "Represents an account in the Stellar blockchain for managing Lumens (XLM)."
+    },
+    "TerraAccount": {
+      "description": "Represents an account in the Terra blockchain for managing LUNA and stablecoins."
+    },
+    "TezosAccount": {
+      "description": "Represents an account in the Tezos blockchain for staking, baking, and transactions."
+    },
+    "ThetaAccount": {
+      "description": "Represents an account in the Theta blockchain for video streaming and rewards."
+    },
+    "TronAccount": {
+      "description": "Represents an account in the TRON network for TRX and TRC tokens."
+    },
+    "VeChainAccount": {
+      "description": "Represents an account in the VeChainThor blockchain for VET and VeChain tokens."
+    },
+    "ZilliqaAccount": {
+      "description": "Represents an account in the Zilliqa blockchain for ZIL and shard-based transactions."
+    }
+  },
+  "media-formats": {
+    "application/ld+json": {
+      "description": "A media type for JSON-LD, a JSON-based format for linked data."
+    },
+    "application/html": {
+      "description": "A media type for HTML documents, used for displaying content in web browsers."
+    },
+    "application/json": {
+      "description": "A media type for JSON, a lightweight data-interchange format."
+    },
+    "application/pdf": {
+      "description": "A media type for PDF documents, commonly used for sharing formatted documents."
+    },
+    "image/jpeg": {
+      "description": "A media type for JPEG images, commonly used for digital photographs."
+    },
+    "image/png": {
+      "description": "A media type for PNG images, known for lossless compression."
+    },
+    "text/plain": {
+      "description": "A media type for plain text, containing unformatted text content."
+    },
+    "ld+json": {
+      "description": "A shorthand notation for JSON-LD, used for linked data."
+    }
+  },
+  "metric-types": {
+    "issued": {
+      "description": "Metric for the amount of units issued",
+      "types": {
+        "carbonCredits": {
+          "description": "A structured framework defining the format and content of credentials."
+        }
+      }
+    }
+  },
+  "asset-types": {
+    "coin": {
+      "description": "A digital currency issued by a DAO or blockchain network, representing a unit of value that can be used for transactions and stored in digital wallets."
+    },
+    "collection": {
+      "description": "A collection of digital assets, such as NFTs, that are grouped together for a specific purpose or theme."
+    },
+    "data": {
+      "description": "A digital representation of data, such as financial data, scientific data, or other types of data that can be stored and shared in a decentralized manner."
+    },
+    "dePIN": {
+      "description": "A decentralized Physical Infrastructure Network that provides real-world services or resources through tokenized incentive mechanisms",
+      "types": {
+        "batteryElectricVehicle": {
+          "description": "An electric vehicle powered by rechargeable fixed or swappable battery packs."
+        },
+        "cleanCooking": {
+          "description": "Cooking solutions that reduce emissions and improve health outcomes."
+        },
+        "pvSystem": {
+          "description": "Photovoltaic systems that convert sunlight into electricity."
+        }
+      }
+    },
+    "impactCredit": {
+      "description": "A digital representation of a real-world impact, such as carbon credits or social impact credits.",
+      "types": {
+        "carbonCredit": {
+          "description": "A digital representation of carbon credits."
+        },
+        "waterCredit": {
+          "description": "A digital representation of water credits."
+        }
+      }
+    },
+    "learnership": {
+      "description": "A digital or physical learning program or opportunity that can be purchased or earned through participation in a DAO or blockchain network."
+    },
+    "membershipAsset": {
+      "description": "An asset signifying membership rights or privileges within a group, organization, or service."
+    },
+    "voucher": {
+      "description": "An asset representing a voucher exchangeable for goods or services",
+      "types": {
+        "beanVoucher": {
+          "description": "A voucher representing a bag of fortified beans."
+        }
+      }
+    }
+  },
+  "dao-types": {
+    "organisation": {
+      "description": "An organisation",
+      "types": {
+        "cooperative": {
+          "description": "A DAO operating as a cooperative, owned and managed by its members for mutual benefit"
+        },
+        "company": {
+          "description": "A legally registered business entity that operates for profit"
+        },
+        "hybridOrganization": {
+          "description": "A DAO combining elements of profit and non-profit structures for diversified objectives"
+        },
+        "liechtensteinVentureCooperative": {
+          "description": "A DAO structured as a joint venture under Lichtenstein laws, allowing shared control and resources"
+        },
+        "nonGovernmentOrganization": {
+          "description": "A DAO operating as a non-governmental entity to address social, cultural, or environmental issues"
+        },
+        "nonProfitOrganization": {
+          "description": "A business-oriented DAO focused on achieving social or environmental objectives rather than profit"
+        },
+        "publicBenefitCorporation": {
+          "description": "A DAO that operates as a public benefit corporation with a focus on public interest"
+        },
+        "socialEnterprise": {
+          "description": "A DAO focused on addressing social challenges while maintaining financial sustainability"
+        }
+      }
+    },
+    "chain": {
+      "description": "A DAO managing or operating a blockchain network",
+      "types": {
+        "validator": {
+          "description": "A DAO serving as a validator within a blockchain network"
+        }
+      }
+    },
+    "community": {
+      "description": "A DAO centered around a specific community for collective action or resource sharing"
+    },
+    "developer": {
+      "description": "A DAO supporting software developers and technical projects"
+    },
+    "funding": {
+      "description": "A DAO dedicated to allocating and managing funds for various purposes"
+    },
+    "investment": {
+      "description": "A DAO focused on managing investments and funding opportunities"
+    },
+    "marketRelayer": {
+      "description": "A DAO facilitating market transactions and providing liquidity"
+    },
+    "marketPlace": {
+      "description": "A DAO that governs a decentralized marketplace, enabling peer-to-peer exchange of goods, services, or digital assets."
+    },
+    "product": {
+      "description": "A DAO focused on the development, management, and governance of a particular product or set of products"
+    },
+    "research": {
+      "description": "A DAO focused on conducting and supporting research activities"
+    }
+  },
+  "deed-types": {
+    "flow": {
+      "description": "An intent-driven workflow that defines and enables the coordination of a piece of work—or a business process—from start to finish",
+      "types": {
+        "identity": {
+          "description": "A flow that establishes, verifies, or manages identities and their attributes"
+        },
+        "governance": {
+          "description": "A flow that coordinates decision-making, voting, and policy enforcement within a domain or organization"
+        },
+        "payout": {
+          "description": "A flow that coordinates the calculation, approval, and distribution of payments or rewards"
+        },
+        "domainCreation": {
+          "description": "A flow that creates and configures new domains, including their governance, permissions, and resources"
+        }
+      }
+    },
+    "offer": {
+      "description": "A deed representing a formal expression of willingness to provide or do something"
+    },
+    "proposal": {
+      "description": "A deed that outlines a suggested plan or action for consideration and approval",
+      "types": {
+        "membership": {
+          "description": "A proposal for managing members"
+        },
+        "governance": {
+          "description": "A proposal for managing domain governance"
+        },
+        "smartContract": {
+          "description": "A proposal for managing domain smart contracts"
+        },
+        "financial": {
+          "description": "A proposal for managing domain financial resources"
+        },
+        "staking": {
+          "description": "A proposal for managing domain staking"
+        },
+        "domain": {
+          "description": "A proposal for creating and managing domains"
+        }
+      }
+    },
+    "request": {
+      "description": "A deed detailing an appeal or demand for something to be provided or done",
+      "types": {
+        "ambassador": {
+          "description": "A request to serve as an ambassedor for an organisation"
+        },
+        "environmentalSteward": {
+          "description": "A request to serve as a protector and manager of environmental resources"
+        },
+        "facilitator": {
+          "description": "A request to guide and enable processes or interactions between parties"
+        },
+        "payment": {
+          "description": "A request for payment"
+        },
+        "marketSolutions": {
+          "description": "Configurations of IXO tools for specific use-cases or sectors."
+        },
+        "marketingAndAdoption": {
+          "description": "Campaigns, communications assets, and onboarding flows to grow user and developer adoption."
+        },
+        "platformIntegration": {
+          "description": "Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules."
+        },
+        "productEnhancements": {
+          "description": "Core protocol or app-level improvements."
+        },
+        "service": {
+          "description": "A request for a specific service to be provided"
+        },
+        "strategicProjects": {
+          "description": "High-value internal or partner initiatives."
+        },
+        "workPlacement": {
+          "description": "A request for practical work experience or professional training position"
+        }
+      }
+    },
+    "subscription": {
+      "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
+    }
+  },
+  "oracle-types": {
+    "evaluation": {
+      "description": "An oracle that evaluates and verifies data, conditions, or outcomes based on predefined criteria"
+    },
+    "subscription": {
+      "description": "An oracle that provides continuous access to data feeds or information streams through a subscription model"
+    },
+    "participationOfPeople": {
+      "description": "Involves human oversight in decision-making processes"
+    },
+    "pathfinding": {
+      "description": "Guides users through complex decision-making processes"
+    },
+    "patternRecognition": {
+      "description": "Identifies patterns in data to inform decision-making and optimize strategies"
+    },
+    "payment": {
+      "description": "Automates payments based on impact goal achievements, using smart contracts to streamline transactions"
+    },
+    "performanceMonitoring": {
+      "description": "Tracks project performance in real-time, providing feedback and analytics"
+    },
+    "personalization": {
+      "description": "Tailors interactions and recommendations to individual users, enhancing user experience"
+    },
+    "planning": {
+      "description": "Supports strategic planning by predicting trends and resource needs"
+    },
+    "policyEnforcement": {
+      "description": "Ensures compliance with policies and regulations, enforcing rules automatically"
+    },
+    "portfolioManagement": {
+      "description": "Manages and optimizes project portfolios for strategic goals"
+    },
+    "positioning": {
+      "description": "Determines optimal placement of resources and interventions within the ecosystem"
+    },
+    "prescribingInterventions": {
+      "description": "Recommends actions based on data analysis to guide stakeholders towards effective strategies"
+    },
+    "preventionOfRisks": {
+      "description": "Anticipates and mitigates potential risks to keep projects on track"
+    },
+    "privacyProtection": {
+      "description": "Safeguards sensitive information and ensures compliance with regulations"
+    },
+    "problemDetectionAndResolution": {
+      "description": "Monitors systems for potential issues, enabling early detection and resolution"
+    },
+    "processOptimization": {
+      "description": "Enhances operational efficiency by automating tasks and streamlining workflows"
+    },
+    "profiling": {
+      "description": "Creates detailed profiles of users and projects for accurate targeting of interventions"
+    },
+    "proofing": {
+      "description": "Ensures data integrity and authenticity, validating claims and outcomes for transparent impact reporting"
+    },
+    "protocolAdherence": {
+      "description": "Ensures compliance with predefined protocols for consistency and reliability"
+    }
+  },
+  "group-types": {
+    "membership": {
+      "description": "The primary governance body that proposes and votes on all high-level decisions, including the creation and oversight of specialised committees."
+    },
+    "custodians": {
+      "description": "A long-lived multisig council of trusted community stewards empowered to safeguard the chain's best interests and block malicious or harmful actions."
+    },
+    "security": {
+      "description": "A committee of elected security specialists who monitor, triage, and respond to vulnerabilities affecting the Impact Hub, acting swiftly while remaining accountable to the membership DAO."
+    },
+    "finance": {
+      "description": "An elected treasury team responsible for managing funds, processing approved claim payouts, and providing transparent on-chain financial reporting."
+    },
+    "operations": {
+      "description": "An elected operations desk that executes day-to-day tasks and implements actions ratified through governance, ensuring smooth organisational workflows."
+    }
+  },
+  "pod-types": {
+    "agriculture": {
+      "description": "A POD that connects farmers, processors, retailers, and consumers on a unified digital platform, enabling end-to-end transparency and coordination in the food supply chain."
+    },
+    "communitySocialImpact": {
+      "description": "A POD that supercharges grassroots organizing with digital coordination and resource-sharing tools, allowing communities to self-organize without formal hierarchies."
+    },
+    "education": {
+      "description": "A POD that transforms learning institutions into borderless, digital-first collaboratives, offering global access to courses and training resources."
+    },
+    "energy": {
+      "description": "A POD that turns the traditionally centralized power industry into a decentralized, intelligent network enabling peer-to-peer energy trading."
+    },
+    "enterprise": {
+      "description": "A POD that reimagines a company or group of companies as a transparent, data-driven, and stakeholder-inclusive entity with automated supply chain management."
+    },
+    "environmentalConservation": {
+      "description": "A POD that uses digital tools to safeguard natural resources through community-driven, automated management and immutable records of environmental data."
+    },
+    "finance": {
+      "description": "A POD that leverages programmable money and decentralized finance to transform how sustainable projects are funded, enabling conditional funding and tokenization."
+    },
+    "governance": {
+      "description": "A POD that introduces decentralized, software-powered decision-making to public administration, enabling transparent, accountable, and democratic governance."
+    },
+    "research": {
+      "description": "A POD that leverages open and decentralized networks to fund and conduct science, enabling researchers to collaborate in dynamic teams unrestricted by institutional silos."
+    },
+    "sme": {
+      "description": "A POD that "
+    },
+    "urbanPlanningAndInfrastructure": {
+      "description": "A POD that integrates smart city technology with decentralized governance to manage urban infrastructure in a collaborative way."
+    }
+  },
+  "project-types": {
+    "accreditation": {
+      "description": "A project focused on certifying that an entity or individual meets specific standards or qualifications"
+    },
+    "behaviourChange": {
+      "description": "A project designed to influence and modify behaviors to achieve desired outcomes or impacts"
+    },
+    "circularEconomy": {
+      "description": "A project aimed at promoting resource efficiency, waste reduction, and sustainable economic practices"
+    },
+    "civicAction": {
+      "description": "A project that engages citizens in collective efforts to address community or societal issues"
+    },
+    "course": {
+      "description": "A project that designs, delivers, and manages structured training programs or courses for learners"
+    },
+    "development": {
+      "description": "A project providing software development services, including design, implementation, testing, and maintenance of software solutions"
+    },
+    "educationAndAwareness": {
+      "description": "A project focused on educating and raising awareness about specific topics or issues"
+    },
+    "environmentalMonitoring": {
+      "description": "A project that observes, collects, and analyzes data to assess environmental conditions and changes"
+    },
+    "esg": {
+      "description": "A project addressing Environmental, Social, and Governance factors to ensure sustainability and ethical impact",
+      "types": {
+        "cosmosMonitoring": {
+          "description": "A project focusing on the sustainable development in Space and on Earth."
+        }
+      }
+    },
+    "identity": {
+      "description": "A project related to establishing, managing, or verifying individual or organizational identities"
+    },
+    "impact": {
+      "description": "A project designed to create, measure, and verify positive social or environmental outcomes with tangible results"
+    },
+    "immuneCell": {
+      "description": "A project involving the study, application, or enhancement of immune cell functions and interactions"
+    },
+    "mitigationActivity": {
+      "description": "A project aimed at reducing the severity or impact of specific risks or issues, such as climate change",
+      "types": {
+        "mecs": {
+          "description": "A project promoting Modern Energy Cooking Services, designed to improve cooking efficiency and reduce reliance on traditional biomass fuels"
+        },
+        "solarPV": {
+          "description": "A project focusing on the implementation and use of solar photovoltaic systems to generate clean and renewable energy"
+        },
+        "mobility": {
+          "description": "A project focused on the development, implementation, or promotion of sustainable mobility solutions"
+        }
+      }
+    },
+    "oracle": {
+      "description": "A project involving systems that provide data integrity, insights, or automation for decision-making processes"
+    },
+    "place": {
+      "description": "A project focusing on a specific geographic place"
+    },
+    "relayer": {
+      "description": "A project focused on facilitating communication or transactions between different systems or networks"
+    },
+    "workPlacement": {
+      "description": "A project providing practical work experiences to individuals in professional environments"
+    }
+  }
+}

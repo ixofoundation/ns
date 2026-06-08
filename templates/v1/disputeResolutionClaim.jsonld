@@ -1,0 +1,14 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:REPLACE-CLAIM-ID#dispute",
+  "type": "ixo:Claim",
+  "hasClaimType": "claimType:dispute",
+  "claimSubject": { "id": "did:ixo:entity:REPLACE-SUBJECT-ID" },
+  "name": "<<<Dispute resolution claim name>>>",
+  "description": "<<<Record of a dispute and its resolution>>>",
+  "disputeType": "<<<Nature of the dispute>>>",
+  "parties": ["did:ixo:entity:REPLACE-PARTY-A-ID", "did:ixo:entity:REPLACE-PARTY-B-ID"],
+  "resolution": "<<<Outcome of the resolution process>>>",
+  "ruling": "<<<Ruling or determination>>>",
+  "resolvedOn": "<<<ISO 8601 date>>>"
+}

@@ -1,0 +1,1364 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "http://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "sec": "https://w3id.org/security#",
+    "did": "https://www.w3.org/ns/did#",
+    "cred": "https://www.w3.org/2018/credentials#",
+    "dpv": "https://w3id.org/dpv#",
+    "vann": "http://purl.org/vocab/vann/"
+  },
+  "@id": "https://w3id.org/ixo/vocab/v1",
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1",
+      "@type": "owl:Ontology",
+      "dcterms:title": {
+        "@value": "IXO Core Vocabulary",
+        "@language": "en"
+      },
+      "dcterms:description": {
+        "@value": "The core RDFS/OWL vocabulary for the IXO Spatial Web: the classes and properties used to interpret entity domains, claims, credentials and linked resources published on Impact Hub. This vocabulary is the interpretation layer only; specific entity instances live on-chain.",
+        "@language": "en"
+      },
+      "dcterms:creator": {
+        "@value": "IXO Foundation"
+      },
+      "dcterms:license": {
+        "@id": "https://opensource.org/licenses/MIT"
+      },
+      "dcterms:created": {
+        "@value": "2026-06-04",
+        "@type": "xsd:date"
+      },
+      "owl:versionInfo": {
+        "@value": "1.0.0",
+        "@language": "en"
+      },
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/ixo/vocab/v1/1.0.0"
+      },
+      "vann:preferredNamespacePrefix": "ixo",
+      "vann:preferredNamespaceUri": "https://w3id.org/ixo/vocab/v1#"
+    },
+    {
+      "@id": "ixo:Entity",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Entity",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A self-sovereign digital domain on the IXO Spatial Web, identified by a Decentralised Identifier (DID) and described by an on-chain IID document.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Domain",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Domain",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The identity and namespace boundary owned by an entity, under which its resources, claims and relationships are organised and resolved.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Project",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Project",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A planned undertaking that coordinates resources and activities toward defined goals and measurable outcomes.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:DAO",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "ixo:Entity"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "DAO",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A Decentralised Autonomous Organisation that coordinates members and sub-groups through on-chain governance.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:POD",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:DAO"
+      },
+      "rdfs:label": {
+        "@value": "POD",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A small, autonomous sub-group within a DAO that can act independently while remaining accountable to the parent organisation.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Organisation",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "ixo:Entity"
+        },
+        {
+          "@id": "schema:Organization"
+        },
+        {
+          "@id": "foaf:Organization"
+        }
+      ],
+      "rdfs:seeAlso": {
+        "@id": "dpv:Organisation"
+      },
+      "rdfs:label": {
+        "@value": "Organisation",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A group of people or agents organised toward a shared purpose, acting as a single accountable entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Investment",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Investment",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An allocation of capital or resources made in expectation of a future financial or impact return.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Oracle",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "ixo:Entity"
+        },
+        {
+          "@id": "prov:Agent"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "Oracle",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An agentic service that evaluates claims, computes results or supplies external information to the network, often as a cognitive digital twin.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Asset",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Asset",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An item or resource of value that is owned or controlled by an entity, whether physical, digital or financial.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:AssetCollection",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Asset"
+      },
+      "rdfs:label": {
+        "@value": "Asset Collection",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A curated group of related assets organised and managed under a common theme or purpose.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Protocol",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Protocol",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A reusable definition of rules, content and structure used to create and govern other entities, claims or credentials of a given kind.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Deed",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Deed",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A recorded act or agreement — such as a request, offer, proposal or subscription — that expresses intent or commitment between entities.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Flow",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Deed"
+      },
+      "rdfs:label": {
+        "@value": "Flow",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An intent-driven workflow that coordinates a piece of work or business process from start to finish.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Claim",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Claim",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A structured assertion made by or about an entity, which may be evaluated and verified to produce a credential.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Credential",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "cred:VerifiableCredential"
+      },
+      "rdfs:label": {
+        "@value": "Credential",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A verifiable attestation issued by an authority about a subject, cryptographically bound to its issuer.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Evidence",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "prov:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Evidence",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Supporting information or data that substantiates a claim, credential or evaluation.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Evaluation",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "prov:Activity"
+      },
+      "rdfs:label": {
+        "@value": "Evaluation",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The act of assessing a claim or entity against a rubric or method to determine a verified result.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Indicator",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Indicator",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A defined metric used to measure progress, performance or impact.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Rubric",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Rubric",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A structured set of criteria and scoring rules against which claims are evaluated.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Blueprint",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Protocol"
+      },
+      "rdfs:label": {
+        "@value": "Blueprint",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A template that prescribes the structure and content of entities, claims or credentials produced from it.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Market",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Market",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A venue and mechanism through which assets, rights or outcomes are exchanged between participants.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:TwinSystem",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Twin System",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A cognitive digital twin system that couples a physical or conceptual subject with its digital representation and reasoning capabilities.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:PhysicalTwin",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Physical Twin",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The digital representation of a real-world physical subject, such as a device or facility, within a twin system.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:CognitiveTwin",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "Cognitive Twin",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The reasoning and decision-making representation of a subject within a twin system, able to interpret data and act.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:OracleTwin",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "ixo:Entity"
+        },
+        {
+          "@id": "ixo:Oracle"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "Oracle Twin",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A cognitive twin that performs oracle functions — evaluating claims and supplying verified results to the network.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:LinkedResource",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Linked Resource",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A described, addressable resource — such as a document, dataset or credential — referenced from an entity's document.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Service",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "did:ServiceEndpoint"
+      },
+      "rdfs:label": {
+        "@value": "Service",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A network endpoint through which an entity's services or data can be accessed.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:AccordedRight",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Accorded Right",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A right or permission granted in relation to an entity, often enforced by an external authority, capability or contract.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Account",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Account",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A blockchain account associated with and controlled by an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Settings",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Settings",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Configuration that governs how an entity behaves or is presented.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:controller",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "sec:controller"
+      },
+      "rdfs:label": {
+        "@value": "controller",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The entities authorised to update this entity's document and to act on its behalf.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:verificationMethod",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "sec:verificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "verificationMethod",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A cryptographic key or method that can be used to authenticate or authorise actions for this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:authentication",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "authentication",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Verification methods this entity may use to prove control of its identifier.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:assertionMethod",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "assertionMethod",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Verification methods this entity may use to issue verifiable claims and credentials.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:keyAgreement",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "keyAgreement",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Verification methods used to establish encrypted communication with this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:capabilityInvocation",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "capabilityInvocation",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Verification methods authorised to invoke authority capabilities held by this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:capabilityDelegation",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "rdfs:label": {
+        "@value": "capabilityDelegation",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Verification methods authorised to delegate authority capabilities to others.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:service",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Service"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "did:service"
+      },
+      "rdfs:label": {
+        "@value": "service",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A network endpoint through which this entity's services or data can be accessed.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:linkedResource",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:LinkedResource"
+      },
+      "rdfs:label": {
+        "@value": "linkedResource",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A resource — such as a credential, document or dataset — referenced by and associated with this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:accordedRight",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:AccordedRight"
+      },
+      "rdfs:label": {
+        "@value": "accordedRight",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A right or permission granted in relation to this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:linkedClaim",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Claim"
+      },
+      "rdfs:label": {
+        "@value": "linkedClaim",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A claim associated with this entity, asserting something about it or made by it.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:linkedEntity",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "linkedEntity",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Another entity related to this one, establishing a typed relationship in the IXO graph.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:account",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Account"
+      },
+      "rdfs:label": {
+        "@value": "account",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A blockchain account associated with and controlled by this entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:settings",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Settings"
+      },
+      "rdfs:label": {
+        "@value": "settings",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Configuration that governs how this entity behaves or is presented.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Attribute",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Attribute",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A named attribute — a name/value pair — attached to an entity or resource.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:DomainCard",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:subClassOf": {
+        "@id": "cred:VerifiableCredential"
+      },
+      "rdfs:label": {
+        "@value": "Domain Card",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A verifiable credential describing an entity's domain — its canonical profile, relationships and resources.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Profile",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Profile",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An entity's public profile resource — name, description, image, brand, location and metrics.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:ResearchProfile",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Research Profile",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A profile describing an entity's research interests, seed queries, citations and embeddings.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Embedding",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Embedding",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A vector embedding of an entity's content, used for semantic search and retrieval.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:AgentCard",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Agent Card",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A descriptor of an agent associated with an entity — its name, endpoint and contact point.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Tags",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Tags",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A set of categorised tags applied to an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Page",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Page",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A page of presentational content for an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:serviceEndpoint",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "did:serviceEndpoint"
+      },
+      "rdfs:label": {
+        "@value": "serviceEndpoint",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The URL or address at which a service or linked resource is accessed.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:blockchainAccountID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "sec:VerificationMethod"
+      },
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "rdfs:label": {
+        "@value": "blockchainAccountID",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The on-chain account address bound to a verification method.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:alsoKnownAs",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "did:alsoKnownAs"
+      },
+      "rdfs:label": {
+        "@value": "alsoKnownAs",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An alternative identifier by which the entity is also known.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:relayerNode",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "relayerNode",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The relayer node entity through which this entity was registered on-chain.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:metadata",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Entity"
+      },
+      "rdfs:label": {
+        "@value": "metadata",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Document metadata for the entity, such as version identifier and lifecycle state.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:versionId",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "rdfs:label": {
+        "@value": "versionId",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The version identifier of the entity document.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:deactivated",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "rdfs:label": {
+        "@value": "deactivated",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Whether the entity document has been deactivated.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:encrypted",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:LinkedResource"
+      },
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "rdfs:label": {
+        "@value": "encrypted",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Whether a linked resource's content is encrypted.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:right",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:LinkedResource"
+      },
+      "schema:rangeIncludes": {
+        "@id": "ixo:AccordedRight"
+      },
+      "rdfs:label": {
+        "@value": "right",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The accorded right that governs access to a linked resource.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:metrics",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Profile"
+      },
+      "rdfs:label": {
+        "@value": "metrics",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Quantitative metrics describing an entity's activity or impact.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:attributes",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:rangeIncludes": {
+        "@id": "ixo:Attribute"
+      },
+      "rdfs:label": {
+        "@value": "attributes",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Named attributes attached to an entity or resource.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:tokenName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "rdfs:label": {
+        "@value": "tokenName",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The display name of an impact token.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:tags",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:label": {
+        "@value": "tags",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Tags categorising an entity or resource.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:entityTags",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Tags"
+      },
+      "rdfs:label": {
+        "@value": "entityTags",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The set of tag categories and values applied to an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:page",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Page"
+      },
+      "rdfs:label": {
+        "@value": "page",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Presentational page content for an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:pages",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Page"
+      },
+      "rdfs:label": {
+        "@value": "pages",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A collection of presentational pages for an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:claimType",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": {
+        "@id": "ixo:Claim"
+      },
+      "schema:rangeIncludes": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:label": {
+        "@value": "claimType",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The kind of claim, as a concept drawn from the claim-types scheme.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:relationship",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:subPropertyOf": {
+        "@id": "ixo:linkedEntity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:label": {
+        "@value": "relationship",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "The type of relationship between two entities, drawn from the relationships scheme.",
+        "@language": "en"
+      }
+    }
+  ]
+}

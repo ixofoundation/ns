@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "https://w3id.org/ixo/schema/shapes/v1/TagsShape",
+  "@type": "sh:NodeShape",
+  "sh:targetClass": { "@id": "ixo:Tags" },
+  "rdfs:comment": "An entity Tags resource: must carry at least one entityTags group.",
+  "sh:property": [
+    {
+      "sh:path": { "@id": "ixo:entityTags" },
+      "sh:minCount": 1,
+      "sh:name": "entityTags"
+    }
+  ]
+}

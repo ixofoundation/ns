@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/ixo/schema/v1/domainCard",
+  "title": "IXO Domain Card",
+  "description": "Document-shape schema for a Domain Card — a verifiable credential describing an entity's domain. Graph-shape rules live in shapes/v1/DomainCardShape.jsonld.",
+  "type": "object",
+  "required": ["@context", "type", "issuer", "credentialSubject"],
+  "properties": {
+    "@context": { "oneOf": [{ "type": "string" }, { "type": "array", "minItems": 1 }] },
+    "id": { "type": "string" },
+    "type": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "type": "string" },
+      "allOf": [
+        { "contains": { "const": "VerifiableCredential" } },
+        { "contains": { "const": "ixo:DomainCard" } }
+      ]
+    },
+    "issuer": {
+      "oneOf": [
+        { "type": "string", "pattern": "^did:[a-z0-9]+:.+" },
+        { "type": "object", "required": ["id"], "properties": { "id": { "type": "string", "pattern": "^did:[a-z0-9]+:.+" } } }
+      ]
+    },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validUntil": { "type": "string" },
+    "issuanceDate": { "type": "string", "format": "date-time" },
+    "credentialSchema": { "type": ["object", "array"] },
+    "credentialSubject": {
+      "type": "object",
+      "required": ["id", "type", "name"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^did:ixo:.+" },
+        "type": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "logo": { "type": ["object", "string"] },
+        "image": { "type": ["array", "object", "string"] }
+      }
+    },
+    "proof": { "type": ["object", "array"] }
+  }
+}

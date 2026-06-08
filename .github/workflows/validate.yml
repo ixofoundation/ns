@@ -1,0 +1,36 @@
+name: validate
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  validate:
+    name: JSON-LD + JSON Schema + SHACL + SKOS + Ontology
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate JSON-LD (expand + toRDF, triple counts)
+        run: npm run validate:jsonld
+
+      - name: Validate JSON Schemas (draft 2020-12)
+        run: npm run validate:schemas
+
+      - name: Validate SHACL shapes against fixtures
+        run: npm run validate:shapes
+
+      - name: Validate SKOS integrity
+        run: npm run validate:skos
+
+      - name: Validate ontology / term consistency
+        run: npm run validate:vocab

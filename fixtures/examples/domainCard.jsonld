@@ -1,0 +1,14 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1", "https://w3id.org/ixo/context/v1"],
+  "id": "did:ixo:entity:33333333333333333333333333333333#domainCard",
+  "type": ["VerifiableCredential", "ixo:DomainCard"],
+  "issuer": "did:ixo:entity:44444444444444444444444444444444",
+  "issuanceDate": "2026-06-04T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:ixo:entity:33333333333333333333333333333333",
+    "type": ["ixo:Project"],
+    "name": "Example Domain",
+    "description": "A conformant example domain card.",
+    "url": "https://example.org"
+  }
+}

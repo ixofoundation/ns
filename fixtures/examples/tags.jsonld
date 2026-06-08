@@ -1,0 +1,6 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:99999999999999999999999999999999#tags",
+  "type": "ixo:Tags",
+  "entityTags": [{ "category": "Sector", "tags": ["Energy", "Cooking"] }]
+}

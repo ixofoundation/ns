@@ -1,0 +1,17 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1", "https://w3id.org/ixo/context/v1"],
+  "id": "did:ixo:entity:REPLACE-ENTITY-ID#domainCard",
+  "type": ["VerifiableCredential", "ixo:DomainCard"],
+  "issuer": "did:ixo:entity:REPLACE-ISSUER-ID",
+  "issuanceDate": "<<<ISO 8601 timestamp>>>",
+  "credentialSubject": {
+    "id": "did:ixo:entity:REPLACE-ENTITY-ID",
+    "type": ["ixo:Project"],
+    "name": "<<<Domain name>>>",
+    "description": "<<<One-paragraph canonical description of the domain>>>",
+    "url": "https://example.org/REPLACE-DOMAIN-URL",
+    "logo": "https://example.org/REPLACE-LOGO-URL",
+    "brand": "<<<Brand name>>>",
+    "location": "<<<ISO 3166-1 alpha-2 country code>>>"
+  }
+}

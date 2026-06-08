@@ -1,0 +1,12 @@
+{
+  "metric": {
+    "issued": {
+      "description": "Metric for the amount of units issued",
+      "types": {
+        "carbonCredits": {
+          "description": "A structured framework defining the format and content of credentials."
+        }
+      }
+    }
+  }
+}

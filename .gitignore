@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Phase 4 on-chain corpus — fetched from ixo-mainnet-linked-resources, never vendored
+fixtures/on-chain/
+
+# Logs / OS cruft
+*.log
+.DS_Store
+Thumbs.db

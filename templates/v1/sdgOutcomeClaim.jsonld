@@ -1,0 +1,15 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:REPLACE-CLAIM-ID#sdgOutcome",
+  "type": "ixo:Claim",
+  "hasClaimType": "claimType:outcome",
+  "claimSubject": { "id": "did:ixo:entity:REPLACE-SUBJECT-ID" },
+  "name": "<<<SDG outcome claim name>>>",
+  "description": "<<<Contribution to a Sustainable Development Goal target>>>",
+  "sdgGoal": "<<<SDG goal number 1-17>>>",
+  "sdgTarget": "<<<SDG target, e.g. 7.1>>>",
+  "indicator": "<<<SDG indicator, e.g. 7.1.2>>>",
+  "value": "<<<Measured value>>>",
+  "unit": "<<<Unit of measure>>>",
+  "period": { "start": "<<<ISO 8601 date>>>", "end": "<<<ISO 8601 date>>>" }
+}

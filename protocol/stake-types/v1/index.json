@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/stake-types/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/stake-types/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Stake Types",
+      "dcterms:description": "Kinds of stake or deposit that back an obligation on the network.",
+      "dcterms:created": "2026-06-04",
+      "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (StakeType)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#security-guarantee"
+        },
+        {
+          "@id": "#performance-guarantee"
+        },
+        {
+          "@id": "#loan-guarantee"
+        },
+        {
+          "@id": "#claim-guarantee"
+        },
+        {
+          "@id": "#dispute-guarantee"
+        },
+        {
+          "@id": "#voting-proposal-deposit"
+        },
+        {
+          "@id": "#membership-deposit"
+        },
+        {
+          "@id": "#services-deposit"
+        },
+        {
+          "@id": "#insurance-guarantee"
+        }
+      ]
+    },
+    {
+      "@id": "#security-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Security Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake guaranteeing the security of a service or network.",
+        "@language": "en"
+      },
+      "skos:notation": "SecurityGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#performance-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Performance Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake guaranteeing performance of an obligation.",
+        "@language": "en"
+      },
+      "skos:notation": "PerformanceGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#loan-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Loan Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake guaranteeing repayment of a loan.",
+        "@language": "en"
+      },
+      "skos:notation": "LoanGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#claim-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Claim Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake guaranteeing the validity of a claim.",
+        "@language": "en"
+      },
+      "skos:notation": "ClaimGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#dispute-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Dispute Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake backing a party in a dispute.",
+        "@language": "en"
+      },
+      "skos:notation": "DisputeGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#voting-proposal-deposit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Voting Proposal Deposit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deposit required to submit a governance proposal.",
+        "@language": "en"
+      },
+      "skos:notation": "VotingProposalDeposit",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#membership-deposit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Membership Deposit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deposit required to join a group or organisation.",
+        "@language": "en"
+      },
+      "skos:notation": "MembershipDeposit",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#services-deposit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Services Deposit",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A deposit securing the provision of services.",
+        "@language": "en"
+      },
+      "skos:notation": "ServicesDeposit",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    },
+    {
+      "@id": "#insurance-guarantee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Insurance Guarantee",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A stake backing an insurance commitment.",
+        "@language": "en"
+      },
+      "skos:notation": "InsuranceGuarantee",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/stake-types/v1"
+      }
+    }
+  ]
+}
