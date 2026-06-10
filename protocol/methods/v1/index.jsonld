@@ -1,0 +1,400 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@base": "https://w3id.org/ixo/protocol/methods/v1"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/protocol/methods/v1",
+      "@type": "skos:ConceptScheme",
+      "dcterms:title": "IXO Verification Methods & Relationships",
+      "dcterms:description": "Verification-method key types and DID verification relationships used in did:ixo documents (the methods: namespace). Per-term IRIs use #fragments.",
+      "dcterms:created": "2026-06-11",
+      "dcterms:source": "ixofoundation/ns protocol/methods/v1 (rebuilt as SKOS)",
+      "skos:hasTopConcept": [
+        {
+          "@id": "#administrative"
+        },
+        {
+          "@id": "#assertionMethod"
+        },
+        {
+          "@id": "#authentication"
+        },
+        {
+          "@id": "#capabilityDelegation"
+        },
+        {
+          "@id": "#capabilityInvocation"
+        },
+        {
+          "@id": "#CosmosAccountAddress"
+        },
+        {
+          "@id": "#digitalSignature"
+        },
+        {
+          "@id": "#EcdsaSecp256k1VerificationKey2019"
+        },
+        {
+          "@id": "#keyAgreement"
+        },
+        {
+          "@id": "#operational"
+        },
+        {
+          "@id": "#userPersonal"
+        },
+        {
+          "@id": "#blockchainAccountID"
+        },
+        {
+          "@id": "#Authentication"
+        },
+        {
+          "@id": "#Assertion"
+        },
+        {
+          "@id": "#KeyAgreement"
+        },
+        {
+          "@id": "#CapabilityInvocation"
+        },
+        {
+          "@id": "#CapabilityDelegation"
+        }
+      ]
+    },
+    {
+      "@id": "#administrative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Administrative",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The root key with administrative privileges for system management.",
+        "@language": "en"
+      },
+      "skos:notation": "administrative",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#assertionMethod",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Assertion Method",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A key used to make assertions and verify claims within the system.",
+        "@language": "en"
+      },
+      "skos:notation": "assertionMethod",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#authentication",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Authentication",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A key used for entity authentication and identity verification.",
+        "@language": "en"
+      },
+      "skos:notation": "authentication",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#capabilityDelegation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Capability Delegation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A key used to delegate capabilities or permissions to other entities.",
+        "@language": "en"
+      },
+      "skos:notation": "capabilityDelegation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#capabilityInvocation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Capability Invocation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A key used to invoke capabilities or permissions within the system.",
+        "@language": "en"
+      },
+      "skos:notation": "capabilityInvocation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#CosmosAccountAddress",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Cosmos Account Address",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A blockchain account address within the Cosmos ecosystem for verification purposes.",
+        "@language": "en"
+      },
+      "skos:notation": "CosmosAccountAddress",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://w3c.github.io/dpv/2.0/dpv/#CryptographicMethods"
+      }
+    },
+    {
+      "@id": "#digitalSignature",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Digital Signature",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "The default key used for digital signatures and message verification.",
+        "@language": "en"
+      },
+      "skos:notation": "digitalSignature",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#EcdsaSecp256k1VerificationKey2019",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Ecdsa Secp256k1 Verification Key2019",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A verification key using ECDSA with the secp256k1 curve, commonly used in blockchain systems.",
+        "@language": "en"
+      },
+      "skos:notation": "EcdsaSecp256k1VerificationKey2019",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://w3c.github.io/dpv/2.0/dpv/#CryptographicMethods"
+      }
+    },
+    {
+      "@id": "#keyAgreement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Key Agreement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A key used for encryption and secure communication between parties.",
+        "@language": "en"
+      },
+      "skos:notation": "keyAgreement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#operational",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Operational",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A rotating key used for regular operational activities.",
+        "@language": "en"
+      },
+      "skos:notation": "operational",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#userPersonal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "User Personal",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A personal key assigned to end-users for their individual operations.",
+        "@language": "en"
+      },
+      "skos:notation": "userPersonal",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#blockchainAccountID",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Blockchain Account ID",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A blockchain account identifier used as a verification method (CAIP-10 style), referenced by the did:ixo method context.",
+        "@language": "en"
+      },
+      "skos:notation": "blockchainAccountID",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#Authentication",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Authentication",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Mechanism to verify the identity of the DID subject.",
+        "@language": "en"
+      },
+      "skos:notation": "Authentication",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#Assertion",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Assertion",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Enables making verifiable claims about the DID subject.",
+        "@language": "en"
+      },
+      "skos:notation": "Assertion",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#KeyAgreement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Key Agreement",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Facilitates secure communication by deriving shared secrets.",
+        "@language": "en"
+      },
+      "skos:notation": "KeyAgreement",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#CapabilityInvocation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Capability Invocation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Allows the DID subject to invoke capabilities associated with the DID.",
+        "@language": "en"
+      },
+      "skos:notation": "CapabilityInvocation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    },
+    {
+      "@id": "#CapabilityDelegation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Capability Delegation",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "Permits the DID subject to delegate capabilities to another party.",
+        "@language": "en"
+      },
+      "skos:notation": "CapabilityDelegation",
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/ixo/protocol/methods/v1"
+      }
+    }
+  ]
+}
