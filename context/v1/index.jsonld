@@ -6,6 +6,7 @@
 		"type": "@type",
 		"did": "https://www.w3.org/ns/did/v1",
 		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
 		"Assertion": "https://w3id.org/dcc/v1#Assertion",
 		"zcap": "https://w3id.org/zcap/v1",
 		"dataIntegrity": "https://w3id.org/security/data-integrity/v1",
@@ -25,6 +26,76 @@
 		"token": "https://w3id.org/ixo/protocol/tokens/v1",
 		"vocab": "https://w3id.org/ixo/vocab/v1",
 		"startDate": "http://schema.org/startDate",
-		"endDate": "http://schema.org/endDate"
+		"endDate": "http://schema.org/endDate",
+
+		"CosmosAccountAddress": "https://w3id.org/ixo/protocol/methods/v1#CosmosAccountAddress",
+		"blockchainAccountID": {
+			"@id": "https://w3id.org/ixo/protocol/methods/v1#blockchainAccountID"
+		},
+
+		"linkedResource": {
+			"@id": "https://w3id.org/ixo/protocol/linked-resources/v1#linkedResource",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "https://w3id.org/ixo/protocol/linked-resources/v1#mediaType",
+				"serviceEndpoint": { "@id": "https://w3id.org/ixo/protocol/linked-resources/v1#serviceEndpoint", "@type": "@id" },
+				"proof": "https://w3id.org/ixo/protocol/linked-resources/v1#proof",
+				"encrypted": "https://w3id.org/ixo/protocol/linked-resources/v1#encrypted",
+				"right": "https://w3id.org/ixo/protocol/linked-resources/v1#right"
+			}
+		},
+
+		"linkedClaim": {
+			"@id": "https://w3id.org/ixo/protocol/claims/v1#linkedClaim",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "https://w3id.org/ixo/protocol/claims/v1#mediaType",
+				"serviceEndpoint": { "@id": "https://w3id.org/ixo/protocol/claims/v1#serviceEndpoint", "@type": "@id" },
+				"proof": "https://w3id.org/ixo/protocol/claims/v1#proof",
+				"encrypted": "https://w3id.org/ixo/protocol/claims/v1#encrypted",
+				"right": "https://w3id.org/ixo/protocol/claims/v1#right"
+			}
+		},
+
+		"linkedEntity": {
+			"@id": "https://w3id.org/ixo/protocol/entities/v1#linkedEntity",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"relationship": "https://w3id.org/ixo/protocol/entities/v1#relationship",
+				"service": "https://w3id.org/ixo/protocol/entities/v1#service"
+			}
+		},
+
+		"accordedRight": {
+			"@id": "https://w3id.org/ixo/protocol/accorded-rights/v1#accordedRight",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "https://w3id.org/ixo/protocol/accorded-rights/v1#mediaType",
+				"service": "https://w3id.org/ixo/protocol/accorded-rights/v1#service",
+				"serviceEndpoint": { "@id": "https://w3id.org/ixo/protocol/accorded-rights/v1#serviceEndpoint", "@type": "@id" }
+			}
+		},
+
+		"metadata": {
+			"@id": "https://w3id.org/ixo/vocab/v1#metadata",
+			"@context": {
+				"versionId": "https://w3id.org/ixo/vocab/v1#versionId",
+				"created": { "@id": "http://schema.org/dateCreated", "@type": "xsd:dateTime" },
+				"updated": { "@id": "http://schema.org/dateModified", "@type": "xsd:dateTime" },
+				"deactivated": { "@id": "https://w3id.org/ixo/vocab/v1#deactivated", "@type": "xsd:boolean" }
+			}
+		}
 	}
 }
