@@ -62,7 +62,7 @@ function disambiguateLabels(concepts) {
 const SCHEMES = {
   'entity-types': {
     title: 'IXO Entity Types',
-    description: 'Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle, group, pod and project (from the legacy tags catalogue) are folded in as skos:broader children, so this is the single scheme for entity kinds and their sub-types.',
+    description: 'Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle and project (from the legacy tags catalogue) are folded in as skos:broader children; the legacy group and pod taxonomies fold under dao (keeping their group/* and pod/* notation), since group and pod are no longer top-level kinds. This is the single scheme for entity kinds and their sub-types.',
     source: `${WEBCLIENT} (EntityType) + on-chain entity.type values (ixo-mainnet, May 2026)`,
     concepts: [
       c('project', 'Project', 'A planned undertaking coordinating resources and activities toward defined goals and measurable outcomes.', 'project'),
@@ -72,14 +72,6 @@ const SCHEMES = {
       c('protocol', 'Protocol', 'A reusable definition used to create and govern entities, claims or credentials of a given kind.', 'protocol'),
       c('deed', 'Deed', 'A recorded act or agreement expressing intent or commitment between entities.', 'deed'),
       c('investment', 'Investment', 'An allocation of capital or resources made in expectation of a future return.', 'investment'),
-      c('group', 'Group', 'An organisational unit grouping members or entities under shared coordination.', 'group'),
-      c('pod', 'POD', 'A small autonomous sub-group that can act independently while remaining accountable to a parent organisation.', 'pod'),
-      c('user', 'User', 'An individual user account represented as an entity.', 'user'),
-      c('agent', 'Agent', 'A human or autonomous agent that acts within the network.', 'agent'),
-      c('document', 'Document', 'A document resource registered as an entity.', 'document'),
-      c('image', 'Image', 'An image resource registered as an entity.', 'image'),
-      c('text', 'Text', 'A text resource registered as an entity.', 'text'),
-      c('request', 'Request', 'A standalone request entity.', 'request'),
       // asset sub-types
       c('asset-device', 'Device', 'A physical or virtual device represented as an asset, such as a metered cookstove or sensor.', 'asset/device', 'asset'),
       c('asset-collection', 'Asset Collection', 'A curated group of related assets managed together.', 'asset/collection', 'asset'),
@@ -100,6 +92,7 @@ const SCHEMES = {
       c('deed-flow', 'Flow', 'An intent-driven workflow coordinating a process from start to finish.', 'deed/flow', 'deed'),
       // oracle sub-types
       c('oracle-evaluation', 'Evaluation Oracle', 'An oracle specialised in evaluating claims to produce verified results.', 'oracle/evaluation', 'oracle'),
+      c('oracle-agent', 'Agent', 'A human or autonomous agent that acts within the network.', 'oracle/agent', 'oracle'),
       // protocol sub-types
       c('protocol-claim', 'Claim Protocol', 'A protocol defining the content and structure of a class of claims.', 'protocol/claim', 'protocol'),
       c('protocol-deed', 'Deed Protocol', 'A protocol defining the content and structure of a class of deeds.', 'protocol/deed', 'protocol'),
@@ -110,7 +103,6 @@ const SCHEMES = {
       c('protocol-oracle', 'Oracle Protocol', 'A protocol defining the properties of a class of oracles.', 'protocol/oracle', 'protocol'),
       c('protocol-investment', 'Investment Protocol', 'A protocol governing a class of investment processes.', 'protocol/investment', 'protocol'),
       c('protocol-group', 'Group Protocol', 'A protocol defining the formation and governance of a class of groups.', 'protocol/group', 'protocol'),
-      c('protocol-request', 'Request Protocol', 'A protocol defining a class of requests.', 'protocol/request', 'protocol'),
       c('protocol-verifiableclaim', 'Verifiable Claim Protocol', 'A protocol for creating verifiable claims and defining their content and structure.', 'protocol/verifiableClaim', 'protocol'),
       c('protocol-verifiablecredential', 'Verifiable Credential Protocol', 'A protocol for creating verifiable credentials and defining their content and structure.', 'protocol/verifiableCredential', 'protocol'),
       c('protocol-impact', 'Impact Protocol', 'A protocol defining how impact is claimed and verified.', 'protocol/impact', 'protocol'),
@@ -573,6 +565,13 @@ function foldSubtypes(base, salvaged) {
       canonNota.set(nNota, x.id);
       remap.set(x.id, x.id);
     }
+  }
+  // Demote the legacy pod/group taxonomies under dao: keep their pod/* and group/*
+  // notation but reparent the folded children onto the dao sub-types (dao/pod,
+  // dao/group), since pod and group are no longer top-level entity kinds.
+  const KIND_REPARENT = { pod: 'dao-pod', group: 'dao-group' };
+  for (const x of out) {
+    if (x.broader && KIND_REPARENT[x.broader]) x.broader = KIND_REPARENT[x.broader];
   }
   return out;
 }

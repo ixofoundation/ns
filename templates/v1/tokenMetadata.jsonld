@@ -1,0 +1,11 @@
+{
+  "@context": ["https://w3id.org/ixo/context/v1"],
+  "id": "did:ixo:entity:REPLACE-ENTITY-ID#tokenMetadata",
+  "type": "ixo:TokenMetadata",
+  "name": "<<<Token display name>>>",
+  "tokenName": "<<<On-chain token name / denom>>>",
+  "decimals": 0,
+  "description": "<<<One-paragraph token description>>>",
+  "image": "https://example.org/REPLACE-TOKEN-IMAGE",
+  "properties": {}
+}

@@ -10,8 +10,9 @@
     "node": ">=18"
   },
   "scripts": {
-    "validate": "node scripts/validate.mjs && node scripts/validate-schemas.mjs && node scripts/validate-shapes.mjs && node scripts/validate-skos.mjs && node scripts/validate-vocab.mjs",
+    "validate": "node scripts/validate.mjs && node scripts/validate-schemas.mjs && node scripts/validate-shapes.mjs && node scripts/validate-skos.mjs && node scripts/validate-vocab.mjs && node scripts/validate-resources.mjs",
     "validate:jsonld": "node scripts/validate.mjs",
+    "validate:resources": "node scripts/validate-resources.mjs",
     "validate:schemas": "node scripts/validate-schemas.mjs",
     "validate:shapes": "node scripts/validate-shapes.mjs",
     "validate:skos": "node scripts/validate-skos.mjs",

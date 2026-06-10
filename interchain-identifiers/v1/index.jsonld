@@ -1,0 +1,85 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"@protected": true,
+
+		"ixo": "https://w3id.org/ixo/vocab/v1#",
+		"resources": "https://w3id.org/ixo/protocol/linked-resources/v1#",
+		"claims": "https://w3id.org/ixo/protocol/claims/v1#",
+		"rights": "https://w3id.org/ixo/protocol/accorded-rights/v1#",
+		"entities": "https://w3id.org/ixo/protocol/entities/v1#",
+		"methods": "https://w3id.org/ixo/protocol/methods/v1#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+
+		"CosmosAccountAddress": "methods:CosmosAccountAddress",
+		"blockchainAccountID": {
+			"@id": "methods:blockchainAccountID"
+		},
+
+		"linkedResource": {
+			"@id": "resources:linkedResource",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "resources:mediaType",
+				"serviceEndpoint": { "@id": "resources:serviceEndpoint", "@type": "@id" },
+				"proof": "resources:proof",
+				"encrypted": "resources:encrypted",
+				"right": "resources:right"
+			}
+		},
+
+		"linkedClaim": {
+			"@id": "claims:linkedClaim",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "claims:mediaType",
+				"serviceEndpoint": { "@id": "claims:serviceEndpoint", "@type": "@id" },
+				"proof": "claims:proof",
+				"encrypted": "claims:encrypted",
+				"right": "claims:right"
+			}
+		},
+
+		"linkedEntity": {
+			"@id": "entities:linkedEntity",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"relationship": "entities:relationship",
+				"service": "entities:service"
+			}
+		},
+
+		"accordedRight": {
+			"@id": "rights:accordedRight",
+			"@container": "@set",
+			"@context": {
+				"id": "@id",
+				"type": "@type",
+				"description": "schema:description",
+				"mediaType": "rights:mediaType",
+				"service": "rights:service",
+				"serviceEndpoint": { "@id": "rights:serviceEndpoint", "@type": "@id" }
+			}
+		},
+
+		"metadata": {
+			"@id": "ixo:metadata",
+			"@context": {
+				"versionId": "ixo:versionId",
+				"created": { "@id": "schema:dateCreated", "@type": "xsd:dateTime" },
+				"updated": { "@id": "schema:dateModified", "@type": "xsd:dateTime" },
+				"deactivated": { "@id": "ixo:deactivated", "@type": "xsd:boolean" }
+			}
+		}
+	}
+}

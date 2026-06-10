@@ -16,6 +16,10 @@
     "sec": "https://w3id.org/security#",
     "zcap": "https://w3id.org/zcap#",
     "dpv": "https://w3id.org/dpv#",
+    "proj": "https://linked.data.gov.au/def/project#",
+    "attribute": "https://w3id.org/ixo/attributes/v1/",
+    "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "fibo": "https://spec.edmcouncil.org/fibo/ontology/",
 
     "ixo": "https://w3id.org/ixo/vocab/v1#",
     "entityType": "https://w3id.org/ixo/protocol/entities/v1#",
@@ -63,6 +67,7 @@
 
     "serviceEndpoint": { "@id": "ixo:serviceEndpoint" },
     "blockchainAccountID": "ixo:blockchainAccountID",
+    "CosmosAccountAddress": "ixo:CosmosAccountAddress",
     "publicKeyBase58": "sec:publicKeyBase58",
     "publicKeyMultibase": "sec:publicKeyMultibase",
     "alsoKnownAs": { "@id": "ixo:alsoKnownAs", "@type": "@id" },
@@ -85,6 +90,8 @@
     "metrics": { "@id": "ixo:metrics" },
     "attributes": { "@id": "ixo:attributes" },
     "tokenName": "ixo:tokenName",
+    "decimals": "ixo:decimals",
+    "properties": { "@id": "ixo:properties" },
     "tags": "ixo:tags",
     "entityTags": "ixo:entityTags",
     "page": { "@id": "ixo:page" },
@@ -104,6 +111,10 @@
     "evidenceType": "ixo:evidenceType",
     "serviceType": "ixo:serviceType",
     "beneficiaryId": "ixo:beneficiaryId",
+    "oracleName": "ixo:oracleName",
+    "requiredPermissions": "ixo:requiredPermissions",
+    "granteeAddress": "ixo:granteeAddress",
+    "granterAddress": "ixo:granterAddress",
 
     "wasGeneratedBy": { "@id": "prov:wasGeneratedBy", "@type": "@id" },
     "wasDerivedFrom": { "@id": "prov:wasDerivedFrom", "@type": "@id" },

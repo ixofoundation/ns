@@ -1016,6 +1016,51 @@
       }
     },
     {
+      "@id": "ixo:SurveyTemplate",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Survey Template",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "A form template resource (e.g. a SurveyJS definition) used to capture claims and structured data for an entity.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:TokenMetadata",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Token Metadata",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "Metadata describing an entity's impact token — its name, denomination, properties and media.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "ixo:Token",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": {
+        "@value": "Token",
+        "@language": "en"
+      },
+      "rdfs:comment": {
+        "@value": "An impact token associated with an entity.",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "ixo:serviceEndpoint",
       "@type": [
         "rdf:Property",
@@ -1451,6 +1496,88 @@
       "rdfs:label": { "@value": "beneficiaryId", "@language": "en" },
       "rdfs:comment": { "@value": "An anonymous identifier for the beneficiary of the claimed activity.", "@language": "en" }
     },
+    {
+      "@id": "ixo:oracleName",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Service" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "oracleName", "@language": "en" },
+      "rdfs:comment": { "@value": "The human-readable name of the oracle providing a service.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:requiredPermissions",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Service" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "requiredPermissions", "@language": "en" },
+      "rdfs:comment": { "@value": "The on-chain message permissions an oracle authorization grants (e.g. a Cosmos Msg type URL).", "@language": "en" }
+    },
+    {
+      "@id": "ixo:granteeAddress",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Service" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "granteeAddress", "@language": "en" },
+      "rdfs:comment": { "@value": "The blockchain address granted the authorization (the grantee).", "@language": "en" }
+    },
+    {
+      "@id": "ixo:granterAddress",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Service" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "granterAddress", "@language": "en" },
+      "rdfs:comment": { "@value": "The blockchain address that issues the authorization (the granter).", "@language": "en" }
+    },
+    {
+      "@id": "ixo:decimals",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:TokenMetadata" },
+      "schema:rangeIncludes": { "@id": "xsd:integer" },
+      "rdfs:label": { "@value": "decimals", "@language": "en" },
+      "rdfs:comment": { "@value": "The number of decimal places a token amount is divisible into.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:properties",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:TokenMetadata" },
+      "rdfs:label": { "@value": "properties", "@language": "en" },
+      "rdfs:comment": { "@value": "A container of additional custom properties describing a token or resource.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:oracleFee",
+      "@type": ["rdf:Property", "owl:DatatypeProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Service" },
+      "schema:rangeIncludes": { "@id": "xsd:string" },
+      "rdfs:label": { "@value": "oracleFee", "@language": "en" },
+      "rdfs:comment": { "@value": "A fee charged by an oracle for a service or evaluation.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:embedding",
+      "@type": ["rdf:Property", "owl:ObjectProperty"],
+      "schema:domainIncludes": { "@id": "ixo:Entity" },
+      "schema:rangeIncludes": { "@id": "ixo:Embedding" },
+      "rdfs:label": { "@value": "embedding", "@language": "en" },
+      "rdfs:comment": { "@value": "A vector embedding of an entity's content, used for semantic search and retrieval.", "@language": "en" }
+    },
+    {
+      "@id": "ixo:VerificationReview",
+      "@type": ["rdfs:Class", "owl:Class"],
+      "rdfs:subClassOf": { "@id": "ixo:Evaluation" },
+      "rdfs:label": { "@value": "Verification Review", "@language": "en" },
+      "rdfs:comment": { "@value": "A reviewer's assessment of submitted identity/registration/tax documents during a KYC/verification workflow.", "@language": "en" }
+    },
+    { "@id": "ixo:reviewerName", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "reviewerName", "@language": "en" }, "rdfs:comment": { "@value": "The name of the reviewer performing the verification.", "@language": "en" } },
+    { "@id": "ixo:idIsNationalIdOrPassport", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "idIsNationalIdOrPassport", "@language": "en" }, "rdfs:comment": { "@value": "Whether the submitted ID is a national ID or passport.", "@language": "en" } },
+    { "@id": "ixo:idClearAndVisible", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "idClearAndVisible", "@language": "en" }, "rdfs:comment": { "@value": "Whether the submitted ID image is clear and fully visible.", "@language": "en" } },
+    { "@id": "ixo:idNotExpiringSoon", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "idNotExpiringSoon", "@language": "en" }, "rdfs:comment": { "@value": "Whether the submitted ID is not expiring soon.", "@language": "en" } },
+    { "@id": "ixo:idComments", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "idComments", "@language": "en" }, "rdfs:comment": { "@value": "Reviewer comments on the submitted identity document.", "@language": "en" } },
+    { "@id": "ixo:registrationBusinessAgeValid", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "registrationBusinessAgeValid", "@language": "en" }, "rdfs:comment": { "@value": "Whether the business registration age is valid.", "@language": "en" } },
+    { "@id": "ixo:registrationNameMatches", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "registrationNameMatches", "@language": "en" }, "rdfs:comment": { "@value": "Whether the registration name matches the applicant.", "@language": "en" } },
+    { "@id": "ixo:registrationComments", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "registrationComments", "@language": "en" }, "rdfs:comment": { "@value": "Reviewer comments on the business registration.", "@language": "en" } },
+    { "@id": "ixo:taxInBusinessName", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "taxInBusinessName", "@language": "en" }, "rdfs:comment": { "@value": "Whether the tax document is in the business name.", "@language": "en" } },
+    { "@id": "ixo:taxNotInPersonalName", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "taxNotInPersonalName", "@language": "en" }, "rdfs:comment": { "@value": "Whether the tax document is not in a personal name.", "@language": "en" } },
+    { "@id": "ixo:taxComments", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "taxComments", "@language": "en" }, "rdfs:comment": { "@value": "Reviewer comments on the tax document.", "@language": "en" } },
+    { "@id": "ixo:addressProofAcceptable", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:VerificationReview" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "addressProofAcceptable", "@language": "en" }, "rdfs:comment": { "@value": "Whether the submitted proof of address is acceptable.", "@language": "en" } },
     {
       "@id": "ixo:relationship",
       "@type": [

@@ -10,7 +10,7 @@
       "@id": "https://w3id.org/ixo/protocol/entities/v1",
       "@type": "skos:ConceptScheme",
       "dcterms:title": "IXO Entity Types",
-      "dcterms:description": "Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle, group, pod and project (from the legacy tags catalogue) are folded in as skos:broader children, so this is the single scheme for entity kinds and their sub-types.",
+      "dcterms:description": "Kinds of entity domain on the IXO Spatial Web. Top concepts are the primary entity classes; slash-notation sub-types record specific kinds observed on-chain. A few malformed on-chain variants (protocol/protocol, protocol/protocol_deed, deed/deed, deed/deed_request) are normalised to their base concept; Phase 4 reconciles coverage exhaustively. Sub-type taxonomies for asset, dao, deed, oracle and project (from the legacy tags catalogue) are folded in as skos:broader children; the legacy group and pod taxonomies fold under dao (keeping their group/* and pod/* notation), since group and pod are no longer top-level kinds. This is the single scheme for entity kinds and their sub-types.",
       "dcterms:created": "2026-06-04",
       "dcterms:source": "https://github.com/ixofoundation/ixo-webclient/blob/main/src/types/entities.ts (EntityType) + on-chain entity.type values (ixo-mainnet, May 2026)",
       "skos:hasTopConcept": [
@@ -34,30 +34,6 @@
         },
         {
           "@id": "#investment"
-        },
-        {
-          "@id": "#group"
-        },
-        {
-          "@id": "#pod"
-        },
-        {
-          "@id": "#user"
-        },
-        {
-          "@id": "#agent"
-        },
-        {
-          "@id": "#document"
-        },
-        {
-          "@id": "#image"
-        },
-        {
-          "@id": "#text"
-        },
-        {
-          "@id": "#request"
         }
       ]
     },
@@ -190,158 +166,6 @@
         "@language": "en"
       },
       "skos:notation": "investment",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#group",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Group",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "An organisational unit grouping members or entities under shared coordination.",
-        "@language": "en"
-      },
-      "skos:notation": "group",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#pod",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "POD",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A small autonomous sub-group that can act independently while remaining accountable to a parent organisation.",
-        "@language": "en"
-      },
-      "skos:notation": "pod",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#user",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "User",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "An individual user account represented as an entity.",
-        "@language": "en"
-      },
-      "skos:notation": "user",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#agent",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Agent",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A human or autonomous agent that acts within the network.",
-        "@language": "en"
-      },
-      "skos:notation": "agent",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#document",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Document",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A document resource registered as an entity.",
-        "@language": "en"
-      },
-      "skos:notation": "document",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#image",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Image",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "An image resource registered as an entity.",
-        "@language": "en"
-      },
-      "skos:notation": "image",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#text",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Text",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A text resource registered as an entity.",
-        "@language": "en"
-      },
-      "skos:notation": "text",
-      "skos:topConceptOf": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      }
-    },
-    {
-      "@id": "#request",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Request",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A standalone request entity.",
-        "@language": "en"
-      },
-      "skos:notation": "request",
       "skos:topConceptOf": {
         "@id": "https://w3id.org/ixo/protocol/entities/v1"
       }
@@ -651,6 +475,25 @@
       }
     },
     {
+      "@id": "#oracle-agent",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/ixo/protocol/entities/v1"
+      },
+      "skos:prefLabel": {
+        "@value": "Agent",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "A human or autonomous agent that acts within the network.",
+        "@language": "en"
+      },
+      "skos:notation": "oracle/agent",
+      "skos:broader": {
+        "@id": "#oracle"
+      }
+    },
+    {
       "@id": "#protocol-claim",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -817,25 +660,6 @@
         "@language": "en"
       },
       "skos:notation": "protocol/group",
-      "skos:broader": {
-        "@id": "#protocol"
-      }
-    },
-    {
-      "@id": "#protocol-request",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "https://w3id.org/ixo/protocol/entities/v1"
-      },
-      "skos:prefLabel": {
-        "@value": "Request Protocol",
-        "@language": "en"
-      },
-      "skos:definition": {
-        "@value": "A protocol defining a class of requests.",
-        "@language": "en"
-      },
-      "skos:notation": "protocol/request",
       "skos:broader": {
         "@id": "#protocol"
       }
@@ -2186,7 +2010,7 @@
       },
       "skos:notation": "group/membership",
       "skos:broader": {
-        "@id": "#group"
+        "@id": "#dao-group"
       }
     },
     {
@@ -2205,7 +2029,7 @@
       },
       "skos:notation": "group/custodians",
       "skos:broader": {
-        "@id": "#group"
+        "@id": "#dao-group"
       }
     },
     {
@@ -2224,7 +2048,7 @@
       },
       "skos:notation": "group/security",
       "skos:broader": {
-        "@id": "#group"
+        "@id": "#dao-group"
       }
     },
     {
@@ -2243,7 +2067,7 @@
       },
       "skos:notation": "group/finance",
       "skos:broader": {
-        "@id": "#group"
+        "@id": "#dao-group"
       }
     },
     {
@@ -2262,7 +2086,7 @@
       },
       "skos:notation": "group/operations",
       "skos:broader": {
-        "@id": "#group"
+        "@id": "#dao-group"
       }
     },
     {
@@ -2281,7 +2105,7 @@
       },
       "skos:notation": "pod/agriculture",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2300,7 +2124,7 @@
       },
       "skos:notation": "pod/communitySocialImpact",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2319,7 +2143,7 @@
       },
       "skos:notation": "pod/education",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2338,7 +2162,7 @@
       },
       "skos:notation": "pod/energy",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2357,7 +2181,7 @@
       },
       "skos:notation": "pod/enterprise",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2376,7 +2200,7 @@
       },
       "skos:notation": "pod/environmentalConservation",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2395,7 +2219,7 @@
       },
       "skos:notation": "pod/finance",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2414,7 +2238,7 @@
       },
       "skos:notation": "pod/governance",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2433,7 +2257,7 @@
       },
       "skos:notation": "pod/research",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2452,7 +2276,7 @@
       },
       "skos:notation": "pod/sme",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {
@@ -2471,7 +2295,7 @@
       },
       "skos:notation": "pod/urbanPlanningAndInfrastructure",
       "skos:broader": {
-        "@id": "#pod"
+        "@id": "#dao-pod"
       }
     },
     {

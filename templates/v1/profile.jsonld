@@ -1,0 +1,12 @@
+{
+  "@context": ["https://w3id.org/ixo/context/v1"],
+  "id": "did:ixo:entity:REPLACE-ENTITY-ID#profile",
+  "type": "ixo:Profile",
+  "orgName": "<<<Legal / organisation name>>>",
+  "name": "<<<Display name>>>",
+  "description": "<<<One-paragraph description>>>",
+  "image": "https://example.org/REPLACE-IMAGE",
+  "logo": "https://example.org/REPLACE-LOGO",
+  "brand": "<<<Brand name>>>",
+  "location": "<<<ISO 3166-1 alpha-2 country code>>>"
+}

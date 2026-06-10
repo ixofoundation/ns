@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "attribute": "https://w3id.org/ixo/attributes/v1/",
+    "ixo": "https://w3id.org/ixo/vocab/v1#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vann": "http://purl.org/vocab/vann/"
+  },
+  "@id": "https://w3id.org/ixo/attributes/v1",
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/attributes/v1",
+      "@type": "ixo:AttributeDictionary",
+      "dcterms:title": { "@value": "IXO Attribute Dictionary", "@language": "en" },
+      "dcterms:description": { "@value": "Named claim/domain attribute keys used in IXO linked resources (the `attribute:` prefix). Terms that mirror the core vocabulary are bridged with owl:equivalentProperty to vocab/v1; data-specific attribute keys are defined here to keep the core vocabulary clean.", "@language": "en" },
+      "vann:preferredNamespacePrefix": "attribute",
+      "vann:preferredNamespaceUri": "https://w3id.org/ixo/attributes/v1/"
+    },
+
+    { "@id": "attribute:claimType", "@type": ["rdf:Property", "owl:DatatypeProperty"], "owl:equivalentProperty": { "@id": "ixo:claimType" }, "rdfs:label": { "@value": "claimType", "@language": "en" }, "rdfs:comment": { "@value": "The type of claim an attribute applies to. Equivalent to ixo:claimType.", "@language": "en" } },
+    { "@id": "attribute:impactUnit", "@type": ["rdf:Property", "owl:DatatypeProperty"], "owl:equivalentProperty": { "@id": "ixo:impactUnit" }, "rdfs:label": { "@value": "impactUnit", "@language": "en" }, "rdfs:comment": { "@value": "Unit of the impact quantity. Equivalent to ixo:impactUnit.", "@language": "en" } },
+    { "@id": "attribute:outcomeIndicator", "@type": ["rdf:Property", "owl:DatatypeProperty"], "owl:equivalentProperty": { "@id": "ixo:outcomeIndicator" }, "rdfs:label": { "@value": "outcomeIndicator", "@language": "en" }, "rdfs:comment": { "@value": "The outcome indicator a claim reports against. Equivalent to ixo:outcomeIndicator.", "@language": "en" } },
+    { "@id": "attribute:sdgGoal", "@type": ["rdf:Property", "owl:DatatypeProperty"], "owl:equivalentProperty": { "@id": "ixo:sdgGoal" }, "rdfs:label": { "@value": "sdgGoal", "@language": "en" }, "rdfs:comment": { "@value": "The UN SDG goal a claim contributes to. Equivalent to ixo:sdgGoal.", "@language": "en" } },
+    { "@id": "attribute:sdgTarget", "@type": ["rdf:Property", "owl:DatatypeProperty"], "owl:equivalentProperty": { "@id": "ixo:sdgTarget" }, "rdfs:label": { "@value": "sdgTarget", "@language": "en" }, "rdfs:comment": { "@value": "The UN SDG target a claim contributes to. Equivalent to ixo:sdgTarget.", "@language": "en" } },
+    { "@id": "attribute:verificationMethod", "@type": ["rdf:Property", "owl:ObjectProperty"], "owl:equivalentProperty": { "@id": "ixo:verificationMethod" }, "rdfs:label": { "@value": "verificationMethod", "@language": "en" }, "rdfs:comment": { "@value": "A verification method referenced by an attribute. Equivalent to ixo:verificationMethod.", "@language": "en" } },
+
+    { "@id": "attribute:countingRule", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Claim" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "countingRule", "@language": "en" }, "rdfs:comment": { "@value": "The rule used to count or aggregate impact for a claim (e.g. per-unit, per-event).", "@language": "en" } },
+    { "@id": "attribute:deed-type", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Claim" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "deed-type", "@language": "en" }, "rdfs:comment": { "@value": "The category of a deed (e.g. offer, request, agreement).", "@language": "en" } },
+    { "@id": "attribute:total-tranches", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Claim" }, "schema:rangeIncludes": { "@id": "xsd:integer" }, "rdfs:label": { "@value": "total-tranches", "@language": "en" }, "rdfs:comment": { "@value": "The total number of payment or delivery tranches in an agreement.", "@language": "en" } },
+    { "@id": "attribute:project/type", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Project" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "project/type", "@language": "en" }, "rdfs:comment": { "@value": "The type or category of a project.", "@language": "en" } },
+    { "@id": "attribute:learning/format", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Claim" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "learning/format", "@language": "en" }, "rdfs:comment": { "@value": "The delivery format of a learning offering (e.g. online, in-person, blended).", "@language": "en" } },
+    { "@id": "attribute:learning/audience", "@type": ["rdf:Property", "owl:DatatypeProperty"], "schema:domainIncludes": { "@id": "ixo:Claim" }, "schema:rangeIncludes": { "@id": "xsd:string" }, "rdfs:label": { "@value": "learning/audience", "@language": "en" }, "rdfs:comment": { "@value": "The intended audience for a learning offering.", "@language": "en" } }
+  ]
+}

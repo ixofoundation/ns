@@ -1,0 +1,8 @@
+{
+  "@context": ["https://w3id.org/ixo/context/v1"],
+  "id": "did:ixo:entity:REPLACE-ENTITY-ID#surveyTemplate",
+  "type": "ixo:SurveyTemplate",
+  "question": {
+    "<<<note>>>": "SurveyJS form definition (pages/elements) goes here. It is RDF-opaque (validated by SurveyJS, not the IXO vocabulary), but every field `name` that becomes a claim key MUST be a CURIE/term that resolves in the claim context (schema:/ixo:/ecs:) per the survey vocab rule."
+  }
+}
