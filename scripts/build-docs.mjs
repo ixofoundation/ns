@@ -76,7 +76,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 function rows(items, cells) { return items.map((it) => `<tr>${cells(it)}</tr>`).join('\n'); }
 
 async function main() {
-  const vocab = JSON.parse(await readFile(path.join(ROOT, 'vocab/v1/index.json'), 'utf8'));
+  const vocab = JSON.parse(await readFile(path.join(ROOT, 'vocab/v1/index.jsonld'), 'utf8'));
   const onto = ontology(vocab);
 
   const schemes = [];

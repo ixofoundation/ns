@@ -82,10 +82,10 @@ async function main() {
   }
 
   // vocab triples (class hierarchy) merged into every data graph for targetClass reasoning
-  const vocabDoc = JSON.parse(await readFile(path.join(ROOT, 'vocab/v1/index.json'), 'utf8'));
+  const vocabDoc = JSON.parse(await readFile(path.join(ROOT, 'vocab/v1/index.jsonld'), 'utf8'));
   const vocabQuads = await toQuads(vocabDoc, 'https://w3id.org/ixo/vocab/v1');
   // Concept schemes referenced by shapes (e.g. ClaimShape checks skos:inScheme membership).
-  const claimTypesDoc = JSON.parse(await readFile(path.join(ROOT, 'protocol/claims/v1/index.json'), 'utf8'));
+  const claimTypesDoc = JSON.parse(await readFile(path.join(ROOT, 'protocol/claims/v1/index.jsonld'), 'utf8'));
   const refQuads = [...vocabQuads, ...await toQuads(claimTypesDoc, 'https://w3id.org/ixo/protocol/claims/v1')];
 
   const shapeByName = new Map();

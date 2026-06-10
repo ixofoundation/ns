@@ -498,26 +498,26 @@ async function countryConcepts() {
 // Legacy-structure targets: SKOS schemes live at protocol/<thing>/v1/index.json
 // (the established concept-list location); countries at the legacy vocab/v1/countries.json.
 const LEGACY = {
-  'entity-types': 'protocol/entities/v1/index.json',
-  'claim-types': 'protocol/claims/v1/index.json',
-  'credential-types': 'protocol/credentials/v1/index.json',
-  'accorded-right-types': 'protocol/accorded-rights/v1/index.json',
-  'linked-resource-types': 'protocol/linked-resources/v1/index.json',
-  'node-types': 'protocol/node-types/v1/index.json',
-  'agent-roles': 'protocol/agent-roles/v1/index.json',
-  'entity-status': 'protocol/entity-status/v1/index.json',
-  'entity-stage': 'protocol/entity-stage/v1/index.json',
-  'entity-view': 'protocol/entity-view/v1/index.json',
-  'page-view': 'protocol/page-view/v1/index.json',
-  'payment-types': 'protocol/payments/v1/index.json',
-  'payment-denominations': 'protocol/payment-denominations/v1/index.json',
-  'stake-types': 'protocol/stake-types/v1/index.json',
-  'slashing-conditions': 'protocol/slashing-conditions/v1/index.json',
-  'liquidity-sources': 'protocol/liquidity-sources/v1/index.json',
-  'oracle-capabilities': 'protocol/oracle-capabilities/v1/index.json',
-  'evaluation-codes': 'protocol/evaluation-codes/v1/index.json',
-  'relationships': 'protocol/relationships/v1/index.json',
-  'countries': 'vocab/v1/countries.json',
+  'entity-types': 'protocol/entities/v1/index.jsonld',
+  'claim-types': 'protocol/claims/v1/index.jsonld',
+  'credential-types': 'protocol/credentials/v1/index.jsonld',
+  'accorded-right-types': 'protocol/accorded-rights/v1/index.jsonld',
+  'linked-resource-types': 'protocol/linked-resources/v1/index.jsonld',
+  'node-types': 'protocol/node-types/v1/index.jsonld',
+  'agent-roles': 'protocol/agent-roles/v1/index.jsonld',
+  'entity-status': 'protocol/entity-status/v1/index.jsonld',
+  'entity-stage': 'protocol/entity-stage/v1/index.jsonld',
+  'entity-view': 'protocol/entity-view/v1/index.jsonld',
+  'page-view': 'protocol/page-view/v1/index.jsonld',
+  'payment-types': 'protocol/payments/v1/index.jsonld',
+  'payment-denominations': 'protocol/payment-denominations/v1/index.jsonld',
+  'stake-types': 'protocol/stake-types/v1/index.jsonld',
+  'slashing-conditions': 'protocol/slashing-conditions/v1/index.jsonld',
+  'liquidity-sources': 'protocol/liquidity-sources/v1/index.jsonld',
+  'oracle-capabilities': 'protocol/oracle-capabilities/v1/index.jsonld',
+  'evaluation-codes': 'protocol/evaluation-codes/v1/index.jsonld',
+  'relationships': 'protocol/relationships/v1/index.jsonld',
+  'countries': 'vocab/v1/countries.jsonld',
 };
 const baseFor = (rel) => 'https://w3id.org/ixo/' + rel.replace(/\.(json|jsonld)$/, '').replace(/\/index$/, '');
 
@@ -529,9 +529,9 @@ const baseFor = (rel) => 'https://w3id.org/ixo/' + rel.replace(/\.(json|jsonld)$
 // companions. (The entity sub-type groupings from tags are NOT here — they fold into the
 // entity-types scheme instead; see ENTITY_SUBTYPE_SCHEMES / foldSubtypes below.)
 const SALVAGED = {
-  'blockchain-account-types': { legacy: 'protocol/blockchain-account-types/v1/index.json', title: 'IXO Blockchain Account Types', description: 'Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/blockchain-account/v1 (rebuilt as SKOS)' },
-  'media-formats': { legacy: 'protocol/media-formats/v1/index.json', title: 'IXO Linked-Resource Media Formats', description: 'IANA media types used for the format / encoding of a linked resource. Notation is the media type. Semantic companion to the protocol/linked-resources/v1/format.json survey-data file.', source: 'legacy ixofoundation/ns protocol/linked-resources/v1/format.json (rebuilt as SKOS)' },
-  'metric-types': { legacy: 'protocol/metric-types/v1/index.json', title: 'IXO Metric Types', description: 'Kinds of quantitative metric tracked for an entity, such as units issued. Semantic companion to the protocol/metric/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/metric/v1 (rebuilt as SKOS)' },
+  'blockchain-account-types': { legacy: 'protocol/blockchain-account-types/v1/index.jsonld', title: 'IXO Blockchain Account Types', description: 'Kinds of external blockchain account that can be linked to an IXO entity (the blockchainAccount linked resource). Notation is the on-chain account-type string. Semantic companion to the protocol/blockchain-account/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/blockchain-account/v1 (rebuilt as SKOS)' },
+  'media-formats': { legacy: 'protocol/media-formats/v1/index.jsonld', title: 'IXO Linked-Resource Media Formats', description: 'IANA media types used for the format / encoding of a linked resource. Notation is the media type. Semantic companion to the protocol/linked-resources/v1/format.json survey-data file.', source: 'legacy ixofoundation/ns protocol/linked-resources/v1/format.json (rebuilt as SKOS)' },
+  'metric-types': { legacy: 'protocol/metric-types/v1/index.jsonld', title: 'IXO Metric Types', description: 'Kinds of quantitative metric tracked for an entity, such as units issued. Semantic companion to the protocol/metric/v1 survey-data file.', source: 'legacy ixofoundation/ns protocol/metric/v1 (rebuilt as SKOS)' },
 };
 
 // Entity sub-type taxonomies (from the legacy protocol/tags groupings) fold directly
