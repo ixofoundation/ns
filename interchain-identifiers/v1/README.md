@@ -28,7 +28,7 @@ JSON-LD-aware consumer silently drops them (W3C DID Core
 Term IRIs are anchored to the existing IXO protocol/vocab namespaces using the
 repo's per-concept `#fragment` convention.
 
-## How it is used (two changes outside this repo)
+## How it is used
 
 1. **Resolver** — append the canonical IRI to the `@context` array of every
    resolved `did:ixo` document, after the base context:
