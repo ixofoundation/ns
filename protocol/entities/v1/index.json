@@ -75,8 +75,8 @@
         "subscription": {
           "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
         },
-        "onboarding":{
-          "description":"A deed defiing an onboarding flow"
+        "onboarding": {
+          "description": "A deed defiing an onboarding flow"
         }
       }
     },
