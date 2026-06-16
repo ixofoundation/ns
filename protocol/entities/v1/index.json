@@ -77,7 +77,7 @@
         },
         "onboarding":{
           "description":"A deed defiing an onboarding flow"
-        },
+        }
       }
     },
     "investment": {
