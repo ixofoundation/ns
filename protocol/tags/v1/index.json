@@ -185,6 +185,9 @@
         "marketingAndAdoption": {
           "description": "Campaigns, communications assets, and onboarding flows to grow user and developer adoption."
         },
+        "onboarding": {
+          "description": "A deed defiing an onboarding flow"
+        },
         "platformIntegration": {
           "description": "Connect external services (e.g. Chainlink, Filecoin, GPTs, IoT devices) to IXO modules."
         },
@@ -204,10 +207,7 @@
     },
     "subscription": {
       "description": "A deed that signifies an agreement to receive or support something regularly, such as a service or membership"
-    },
-    "onboarding": {
-          "description": "A deed defiing an onboarding flow"
-        }
+    }
   },
   "oracleType": {
     "evaluation": {
