@@ -96,6 +96,16 @@
 								"@type": "@id",
 								"@container": "@set"
 							},
+							"claims": {
+								"@id": "con:hasClaims",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"wallets": {
+								"@id": "con:hasWallet",
+								"@type": "@id",
+								"@container": "@set"
+							},
 							"authorities": {
 								"@id": "con:hasAuthority",
 								"@type": "@id",
