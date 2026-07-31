@@ -1,0 +1,88 @@
+{
+  "@context": "https://w3id.org/ixo/context/v1",
+  "id": "did:ixo:entity:example-dao",
+  "type": "con:ConstitutionalSubject",
+  "constitution": {
+    "id": "urn:uuid:1a4662b5-8b8a-4e10-96a7-5b5b96b7b1c9",
+    "type": "con:DAOConstitution",
+    "status": "in_force",
+    "subject": "did:ixo:entity:example-dao",
+    "legal_effect": {
+      "status": "unknown",
+      "jurisdiction": null,
+      "authority_evidence": []
+    },
+    "norms": [
+      "urn:ixo:resource:dao-principles"
+    ],
+    "instruments": [
+      {
+        "document_ref": "dao-charter",
+        "type": "con:DAOCharter",
+        "functions": [
+          "constitutive",
+          "governing"
+        ],
+        "canonical": true,
+        "effective_from": "2026-07-31T00:00:00Z",
+        "effective_until": null
+      },
+      {
+        "document_ref": "governance-policy",
+        "type": "con:ExecutableGovernancePolicy",
+        "functions": [
+          "governing",
+          "executable"
+        ],
+        "canonical": true,
+        "effective_from": "2026-07-31T00:00:00Z",
+        "effective_until": null
+      }
+    ],
+    "governance": {
+      "authority_sources": [
+        "dao-charter",
+        "governance-policy"
+      ],
+      "decision_procedure": "urn:ixo:resource:dao-decision-procedure",
+      "amendment_procedure": "urn:ixo:resource:dao-amendment-procedure",
+      "interpretation_procedure": "urn:ixo:resource:dao-interpretation-procedure",
+      "dispute_resolution_procedure": "urn:ixo:resource:dao-dispute-procedure",
+      "suspension_procedure": "urn:ixo:resource:dao-suspension-procedure",
+      "dissolution_procedure": "urn:ixo:resource:dao-dissolution-procedure"
+    },
+    "execution": {
+      "mode": "hybrid",
+      "implementations": [
+        "urn:ixo:resource:dao-governance-code"
+      ],
+      "conformance_tests": [
+        "urn:ixo:resource:dao-governance-tests"
+      ],
+      "enforcement_points": [
+        "urn:ixo:service:dao-governance"
+      ],
+      "failure_policy": "pause_and_escalate",
+      "human_review_required_for": [
+        "amend constitution",
+        "change rights",
+        "move value"
+      ]
+    },
+    "constitutional_ai": {
+      "mode": "critique_and_revise",
+      "applies_to_agents": [
+        "urn:ixo:agent:dao-assistant"
+      ],
+      "principles": [
+        "urn:ixo:resource:dao-principles"
+      ],
+      "critique_procedure": "urn:ixo:resource:dao-critique-procedure",
+      "revision_procedure": "urn:ixo:resource:dao-revision-procedure",
+      "decision_procedure": null,
+      "model_profile": null,
+      "conflict_policy": "canonical_authority_prevails",
+      "audit_record": "urn:ixo:resource:dao-constitutional-audit-schema"
+    }
+  }
+}
