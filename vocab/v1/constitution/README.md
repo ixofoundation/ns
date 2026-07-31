@@ -21,8 +21,8 @@ The ontology keeps five things distinct:
 4. A **constitutional mechanism** is a human, institutional, technical, or hybrid procedure that evaluates,
    applies, enforces, records, or escalates constitutional norms.
 5. A **constitutional subject profile** classifies the subject and references its identity, purposes,
-   interests, values, rights, obligations, capabilities, authority, memory, policies, responsible parties,
-   or agentic twins without duplicating their canonical sources.
+   interests, values, rights, obligations, capabilities, claims, wallets, authority, memory, policies,
+   responsible parties, or agentic twins without duplicating their canonical sources.
 
 A deed is not a trust. Articles are not a company. A smart contract is not a DAO. A model prompt is not the
 authority it describes. A digital twin is not the asset it serves.
@@ -74,7 +74,8 @@ Every constitutional subject may be described through the same semantic facets:
 hasIdentity       hasPurpose          hasInterests
 hasValues         hasConstitution     hasRights
 hasObligations    hasCapabilities     hasAuthority
-hasMemory         hasEvidencePolicy   hasEvaluationPolicy
+hasClaims         hasWallet           hasMemory
+hasEvidencePolicy hasEvaluationPolicy
 hasDecisionPolicy hasSettlementPolicy hasGovernance
 hasCustodian      hasSteward          hasOwner
 hasBeneficiary    hasOracle           hasAgenticTwin
@@ -118,9 +119,10 @@ Every constitutional subject may have an intrinsic cognitive twin, but need not 
 ```text
 subject
 ├── constitution
-├── claims, evidence, rights, capabilities, and memory
+├── claims, wallet, evidence, rights, capabilities, and memory
 └── agentic twin
     ├── its own identity and constitution
+    ├── claims and wallet
     ├── memory and world model
     ├── decision engine
     ├── capability tokens

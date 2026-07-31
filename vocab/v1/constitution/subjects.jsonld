@@ -26,7 +26,7 @@
       "@type": "owl:Ontology",
       "dcterms:title": "IXO Constitutional Subject Taxonomy",
       "dcterms:description": "A legal-form-independent taxonomy of things that may be modeled as constitutional subjects, together with reusable constitutional archetypes and the IXO constitutional agency cycle.",
-      "owl:versionInfo": "1.0.0",
+      "owl:versionInfo": "1.1.0",
       "dcterms:issued": {
         "@value": "2026-07-31",
         "@type": "xsd:date"
@@ -462,6 +462,7 @@
       "label": "Agentic twin",
       "definition": "An identity-bearing cognitive twin that exercises bounded agency for another constitutional subject while remaining a recursively governed constitutional subject in its own right."
     },
+    { "@id": "con:Wallet", "@type": "owl:Class", "subClassOf": "con:Entity", "label": "Wallet", "definition": "A governed account, key, custody, or capability interface through which a constitutional subject may hold or initiate control of value, credentials, or other digital resources. A wallet does not itself establish current authority." },
     { "@id": "con:Memory", "@type": "owl:Class", "subClassOf": "con:InformationObject", "label": "Memory", "definition": "Governed retained information used to preserve a subject's history, evidence, decisions, actions, and learned state." },
     { "@id": "con:WorldModel", "@type": "owl:Class", "subClassOf": "con:InformationObject", "label": "World model", "definition": "A governed representation of the subject, environment, relationships, state, uncertainty, and predicted consequences." },
     { "@id": "con:DecisionEngine", "@type": "owl:Class", "subClassOf": ["con:Entity", "con:Capability"], "label": "Decision engine", "definition": "A governed mechanism that evaluates evidence and policy to produce proposals or decisions within a bounded role." },

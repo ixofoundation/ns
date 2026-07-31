@@ -43,6 +43,12 @@
           "capabilities": [
             "urn:ixo:right:forest-monitoring"
           ],
+          "claims": [
+            "urn:ixo:claim:forest-state"
+          ],
+          "wallets": [
+            "did:ixo:wallet:forest"
+          ],
           "authorities": [
             "did:ixo:dao:forest-stewards"
           ],
@@ -154,6 +160,12 @@
       },
       "con:hasMemory": {
         "id": "urn:ixo:resource:forest-twin-memory"
+      },
+      "con:hasClaims": {
+        "id": "urn:ixo:claim:forest-twin-state"
+      },
+      "con:hasWallet": {
+        "id": "did:ixo:wallet:forest-twin"
       },
       "con:hasWorldModel": {
         "id": "urn:ixo:resource:forest-world-model"

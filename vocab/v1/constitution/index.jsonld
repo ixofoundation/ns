@@ -49,7 +49,7 @@
       "@type": "owl:Ontology",
       "dcterms:title": "IXO Constitutional Ontology",
       "dcterms:description": "A legal-form-independent ontology for constitutional subjects, normative constitutions, constitutional instruments, norms, authority, reusable governance archetypes, bounded agentic twins, executable mechanisms, and constitutional-AI mechanisms.",
-      "owl:versionInfo": "1.1.0",
+      "owl:versionInfo": "1.2.0",
       "owl:imports": {
         "@id": "https://w3id.org/ixo/vocab/v1/constitution/subjects"
       },
@@ -1056,6 +1056,20 @@
       "label": "has capabilities",
       "definition": "Relates a constitutional subject or profile to bounded capabilities. Current authorization and revocation must still be resolved at action time.",
       "range": "con:Capability"
+    },
+    {
+      "@id": "con:hasClaims",
+      "@type": "owl:ObjectProperty",
+      "label": "has claims",
+      "definition": "Relates a constitutional subject or profile to claims made by, about, or for the subject. The relation does not establish a claim's truth, validity, or current status.",
+      "range": "con:Claim"
+    },
+    {
+      "@id": "con:hasWallet",
+      "@type": "owl:ObjectProperty",
+      "label": "has wallet",
+      "definition": "Relates a constitutional subject or profile to a governed wallet used within a declared scope. Possession of the wallet reference does not prove control or authorize an action.",
+      "range": "con:Wallet"
     },
     {
       "@id": "con:hasMemory",
