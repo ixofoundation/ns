@@ -36,6 +36,11 @@
     "applicableSubjectType": {
       "@id": "con:applicableSubjectType",
       "@container": "@set"
+    },
+    "applicableSubjectClass": {
+      "@id": "con:applicableSubjectClass",
+      "@type": "@id",
+      "@container": "@set"
     }
   },
   "@graph": [
@@ -43,8 +48,11 @@
       "@id": "https://w3id.org/ixo/vocab/v1/constitution",
       "@type": "owl:Ontology",
       "dcterms:title": "IXO Constitutional Ontology",
-      "dcterms:description": "A jurisdiction-neutral ontology for constitutional subjects, normative constitutions, constitutional instruments, norms, authorities, executable mechanisms, and constitutional-AI mechanisms.",
-      "owl:versionInfo": "1.0.0",
+      "dcterms:description": "A legal-form-independent ontology for constitutional subjects, normative constitutions, constitutional instruments, norms, authority, reusable governance archetypes, bounded agentic twins, executable mechanisms, and constitutional-AI mechanisms.",
+      "owl:versionInfo": "1.1.0",
+      "owl:imports": {
+        "@id": "https://w3id.org/ixo/vocab/v1/constitution/subjects"
+      },
       "dcterms:issued": {
         "@value": "2026-07-31",
         "@type": "xsd:date"
@@ -60,8 +68,9 @@
     {
       "@id": "con:ConstitutionalSubject",
       "@type": "owl:Class",
+      "subClassOf": "con:Thing",
       "label": "Constitutional subject",
-      "definition": "An entity, institutional arrangement, collective, protocol, or agentic system whose identity, powers, governance, or conduct is ordered by a constitution."
+      "definition": "A thing explicitly modeled as possessing an identity and a governing normative system, whether or not it is a legal person, organisation, enduring entity, or independently agentic."
     },
     {
       "@id": "con:Constitution",
@@ -163,12 +172,189 @@
       "source": "https://arxiv.org/abs/2212.08073"
     },
     {
+      "@id": "con:OperationalConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:Constitution",
+      "label": "Operational constitution",
+      "definition": "A constitution that gives a non-state subject an explicit identity, purpose, normative constraints, authority, evidence and decision policies, capabilities, procedures, and change controls. Operational effect does not imply legal effect.",
+      "commonInstrument": [
+        "con:OperationalConstitutionDocument",
+        "con:GovernancePolicy"
+      ]
+    },
+    {
+      "@id": "con:PersonalConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Personal constitution",
+      "definition": "An operational constitution for a natural, artificial, digital, or collective person, without inferring legal personality or capacity.",
+      "applicableSubjectType": "person",
+      "applicableSubjectClass": "con:Person",
+      "commonInstrument": "con:OperationalConstitutionDocument"
+    },
+    {
+      "@id": "con:AssetConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Asset constitution",
+      "definition": "An operational constitution for an asset or commodity, governing its identity, purpose, ownership or stewardship, obligations, evidence, capabilities, lifecycle, and agentic operation.",
+      "applicableSubjectType": [
+        "asset",
+        "commodity"
+      ],
+      "applicableSubjectClass": [
+        "con:Asset",
+        "con:Commodity"
+      ],
+      "commonInstrument": [
+        "con:AssetCharter",
+        "con:OperationalConstitutionDocument"
+      ]
+    },
+    {
+      "@id": "con:FinancialSubjectConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Financial-subject constitution",
+      "definition": "A constitution for a financial instrument, investment, property right, agreement, or deed, governing its parties, rights, obligations, evidence, decisions, transfer, settlement, and amendment.",
+      "applicableSubjectType": [
+        "financial instrument",
+        "property right",
+        "agreement",
+        "deed"
+      ],
+      "applicableSubjectClass": [
+        "con:FinancialInstrument",
+        "con:PropertyRight",
+        "con:Agreement",
+        "con:Deed"
+      ],
+      "commonInstrument": [
+        "con:TermsInstrument",
+        "con:GovernancePolicy"
+      ]
+    },
+    {
+      "@id": "con:WorkConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Work constitution",
+      "definition": "An operational constitution for a project, programme, mission, workflow, task, milestone, deliverable, or other governed work subject.",
+      "applicableSubjectType": [
+        "project",
+        "work"
+      ],
+      "applicableSubjectClass": [
+        "con:Project",
+        "con:Work"
+      ],
+      "commonInstrument": [
+        "con:ProjectCharter",
+        "con:OperationalConstitutionDocument"
+      ]
+    },
+    {
+      "@id": "con:ServiceConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Service constitution",
+      "definition": "An operational constitution for a service, governing its purpose, beneficiaries, quality, authority, evidence, capabilities, obligations, escalation, and change controls.",
+      "applicableSubjectType": "service",
+      "applicableSubjectClass": "con:Service",
+      "commonInstrument": [
+        "con:ServiceCharter",
+        "con:ServiceAgreementInstrument"
+      ]
+    },
+    {
+      "@id": "con:OracleConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Oracle constitution",
+      "definition": "An operational constitution for an oracle, governing the observations it may accept, claims it may authenticate, methods it must apply, authority limits, review, audit, and amendment.",
+      "applicableSubjectType": "oracle",
+      "applicableSubjectClass": "con:Oracle",
+      "commonInstrument": [
+        "con:OracleCharter",
+        "con:EvaluationPolicy"
+      ]
+    },
+    {
+      "@id": "con:InformationSubjectConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Information-subject constitution",
+      "definition": "An operational constitution for a claim, credential, evidence item, decision, or other information subject, governing identity, provenance, admissibility, evaluation, authority, status, consequences, revision, and retirement.",
+      "applicableSubjectType": [
+        "claim",
+        "credential",
+        "evidence",
+        "decision"
+      ],
+      "applicableSubjectClass": [
+        "con:Claim",
+        "con:Credential",
+        "con:Evidence",
+        "con:Decision"
+      ],
+      "commonInstrument": [
+        "con:EvaluationPolicy",
+        "con:LifecyclePolicy"
+      ]
+    },
+    {
+      "@id": "con:PlaceConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Place constitution",
+      "definition": "An operational constitution for a place, jurisdiction, protected area, facility, watershed, or other spatial subject, governing boundaries, authority, stewardship, rights, evidence, and permitted use.",
+      "applicableSubjectType": "place",
+      "applicableSubjectClass": "con:Place",
+      "commonInstrument": [
+        "con:StewardshipCharter",
+        "con:GovernancePolicy"
+      ]
+    },
+    {
+      "@id": "con:BiologicalSubjectConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Biological-subject constitution",
+      "definition": "An operational constitution for a patient, population, species, pathogen, ecosystem, crop, livestock population, forest, or disease outbreak, governing interests, evidence, intervention authority, safeguards, and memory.",
+      "applicableSubjectType": [
+        "biological entity",
+        "disease outbreak"
+      ],
+      "applicableSubjectClass": [
+        "con:BiologicalEntity",
+        "con:DiseaseOutbreak"
+      ],
+      "commonInstrument": [
+        "con:StewardshipCharter",
+        "con:EvidencePolicy"
+      ]
+    },
+    {
+      "@id": "con:NetworkConstitution",
+      "@type": "owl:Class",
+      "subClassOf": "con:OperationalConstitution",
+      "label": "Network constitution",
+      "definition": "An operational constitution for a supply, energy, transport, validator, social, healthcare, or other network, governing participation, topology, state, duties, interoperability, and change.",
+      "applicableSubjectType": "network",
+      "applicableSubjectClass": "con:Network",
+      "commonInstrument": [
+        "con:NetworkCharter",
+        "con:ProtocolSpecification"
+      ]
+    },
+    {
       "@id": "con:StateConstitution",
       "@type": "owl:Class",
       "subClassOf": "con:Constitution",
       "label": "State constitution",
       "definition": "A constitution that establishes and governs a state or polity and allocates public powers, institutions, rights, and amendment procedures.",
       "applicableSubjectType": "state",
+      "applicableSubjectClass": "con:Government",
       "commonInstrument": [
         "con:ConstitutionDocument",
         "con:BasicLaw"
@@ -181,6 +367,7 @@
       "label": "International-organisation constitution",
       "definition": "A constitution that establishes and governs an international organisation through an agreement among its members.",
       "applicableSubjectType": "international organisation",
+      "applicableSubjectClass": "con:InternationalOrganization",
       "commonInstrument": [
         "con:ConstituentTreaty",
         "con:OrganizationCharter"
@@ -198,6 +385,7 @@
         "membership organisation",
         "limited-liability organisation"
       ],
+      "applicableSubjectClass": "con:Organization",
       "commonInstrument": [
         "con:OrganizationConstitutionDocument",
         "con:Bylaws",
@@ -212,6 +400,7 @@
       "label": "Corporate constitution",
       "definition": "A constitution that establishes and governs a company or corporation, typically through multiple instruments whose legal effect depends on applicable law.",
       "applicableSubjectType": "company",
+      "applicableSubjectClass": "con:Company",
       "commonInstrument": [
         "con:ArticlesOfAssociation",
         "con:CorporateCharter",
@@ -226,6 +415,7 @@
       "label": "Trust constitution",
       "definition": "A constitution for the legal relationships, powers, duties, purposes, and beneficial interests comprising a trust. A trust deed is one possible instrument and is not universally required.",
       "applicableSubjectType": "trust",
+      "applicableSubjectClass": "con:Trust",
       "commonInstrument": [
         "con:TrustDeed",
         "con:DeclarationOfTrust",
@@ -240,6 +430,7 @@
       "label": "Cooperative constitution",
       "definition": "A constitution that establishes and governs a cooperative according to member-control, membership, capital, benefit, and decision rules.",
       "applicableSubjectType": "cooperative",
+      "applicableSubjectClass": "con:Cooperative",
       "commonInstrument": [
         "con:CooperativeStatutes",
         "con:CooperativeArticles",
@@ -255,6 +446,7 @@
       "label": "Partnership constitution",
       "definition": "A constitution governing the relationship, contributions, authority, duties, benefits, admissions, exits, and dissolution of a partnership.",
       "applicableSubjectType": "partnership",
+      "applicableSubjectClass": "con:Partnership",
       "commonInstrument": [
         "con:PartnershipAgreement",
         "con:PartnershipDeed"
@@ -267,6 +459,7 @@
       "label": "Foundation constitution",
       "definition": "A constitution establishing and governing a purpose-bound foundation, its endowed property, organs, beneficiaries, and amendment constraints.",
       "applicableSubjectType": "foundation",
+      "applicableSubjectClass": "con:Foundation",
       "commonInstrument": [
         "con:FoundationCharter",
         "con:FoundationDeed",
@@ -285,7 +478,7 @@
     {
       "@id": "con:ProjectConstitution",
       "@type": "owl:Class",
-      "subClassOf": "con:Constitution",
+      "subClassOf": "con:WorkConstitution",
       "label": "Project constitution",
       "definition": "An operational constitution for a project, service POD, marketplace, or other bounded collective undertaking.",
       "applicableSubjectType": [
@@ -293,6 +486,10 @@
         "pod",
         "marketplace",
         "collective"
+      ],
+      "applicableSubjectClass": [
+        "con:Project",
+        "con:Work"
       ],
       "commonInstrument": [
         "con:ProjectCharter",
@@ -303,10 +500,11 @@
     {
       "@id": "con:ProtocolConstitution",
       "@type": "owl:Class",
-      "subClassOf": "con:Constitution",
+      "subClassOf": "con:OperationalConstitution",
       "label": "Protocol constitution",
       "definition": "A constitution establishing a protocol's roles, change authority, decision rules, invariants, and operating constraints.",
       "applicableSubjectType": "protocol",
+      "applicableSubjectClass": "con:Protocol",
       "commonInstrument": [
         "con:ProtocolSpecification",
         "con:GovernancePolicy"
@@ -319,6 +517,7 @@
       "label": "DAO constitution",
       "definition": "A constitution governing a decentralized autonomous organisation through social, legal, and executable instruments.",
       "applicableSubjectType": "dao",
+      "applicableSubjectClass": "con:DAO",
       "commonInstrument": [
         "con:DAOCharter",
         "con:GovernancePolicy",
@@ -328,25 +527,27 @@
     {
       "@id": "con:AgenticConstitution",
       "@type": "owl:Class",
-      "subClassOf": "con:Constitution",
+      "subClassOf": "con:OperationalConstitution",
       "label": "Agentic constitution",
       "definition": "An operational constitution that establishes the identity, purposes, bounded powers, duties, prohibitions, oversight, evidence requirements, and change procedures of an agentic twin or agentic system. It has no inferred legal effect.",
       "applicableSubjectType": [
         "agentic twin",
         "agentic system"
       ],
+      "applicableSubjectClass": "con:AgenticTwin",
       "commonInstrument": "con:AgenticConstitutionDocument"
     },
     {
       "@id": "con:SchemeConstitution",
       "@type": "owl:Class",
-      "subClassOf": "con:Constitution",
+      "subClassOf": "con:FinancialSubjectConstitution",
       "label": "Scheme constitution",
       "definition": "A constitution governing a regulated fund, pension, investment, insurance, or comparable scheme and the relations among its responsible parties and participants.",
       "applicableSubjectType": [
         "regulated fund",
         "regulated scheme"
       ],
+      "applicableSubjectClass": "con:FinancialInstrument",
       "commonInstrument": "con:SchemeRules"
     },
     {
@@ -564,6 +765,83 @@
       "definition": "Rules governing the constitution, operation, responsible parties, participants, benefits, investments, claims, or amendment of a regulated scheme."
     },
     {
+      "@id": "con:OperationalConstitutionDocument",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Operational constitution document",
+      "definition": "A de-novo instrument that expresses a non-legal subject's identity, purpose, interests, values, rights, obligations, authority, evidence and decision policies, capabilities, procedures, and change controls."
+    },
+    {
+      "@id": "con:AssetCharter",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Asset charter",
+      "definition": "An instrument governing an asset's identity, purpose, ownership or stewardship, obligations, evidence, capabilities, lifecycle, and agentic operation."
+    },
+    {
+      "@id": "con:TermsInstrument",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Terms instrument",
+      "definition": "An instrument expressing the rights, obligations, parties, events, lifecycle, remedies, transfer, and settlement terms of a financial, rights, agreement, or deed subject."
+    },
+    {
+      "@id": "con:ServiceCharter",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Service charter",
+      "definition": "An instrument governing a service's purpose, beneficiaries, scope, quality, authority, obligations, escalation, and change controls."
+    },
+    {
+      "@id": "con:ServiceAgreementInstrument",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Service agreement instrument",
+      "definition": "An agreement used as a constitutional instrument for a service. The agreement and the service remain distinct constitutional subjects."
+    },
+    {
+      "@id": "con:OracleCharter",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Oracle charter",
+      "definition": "An instrument defining an oracle's observation scope, authenticated claim types, evidence policy, methods, authority limits, review, audit, and amendment."
+    },
+    {
+      "@id": "con:EvaluationPolicy",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Evaluation policy",
+      "definition": "An instrument defining admissible evidence, methods, rubrics, reason codes, reviewers, outcomes, and challenge procedures."
+    },
+    {
+      "@id": "con:LifecyclePolicy",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Lifecycle policy",
+      "definition": "An instrument defining valid creation, activation, use, suspension, supersession, revocation, settlement, retention, and retirement."
+    },
+    {
+      "@id": "con:StewardshipCharter",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Stewardship charter",
+      "definition": "An instrument defining stewardship purposes, duties, beneficiaries, boundaries, evidence, permitted uses, safeguards, and accountability."
+    },
+    {
+      "@id": "con:EvidencePolicy",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Evidence policy",
+      "definition": "An instrument defining admissibility, provenance, integrity, freshness, sensitivity, access, evaluation, challenge, and retention of evidence."
+    },
+    {
+      "@id": "con:NetworkCharter",
+      "@type": "owl:Class",
+      "subClassOf": "con:GoverningInstrument",
+      "label": "Network charter",
+      "definition": "An instrument defining a network's participants, topology, roles, interoperability, state, duties, evidence, decisions, and change controls."
+    },
+    {
       "@id": "con:hasConstitution",
       "@type": "owl:ObjectProperty",
       "label": "has constitution",
@@ -669,17 +947,21 @@
     },
     {
       "@id": "con:commonInstrument",
-      "@type": "owl:ObjectProperty",
+      "@type": "owl:AnnotationProperty",
       "label": "common instrument",
-      "definition": "Relates a constitutional type to an instrument type commonly used for that subject. It does not assert universal legal necessity or equivalence.",
-      "domain": "con:Constitution",
-      "range": "con:ConstitutionalInstrument"
+      "definition": "Class-level catalogue metadata identifying an instrument type commonly used with a constitutional type. It does not assert an instance relation, universal legal necessity, or equivalence."
     },
     {
       "@id": "con:applicableSubjectType",
       "@type": "owl:AnnotationProperty",
       "label": "applicable subject type",
       "definition": "A jurisdiction-neutral label for a subject type to which a constitutional type commonly applies."
+    },
+    {
+      "@id": "con:applicableSubjectClass",
+      "@type": "owl:AnnotationProperty",
+      "label": "applicable subject class",
+      "definition": "Class-level catalogue metadata identifying a constitutional-subject taxonomy class to which a constitutional type commonly applies."
     },
     {
       "@id": "con:LegalEffectAssertion",
@@ -704,6 +986,197 @@
       "@type": "owl:Class",
       "label": "Constitutional AI profile",
       "definition": "A configuration identifying the agents, principles, critique, revision, decision, conflict, and audit procedures for constitutional-AI use."
+    },
+    {
+      "@id": "con:ConstitutionalSubjectProfile",
+      "@type": "owl:Class",
+      "label": "Constitutional subject profile",
+      "definition": "A qualified declaration of a constitutional subject's semantic types, reusable archetypes, and references to its identity, purposes, interests, values, rights, obligations, capabilities, authority, memory, policies, governance, responsible parties, or agentic twins. Referencing a facet does not duplicate or override its canonical source."
+    },
+    {
+      "@id": "con:subjectProfile",
+      "@type": "owl:ObjectProperty",
+      "label": "subject profile",
+      "definition": "Relates a constitution to the qualified semantic profile of its constitutional subject.",
+      "domain": "con:Constitution",
+      "range": "con:ConstitutionalSubjectProfile"
+    },
+    {
+      "@id": "con:subjectType",
+      "@type": "owl:AnnotationProperty",
+      "label": "subject type",
+      "definition": "Identifies an OWL class from the constitutional-subject taxonomy used to classify the subject within a constitutional declaration."
+    },
+    {
+      "@id": "con:hasArchetype",
+      "@type": "owl:ObjectProperty",
+      "label": "has archetype",
+      "definition": "Relates a constitutional subject profile to a reusable, non-exclusive constitutional archetype.",
+      "range": "con:ConstitutionalArchetype"
+    },
+    {
+      "@id": "con:hasIdentity",
+      "@type": "owl:ObjectProperty",
+      "label": "has identity",
+      "definition": "Relates a constitutional subject or profile to its identity record or canonical identity reference."
+    },
+    {
+      "@id": "con:hasPurpose",
+      "@type": "owl:ObjectProperty",
+      "label": "has purpose",
+      "definition": "Relates a constitutional subject or profile to a declared purpose resource."
+    },
+    {
+      "@id": "con:hasInterests",
+      "@type": "owl:ObjectProperty",
+      "label": "has interests",
+      "definition": "Relates a constitutional subject or profile to interests that its governance must recognize or protect."
+    },
+    {
+      "@id": "con:hasValues",
+      "@type": "owl:ObjectProperty",
+      "label": "has values",
+      "definition": "Relates a constitutional subject or profile to declared values or principles."
+    },
+    {
+      "@id": "con:hasRights",
+      "@type": "owl:ObjectProperty",
+      "label": "has rights",
+      "definition": "Relates a constitutional subject or profile to rights or entitlements accorded to or exercisable for it."
+    },
+    {
+      "@id": "con:hasObligations",
+      "@type": "owl:ObjectProperty",
+      "label": "has obligations",
+      "definition": "Relates a constitutional subject or profile to duties, commitments, liabilities, or other obligations that constrain it."
+    },
+    {
+      "@id": "con:hasCapabilities",
+      "@type": "owl:ObjectProperty",
+      "label": "has capabilities",
+      "definition": "Relates a constitutional subject or profile to bounded capabilities. Current authorization and revocation must still be resolved at action time.",
+      "range": "con:Capability"
+    },
+    {
+      "@id": "con:hasMemory",
+      "@type": "owl:ObjectProperty",
+      "label": "has memory",
+      "definition": "Relates a constitutional subject or profile to governed memory resources.",
+      "range": "con:Memory"
+    },
+    {
+      "@id": "con:hasEvidencePolicy",
+      "@type": "owl:ObjectProperty",
+      "label": "has evidence policy",
+      "definition": "Relates a constitutional subject or profile to its evidence policy."
+    },
+    {
+      "@id": "con:hasEvaluationPolicy",
+      "@type": "owl:ObjectProperty",
+      "label": "has evaluation policy",
+      "definition": "Relates a constitutional subject or profile to its evaluation policy."
+    },
+    {
+      "@id": "con:hasDecisionPolicy",
+      "@type": "owl:ObjectProperty",
+      "label": "has decision policy",
+      "definition": "Relates a constitutional subject or profile to its decision policy."
+    },
+    {
+      "@id": "con:hasSettlementPolicy",
+      "@type": "owl:ObjectProperty",
+      "label": "has settlement policy",
+      "definition": "Relates a constitutional subject or profile to its settlement policy."
+    },
+    {
+      "@id": "con:hasGovernance",
+      "@type": "owl:ObjectProperty",
+      "label": "has governance",
+      "definition": "Relates a constitutional subject or profile to its governance documents, resources, or canonical governance state."
+    },
+    {
+      "@id": "con:hasCustodian",
+      "@type": "owl:ObjectProperty",
+      "label": "has custodian",
+      "definition": "Relates a constitutional subject or profile to a subject responsible for custody under defined authority and duties."
+    },
+    {
+      "@id": "con:hasSteward",
+      "@type": "owl:ObjectProperty",
+      "label": "has steward",
+      "definition": "Relates a constitutional subject or profile to a subject responsible for stewardship under defined purposes and duties."
+    },
+    {
+      "@id": "con:hasOwner",
+      "@type": "owl:ObjectProperty",
+      "label": "has owner",
+      "definition": "Relates a constitutional subject or profile to a subject holding a recognized ownership interest."
+    },
+    {
+      "@id": "con:hasBeneficiary",
+      "@type": "owl:ObjectProperty",
+      "label": "has beneficiary",
+      "definition": "Relates a constitutional subject or profile to a subject for whose benefit an interest, duty, purpose, or outcome is governed."
+    },
+    {
+      "@id": "con:hasOracle",
+      "@type": "owl:ObjectProperty",
+      "label": "has oracle",
+      "definition": "Relates a constitutional subject or profile to an oracle authorized for an identified claim or observation scope.",
+      "range": "con:Oracle"
+    },
+    {
+      "@id": "con:hasAgenticTwin",
+      "@type": "owl:ObjectProperty",
+      "label": "has agentic twin",
+      "definition": "Relates a constitutional subject or profile to an identity-bearing agentic twin that exercises bounded agency for it.",
+      "range": "con:AgenticTwin"
+    },
+    {
+      "@id": "con:agenticTwinOf",
+      "@type": "owl:ObjectProperty",
+      "label": "agentic twin of",
+      "definition": "Relates an agentic twin to the constitutional subject for which it exercises bounded agency.",
+      "domain": "con:AgenticTwin",
+      "range": "con:ConstitutionalSubject"
+    },
+    {
+      "@id": "con:hasWorldModel",
+      "@type": "owl:ObjectProperty",
+      "label": "has world model",
+      "definition": "Relates an agentic twin to its governed world-model resource.",
+      "domain": "con:AgenticTwin",
+      "range": "con:WorldModel"
+    },
+    {
+      "@id": "con:hasDecisionEngine",
+      "@type": "owl:ObjectProperty",
+      "label": "has decision engine",
+      "definition": "Relates an agentic twin to a governed decision engine.",
+      "domain": "con:AgenticTwin",
+      "range": "con:DecisionEngine"
+    },
+    {
+      "@id": "con:hasCapabilityToken",
+      "@type": "owl:ObjectProperty",
+      "label": "has capability token",
+      "definition": "Relates an agentic twin to a bounded and independently verifiable capability token.",
+      "domain": "con:AgenticTwin",
+      "range": "con:CapabilityToken"
+    },
+    {
+      "@id": "con:hasConstitutionalGovernor",
+      "@type": "owl:ObjectProperty",
+      "label": "has constitutional governor",
+      "definition": "Relates an agentic twin to a mechanism that evaluates proposed behavior against constitutional norms before live authorization.",
+      "domain": "con:AgenticTwin",
+      "range": "con:ConstitutionalGovernor"
+    },
+    {
+      "@id": "con:precedes",
+      "@type": "owl:ObjectProperty",
+      "label": "precedes",
+      "definition": "Relates one conceptual constitutional-agency stage to a later stage. The relation does not authorize a transition."
     },
     {
       "@id": "con:status",

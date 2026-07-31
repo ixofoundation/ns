@@ -48,6 +48,121 @@
 						"@id": "con:constitutionalSubject",
 						"@type": "@id"
 					},
+					"subject_profile": {
+						"@id": "con:subjectProfile",
+						"@context": {
+							"subject_types": {
+								"@id": "con:subjectType",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"archetypes": {
+								"@id": "con:hasArchetype",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"identity": {
+								"@id": "con:hasIdentity",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"purposes": {
+								"@id": "con:hasPurpose",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"interests": {
+								"@id": "con:hasInterests",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"values": {
+								"@id": "con:hasValues",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"rights": {
+								"@id": "con:hasRights",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"obligations": {
+								"@id": "con:hasObligations",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"capabilities": {
+								"@id": "con:hasCapabilities",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"authorities": {
+								"@id": "con:hasAuthority",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"memory": {
+								"@id": "con:hasMemory",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"evidence_policies": {
+								"@id": "con:hasEvidencePolicy",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"evaluation_policies": {
+								"@id": "con:hasEvaluationPolicy",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"decision_policies": {
+								"@id": "con:hasDecisionPolicy",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"settlement_policies": {
+								"@id": "con:hasSettlementPolicy",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"governance": {
+								"@id": "con:hasGovernance",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"custodians": {
+								"@id": "con:hasCustodian",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"stewards": {
+								"@id": "con:hasSteward",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"owners": {
+								"@id": "con:hasOwner",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"beneficiaries": {
+								"@id": "con:hasBeneficiary",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"oracles": {
+								"@id": "con:hasOracle",
+								"@type": "@id",
+								"@container": "@set"
+							},
+							"agentic_twins": {
+								"@id": "con:hasAgenticTwin",
+								"@type": "@id",
+								"@container": "@set"
+							}
+						}
+					},
 					"legal_effect": "con:legalEffect",
 					"jurisdiction": {
 						"@id": "con:hasJurisdiction",
