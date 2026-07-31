@@ -1,88 +1,169 @@
 {
   "@context": "https://w3id.org/ixo/context/v1",
-  "id": "did:ixo:entity:example-dao",
-  "type": "con:ConstitutionalSubject",
-  "constitution": {
-    "id": "urn:uuid:1a4662b5-8b8a-4e10-96a7-5b5b96b7b1c9",
-    "type": "con:DAOConstitution",
-    "status": "in_force",
-    "subject": "did:ixo:entity:example-dao",
-    "legal_effect": {
-      "status": "unknown",
-      "jurisdiction": null,
-      "authority_evidence": []
-    },
-    "norms": [
-      "urn:ixo:resource:dao-principles"
-    ],
-    "instruments": [
-      {
-        "document_ref": "dao-charter",
-        "type": "con:DAOCharter",
-        "functions": [
-          "constitutive",
-          "governing"
+  "@graph": [
+    {
+      "id": "did:ixo:entity:example-forest",
+      "type": [
+        "con:Forest",
+        "con:ConstitutionalSubject"
+      ],
+      "constitution": {
+        "id": "urn:uuid:25c0b1e1-6b67-41e8-a184-23fab2bda458",
+        "type": "con:AssetConstitution",
+        "status": "in_force",
+        "subject": "did:ixo:entity:example-forest",
+        "subject_profile": {
+          "subject_types": [
+            "con:Forest",
+            "con:NaturalAsset",
+            "con:BiologicalEntity"
+          ],
+          "archetypes": [
+            "con:Stewarded",
+            "con:Regulated"
+          ],
+          "identity": [
+            "did:ixo:entity:example-forest"
+          ],
+          "purposes": [
+            "urn:ixo:resource:forest-purpose"
+          ],
+          "interests": [
+            "urn:ixo:resource:forest-ecological-interests"
+          ],
+          "values": [
+            "urn:ixo:resource:forest-principles"
+          ],
+          "rights": [
+            "urn:ixo:right:forest-protection"
+          ],
+          "obligations": [
+            "urn:ixo:resource:forest-stewardship-duties"
+          ],
+          "capabilities": [
+            "urn:ixo:right:forest-monitoring"
+          ],
+          "authorities": [
+            "did:ixo:dao:forest-stewards"
+          ],
+          "memory": [
+            "urn:ixo:resource:forest-state-memory"
+          ],
+          "evidence_policies": [
+            "urn:ixo:resource:forest-evidence-policy"
+          ],
+          "evaluation_policies": [
+            "urn:ixo:resource:forest-evaluation-policy"
+          ],
+          "decision_policies": [
+            "urn:ixo:resource:forest-decision-policy"
+          ],
+          "settlement_policies": [],
+          "governance": [
+            "forest-stewardship-charter"
+          ],
+          "custodians": [],
+          "stewards": [
+            "did:ixo:dao:forest-stewards"
+          ],
+          "owners": [],
+          "beneficiaries": [
+            "did:ixo:entity:forest-community"
+          ],
+          "oracles": [
+            "did:ixo:oracle:forest-monitor"
+          ],
+          "agentic_twins": [
+            "did:ixo:agent:forest-twin"
+          ]
+        },
+        "legal_effect": {
+          "status": "unknown",
+          "jurisdiction": null,
+          "authority_evidence": []
+        },
+        "norms": [
+          "urn:ixo:resource:forest-principles"
         ],
-        "canonical": true,
-        "effective_from": "2026-07-31T00:00:00Z",
-        "effective_until": null
-      },
-      {
-        "document_ref": "governance-policy",
-        "type": "con:ExecutableGovernancePolicy",
-        "functions": [
-          "governing",
-          "executable"
+        "instruments": [
+          {
+            "document_ref": "forest-stewardship-charter",
+            "type": "con:StewardshipCharter",
+            "functions": [
+              "governing"
+            ],
+            "canonical": true,
+            "effective_from": "2026-07-31T00:00:00Z",
+            "effective_until": null
+          }
         ],
-        "canonical": true,
-        "effective_from": "2026-07-31T00:00:00Z",
-        "effective_until": null
+        "governance": {
+          "authority_sources": [
+            "forest-stewardship-charter"
+          ],
+          "decision_procedure": "urn:ixo:resource:forest-decision-procedure",
+          "amendment_procedure": "urn:ixo:resource:forest-amendment-procedure",
+          "interpretation_procedure": "urn:ixo:resource:forest-interpretation-procedure",
+          "dispute_resolution_procedure": "urn:ixo:resource:forest-dispute-procedure",
+          "suspension_procedure": "urn:ixo:resource:forest-suspension-procedure",
+          "dissolution_procedure": null
+        },
+        "execution": {
+          "mode": "machine_assisted",
+          "implementations": [
+            "urn:ixo:resource:forest-monitoring-rules"
+          ],
+          "conformance_tests": [
+            "urn:ixo:resource:forest-monitoring-tests"
+          ],
+          "enforcement_points": [
+            "urn:ixo:service:forest-governance"
+          ],
+          "failure_policy": "pause_and_escalate",
+          "human_review_required_for": [
+            "change stewardship",
+            "approve intervention",
+            "change evidence policy"
+          ]
+        },
+        "constitutional_ai": {
+          "mode": "critique_and_revise",
+          "applies_to_agents": [
+            "did:ixo:agent:forest-twin"
+          ],
+          "principles": [
+            "urn:ixo:resource:forest-principles"
+          ],
+          "critique_procedure": "urn:ixo:resource:forest-critique-procedure",
+          "revision_procedure": "urn:ixo:resource:forest-revision-procedure",
+          "decision_procedure": null,
+          "model_profile": "urn:ixo:resource:forest-model-profile",
+          "conflict_policy": "canonical_authority_prevails",
+          "audit_record": "urn:ixo:resource:forest-constitutional-audit-schema"
+        }
       }
-    ],
-    "governance": {
-      "authority_sources": [
-        "dao-charter",
-        "governance-policy"
-      ],
-      "decision_procedure": "urn:ixo:resource:dao-decision-procedure",
-      "amendment_procedure": "urn:ixo:resource:dao-amendment-procedure",
-      "interpretation_procedure": "urn:ixo:resource:dao-interpretation-procedure",
-      "dispute_resolution_procedure": "urn:ixo:resource:dao-dispute-procedure",
-      "suspension_procedure": "urn:ixo:resource:dao-suspension-procedure",
-      "dissolution_procedure": "urn:ixo:resource:dao-dissolution-procedure"
     },
-    "execution": {
-      "mode": "hybrid",
-      "implementations": [
-        "urn:ixo:resource:dao-governance-code"
+    {
+      "id": "did:ixo:agent:forest-twin",
+      "type": [
+        "con:AgenticTwin",
+        "con:ConstitutionalSubject"
       ],
-      "conformance_tests": [
-        "urn:ixo:resource:dao-governance-tests"
-      ],
-      "enforcement_points": [
-        "urn:ixo:service:dao-governance"
-      ],
-      "failure_policy": "pause_and_escalate",
-      "human_review_required_for": [
-        "amend constitution",
-        "change rights",
-        "move value"
-      ]
-    },
-    "constitutional_ai": {
-      "mode": "critique_and_revise",
-      "applies_to_agents": [
-        "urn:ixo:agent:dao-assistant"
-      ],
-      "principles": [
-        "urn:ixo:resource:dao-principles"
-      ],
-      "critique_procedure": "urn:ixo:resource:dao-critique-procedure",
-      "revision_procedure": "urn:ixo:resource:dao-revision-procedure",
-      "decision_procedure": null,
-      "model_profile": null,
-      "conflict_policy": "canonical_authority_prevails",
-      "audit_record": "urn:ixo:resource:dao-constitutional-audit-schema"
+      "con:agenticTwinOf": {
+        "id": "did:ixo:entity:example-forest"
+      },
+      "con:hasMemory": {
+        "id": "urn:ixo:resource:forest-twin-memory"
+      },
+      "con:hasWorldModel": {
+        "id": "urn:ixo:resource:forest-world-model"
+      },
+      "con:hasDecisionEngine": {
+        "id": "urn:ixo:resource:forest-decision-engine"
+      },
+      "con:hasConstitutionalGovernor": {
+        "id": "urn:ixo:resource:forest-constitutional-governor"
+      }
     }
-  }
+  ]
 }
