@@ -3,9 +3,9 @@
 Rules and guidelines for extending the IXO Spatial Web namespace (`https://w3id.org/ixo/…`)
 — new vocabulary terms, new controlled-value concepts, and whole new schemes/ontologies.
 
-> **Read first:** every `protocol/<scheme>/v1/index.json` is **generated** by
+> **Read first:** every `protocol/<scheme>/v1/index.jsonld` is **generated** by
 > `scripts/build-schemes.mjs`. Hand-editing those files is not durable — a rebuild
-> overwrites it. Make changes in the **source** (the generator, `vocab/v1/index.json`,
+> overwrites it. Make changes in the **source** (the generator, `vocab/v1/index.jsonld`,
 > `context/v1/index.jsonld`, or `schema/…`) and regenerate. See §11.
 
 ---
@@ -41,8 +41,8 @@ Know which layer your addition belongs to — this is the single most common mis
 
 | Layer | Location | What lives here | Authoring |
 |---|---|---|---|
-| **Vocabulary (interpretation)** | `vocab/v1/index.json` | RDFS/OWL **classes** (`ixo:Entity`) and **properties** (`ixo:controller`). The meaning layer. | Hand-authored |
-| **Controlled values (taxonomies)** | `protocol/<scheme>/v1/index.json` | SKOS `ConceptScheme`s — the allowed **values** for a field (entity types, claim types, statuses, roles, …). | **Generated** by `build-schemes.mjs` |
+| **Vocabulary (interpretation)** | `vocab/v1/index.jsonld` | RDFS/OWL **classes** (`ixo:Entity`) and **properties** (`ixo:controller`). The meaning layer. | Hand-authored |
+| **Controlled values (taxonomies)** | `protocol/<scheme>/v1/index.jsonld` | SKOS `ConceptScheme`s — the allowed **values** for a field (entity types, claim types, statuses, roles, …). | **Generated** by `build-schemes.mjs` |
 | **Context (wiring)** | `context/v1/index.jsonld` | JSON-LD 1.1 prefixes + term aliases that make compact JSON expand to the IRIs above. | Hand-authored |
 | **Document validation** | `schema/v1/*.json` (JSON Schema), `schema/shapes/v1/*.jsonld` (SHACL) | Structural rules for document bodies (Entity, Claim, Profile, …). | Hand-authored |
 
@@ -58,7 +58,7 @@ Rule of thumb:
 
 ```
 Is it a new MEANING (a class) or a new PREDICATE (a property)?
-  └─ yes → vocab/v1/index.json  ............................. §4
+  └─ yes → vocab/v1/index.jsonld  ............................. §4
 Is it a new VALUE in an existing controlled list?
   └─ yes → add a c(...) concept to that scheme in build-schemes.mjs   §5
 Is it a whole new controlled list / taxonomy / external ontology?
@@ -98,7 +98,7 @@ Is it a new constraint on a document's shape?
 
 ---
 
-## 4. Adding a vocabulary term (class or property) — `vocab/v1/index.json`
+## 4. Adding a vocabulary term (class or property) — `vocab/v1/index.jsonld`
 
 Add a node to the `@graph`. Enforced by `validate-vocab.mjs` (Part A).
 
@@ -141,7 +141,7 @@ Add a node to the `@graph`. Enforced by `validate-vocab.mjs` (Part A).
 ## 5. Adding a concept (a value) to an existing scheme
 
 Concepts are **generated** — add a `c(...)` entry to the scheme's `concepts` array in
-`scripts/build-schemes.mjs`, then rebuild. Do **not** edit `protocol/<scheme>/v1/index.json`.
+`scripts/build-schemes.mjs`, then rebuild. Do **not** edit `protocol/<scheme>/v1/index.jsonld`.
 
 ```js
 // c(id, label, def, notation?, broader?, inv?)
@@ -186,7 +186,7 @@ SKOS `ConceptScheme`. Five steps in `build-schemes.mjs` + context:
    ```
 2. **Register the output path** in the `LEGACY` map:
    ```js
-   'incentive-types': 'protocol/incentive-types/v1/index.json',
+   'incentive-types': 'protocol/incentive-types/v1/index.jsonld',
    ```
    (The IRI base is derived from this path by `baseFor`.)
 3. **Add the scheme to the build order** if it isn't already iterated (the `order`
@@ -283,10 +283,10 @@ Keep the two consistent with each other and with the context aliases.
 ```
 1. Edit the SOURCE
    • SKOS concept/scheme  → scripts/build-schemes.mjs  (+ scripts/salvaged.data.json)
-   • vocab term           → vocab/v1/index.json
+   • vocab term           → vocab/v1/index.jsonld
    • context wiring        → context/v1/index.jsonld
    • document shape        → schema/v1/*.json  and/or  schema/shapes/v1/*.jsonld
-2. Regenerate     → npm run build:schemes      (rewrites protocol/**/index.json)
+2. Regenerate     → npm run build:schemes      (rewrites protocol/**/index.jsonld)
 3. Validate       → npm run validate           (MUST be 0 errors)
 4. Rebuild docs   → npm run build:docs
 5. Mirror the identical change into all three trees and re-confirm they match.

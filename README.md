@@ -12,7 +12,7 @@ The namespace **does not duplicate the on-chain graph**. Specific entities, thei
 
 The current `main` branch reflects historical contents that have known correctness issues (audit findings documented in [`PLAN.md`](./PLAN.md), Appendix A).
 
-Active work is on branch [`ns-v2`](https://github.com/ixofoundation/ns/tree/ns-v2). The rebuild covers:
+Active work is on branch [`v2`](https://github.com/ixofoundation/ns/tree/v2). The rebuild covers:
 
 - A working JSON-LD umbrella context (fixing duplicate keys, illegal keyword overrides, undefined terms).
 - A proper RDFS/OWL vocabulary with class hierarchy, properties, and bridging to schema.org / PROV-O / FOAF / DPV / W3C VC / DID Core.
@@ -26,8 +26,12 @@ See [`PLAN.md`](./PLAN.md) for the full project plan, phase-by-phase task lists,
 
 ```
 context/v1/             JSON-LD umbrella context (entry point for consumers)
-vocab/v1/               Core vocabulary — RDFS/OWL classes & properties (index.json) + countries.json
+vocab/v1/               Core vocabulary — RDFS/OWL classes & properties (index.jsonld) + countries.jsonld
+vocab/v1/<module>/      Ontology modules — index.jsonld + example.jsonld + README.md per module
+                        (constitution/ — constitutional subjects; billing/ — usage-billing claims)
 protocol/<thing>/v1/    SKOS concept schemes — closed enums & taxonomies (legacy structure)
+did/v1/                 Canonical did:ixo DID Method specification + method context
+interchain-identifiers/v1/  did:ixo method-term context (IID extension properties)
 schema/v1/              JSON Schemas — document-shape validation
 schema/shapes/v1/       SHACL shapes — graph-shape validation
 templates/v1/           Credential and claim templates
@@ -35,8 +39,15 @@ scripts/                Validation harness
 .github/workflows/      CI
 ```
 
+Ontology modules under `vocab/v1/<module>/` follow the pattern established by the
+constitutional ontology: an OWL ontology (`index.jsonld`) with `dcterms` metadata,
+`owl:versionInfo`, an issue date and sources, `skos:definition`/`rdfs:label` on every
+class and property, a worked `example.jsonld`, a `README.md` covering the model
+boundary and source basis, registration through `owl:imports` in `vocab/v1/index.jsonld`,
+and prefix + scoped-context wiring in the umbrella context.
+
 The repo follows the **legacy `protocol/` structure**: concept schemes live at
-`protocol/<thing>/v1/index.json` (e.g. `protocol/claims/v1`), not under a
+`protocol/<thing>/v1/index.jsonld` (e.g. `protocol/claims/v1`), not under a
 separate `vocab/<scheme>` tree. See [`PLAN.md`](./PLAN.md) section 2.
 
 ## How to use the namespace
@@ -68,7 +79,7 @@ This single context import gives access to all IXO classes, properties, and pref
 ```bash
 git clone https://github.com/ixofoundation/ns.git
 cd ns
-git checkout ns-v2
+git checkout v2
 npm install
 npm run validate
 ```

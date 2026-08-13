@@ -1,0 +1,503 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "con": "https://w3id.org/ixo/vocab/v1/constitution#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "definition": "skos:definition",
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "precedes": {
+      "@id": "con:precedes",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1/constitution/subjects",
+      "@type": "owl:Ontology",
+      "dcterms:title": "IXO Constitutional Subject Taxonomy",
+      "dcterms:description": "A legal-form-independent taxonomy of things that may be modeled as constitutional subjects, together with reusable constitutional archetypes and the IXO constitutional agency cycle.",
+      "owl:versionInfo": "1.1.0",
+      "dcterms:issued": {
+        "@value": "2026-07-31",
+        "@type": "xsd:date"
+      }
+    },
+
+    {
+      "@id": "con:Thing",
+      "@type": "owl:Class",
+      "label": "Thing",
+      "definition": "The most general class of anything that may be described, related, governed, or reasoned about."
+    },
+    {
+      "@id": "con:Entity",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Entity",
+      "definition": "A distinguishable thing that persists or is treated as having identity through time."
+    },
+    {
+      "@id": "con:Event",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Event",
+      "definition": "A temporally bounded occurrence that changes, records, or reveals state."
+    },
+    {
+      "@id": "con:Process",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Process",
+      "definition": "An ordered or governed course of activity that unfolds through time."
+    },
+    {
+      "@id": "con:Relationship",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Relationship",
+      "definition": "A connection among subjects, objects, roles, rights, or states that may itself carry governed meaning."
+    },
+    {
+      "@id": "con:InformationObject",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Information object",
+      "definition": "A persistent or addressable expression of information whose identity, provenance, interpretation, or use may be governed."
+    },
+    {
+      "@id": "con:NormativeObject",
+      "@type": "owl:Class",
+      "subClassOf": "con:InformationObject",
+      "label": "Normative object",
+      "definition": "An information object that expresses, creates, records, or evidences a rule, right, duty, permission, prohibition, or institutional fact."
+    },
+    {
+      "@id": "con:Capability",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Capability",
+      "definition": "A bounded ability or authority to perform an action, subject to applicable constraints and current authorization."
+    },
+    {
+      "@id": "con:ConstitutionalSubject",
+      "@type": "owl:Class",
+      "subClassOf": "con:Thing",
+      "label": "Constitutional subject",
+      "definition": "A thing explicitly modeled as possessing an identity and a governing normative system, whether or not it is a legal person, organisation, or independently agentic."
+    },
+
+    {
+      "@id": "con:Person",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Person",
+      "definition": "A natural, artificial, digital, or collective subject treated as a bearer of identity, interests, rights, duties, or agency."
+    },
+    {
+      "@id": "con:Organization",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Organisation",
+      "definition": "A structured collective subject formed around purposes, membership, offices, resources, or coordinated activity."
+    },
+    {
+      "@id": "con:Asset",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Asset",
+      "definition": "A persistent entity that stores or produces economic, ecological, or social value and whose state, ownership, obligations, and capabilities may evolve through time."
+    },
+    {
+      "@id": "con:Commodity",
+      "@type": "owl:Class",
+      "subClassOf": "con:Asset",
+      "label": "Commodity",
+      "definition": "An asset category whose units are defined for exchange, substitutability, or fungibility under a market, technical, or regulatory specification."
+    },
+    {
+      "@id": "con:FinancialInstrument",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Asset", "con:NormativeObject"],
+      "label": "Financial instrument",
+      "definition": "A subject representing financial value, entitlement, risk, payment, investment, or settlement terms."
+    },
+    {
+      "@id": "con:PropertyRight",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Relationship", "con:NormativeObject", "con:ConstitutionalSubject"],
+      "label": "Property right",
+      "definition": "A governed entitlement, interest, permission, or exclusion concerning the possession, use, benefit, transfer, or protection of a thing."
+    },
+    {
+      "@id": "con:Agreement",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Relationship", "con:NormativeObject", "con:ConstitutionalSubject"],
+      "label": "Agreement",
+      "definition": "A governed arrangement among parties that records mutual commitments, permissions, duties, remedies, or conditions."
+    },
+    {
+      "@id": "con:Deed",
+      "@type": "owl:Class",
+      "subClassOf": ["con:NormativeObject", "con:ConstitutionalSubject"],
+      "label": "Deed",
+      "definition": "A formally executed legal instrument intended to create, transfer, declare, or extinguish legal rights or obligations independently of ordinary contractual consideration."
+    },
+    {
+      "@id": "con:Project",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Process", "con:ConstitutionalSubject"],
+      "label": "Project",
+      "definition": "A temporally bounded undertaking with identity, purpose, scope, roles, resources, decisions, deliverables, and completion or transition conditions."
+    },
+    {
+      "@id": "con:Work",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Process", "con:ConstitutionalSubject"],
+      "label": "Work",
+      "definition": "A governed unit or sequence of activity undertaken to produce a result, deliverable, state transition, or obligation discharge."
+    },
+    {
+      "@id": "con:Protocol",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Process", "con:NormativeObject", "con:ConstitutionalSubject"],
+      "label": "Protocol",
+      "definition": "A governed specification of roles, messages, rules, state transitions, conformance conditions, or procedures."
+    },
+    {
+      "@id": "con:Service",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Process", "con:Capability", "con:ConstitutionalSubject"],
+      "label": "Service",
+      "definition": "A governed capability made available to perform defined activities or produce defined results for a subject or beneficiary."
+    },
+    {
+      "@id": "con:Oracle",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:Capability", "con:ConstitutionalSubject"],
+      "label": "Oracle",
+      "definition": "A constitutional subject authorised to transform observations into authenticated claims within a defined scope of authority."
+    },
+    {
+      "@id": "con:Claim",
+      "@type": "owl:Class",
+      "subClassOf": ["con:InformationObject", "con:ConstitutionalSubject"],
+      "label": "Claim",
+      "definition": "An identifiable assertion whose admissibility, evidence, evaluation, authority, lifecycle, and consequences may be governed."
+    },
+    {
+      "@id": "con:Credential",
+      "@type": "owl:Class",
+      "subClassOf": ["con:InformationObject", "con:ConstitutionalSubject"],
+      "label": "Credential",
+      "definition": "An identifiable attestation of status, qualification, authority, entitlement, or fact whose issuance, use, verification, suspension, and revocation may be governed."
+    },
+    {
+      "@id": "con:Evidence",
+      "@type": "owl:Class",
+      "subClassOf": ["con:InformationObject", "con:ConstitutionalSubject"],
+      "label": "Evidence",
+      "definition": "An identifiable observation, record, or information object offered to support, contest, or evaluate a claim or decision."
+    },
+    {
+      "@id": "con:Decision",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Event", "con:InformationObject", "con:ConstitutionalSubject"],
+      "label": "Decision",
+      "definition": "An identifiable determination produced through a declared authority and procedure with recorded grounds, outcomes, and consequences."
+    },
+    {
+      "@id": "con:Outcome",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Event", "con:ConstitutionalSubject"],
+      "label": "Outcome",
+      "definition": "An identifiable resulting state or change whose achievement, verification, attribution, or settlement may be governed."
+    },
+    {
+      "@id": "con:Place",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Place",
+      "definition": "An identifiable geographic, physical, administrative, ecological, or jurisdictional area whose state, use, stewardship, and boundaries may be governed."
+    },
+    {
+      "@id": "con:BiologicalEntity",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Biological entity",
+      "definition": "A living, ecological, population, or pathogenic subject whose state, interests, risks, evidence, or interventions may be governed."
+    },
+    {
+      "@id": "con:Network",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Network",
+      "definition": "An identifiable system of connected participants, nodes, facilities, routes, relationships, or flows with governed membership, coordination, or state."
+    },
+
+    { "@id": "con:NaturalPerson", "@type": "owl:Class", "subClassOf": "con:Person", "label": "Natural person", "definition": "A human individual modeled as a constitutional subject." },
+    { "@id": "con:ArtificialPerson", "@type": "owl:Class", "subClassOf": "con:Person", "label": "Artificial person", "definition": "A non-human person recognized by a legal or institutional system as a bearer of rights or duties." },
+    { "@id": "con:DigitalPerson", "@type": "owl:Class", "subClassOf": "con:Person", "label": "Digital person", "definition": "A digitally constituted person-like subject whose recognition, rights, and duties depend on an explicit governing system." },
+    { "@id": "con:CollectivePerson", "@type": "owl:Class", "subClassOf": "con:Person", "label": "Collective person", "definition": "A collective treated as one person-like bearer of identity, interests, rights, or duties." },
+
+    { "@id": "con:Company", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Company", "definition": "An incorporated or otherwise constituted commercial organisation." },
+    { "@id": "con:Partnership", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Partnership", "definition": "An organisation formed through an ongoing relationship among partners who share authority, duties, risks, or benefits." },
+    { "@id": "con:Cooperative", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Cooperative", "definition": "A member-controlled organisation governed for shared economic, social, or cultural benefit." },
+    { "@id": "con:Association", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Association", "definition": "A membership organisation formed around a common purpose, activity, or interest." },
+    { "@id": "con:Foundation", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Foundation", "definition": "A purpose-bound organisation or endowed institution governed for stated beneficiaries or public purposes." },
+    { "@id": "con:Trust", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Trust", "definition": "A governed relationship in which property is held or administered by a trustee for beneficiaries or purposes." },
+    { "@id": "con:DAO", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Decentralized autonomous organisation", "definition": "A digitally coordinated organisation governed through social, legal, protocol, and executable mechanisms." },
+    { "@id": "con:Government", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "Government", "definition": "A public organisation exercising governmental authority for a polity or jurisdiction." },
+    { "@id": "con:InternationalOrganization", "@type": "owl:Class", "subClassOf": "con:Organization", "label": "International organisation", "definition": "An organisation established across states or other international members by a constituent instrument." },
+
+    { "@id": "con:PhysicalAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Physical asset", "definition": "A materially embodied asset with observable physical state and location." },
+    { "@id": "con:DigitalAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Digital asset", "definition": "An asset whose primary existence, control, or transfer is represented digitally." },
+    { "@id": "con:FinancialAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Financial asset", "definition": "An asset representing monetary value, a financial claim, or an economic entitlement." },
+    { "@id": "con:NaturalAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Natural asset", "definition": "An ecological or naturally occurring asset that stores, supports, or produces value." },
+    { "@id": "con:InfrastructureAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Infrastructure asset", "definition": "A built or technical asset that provides persistent productive or public-service capacity." },
+    { "@id": "con:KnowledgeAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Knowledge asset", "definition": "An asset consisting primarily of organized knowledge, data, methods, or know-how." },
+    { "@id": "con:IntangibleAsset", "@type": "owl:Class", "subClassOf": "con:Asset", "label": "Intangible asset", "definition": "A non-physical asset whose value arises from rights, reputation, relationships, information, or other intangibles." },
+    { "@id": "con:DeliveryVehicle", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "Delivery vehicle", "definition": "A vehicle asset governed for the transport or delivery of goods or services." },
+    { "@id": "con:GPU", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "GPU", "definition": "A graphics processing unit treated as an owned asset and source of governed compute capacity; standardized GPU hours, rather than the device itself, may be modeled as a digital compute commodity." },
+    { "@id": "con:SolarFarm", "@type": "owl:Class", "subClassOf": "con:InfrastructureAsset", "label": "Solar farm", "definition": "An infrastructure asset that produces electricity from solar energy." },
+    { "@id": "con:Hospital", "@type": "owl:Class", "subClassOf": "con:InfrastructureAsset", "label": "Hospital", "definition": "A health infrastructure asset with governed facilities, services, obligations, and risks." },
+    { "@id": "con:Forest", "@type": "owl:Class", "subClassOf": ["con:NaturalAsset", "con:BiologicalEntity"], "label": "Forest", "definition": "A persistent forest ecosystem whose condition, stewardship, rights, benefits, and ecological services may be governed." },
+    { "@id": "con:Building", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "Building", "definition": "A constructed physical asset with governed ownership, occupation, maintenance, and use." },
+    { "@id": "con:ArtisanalGold", "@type": "owl:Class", "subClassOf": ["con:PhysicalAsset", "con:GoldCommodity"], "label": "Artisanal gold", "definition": "Gold originating from artisanal or small-scale mining and governed through provenance, custody, compliance, and trade claims." },
+    { "@id": "con:PatentAsset", "@type": "owl:Class", "subClassOf": ["con:IntangibleAsset", "con:KnowledgeAsset"], "label": "Patent", "definition": "An intangible knowledge asset grounded in a patent right." },
+    { "@id": "con:Battery", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "Battery", "definition": "A physical asset that stores energy and carries governed safety, provenance, performance, and lifecycle obligations." },
+    { "@id": "con:MachineTool", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "Machine tool", "definition": "A productive physical asset used to shape or manufacture components under governed operating conditions." },
+    { "@id": "con:FishingVessel", "@type": "owl:Class", "subClassOf": "con:PhysicalAsset", "label": "Fishing vessel", "definition": "A vessel asset governed by ownership, licensing, location, catch, safety, and environmental obligations." },
+    { "@id": "con:DataCentre", "@type": "owl:Class", "subClassOf": "con:InfrastructureAsset", "label": "Data centre", "definition": "An infrastructure asset that provides governed compute, storage, network, energy, and security capacity." },
+
+    { "@id": "con:EnergyCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Energy commodity", "definition": "A commodity defined as usable or transferable energy." },
+    { "@id": "con:AgriculturalCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Agricultural commodity", "definition": "A fungible agricultural product defined by origin, grade, quantity, or market specification." },
+    { "@id": "con:MineralCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Mineral commodity", "definition": "A fungible mineral or extracted material defined by composition, grade, quantity, provenance, or market specification." },
+    { "@id": "con:DigitalComputeCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Digital compute commodity", "definition": "A standardized and exchangeable unit of compute, storage, bandwidth, or related digital capacity." },
+    { "@id": "con:GoldCommodity", "@type": "owl:Class", "subClassOf": "con:MineralCommodity", "label": "Gold", "definition": "Gold defined as a fungible mineral commodity under stated grade, custody, and market rules." },
+    { "@id": "con:CoffeeCommodity", "@type": "owl:Class", "subClassOf": "con:AgriculturalCommodity", "label": "Coffee", "definition": "Coffee defined as an agricultural commodity under stated origin, grade, sustainability, and trade rules." },
+    { "@id": "con:CarbonCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Carbon", "definition": "A standardized carbon quantity or environmental unit governed by a measurement and market methodology." },
+    { "@id": "con:ElectricityCommodity", "@type": "owl:Class", "subClassOf": "con:EnergyCommodity", "label": "Electricity", "definition": "Electrical energy defined as a metered and exchangeable commodity." },
+    { "@id": "con:GPUHours", "@type": "owl:Class", "subClassOf": "con:DigitalComputeCommodity", "label": "GPU hours", "definition": "Standardized time-bounded GPU compute capacity offered as a digital commodity." },
+    { "@id": "con:BandwidthCommodity", "@type": "owl:Class", "subClassOf": "con:DigitalComputeCommodity", "label": "Bandwidth", "definition": "Standardized network transmission capacity offered as a digital commodity." },
+    { "@id": "con:FreshWaterCommodity", "@type": "owl:Class", "subClassOf": "con:Commodity", "label": "Fresh water", "definition": "Fresh water represented as a measured, allocated, or exchangeable commodity under environmental and use constraints." },
+
+    { "@id": "con:Investment", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Investment", "definition": "A commitment of value to an asset, project, organisation, or strategy in expectation of governed financial or impact returns." },
+    { "@id": "con:Bond", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Bond", "definition": "A debt instrument recording repayment, interest, maturity, covenant, and enforcement terms." },
+    { "@id": "con:Equity", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Equity", "definition": "An ownership or residual-interest instrument in an organisation or asset." },
+    { "@id": "con:SAFE", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "SAFE", "definition": "A simple agreement for future equity governed by conversion and triggering terms." },
+    { "@id": "con:ConvertibleNote", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Convertible note", "definition": "A debt instrument that may convert into equity under stated conditions." },
+    { "@id": "con:Loan", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Loan", "definition": "A financial instrument governing an advance of value and its repayment obligations." },
+    { "@id": "con:Mortgage", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Mortgage", "definition": "A secured financial instrument governing a debt and an interest in property." },
+    { "@id": "con:InsurancePolicy", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Insurance policy", "definition": "A risk-transfer instrument defining coverage, premiums, exclusions, claims, and settlement." },
+    { "@id": "con:Option", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Option", "definition": "A financial instrument granting a governed right, but not an obligation, to transact under stated terms." },
+    { "@id": "con:Future", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Future", "definition": "A standardized financial instrument obliging a future transaction under stated market terms." },
+    { "@id": "con:CarbonCredit", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Carbon credit", "definition": "A governed environmental unit representing a verified quantity of emission reduction, avoidance, or removal." },
+    { "@id": "con:BiodiversityCredit", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Biodiversity credit", "definition": "A governed environmental unit representing a verified biodiversity outcome under a stated methodology." },
+    { "@id": "con:Stablecoin", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Stablecoin", "definition": "A digital financial instrument designed to maintain a stated reference value under governed issuance and redemption rules." },
+    { "@id": "con:CBDC", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Central bank digital currency", "definition": "A digital monetary instrument issued or governed by a central bank." },
+    { "@id": "con:SecurityToken", "@type": "owl:Class", "subClassOf": "con:FinancialInstrument", "label": "Security token", "definition": "A digitally represented regulated financial interest with governed issuance, ownership, transfer, and compliance." },
+
+    { "@id": "con:Title", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Title", "definition": "A legally or institutionally recognized basis for ownership or superior interest in property." },
+    { "@id": "con:Lease", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Lease", "definition": "A time-bounded right to possess or use property under stated obligations." },
+    { "@id": "con:LicenseRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Licence", "definition": "A governed permission to use, perform, access, or exploit a protected thing or activity." },
+    { "@id": "con:PermitRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Permit", "definition": "An authority-granted permission to undertake a regulated activity subject to conditions." },
+    { "@id": "con:Concession", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Concession", "definition": "A granted right to use, operate, or exploit a public, natural, or infrastructure asset under stated conditions." },
+    { "@id": "con:MiningRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Mining right", "definition": "A governed right to explore for or extract minerals within a defined area and term." },
+    { "@id": "con:FishingRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Fishing right", "definition": "A governed right to harvest specified aquatic resources within defined conditions." },
+    { "@id": "con:SpectrumRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Spectrum right", "definition": "A governed right to use specified radio-frequency spectrum under allocated conditions." },
+    { "@id": "con:EmissionAllowance", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Emission allowance", "definition": "A regulated entitlement to emit a specified quantity under an emissions-control scheme." },
+    { "@id": "con:PatentRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Patent", "definition": "An exclusive right concerning a qualifying invention under applicable law." },
+    { "@id": "con:TrademarkRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Trademark", "definition": "A protected right concerning a mark that identifies source or origin." },
+    { "@id": "con:CopyrightRight", "@type": "owl:Class", "subClassOf": "con:PropertyRight", "label": "Copyright", "definition": "A protected right concerning an original expressive work." },
+
+    { "@id": "con:Contract", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Contract", "definition": "An agreement intended to create enforceable commitments under an applicable authority system." },
+    { "@id": "con:ServiceAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Service agreement", "definition": "An agreement governing the provision, acceptance, quality, payment, and remedies of a service." },
+    { "@id": "con:EmploymentContract", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Employment contract", "definition": "An agreement governing employment duties, compensation, rights, conditions, and termination." },
+    { "@id": "con:PurchaseAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Purchase agreement", "definition": "An agreement governing the sale and purchase of goods, assets, rights, or services." },
+    { "@id": "con:OptionAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Option agreement", "definition": "An agreement granting a conditional right to enter or require a future transaction." },
+    { "@id": "con:EscrowAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Escrow agreement", "definition": "An agreement governing custody and conditional release of assets, rights, documents, or funds." },
+    { "@id": "con:SupplyAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Supply agreement", "definition": "An agreement governing ongoing supply, quality, delivery, price, and performance obligations." },
+    { "@id": "con:LicenseAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Licence agreement", "definition": "An agreement granting and governing permission to use protected rights, assets, information, or capabilities." },
+    { "@id": "con:CollectiveBargainingAgreement", "@type": "owl:Class", "subClassOf": "con:Agreement", "label": "Collective bargaining agreement", "definition": "An agreement governing employment conditions negotiated between collective worker and employer representatives." },
+
+    { "@id": "con:TrustDeed", "subClassOf": "con:Deed" },
+    { "@id": "con:FoundationDeed", "subClassOf": "con:Deed" },
+    { "@id": "con:PartnershipDeed", "subClassOf": "con:Deed" },
+    { "@id": "con:DeedOfFormation", "subClassOf": "con:Deed" },
+    { "@id": "con:PropertyDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Property deed", "definition": "A deed that creates, records, or transfers an interest in property." },
+    { "@id": "con:MiningDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Mining deed", "definition": "A deed-form instrument creating or evidencing governed mining rights or obligations." },
+    { "@id": "con:ConservationDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Conservation deed", "definition": "A deed-form instrument imposing or recording enduring conservation purposes, rights, or restrictions." },
+    { "@id": "con:GiftDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Gift deed", "definition": "A deed-form instrument transferring property by gift." },
+    { "@id": "con:SettlementDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Settlement deed", "definition": "A deed-form instrument recording a settlement, transfer, trust, or discharge arrangement." },
+    { "@id": "con:MortgageDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Mortgage deed", "definition": "A deed-form instrument creating or recording security over property for an obligation." },
+    { "@id": "con:GrantDeed", "@type": "owl:Class", "subClassOf": "con:Deed", "label": "Grant deed", "definition": "A deed-form instrument granting or transferring an interest, right, or property." },
+
+    { "@id": "con:Programme", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Programme", "definition": "A coordinated set of projects and activities governed toward broader strategic outcomes." },
+    { "@id": "con:Mission", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Mission", "definition": "A purpose-led undertaking governed toward a defined transformative result." },
+    { "@id": "con:Campaign", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Campaign", "definition": "A coordinated, time-bounded undertaking intended to influence, mobilize, or deliver a defined result." },
+    { "@id": "con:Initiative", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Initiative", "definition": "A bounded undertaking established to pursue a defined change or opportunity." },
+    { "@id": "con:ConstructionProject", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Construction project", "definition": "A project governed to design, build, commission, or rehabilitate physical infrastructure." },
+    { "@id": "con:ResearchProject", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Research project", "definition": "A project governed to investigate questions, produce evidence, or develop knowledge." },
+    { "@id": "con:HumanitarianProject", "@type": "owl:Class", "subClassOf": "con:Project", "label": "Humanitarian project", "definition": "A project governed to protect life, health, dignity, or essential needs in a humanitarian context." },
+
+    { "@id": "con:Task", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Task", "definition": "A bounded unit of work assigned or undertaken toward a result." },
+    { "@id": "con:Job", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Job", "definition": "A defined unit or role of work governed by expected activities, conditions, and results." },
+    { "@id": "con:Assignment", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Assignment", "definition": "Work allocated to a subject under stated scope, authority, and completion conditions." },
+    { "@id": "con:Workflow", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Workflow", "definition": "An ordered set of governed work states, roles, transitions, and effects." },
+    { "@id": "con:Flow", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Flow", "definition": "A stateful sequence of activities and transitions governed toward an outcome." },
+    { "@id": "con:DeedWork", "@type": "owl:Class", "subClassOf": ["con:Work", "con:Deed"], "label": "IXO Deed", "definition": "An IXO-governed unit of work or commitment represented as a deed subject with its own claims, evidence, state, and completion conditions." },
+    { "@id": "con:Milestone", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Milestone", "definition": "An identifiable governed checkpoint or achieved state within a project or workflow." },
+    { "@id": "con:Deliverable", "@type": "owl:Class", "subClassOf": "con:Work", "label": "Deliverable", "definition": "An identifiable output whose required properties, acceptance, evidence, and completion may be governed." },
+
+    { "@id": "con:BlockchainProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Blockchain protocol", "definition": "A protocol governing distributed ledger state, validation, consensus, transactions, or execution." },
+    { "@id": "con:CommunicationProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Communication protocol", "definition": "A protocol governing messages, formats, exchanges, and communication behavior." },
+    { "@id": "con:GovernanceProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Governance protocol", "definition": "A protocol governing proposals, decisions, approvals, amendments, and accountability." },
+    { "@id": "con:EvaluationProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Evaluation protocol", "definition": "A protocol governing admissible evidence, methods, scoring, review, and determinations." },
+    { "@id": "con:SettlementProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Settlement protocol", "definition": "A protocol governing the discharge, transfer, reconciliation, or finalization of obligations and value." },
+    { "@id": "con:MedicalProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Medical protocol", "definition": "A protocol governing a medical investigation, intervention, care pathway, or clinical operation." },
+    { "@id": "con:ClinicalGuideline", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Clinical guideline", "definition": "A governed recommendation framework for clinical decisions and care." },
+    { "@id": "con:SecurityProtocol", "@type": "owl:Class", "subClassOf": "con:Protocol", "label": "Security protocol", "definition": "A protocol governing authentication, confidentiality, integrity, authorization, or secure interaction." },
+
+    { "@id": "con:ProfessionalService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Professional service", "definition": "A service delivered through specialized professional competence and accountable practice." },
+    { "@id": "con:OracleService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Oracle service", "definition": "A service that produces authenticated claims from observations under defined oracle authority." },
+    { "@id": "con:EvaluationService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Evaluation service", "definition": "A service that assesses claims or evidence against a governed method or rubric." },
+    { "@id": "con:VerificationService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Verification service", "definition": "A service that checks integrity, authenticity, conformance, status, or evidence." },
+    { "@id": "con:PaymentService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Payment service", "definition": "A service that initiates, processes, records, or reconciles governed transfers of value." },
+    { "@id": "con:HostingService", "@type": "owl:Class", "subClassOf": "con:Service", "label": "Hosting service", "definition": "A service that makes governed compute, applications, data, or content available." },
+
+    { "@id": "con:HumanOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Human oracle", "definition": "A human subject authorised to transform observations or judgments into authenticated claims." },
+    { "@id": "con:AIOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "AI oracle", "definition": "An AI-mediated oracle whose claims are constrained by declared models, evidence policies, authority, and review." },
+    { "@id": "con:SensorOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Sensor oracle", "definition": "An oracle that transforms sensor observations into authenticated claims under defined calibration and integrity controls." },
+    { "@id": "con:InstitutionalOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Institutional oracle", "definition": "An organisation or office authorised to issue authenticated claims within an institutional mandate." },
+    { "@id": "con:CompositeOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Composite oracle", "definition": "An oracle that combines multiple observation, model, or human sources under a governed aggregation procedure." },
+    { "@id": "con:MarketOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Market oracle", "definition": "An oracle authorised to produce market-state or price claims from governed sources." },
+    { "@id": "con:ScientificOracle", "@type": "owl:Class", "subClassOf": "con:Oracle", "label": "Scientific oracle", "definition": "An oracle authorised to produce scientific claims through governed methods, evidence, and review." },
+
+    { "@id": "con:FactClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Fact claim", "definition": "A claim that a stated fact holds." },
+    { "@id": "con:MeasurementClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Measurement claim", "definition": "A claim reporting a measured quantity, property, time, place, method, and uncertainty." },
+    { "@id": "con:OwnershipClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Ownership claim", "definition": "A claim asserting ownership or a superior interest in a subject." },
+    { "@id": "con:IdentityClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Identity claim", "definition": "A claim asserting the identity or identifying attributes of a subject." },
+    { "@id": "con:EmploymentClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Employment claim", "definition": "A claim concerning employment, work status, performance, or employment outcome." },
+    { "@id": "con:ComplianceClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Compliance claim", "definition": "A claim that a subject, action, or state conforms to a rule, standard, or obligation." },
+    { "@id": "con:ImpactClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Impact claim", "definition": "A claim that an intervention caused or contributed to a social, ecological, or economic change." },
+    { "@id": "con:ScientificClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Scientific claim", "definition": "A claim produced or evaluated through a stated scientific method and evidence policy." },
+    { "@id": "con:MedicalClaim", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Medical claim", "definition": "A claim concerning health, diagnosis, treatment, care, or biomedical state." },
+    { "@id": "con:ScientificHypothesis", "@type": "owl:Class", "subClassOf": "con:Claim", "label": "Scientific hypothesis", "definition": "A testable scientific claim governed by stated assumptions, methods, evidence, and revision conditions." },
+
+    { "@id": "con:LicenseCredential", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Licence", "definition": "A credential attesting to a governed permission or licensed status." },
+    { "@id": "con:Certification", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Certification", "definition": "A credential attesting conformance, competence, quality, or status under a certification scheme." },
+    { "@id": "con:PermitCredential", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Permit", "definition": "A credential evidencing a governed permit or permission." },
+    { "@id": "con:Degree", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Degree", "definition": "An academic credential attesting completion of a recognized programme of study." },
+    { "@id": "con:Passport", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Passport", "definition": "A government-issued identity and travel credential." },
+    { "@id": "con:Visa", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Visa", "definition": "A credential recording governed authorization concerning entry, stay, or activity in a jurisdiction." },
+    { "@id": "con:ProfessionalRegistration", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Professional registration", "definition": "A credential recording authorized professional status in a registry." },
+    { "@id": "con:VerifiableCredential", "@type": "owl:Class", "subClassOf": "con:Credential", "label": "Verifiable credential", "definition": "A digitally verifiable credential represented under an explicit data model and proof system." },
+
+    { "@id": "con:Observation", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Observation", "definition": "Evidence produced by observing a subject, event, condition, or process." },
+    { "@id": "con:DocumentEvidence", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Document", "definition": "A document used as evidence with governed provenance, authenticity, access, and interpretation." },
+    { "@id": "con:Photograph", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Photograph", "definition": "Image evidence governed by capture, provenance, time, place, integrity, and interpretation controls." },
+    { "@id": "con:Telemetry", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Telemetry", "definition": "Machine-produced evidence reporting remote observations or operational state over time." },
+    { "@id": "con:SensorReading", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Sensor reading", "definition": "Evidence recording a sensor observation with calibration, units, time, place, and integrity context." },
+    { "@id": "con:WitnessStatement", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Witness statement", "definition": "Evidence consisting of a person's attested account of observations or knowledge." },
+    { "@id": "con:EvaluationReport", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Evaluation report", "definition": "Evidence recording an evaluation method, inputs, findings, reasons, and limitations." },
+    { "@id": "con:LaboratoryResult", "@type": "owl:Class", "subClassOf": "con:Evidence", "label": "Laboratory result", "definition": "Evidence produced through a governed laboratory method with sample, instrument, quality, and provenance controls." },
+
+    { "@id": "con:Approval", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Approval", "definition": "A decision granting consent, permission, acceptance, or progression." },
+    { "@id": "con:Rejection", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Rejection", "definition": "A decision refusing acceptance, permission, entitlement, or progression." },
+    { "@id": "con:Allocation", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Allocation", "definition": "A decision assigning resources, rights, value, capacity, or responsibility." },
+    { "@id": "con:Judgement", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Judgement", "definition": "A reasoned decision by an authorized adjudicative subject." },
+    { "@id": "con:Classification", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Classification", "definition": "A decision assigning a subject to a defined category under a governed method." },
+    { "@id": "con:Diagnosis", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Diagnosis", "definition": "A medical or technical decision identifying a condition from governed evidence and methods." },
+    { "@id": "con:SettlementDecision", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Settlement", "definition": "A decision authorizing or recording the settlement of an obligation, claim, or transfer." },
+    { "@id": "con:Award", "@type": "owl:Class", "subClassOf": "con:Decision", "label": "Award", "definition": "A decision granting value, status, recognition, entitlement, or remedy." },
+
+    { "@id": "con:EmploymentOutcome", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Employment", "definition": "An outcome in which a subject enters, retains, changes, or completes employment." },
+    { "@id": "con:EmissionReduction", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Emission reduction", "definition": "A measured and attributable reduction in greenhouse-gas emissions." },
+    { "@id": "con:DiseaseElimination", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Disease elimination", "definition": "A verified outcome in which transmission or incidence is reduced to an elimination threshold within a defined area." },
+    { "@id": "con:InfrastructureBuilt", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Infrastructure built", "definition": "A verified outcome in which specified infrastructure has been completed and accepted." },
+    { "@id": "con:PaymentCompleted", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Payment completed", "definition": "A verified outcome in which a payment obligation has been settled." },
+    { "@id": "con:TrainingCompleted", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Training completed", "definition": "A verified outcome in which stated training requirements have been completed." },
+    { "@id": "con:CarbonRemoved", "@type": "owl:Class", "subClassOf": "con:Outcome", "label": "Carbon removed", "definition": "A measured and durable outcome in which carbon dioxide has been removed from the atmosphere under a stated methodology." },
+
+    { "@id": "con:Jurisdiction", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Jurisdiction", "definition": "A place or scope within which an authority system claims competence." },
+    { "@id": "con:ProtectedArea", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Protected area", "definition": "A geographically defined place governed for conservation or protection purposes." },
+    { "@id": "con:Farm", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Farm", "definition": "A place governed for agricultural production, stewardship, labor, and environmental obligations." },
+    { "@id": "con:Mine", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Mine", "definition": "A place governed for mineral exploration, extraction, processing, safety, closure, and rehabilitation." },
+    { "@id": "con:Factory", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Factory", "definition": "A place governed for industrial production, labor, safety, quality, and environmental performance." },
+    { "@id": "con:Warehouse", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Warehouse", "definition": "A place governed for storage, custody, inventory, handling, and dispatch." },
+    { "@id": "con:City", "@type": "owl:Class", "subClassOf": "con:Place", "label": "City", "definition": "An urban place with governed infrastructure, services, populations, rights, and obligations." },
+    { "@id": "con:Watershed", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Watershed", "definition": "A hydrological area governed through connected water, land, ecological, and stakeholder interests." },
+    { "@id": "con:MarineReserve", "@type": "owl:Class", "subClassOf": "con:Place", "label": "Marine reserve", "definition": "A marine place governed for ecological protection and controlled use." },
+
+    { "@id": "con:Patient", "@type": "owl:Class", "subClassOf": ["con:BiologicalEntity", "con:NaturalPerson"], "label": "Patient", "definition": "A person receiving or subject to health observation, diagnosis, care, treatment, or research governance." },
+    { "@id": "con:Population", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Population", "definition": "A defined group of organisms or persons governed as an epidemiological, ecological, or social subject." },
+    { "@id": "con:Species", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Species", "definition": "A biological taxon whose state, protection, evidence, and stewardship may be governed." },
+    { "@id": "con:Pathogen", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Pathogen", "definition": "A biological agent capable of causing disease and governed as an object of observation, risk, intervention, and evidence." },
+    { "@id": "con:Ecosystem", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Ecosystem", "definition": "A persistent ecological system of organisms, environment, processes, services, and governed interests." },
+    { "@id": "con:Crop", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Crop", "definition": "A cultivated biological subject governed through provenance, production, health, quality, and stewardship." },
+    { "@id": "con:Livestock", "@type": "owl:Class", "subClassOf": "con:BiologicalEntity", "label": "Livestock", "definition": "Domesticated animals governed through identity, welfare, health, ownership, production, and movement." },
+    { "@id": "con:DiseaseOutbreak", "@type": "owl:Class", "subClassOf": ["con:Event", "con:ConstitutionalSubject"], "label": "Disease outbreak", "definition": "An identifiable occurrence of disease above an expected threshold, governed through surveillance, evidence, response authority, decisions, and memory." },
+
+    { "@id": "con:SupplyChain", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Supply chain", "definition": "A network of parties, assets, agreements, custody events, and flows that produce and deliver goods or services." },
+    { "@id": "con:EnergyGrid", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Energy grid", "definition": "A network that generates, transmits, distributes, balances, and meters energy." },
+    { "@id": "con:TransportNetwork", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Transport network", "definition": "A network of routes, nodes, assets, operators, and services that moves people or goods." },
+    { "@id": "con:ValidatorNetwork", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Validator network", "definition": "A network of participants authorized to validate, attest, or reach consensus on state." },
+    { "@id": "con:SocialNetwork", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Social network", "definition": "A network of persons, groups, relationships, communications, and shared contexts." },
+    { "@id": "con:HealthcareNetwork", "@type": "owl:Class", "subClassOf": "con:Network", "label": "Healthcare network", "definition": "A network of patients, professionals, facilities, services, payers, evidence, and care pathways." },
+
+    {
+      "@id": "con:AgenticTwin",
+      "@type": "owl:Class",
+      "subClassOf": ["con:Entity", "con:ConstitutionalSubject"],
+      "label": "Agentic twin",
+      "definition": "An identity-bearing cognitive twin that exercises bounded agency for another constitutional subject while remaining a recursively governed constitutional subject in its own right."
+    },
+    { "@id": "con:Wallet", "@type": "owl:Class", "subClassOf": "con:Entity", "label": "Wallet", "definition": "A governed account, key, custody, or capability interface through which a constitutional subject may hold or initiate control of value, credentials, or other digital resources. A wallet does not itself establish current authority." },
+    { "@id": "con:Memory", "@type": "owl:Class", "subClassOf": "con:InformationObject", "label": "Memory", "definition": "Governed retained information used to preserve a subject's history, evidence, decisions, actions, and learned state." },
+    { "@id": "con:WorldModel", "@type": "owl:Class", "subClassOf": "con:InformationObject", "label": "World model", "definition": "A governed representation of the subject, environment, relationships, state, uncertainty, and predicted consequences." },
+    { "@id": "con:DecisionEngine", "@type": "owl:Class", "subClassOf": ["con:Entity", "con:Capability"], "label": "Decision engine", "definition": "A governed mechanism that evaluates evidence and policy to produce proposals or decisions within a bounded role." },
+    { "@id": "con:CapabilityToken", "@type": "owl:Class", "subClassOf": ["con:InformationObject", "con:Capability"], "label": "Capability token", "definition": "A verifiable bearer or delegated artifact representing bounded, revocable authority to perform specified actions." },
+    { "@id": "con:ConstitutionalGovernor", "@type": "owl:Class", "subClassOf": ["con:Entity", "con:Capability"], "label": "Constitutional governor", "definition": "A mechanism that evaluates proposed behavior against constitutional norms and routes it to authorization, denial, revision, or escalation." },
+
+    {
+      "@id": "con:ConstitutionalArchetype",
+      "@type": "owl:Class",
+      "label": "Constitutional archetype",
+      "definition": "A reusable, non-exclusive governance pattern that may be applied across otherwise unrelated constitutional subject types."
+    },
+    { "@id": "con:Stewarded", "@type": "con:ConstitutionalArchetype", "label": "Stewarded", "definition": "A subject governed primarily through stewardship duties owed to its purpose, beneficiaries, public, or future state." },
+    { "@id": "con:Owned", "@type": "con:ConstitutionalArchetype", "label": "Owned", "definition": "A subject governed through identifiable ownership interests, transfer rules, and owner obligations." },
+    { "@id": "con:Managed", "@type": "con:ConstitutionalArchetype", "label": "Managed", "definition": "A subject governed through delegated management authority, operating duties, controls, and accountability." },
+    { "@id": "con:Governed", "@type": "con:ConstitutionalArchetype", "label": "Governed", "definition": "A subject governed through collective or institutional decision procedures and amendment rules." },
+    { "@id": "con:Regulated", "@type": "con:ConstitutionalArchetype", "label": "Regulated", "definition": "A subject governed by external regulatory requirements, competent authorities, compliance evidence, and enforcement." },
+    { "@id": "con:Verified", "@type": "con:ConstitutionalArchetype", "label": "Verified", "definition": "A subject whose authoritative state depends on evidence, evaluation, verification, and status controls." },
+    { "@id": "con:Settled", "@type": "con:ConstitutionalArchetype", "label": "Settled", "definition": "A subject whose lifecycle includes governed discharge, transfer, reconciliation, finalization, or settlement." },
+
+    {
+      "@id": "con:ConstitutionalAgencyStage",
+      "@type": "owl:Class",
+      "label": "Constitutional agency stage",
+      "definition": "A conceptual stage in the IXO constitutional agency cycle. The ordering is a reasoning aid and does not itself authorize any transition."
+    },
+    { "@id": "con:IdentityStage", "@type": "con:ConstitutionalAgencyStage", "label": "Identity", "definition": "Resolve the subject and its current identity authority.", "precedes": "con:ConstitutionStage" },
+    { "@id": "con:ConstitutionStage", "@type": "con:ConstitutionalAgencyStage", "label": "Constitution", "definition": "Resolve the governing normative system, instruments, and effective authority.", "precedes": "con:ClaimsStage" },
+    { "@id": "con:ClaimsStage", "@type": "con:ConstitutionalAgencyStage", "label": "Claims", "definition": "Identify assertions whose status or consequences require evidence and evaluation.", "precedes": "con:EvidenceStage" },
+    { "@id": "con:EvidenceStage", "@type": "con:ConstitutionalAgencyStage", "label": "Evidence", "definition": "Resolve admissible evidence and its provenance, integrity, freshness, and access.", "precedes": "con:EvaluationStage" },
+    { "@id": "con:EvaluationStage", "@type": "con:ConstitutionalAgencyStage", "label": "Evaluation", "definition": "Apply the authorized methodology, rubric, or policy to the evidence.", "precedes": "con:DecisionStage" },
+    { "@id": "con:DecisionStage", "@type": "con:ConstitutionalAgencyStage", "label": "Decision", "definition": "Produce or resolve an authorized determination with reasons and review status.", "precedes": "con:CapabilityStage" },
+    { "@id": "con:CapabilityStage", "@type": "con:ConstitutionalAgencyStage", "label": "Capability", "definition": "Resolve the current right, capability, approval, and constraints required for action.", "precedes": "con:ActionStage" },
+    { "@id": "con:ActionStage", "@type": "con:ConstitutionalAgencyStage", "label": "Action", "definition": "Perform only the action authorized by current capability and live state.", "precedes": "con:SettlementStage" },
+    { "@id": "con:SettlementStage", "@type": "con:ConstitutionalAgencyStage", "label": "Settlement", "definition": "Discharge, transfer, reconcile, or finalize resulting obligations and value.", "precedes": "con:MemoryStage" },
+    { "@id": "con:MemoryStage", "@type": "con:ConstitutionalAgencyStage", "label": "Memory", "definition": "Record evidence, decisions, authority, actions, receipts, and unresolved exceptions for future governance." }
+  ]
+}

@@ -48,7 +48,15 @@
         "@id": "https://w3id.org/ixo/vocab/v1/1.0.0"
       },
       "vann:preferredNamespacePrefix": "ixo",
-      "vann:preferredNamespaceUri": "https://w3id.org/ixo/vocab/v1#"
+      "vann:preferredNamespaceUri": "https://w3id.org/ixo/vocab/v1#",
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/ixo/vocab/v1/constitution"
+        },
+        {
+          "@id": "https://w3id.org/ixo/vocab/v1/billing"
+        }
+      ]
     },
     {
       "@id": "ixo:Entity",
