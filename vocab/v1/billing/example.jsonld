@@ -1,0 +1,75 @@
+[
+  {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/data-integrity/v2",
+      "https://w3id.org/ixo/context/v1"
+    ],
+    "type": ["VerifiableCredential"],
+    "issuer": { "id": "did:ixo:wqj8yr43example000000000000000000000000" },
+    "issuanceDate": "2026-08-05T09:12:00.000Z",
+    "credentialSubject": {
+      "type": "UsageClaim",
+      "amount": 496,
+      "oracleDid": "did:ixo:wqj8yr43example000000000000000000000000",
+      "oracleEntityDid": "did:ixo:entity:0f4184b3example00000000000000000",
+      "service": "Chatting With AI Guru",
+      "oracleName": "Guru",
+      "userDid": "did:ixo:e4x9mtcpexample000000000000000000000000"
+    },
+    "proof": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/data-integrity/v2",
+        "https://w3id.org/ixo/context/v1"
+      ],
+      "type": "DataIntegrityProof",
+      "cryptosuite": "eddsa-jcs-2022",
+      "created": "2026-08-05T09:12:00.000Z",
+      "verificationMethod": "did:ixo:wqj8yr43example000000000000000000000000#4XvyAqbeZANFHLz2AeGCGnEHDMdSHDe2j3S6bhFTZcvX",
+      "proofPurpose": "assertionMethod",
+      "proofValue": "z58xkoFyExampleMultibaseBase58btcEncodedEd25519SignatureOver64Bytes0000000000000000000"
+    }
+  },
+  {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/data-integrity/v2",
+      "https://w3id.org/ixo/context/v1"
+    ],
+    "type": ["VerifiableCredential"],
+    "issuer": { "id": "did:ixo:entity:a28a80eb4d1c9f8b29491d9d0dad738c" },
+    "issuanceDate": "2026-08-05T09:15:00.000Z",
+    "credentialSubject": {
+      "type": "UsageBillingSettlement",
+      "service": "usage-billing",
+      "resultStatus": "completed",
+      "settlementId": "stl_01J8KQEXAMPLE0000000000000",
+      "customerDid": "did:ixo:e4x9mtcpexample000000000000000000000000",
+      "deedDid": "did:ixo:entity:7be1f9c2example00000000000000000",
+      "collectionId": "412",
+      "amount": [
+        {
+          "amount": "496000",
+          "denom": "ibc/6BBE9BD4246F8E04948D5A4EEE7164B2630263B9EBB5E7DC5F0A46C62A2FF97B"
+        }
+      ],
+      "request": "Automatic settlement of accrued platform usage charges, authorized by the deed admin's SubmitClaimAuthorization to the treasury.",
+      "workSummary": "Metered usage charges of 496000 ibc/6BBE...F97B accrued by did:ixo:e4x9mtcp... were rated and posted to the billing ledger. Settlement stl_01J8KQ... claims the owed balance from deed did:ixo:entity:7be1f9c2... (collection 412); the approval payout escrows to the treasury account.",
+      "proofs": "Billing-engine ledger settlement stl_01J8KQ...: settlement to charges to usage events to archived customer-signed UCAN invocations, re-verifiable via the engine audit API."
+    },
+    "proof": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/data-integrity/v2",
+        "https://w3id.org/ixo/context/v1"
+      ],
+      "type": "DataIntegrityProof",
+      "cryptosuite": "eddsa-jcs-2022",
+      "created": "2026-08-05T09:15:00.000Z",
+      "verificationMethod": "did:ixo:entity:a28a80eb4d1c9f8b29491d9d0dad738c#DAezNghtExampleBase58Pubkey000000000000000000",
+      "proofPurpose": "assertionMethod",
+      "proofValue": "z58xkoFyExampleMultibaseBase58btcEncodedEd25519SignatureOver64Bytes0000000000000000000"
+    }
+  }
+]

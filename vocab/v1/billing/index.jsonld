@@ -1,0 +1,200 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "bil": "https://w3id.org/ixo/vocab/v1/billing#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vocab": "https://w3id.org/ixo/vocab/v1#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "definition": "skos:definition",
+    "label": "rdfs:label",
+    "source": {
+      "@id": "dcterms:source",
+      "@type": "@id"
+    },
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1/billing",
+      "@type": "owl:Ontology",
+      "dcterms:title": "IXO Usage Billing Ontology",
+      "dcterms:description": "A vocabulary for metered service-usage claims issued by oracles and for usage-billing settlement claims issued by the billing engine, as carried in the credentialSubject of Verifiable Credentials secured with the Data Integrity eddsa-jcs-2022 cryptosuite.",
+      "owl:versionInfo": "1.0.0",
+      "dcterms:issued": {
+        "@value": "2026-08-12",
+        "@type": "xsd:date"
+      },
+      "source": [
+        "https://www.w3.org/TR/vc-data-model/",
+        "https://www.w3.org/TR/vc-di-eddsa/",
+        "https://www.rfc-editor.org/rfc/rfc8785"
+      ]
+    },
+    {
+      "@id": "bil:UsageClaim",
+      "@type": "owl:Class",
+      "subClassOf": "vocab:Claim",
+      "label": "Usage claim",
+      "definition": "A metered service-usage claim issued and signed by an oracle, asserting that a user consumed a quantity of the oracle's service, submitted against the user's oracle claims collection."
+    },
+    {
+      "@id": "bil:UsageBillingSettlement",
+      "@type": "owl:Class",
+      "subClassOf": "vocab:Claim",
+      "label": "Usage billing settlement",
+      "definition": "A settlement claim issued by the billing engine asserting that accrued, rated usage charges were posted to the billing ledger and claimed from a deed's claims collection, with the payout escrowed to a treasury account."
+    },
+    {
+      "@id": "bil:Coin",
+      "@type": "owl:Class",
+      "label": "Coin",
+      "definition": "A Cosmos SDK coin: an integer amount expressed in the smallest unit of a token denomination.",
+      "seeAlso": "https://w3id.org/ixo/protocol/blockchain-account/v1"
+    },
+    {
+      "@id": "bil:amount",
+      "@type": "rdf:Property",
+      "label": "Amount",
+      "definition": "The quantity being claimed. On a usage claim this is a number of credits in the smallest unit; on a settlement it is a set of Coin values.",
+      "seeAlso": "schema:amount"
+    },
+    {
+      "@id": "bil:coinValue",
+      "@type": "rdf:Property",
+      "domain": "bil:Coin",
+      "range": "xsd:string",
+      "label": "Coin value",
+      "definition": "The integer amount of a Coin, serialized as a string in the smallest unit of the denomination."
+    },
+    {
+      "@id": "bil:coinDenom",
+      "@type": "rdf:Property",
+      "domain": "bil:Coin",
+      "range": "xsd:string",
+      "label": "Coin denomination",
+      "definition": "The token denomination of a Coin, for example uixo or an ibc/ voucher hash."
+    },
+    {
+      "@id": "bil:oracleDid",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageClaim",
+      "label": "Oracle DID",
+      "definition": "The DID of the oracle agent that metered the usage and issued the claim credential."
+    },
+    {
+      "@id": "bil:oracleEntityDid",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageClaim",
+      "label": "Oracle entity DID",
+      "definition": "The DID of the on-chain entity that the oracle service belongs to."
+    },
+    {
+      "@id": "bil:oracleName",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageClaim",
+      "range": "xsd:string",
+      "label": "Oracle name",
+      "definition": "The display name of the oracle service.",
+      "seeAlso": "schema:name"
+    },
+    {
+      "@id": "bil:service",
+      "@type": "rdf:Property",
+      "range": "xsd:string",
+      "label": "Service",
+      "definition": "The name of the service whose usage is being claimed or settled. Note: this IRI documents the field, but the term is not mapped in the umbrella context because the DID v1 context protects the term service; see the module README.",
+      "seeAlso": "schema:Service"
+    },
+    {
+      "@id": "bil:userDid",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageClaim",
+      "label": "User DID",
+      "definition": "The DID of the user whose service usage is being claimed."
+    },
+    {
+      "@id": "bil:customerDid",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "label": "Customer DID",
+      "definition": "The DID of the customer whose accrued usage charges are being settled."
+    },
+    {
+      "@id": "bil:deedDid",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "label": "Deed DID",
+      "definition": "The DID of the deed entity whose claims collection the settlement is claimed against."
+    },
+    {
+      "@id": "bil:collectionId",
+      "@type": "rdf:Property",
+      "range": "xsd:string",
+      "label": "Collection ID",
+      "definition": "The on-chain claims collection identifier the claim is submitted to."
+    },
+    {
+      "@id": "bil:settlementId",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "range": "xsd:string",
+      "label": "Settlement ID",
+      "definition": "The billing-engine ledger identifier of the settlement that this claim asserts."
+    },
+    {
+      "@id": "bil:resultStatus",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "range": "xsd:string",
+      "label": "Result status",
+      "definition": "The completion status of the settlement run, for example completed.",
+      "seeAlso": "schema:actionStatus"
+    },
+    {
+      "@id": "bil:request",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "range": "xsd:string",
+      "label": "Request",
+      "definition": "A human-readable statement of what was requested and under which authorization the settlement was executed.",
+      "seeAlso": "schema:description"
+    },
+    {
+      "@id": "bil:workSummary",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "range": "xsd:string",
+      "label": "Work summary",
+      "definition": "A human-readable summary of the rating, posting, and settlement work performed.",
+      "seeAlso": "schema:abstract"
+    },
+    {
+      "@id": "bil:verificationTrail",
+      "@type": "rdf:Property",
+      "domain": "bil:UsageBillingSettlement",
+      "range": "xsd:string",
+      "label": "Verification trail",
+      "definition": "A description of the evidence chain behind the settlement - settlement to charges to usage events to archived customer-signed authorizations - and where it can be re-verified. Carried in the credential field named proofs."
+    }
+  ]
+}
