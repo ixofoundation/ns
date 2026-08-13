@@ -19,9 +19,14 @@
 		{
 			"@id": "https://w3id.org/ixo/vocab/v1",
 			"@type": "owl:Ontology",
-			"owl:imports": {
-				"@id": "https://w3id.org/ixo/vocab/v1/constitution"
-			}
+			"owl:imports": [
+				{
+					"@id": "https://w3id.org/ixo/vocab/v1/constitution"
+				},
+				{
+					"@id": "https://w3id.org/ixo/vocab/v1/billing"
+				}
+			]
 		},
 		{
 			"@id": "#Claim",

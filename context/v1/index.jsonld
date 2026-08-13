@@ -13,6 +13,10 @@
 				"@id": "https://w3id.org/ixo/vocab/v1/constitution#",
 				"@prefix": true
 			},
+			"bil": {
+				"@id": "https://w3id.org/ixo/vocab/v1/billing#",
+				"@prefix": true
+			},
 			"dcterms": "http://purl.org/dc/terms/",
 			"odrl": "http://www.w3.org/ns/odrl/2/",
 			"prov": "http://www.w3.org/ns/prov#",
@@ -291,6 +295,59 @@
 					"audit_record": {
 						"@id": "con:auditRecord",
 						"@type": "@id"
+					}
+				}
+			},
+
+			"UsageClaim": {
+				"@id": "bil:UsageClaim",
+				"@context": {
+					"id": "@id",
+					"type": "@type",
+					"amount": "bil:amount",
+					"oracleDid": {
+						"@id": "bil:oracleDid",
+						"@type": "@id"
+					},
+					"oracleEntityDid": {
+						"@id": "bil:oracleEntityDid",
+						"@type": "@id"
+					},
+					"oracleName": "bil:oracleName",
+					"userDid": {
+						"@id": "bil:userDid",
+						"@type": "@id"
+					},
+					"collectionId": "bil:collectionId"
+				}
+			},
+
+			"UsageBillingSettlement": {
+				"@id": "bil:UsageBillingSettlement",
+				"@context": {
+					"id": "@id",
+					"type": "@type",
+					"settlementId": "bil:settlementId",
+					"customerDid": {
+						"@id": "bil:customerDid",
+						"@type": "@id"
+					},
+					"deedDid": {
+						"@id": "bil:deedDid",
+						"@type": "@id"
+					},
+					"collectionId": "bil:collectionId",
+					"resultStatus": "bil:resultStatus",
+					"request": "bil:request",
+					"workSummary": "bil:workSummary",
+					"proofs": "bil:verificationTrail",
+					"amount": {
+						"@id": "bil:amount",
+						"@container": "@set",
+						"@context": {
+							"amount": "bil:coinValue",
+							"denom": "bil:coinDenom"
+						}
 					}
 				}
 			},
