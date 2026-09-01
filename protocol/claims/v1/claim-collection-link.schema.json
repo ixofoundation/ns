@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://w3id.org/ixo/ns/protocol/claims/v1/claim-collection-link.schema.json",
+	"title": "IXO Entity Claim Collection LinkedClaim",
+	"description": "The exact IID LinkedClaim record connecting an entity to an immutable EntityClaimCollectionLink document. That document identifies the pinned claim protocol release and resulting on-chain collection.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["type", "id", "description", "serviceEndpoint", "proof", "encrypted", "right"],
+	"properties": {
+		"type": {
+			"const": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollectionLink"
+		},
+		"id": {
+			"type": "string",
+			"pattern": "^did:ixo:.+#claim-collection-[A-Za-z0-9._:-]+$"
+		},
+		"description": {
+			"type": "string",
+			"minLength": 1
+		},
+		"serviceEndpoint": {
+			"type": "string",
+			"format": "uri",
+			"description": "Immutable URI of the EntityClaimCollectionLinkV1 document containing target entity DID, protocol release URI and digest, collection ID and network."
+		},
+		"proof": {
+			"type": "string",
+			"pattern": "^sha256:[a-f0-9]{64}$",
+			"description": "Digest of the pinned ClaimProtocolReleaseV1."
+		},
+		"encrypted": {
+			"const": "false"
+		},
+		"right": {
+			"const": "ixo:claim-collection:operate:v1"
+		}
+	}
+}

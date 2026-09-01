@@ -1,1 +1,35 @@
-{}
+{
+	"@context": {
+		"id": "@id",
+		"type": "@type",
+		"ClaimCollectionLink": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollectionLink",
+		"ClaimProtocolRelease": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimProtocolRelease",
+		"ClaimCollection": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollection"
+	},
+	"namespace": "https://w3id.org/ixo/ns/protocol/claims/v1",
+	"version": 1,
+	"identifiers": {
+		"linkedClaimType": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollectionLink",
+		"claimProtocolReleaseType": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimProtocolRelease",
+		"claimCollectionType": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollection",
+		"claimForm": "#vct",
+		"claimSchema": "#csc",
+		"rubric": "#rub",
+		"collectionTemplate": "#cct",
+		"evaluationForm": "#eft",
+		"contributorBid": "#bco",
+		"evaluatorBid": "#bev"
+	},
+	"schemas": {
+		"linkedClaim": "https://w3id.org/ixo/ns/protocol/claims/v1/claim-collection-link.schema.json"
+	},
+	"mapping": {
+		"description": "IID LinkedClaim mapping for a target entity, immutable protocol release and resulting claim collection.",
+		"type": "https://w3id.org/ixo/ns/protocol/claims/v1#ClaimCollectionLink",
+		"id": "{targetEntityDid}#claim-collection-{collectionId}",
+		"serviceEndpoint": "{immutableEntityClaimCollectionLinkDocumentUri}",
+		"proof": "{claimProtocolReleaseDigest}",
+		"encrypted": "false",
+		"right": "ixo:claim-collection:operate:v1"
+	}
+}

@@ -1,1 +1,25 @@
-{}
+{
+	"@context": {
+		"id": "@id",
+		"type": "@type",
+		"ClaimCollectionOperatingRight": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1#ClaimCollectionOperatingRight"
+	},
+	"namespace": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1",
+	"version": 1,
+	"identifiers": {
+		"rightId": "ixo:claim-collection:operate:v1",
+		"rightType": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1#ClaimCollectionOperatingRight",
+		"mechanism": "UCAN"
+	},
+	"schemas": {
+		"accordedRight": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1/claim-collection-right.schema.json"
+	},
+	"mapping": {
+		"description": "IID AccordedRight pointer for bounded claim-collection operation.",
+		"id": "ixo:claim-collection:operate:v1",
+		"type": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1#ClaimCollectionOperatingRight",
+		"mechanism": "UCAN",
+		"message": "{immutableClaimCollectionCapabilityDocumentUri}",
+		"service": "{flowOrRuntimeServiceUri}"
+	}
+}

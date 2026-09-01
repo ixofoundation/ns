@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1/claim-collection-right.schema.json",
+	"title": "IXO Claim Collection AccordedRight",
+	"description": "The exact IID AccordedRight pointer for bounded claim-collection operation. Authority is conferred by the referenced immutable capability document and UCAN delegation, never by this pointer alone.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["type", "id", "mechanism", "message", "service"],
+	"properties": {
+		"type": {
+			"const": "https://w3id.org/ixo/ns/protocol/accorded-rights/v1#ClaimCollectionOperatingRight"
+		},
+		"id": {
+			"const": "ixo:claim-collection:operate:v1"
+		},
+		"mechanism": {
+			"const": "UCAN"
+		},
+		"message": {
+			"type": "string",
+			"format": "uri",
+			"description": "Immutable ClaimCollectionCapabilityDocumentV1 URI."
+		},
+		"service": {
+			"type": "string",
+			"format": "uri",
+			"description": "Topic-owned Flow URI or runtime service URI governed by the capability document."
+		}
+	}
+}
