@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/ixo/context/v1/topic-recipe/index.jsonld"
+  ],
+  "id": "did:ixo:entity:example-topic-recipe#dmn",
+  "type": [
+    "VerifiableCredential",
+    "ixo:DomainCard"
+  ],
+  "issuer": {
+    "id": "did:ixo:entity:example-topic-recipe"
+  },
+  "validFrom": "2026-09-12T00:00:00Z",
+  "credentialSchema": {
+    "id": "https://w3id.org/ixo/schema/v1/topic-recipe-domain-card",
+    "type": "JsonSchema"
+  },
+  "credentialSubject": {
+    "id": "did:ixo:entity:example-topic-recipe",
+    "type": [
+      "ixo:protocol/topic"
+    ],
+    "additionalType": [
+      "Topic Recipe"
+    ],
+    "name": "Private accountable work recipe",
+    "purpose": "Coordinate delivery of a defined outcome.",
+    "function": "Create a task Draft with suggested terms and explicit completion criteria.",
+    "systemRole": "topic-recipe",
+    "keywords": [
+      "topic",
+      "recipe",
+      "task",
+      "accountable-work"
+    ],
+    "relatedDocument": [
+      {
+        "type": [
+          "schema:DigitalDocument"
+        ],
+        "id": "did:ixo:entity:example-topic-recipe#top-01",
+        "description": "Pinned Topic Shape JSON for recipe version 1.0.0.",
+        "mediaType": "application/json"
+      }
+    ],
+    "topicRecipe": {
+      "profileVersion": "2.0.0",
+      "entityType": "protocol/topic",
+      "version": "1.0.0",
+      "protocolVersion": "1.0.0-rc.4",
+      "baseKind": "task",
+      "baseRecipe": "project",
+      "publication": "draft",
+      "listingVisibility": "public",
+      "instantiation": "reviewable-draft",
+      "shapeResource": {
+        "id": "did:ixo:entity:example-topic-recipe#top-01",
+        "version": "1.0.0",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "mediaType": "application/json",
+        "vfs": {
+          "provider": "ixo-vfs",
+          "resource": "did:ixo:entity:example-topic-recipe",
+          "fileId": "00000000-0000-4000-8000-000000000001",
+          "version": "1"
+        },
+        "access": {
+          "mode": "ucan",
+          "delegation": {
+            "authority": "did:ixo:entity:example-topic-recipe",
+            "requestEndpoint": "https://access.example.org/topic-recipes/request"
+          },
+          "paywall": {
+            "protocol": "x402",
+            "status": "planned"
+          }
+        }
+      }
+    },
+    "logo": {
+      "type": "schema:ImageObject",
+      "contentUrl": "https://example.org/topic-recipe.webp",
+      "caption": "Illustrative recipe cover"
+    }
+  }
+}

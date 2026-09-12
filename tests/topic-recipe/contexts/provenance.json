@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-09-12",
+  "sharedContextCommit": "a85b26612e097f2004ca7ec5fdc67129d12f1038",
+  "documents": [
+    {
+      "path": "tests/topic-recipe/contexts/credentials-v2.jsonld",
+      "url": "https://www.w3.org/ns/credentials/v2",
+      "sha256": "59955ced6697d61e03f2b2556febe5308ab16842846f5b586d7f1f7adec92734"
+    },
+    {
+      "path": "tests/topic-recipe/contexts/did-v1.jsonld",
+      "url": "https://www.w3.org/ns/did/v1",
+      "sha256": "4f3eae5568c9c5f036a082088f9e192019ee06faa78973c87ff91d5421b88dad"
+    },
+    {
+      "path": "context/v1/index.jsonld",
+      "url": "https://w3id.org/ixo/context/v1",
+      "sha256": "b3587721a451ababcbcbcb7d8a0712b2ff6e0a3efede4914ee035dc987fdd27b"
+    }
+  ],
+  "note": "W3C files are unmodified test snapshots fetched from official URLs. The shared IXO context is read from the repository and must remain unchanged by this opt-in profile."
+}

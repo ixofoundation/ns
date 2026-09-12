@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://w3id.org/ixo/context/v1",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "ixo": {
+        "@id": "https://w3id.org/ixo/vocab/v1#",
+        "@prefix": true
+      },
+      "topic": {
+        "@id": "https://w3id.org/ixo/vocab/v1#",
+        "@prefix": true
+      },
+      "topicRecipe": {
+        "@id": "https://w3id.org/ixo/vocab/v1#topicRecipe",
+        "@type": "@json"
+      },
+      "purpose": "https://w3id.org/ixo/vocab/v1#purpose",
+      "function": "https://w3id.org/ixo/vocab/v1#function",
+      "systemRole": "https://w3id.org/ixo/vocab/v1#systemRole",
+      "additionalType": "http://schema.org/additionalType",
+      "alternateName": "http://schema.org/alternateName",
+      "url": {
+        "@id": "http://schema.org/url",
+        "@type": "@id"
+      },
+      "sameAs": {
+        "@id": "http://schema.org/sameAs",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "http://schema.org/keywords",
+        "@container": "@set"
+      },
+      "knowsAbout": {
+        "@id": "http://schema.org/knowsAbout",
+        "@container": "@set"
+      },
+      "relatedDocument": {
+        "@id": "http://schema.org/subjectOf",
+        "@container": "@set"
+      },
+      "logo": {
+        "@id": "http://schema.org/logo",
+        "@type": "@id"
+      },
+      "image": {
+        "@id": "http://schema.org/image",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "contentUrl": {
+        "@id": "http://schema.org/contentUrl",
+        "@type": "@id"
+      },
+      "caption": "http://schema.org/caption",
+      "contactPoint": {
+        "@id": "http://schema.org/contactPoint",
+        "@container": "@set"
+      },
+      "contactType": "http://schema.org/contactType",
+      "email": "http://schema.org/email",
+      "telephone": "http://schema.org/telephone",
+      "availableLanguage": {
+        "@id": "http://schema.org/availableLanguage",
+        "@container": "@set"
+      },
+      "composition": "http://schema.org/hasPart",
+      "hasPart": {
+        "@id": "http://schema.org/hasPart",
+        "@container": "@set"
+      },
+      "subjectOf": {
+        "@id": "http://schema.org/subjectOf",
+        "@container": "@set"
+      },
+      "creator": {
+        "@id": "http://schema.org/creator",
+        "@type": "@id"
+      },
+      "author": {
+        "@id": "http://schema.org/author",
+        "@type": "@id"
+      },
+      "license": {
+        "@id": "http://schema.org/license",
+        "@type": "@id"
+      },
+      "makesOffer": {
+        "@id": "http://schema.org/makesOffer",
+        "@container": "@set"
+      },
+      "itemOffered": {
+        "@id": "http://schema.org/itemOffered",
+        "@type": "@id"
+      },
+      "price": "http://schema.org/price",
+      "priceCurrency": "http://schema.org/priceCurrency",
+      "version": "http://schema.org/version"
+    }
+  ]
+}
