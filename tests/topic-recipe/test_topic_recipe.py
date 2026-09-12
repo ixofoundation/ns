@@ -45,6 +45,76 @@ def canonical(card):
 
 
 class TopicRecipeTests(unittest.TestCase):
+    def assert_field_validity(self, path, value, valid):
+        card = example("private")
+        target = card
+        for key in path[:-1]:
+            target = target[key]
+        target[path[-1]] = value
+        validator = Draft202012Validator(
+            read(ROOT / "schema/v1/topic-recipe-domain-card.json"),
+            format_checker=FormatChecker(),
+        )
+        self.assertEqual(validator.is_valid(card), valid, (path, value))
+
+    def test_required_format_validators_are_installed(self):
+        checker = FormatChecker()
+        for name in ("uri", "date-time"):
+            self.assertIn(name, checker.checkers)
+
+    def test_invalid_dates_and_source_uris_are_rejected(self):
+        self.assert_field_validity(("validFrom",), "not-a-date", False)
+        card = example("private")
+        card["credentialSubject"]["topicRecipe"]["sources"] = [{
+            "role": "protocol-core", "id": "not a uri", "version": "1.0.0",
+            "digest": "sha256:" + "0" * 64,
+        }]
+        validator = Draft202012Validator(
+            read(ROOT / "schema/v1/topic-recipe-domain-card.json"),
+            format_checker=FormatChecker(),
+        )
+        self.assertFalse(validator.is_valid(card))
+        card["credentialSubject"]["topicRecipe"]["sources"][0]["id"] = "https://example.org/source"
+        validator.validate(card)
+
+    def test_did_grammar_at_every_identity_location(self):
+        subject = ("credentialSubject",)
+        resource = subject + ("topicRecipe", "shapeResource")
+        locations = [
+            (("id",), "#dmn"),
+            (("issuer", "id"), ""),
+            (subject + ("id",), ""),
+            (subject + ("relatedDocument", 0, "id"), "#top-01"),
+            (resource + ("id",), "#top-01"),
+            (resource + ("access", "delegation", "authority"), ""),
+        ]
+        for path, fragment in locations:
+            for did in ("did:ixo:", "did:ixo::", "did:ixo:abc:", "did:ixo:a%",
+                        "did:ixo:a%G0", "did:ixo:a@b", "did:ixo:a/b", "did:ixo:a?b",
+                        "did:ixo:a#b", "did:ixo:café", "did:IXO:abc", "did:ixo:a b"):
+                with self.subTest(path=path, did=did):
+                    self.assert_field_validity(path, did + fragment, False)
+            for did in ("did:ixo:abc", "did:example:network:Abc.1_-", "did:example::abc",
+                        "did:example:a%20b", "did:example:%3A"):
+                with self.subTest(path=path, did=did):
+                    self.assert_field_validity(path, did + fragment, True)
+            with self.subTest(path=path, trailing_newline=True):
+                self.assert_field_validity(path, "did:ixo:abc" + fragment + "\n", False)
+
+    def test_delegation_endpoint_requires_https_host(self):
+        path = ("credentialSubject", "topicRecipe", "shapeResource", "access",
+                "delegation", "requestEndpoint")
+        for endpoint in ("https://", "https:///request", "https://?request=1", "https://#request",
+                         "https://:443/request", "https://[]/request", "https:// /request",
+                         "http://example.org/request", "https://user:secret@example.org/request",
+                         "https://example.org/request\n"):
+            with self.subTest(endpoint=endpoint):
+                self.assert_field_validity(path, endpoint, False)
+        for endpoint in ("https://example.org", "https://example.org:8443/request?recipe=1",
+                         "https://127.0.0.1/request", "https://[::1]:8443/request"):
+            with self.subTest(endpoint=endpoint):
+                self.assert_field_validity(path, endpoint, True)
+
     def test_pinned_dependencies_and_unchanged_shared_context(self):
         for item in read(HERE / "contexts/provenance.json")["documents"]:
             self.assertEqual(hashlib.sha256((ROOT / item["path"]).read_bytes()).hexdigest(), item["sha256"])
@@ -115,7 +185,7 @@ class TopicRecipeTests(unittest.TestCase):
             expand(card)
 
     def test_schema_rejects_invalid_fragment_paywall_and_base_recipe(self):
-        validator = Draft202012Validator(read(ROOT / "schema/v1/topic-recipe-domain-card.json"))
+        validator = Draft202012Validator(read(ROOT / "schema/v1/topic-recipe-domain-card.json"), format_checker=FormatChecker())
         bad = example(); bad["credentialSubject"]["topicRecipe"]["baseRecipe"] = "task"
         self.assertFalse(validator.is_valid(bad))
         bad = example(); bad["credentialSubject"]["topicRecipe"]["shapeResource"]["id"] = "did:ixo:test#top-00"

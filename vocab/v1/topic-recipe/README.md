@@ -81,6 +81,8 @@ The card ID is `<entity-did>#dmn`. Both `relatedDocument[].id` and
 `topicRecipe.shapeResource.id` identify an entity linked resource such as
 `<entity-did>#top-01`. Each changed released Shape uses a new fragment and immutable
 VFS file version; the numeric suffix is not a semantic version or Kind code.
+DID fields follow the [DID Core syntax](https://www.w3.org/TR/did-core/#did-syntax),
+including a nonempty final method-specific segment and valid percent escapes.
 
 The profile carries recipe/protocol version, base Kind and Base Recipe, file-byte
 SHA-256 digest, VFS provider/resource/fileId/version tuple, publication status,
@@ -99,7 +101,9 @@ integrity profile. Managed at-rest encryption is independent of that wire flag.
 Public access requires anonymous retrieval of the exact verified release bytes.
 Private access requires a separately valid user-audience UCAN delegation and
 unauthorised-read denial. The metadata and `right` reference are requirements,
-not capability grants. A public teaser card may describe a private Shape without
+not capability grants. The delegation request endpoint must be an HTTPS URI with
+a nonempty host and no embedded credentials; ports and IPv6 hosts are supported.
+A public teaser card may describe a private Shape without
 publishing its body. The only declared paywall state is
 `{"protocol":"x402","status":"planned"}`; this does not enable payment or
 grant access. Tokens and private keys must never be embedded in a card.
@@ -140,6 +144,12 @@ python3 -m venv /tmp/ixo-ns-validation
 /tmp/ixo-ns-validation/bin/python -m pip install -r tests/topic-recipe/requirements.txt
 /tmp/ixo-ns-validation/bin/python -B -m unittest discover -s tests/topic-recipe
 ```
+
+Install the requirements with the `format-nongpl` extra intact and enable
+`FormatChecker()` when validating with Python jsonschema. Core jsonschema alone
+does not install the URI and date-time validators; the tests assert that both
+are available and reject malformed dates, source URIs, DIDs, and delegation URLs.
+Other consumers must likewise enable format assertions in their validator.
 
 The tests use pinned official VC v2/DID v1 snapshots and the local IXO context;
 they make no remote context requests. They cover schema validation, canonical

@@ -21,8 +21,7 @@
       ]
     },
     "id": {
-      "type": "string",
-      "pattern": "^did:[a-z0-9]+:[^/?#\\s]+#dmn$"
+      "$ref": "#/$defs/domainCardId"
     },
     "type": {
       "type": "array",
@@ -52,8 +51,7 @@
       ],
       "properties": {
         "id": {
-          "type": "string",
-          "pattern": "^did:[a-z0-9]+:[^/?#\\s]+$"
+          "$ref": "#/$defs/did"
         }
       },
       "additionalProperties": true
@@ -97,8 +95,7 @@
       ],
       "properties": {
         "id": {
-          "type": "string",
-          "pattern": "^did:[a-z0-9]+:[^/?#\\s]+$"
+          "$ref": "#/$defs/did"
         },
         "type": {
           "type": "array",
@@ -176,8 +173,7 @@
             ],
             "properties": {
               "id": {
-                "type": "string",
-                "pattern": "^did:[a-z0-9]+:[^/?#\\s]+#top-(?:0[1-9]|[1-9][0-9]+)$"
+                "$ref": "#/$defs/shapeResourceId"
               },
               "type": {
                 "type": "array",
@@ -516,8 +512,7 @@
       ],
       "properties": {
         "id": {
-          "type": "string",
-          "pattern": "^did:[a-z0-9]+:[^/?#\\s]+#top-(?:0[1-9]|[1-9][0-9]+)$"
+          "$ref": "#/$defs/shapeResourceId"
         },
         "version": {
           "type": "string",
@@ -595,13 +590,13 @@
                   ],
                   "properties": {
                     "authority": {
-                      "type": "string",
-                      "pattern": "^did:[a-z0-9]+:[^/?#\\s]+$"
+                      "$ref": "#/$defs/did"
                     },
                     "requestEndpoint": {
                       "type": "string",
                       "format": "uri",
-                      "pattern": "^https://"
+                      "pattern": "^https://(?:\\[[^\\]\\s]+\\]|[^/?#\\s:@\\[\\]]+)(?::[0-9]+)?(?:[/?#][^\\s]*)?(?![\\s\\S])",
+                      "description": "HTTPS URI with a nonempty host and no embedded credentials; optional port and IPv6 literals are supported."
                     }
                   },
                   "additionalProperties": false
@@ -636,6 +631,24 @@
         }
       },
       "additionalProperties": false
+    },
+    "did": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+(?![\\s\\S])"
+    },
+    "domainCardId": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+#dmn(?![\\s\\S])"
+    },
+    "shapeResourceId": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+#top-(?:0[1-9]|[1-9][0-9]+)(?![\\s\\S])"
     }
   }
 }
