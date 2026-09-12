@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1/topic-recipe/index.jsonld",
+      "@type": "owl:Ontology",
+      "dcterms:title": "IXO Topic Recipe vocabulary",
+      "owl:versionInfo": "1.0.0",
+      "dcterms:description": "An interoperable Domain Card profile for reusable protocol/topic entities. Recipe metadata is a JSON literal; it is not a capability grant, runtime Topic state, or evidence of publication."
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#DomainCard",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Domain Card",
+      "rdfs:comment": "A verifiable credential describing an IXO domain entity for discovery.",
+      "rdfs:subClassOf": {
+        "@id": "https://www.w3.org/2018/credentials#VerifiableCredential"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#TopicRecipe",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Topic Recipe",
+      "rdfs:comment": "A reusable, versioned blueprint for instantiating a reviewable Topic Draft; not an instance or an authority grant."
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#protocol/topic",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Topic Recipe protocol entity",
+      "rdfs:comment": "An IXO entity whose exact chain entity type is protocol/topic and which represents a reusable Topic Recipe.",
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/ixo/vocab/v1#TopicRecipe"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#topicRecipe",
+      "@type": "rdf:Property",
+      "rdfs:label": "Topic Recipe metadata",
+      "rdfs:comment": "A lossless JSON literal carrying the profile version, recipe and protocol versions, base Kind and Recipe, publication/disclosure declarations, pinned Shape/VFS reference, and access requirements. Values describe requirements and do not grant UCAN authority or establish payment.",
+      "rdfs:range": {
+        "@id": "rdf:JSON"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#purpose",
+      "@type": "rdf:Property",
+      "rdfs:label": "Purpose",
+      "rdfs:comment": "Why the described domain entity or recipe exists."
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#function",
+      "@type": "rdf:Property",
+      "rdfs:label": "Function",
+      "rdfs:comment": "What the described entity or recipe is intended to do."
+    },
+    {
+      "@id": "https://w3id.org/ixo/vocab/v1#systemRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "System role",
+      "rdfs:comment": "The described entity role; topic-recipe identifies a reusable recipe listing."
+    }
+  ]
+}

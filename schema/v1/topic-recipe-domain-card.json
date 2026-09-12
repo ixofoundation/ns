@@ -1,0 +1,654 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/ixo/schema/v1/topic-recipe-domain-card",
+  "title": "IXO Topic Recipe Domain Card profile 2.0.0",
+  "description": "Opt-in canonical IXO Topic Recipe Domain Card profile. Structural validation does not verify signatures, ledger bindings, access authority, or deployment.",
+  "type": "object",
+  "required": [
+    "@context",
+    "id",
+    "type",
+    "issuer",
+    "validFrom",
+    "credentialSchema",
+    "credentialSubject"
+  ],
+  "properties": {
+    "@context": {
+      "const": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/ixo/context/v1/topic-recipe/index.jsonld"
+      ]
+    },
+    "id": {
+      "$ref": "#/$defs/domainCardId"
+    },
+    "type": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "VerifiableCredential"
+          }
+        },
+        {
+          "contains": {
+            "const": "ixo:DomainCard"
+          }
+        }
+      ]
+    },
+    "issuer": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/did"
+        }
+      },
+      "additionalProperties": true
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "credentialSchema": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "const": "https://w3id.org/ixo/schema/v1/topic-recipe-domain-card"
+        },
+        "type": {
+          "const": "JsonSchema"
+        }
+      },
+      "additionalProperties": true
+    },
+    "credentialSubject": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "name",
+        "purpose",
+        "function",
+        "systemRole",
+        "keywords",
+        "relatedDocument",
+        "topicRecipe"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/did"
+        },
+        "type": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contains": {
+            "const": "ixo:protocol/topic"
+          }
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "function": {
+          "type": "string",
+          "minLength": 1
+        },
+        "systemRole": {
+          "const": "topic-recipe"
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "relatedDocument": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "mediaType"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "uri"
+              },
+              "type": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "mediaType": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          },
+          "contains": {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "mediaType"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/shapeResourceId"
+              },
+              "type": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "contains": {
+                  "const": "schema:DigitalDocument"
+                }
+              },
+              "mediaType": {
+                "const": "application/json"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "topicRecipe": {
+          "$ref": "#/$defs/topicRecipe"
+        }
+      },
+      "additionalProperties": true
+    },
+    "proof": {
+      "type": "object",
+      "minProperties": 1
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "topicRecipe": {
+      "type": "object",
+      "required": [
+        "profileVersion",
+        "entityType",
+        "version",
+        "protocolVersion",
+        "baseKind",
+        "baseRecipe",
+        "publication",
+        "listingVisibility",
+        "shapeResource",
+        "instantiation"
+      ],
+      "properties": {
+        "profileVersion": {
+          "const": "2.0.0"
+        },
+        "entityType": {
+          "const": "protocol/topic"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protocolVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "baseKind": {
+          "enum": [
+            "project",
+            "task",
+            "agent_task",
+            "proposal",
+            "evaluation",
+            "claims",
+            "question",
+            "discussion",
+            "incident"
+          ]
+        },
+        "baseRecipe": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "project",
+            "flow",
+            "proposal",
+            "evaluation",
+            "claims",
+            "research",
+            "discussion",
+            "incident"
+          ]
+        },
+        "publication": {
+          "enum": [
+            "draft",
+            "published",
+            "deprecated",
+            "withdrawn"
+          ]
+        },
+        "listingVisibility": {
+          "enum": [
+            "public",
+            "restricted"
+          ]
+        },
+        "shapeResource": {
+          "$ref": "#/$defs/shapeResource"
+        },
+        "instantiation": {
+          "const": "reviewable-draft"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "id",
+              "version",
+              "digest"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "uri"
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "digest": {
+                "type": "string",
+                "pattern": "^sha256:[a-f0-9]{64}$"
+              },
+              "role": {
+                "enum": [
+                  "protocol-core",
+                  "base-recipe",
+                  "kind-profile",
+                  "resource-schema",
+                  "action-manifest",
+                  "flow-binding",
+                  "policy",
+                  "claim-protocol"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "task"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "project"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "agent_task"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "flow"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "question"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "research"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "project"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "project"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "proposal"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "proposal"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "evaluation"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "evaluation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "claims"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "claims"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "discussion"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "discussion"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "baseKind": {
+                "const": "incident"
+              }
+            },
+            "required": [
+              "baseKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "baseRecipe": {
+                "const": "incident"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "shapeResource": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "digest",
+        "mediaType",
+        "vfs",
+        "access"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/shapeResourceId"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "mediaType": {
+          "const": "application/json"
+        },
+        "vfs": {
+          "type": "object",
+          "required": [
+            "provider",
+            "resource",
+            "fileId",
+            "version"
+          ],
+          "properties": {
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "resource": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fileId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "access": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "mode",
+                "paywall"
+              ],
+              "properties": {
+                "mode": {
+                  "const": "public"
+                },
+                "paywall": {
+                  "type": "null"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "required": [
+                "mode",
+                "delegation",
+                "paywall"
+              ],
+              "properties": {
+                "mode": {
+                  "const": "ucan"
+                },
+                "delegation": {
+                  "type": "object",
+                  "required": [
+                    "authority",
+                    "requestEndpoint"
+                  ],
+                  "properties": {
+                    "authority": {
+                      "$ref": "#/$defs/did"
+                    },
+                    "requestEndpoint": {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://(?:\\[[^\\]\\s]+\\]|[^/?#\\s:@\\[\\]]+)(?::[0-9]+)?(?:[/?#][^\\s]*)?(?![\\s\\S])",
+                      "description": "HTTPS URI with a nonempty host and no embedded credentials; optional port and IPv6 literals are supported."
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "paywall": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "protocol",
+                        "status"
+                      ],
+                      "properties": {
+                        "protocol": {
+                          "const": "x402"
+                        },
+                        "status": {
+                          "const": "planned"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "did": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+(?![\\s\\S])"
+    },
+    "domainCardId": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+#dmn(?![\\s\\S])"
+    },
+    "shapeResourceId": {
+      "$comment": "DID Core method-specific-id grammar: https://www.w3.org/TR/did-core/#did-syntax. The final segment must contain at least one idchar.",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^did:[a-z0-9]+:(?:(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})*:)*(?:[A-Za-z0-9._-]|%[0-9A-Fa-f]{2})+#top-(?:0[1-9]|[1-9][0-9]+)(?![\\s\\S])"
+    }
+  }
+}
